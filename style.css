@@ -1,0 +1,173 @@
+/* Reset elements*/
+
+body,div,h1,h2,h3,h4,table,tr,td,ul,li,a,hr {
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+/* Set defaults for base text */
+body {
+    font-family:Helvetica, san-serif;
+    font-size:100%;
+    line-height:125%;
+    background:#D8D8D8;
+}
+
+/* Set heading fonts */
+h1 {
+    font-size:2em;
+    color:#39275B;
+    clear:both;
+    line-height:100%;
+}
+
+h2 {
+    font-size:2em;
+    color:#39275B;
+    clear:both;
+    padding-top:1em;
+    padding-bottom:.1em;
+    line-height:100%;
+    font-weight:normal;
+}
+
+h3 {
+    font-size:1.25em;
+    color:#39275B;
+    clear:both;
+    padding-top:.5em;
+    line-height:100%;
+}
+
+h4 {
+    font-size:1.2em;
+    color:#39275B;
+    clear:both;
+    margin-bottom:.1em;
+    margin-top:.25em;
+    font-weight:bold;
+    line-height:100%;
+}
+
+a {
+    font-weight:bold;
+    color:#000;
+    text-decoration:none;
+}
+
+p {
+    margin-top:.5em;
+    margin-bottom:.5em;
+    line-height:125%;
+}
+
+/* Page elements */
+#container {
+    margin:0 auto;
+    padding:0;
+    width:60em;
+    min-height:100%;
+    height:100%;
+}
+
+#header {
+    font-size:7.2em;
+    text-align:center;
+    margin-bottom:.2em;
+    margin-top:.5em;
+    font-family:Times, serif;
+    line-height:100%;
+    
+}
+
+#header a {
+    text-decoration:none;
+    color:#39275B;
+    font-weight:normal;
+}
+
+#navbar {
+    text-align:center;
+    background:#39275B;
+    border:0;
+    padding-top:1em;
+    padding-bottom:.5em;
+    line-height:100%;
+}
+
+#navbar li {
+    list-style-type: none;
+    display: inline;
+}
+
+#navbar a {
+    font-size:1.5em;
+    text-decoration:none;
+    color:#FFFFFF;
+    margin-right:2.55em;
+    margin-left:2.55em;
+    font-weight:normal;
+}
+
+#main {
+    background:#FFF;
+    min-height:100%;
+    height:100%;
+    padding-left:8.5em;
+    padding-right:8.5em;
+    padding-bottom:2em;
+    overflow:auto;
+    margin-bottom:3em;
+    border-style:solid;
+    border-bottom-width:.5em;
+    border-color:#39275B;
+}
+
+#photo {
+    float:left;
+    max-width:29em;
+    margin-top:1.5em;
+
+}
+
+#contact {
+    float:left;
+    margin-left:1em;
+    margin-top:1.5em;
+    max-width:13em;
+}
+
+#lastupdate{
+    width:100%;
+    text-align:center;
+}
+
+.cite {
+    float:left;
+    clear:left;
+    max-width:38em;
+    margin-bottom:.25em;
+    margin-top:.25em;
+    margin-left:1.5em;
+}
+
+.links {
+    float:right;
+    text-align:right;
+    clear:right;
+    width:3em;
+    margin-top:.5em;
+}
+
+.links a {
+    text-decoration:none;
+}
+
+hr {
+    color:#39275B;
+    background-color:#39275B;
+    height:.1em;
+    border:0;
+    margin-bottom:.5em;
+}
