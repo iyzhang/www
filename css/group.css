@@ -2,12 +2,11 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: url(/img/crossword.png) repeat 0 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', Georgia, Times, serif;
-    color:#554D7D;
+    color:#888;
 }
 p, div {
     font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
@@ -49,7 +48,7 @@ color:#5C2E90;
 .footer {
   padding-top: 19px;
   color: #444;
-  border-top: 1px solid #554D7D;
+  border-top: 2px solid #554D7D;
   text-align: center;
   font-size: 0.8em;
 }
@@ -82,8 +81,8 @@ color:#5C2E90;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #554D7D;
-  border-top: 1px solid #554D7D;
+  border-bottom: 2px solid #554D7D;
+  border-top: 2px solid #554D7D;
 }
 .nav-pills > li > a {
   border-radius: 0px;
