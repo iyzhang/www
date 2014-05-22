@@ -20,5 +20,7 @@ clean:
 	$(RM) -r _site _includes/pubs.html
 
 CSEHOST := bicycle.cs.washington.edu
+HOST := irene@ambulatoryclam.net
 deploy: clean all
-	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(CSEHOST):/XXX
+	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(HOST):schemeprincess
+	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(CSEHOST):public_html

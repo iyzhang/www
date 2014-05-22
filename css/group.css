@@ -13,7 +13,7 @@ p, div {
 }
 
 a {
-color:#5C2E90;
+color:##70608F;
 }
 
 /* Make sure abstract does not disply by default*/
@@ -94,7 +94,13 @@ color:#5C2E90;
   background-color: #70608F;
 }
 
-
+/* custom button */
+/* .btn-default { */
+/*   color:#888; */
+/*   font-weight:bold; */
+/*   background-color:#fff; */
+/*   border-color:#888; */
+/* } */
 
 /* Jumbotron */
 .jumbotron {

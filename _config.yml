@@ -1,6 +1,5 @@
 name: Irene Y. Zhang
 url: http://irenezhang.net
-
 exclude: [bibble, README.md, Makefile]
 
 # use this library to parse Markdown
