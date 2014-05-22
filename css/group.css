@@ -24,7 +24,7 @@ color:#5C2E90;
 /* customize wells */
 .well{
     background-color:#e6e6e6;
-    border: 0px solid #fff;
+    border: 0px solid #888;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -48,7 +48,7 @@ color:#5C2E90;
 .footer {
   padding-top: 19px;
   color: #444;
-  border-top: 2px solid #554D7D;
+  border-top: 1px solid #70608F;
   text-align: center;
   font-size: 0.8em;
 }
@@ -81,17 +81,17 @@ color:#5C2E90;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 2px solid #554D7D;
-  border-top: 2px solid #554D7D;
+  border-bottom: 1px solid #70608F;
+  border-top: 1px solid #70608F;
 }
 .nav-pills > li > a {
   border-radius: 0px;
-  color:#554D7D;
+  color:#70608F;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: #554D7D;
+  background-color: #70608F;
 }
 
 

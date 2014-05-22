@@ -4,7 +4,7 @@ title: Research Projects
 ---
 
 My current research focuses on operating systems and distributed
-systems for large-scale distributed applications. I am exploring
+systems for large-scale distributed applications. I am working on
 better transactional storage, flexible deployment and practical
 user-level I/O for these applications.
 
@@ -12,22 +12,22 @@ user-level I/O for these applications.
 <p>
 Optimistic Replicated Two-Phase Commit (OR-2PC) is a new protocol
 integrating two-phase commit, replication and concurrency control. By
-taking advantage of cross-protocol optimizations, OR-2PC is able to
+taking advantage of <em>cross-protocol</em> optimizations, OR-2PC is able to
 commit transactions in a single round-trip with the same consistency
 guarantees and general transaction model as conventional
 protocols.<br />
-<a href="or-2pc/index.html">More about OR-2PC
+<a href="{{ site.base }}/or-2pc/index.html">More about OR-2PC
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
 
 <h3>Sapphire</h3>
 Sapphire is a new distributed programming platform that provides
-*customizable* and *extensible* deployment of mobile/cloud
+<em>customizable</em> and <em>extensible</em> deployment of mobile/cloud
 applications.  This flexibility enables programmers to separate
 deployment logic from their application, while maintaining
 fine-grained control over performance trade-offs.<br />
-<a href="sapphire.cs.washington.edu">More about Sapphire
+<a href="http://sapphire.cs.washington.edu">More about Sapphire
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
@@ -39,15 +39,15 @@ fast-path I/O operations. Arrakis allows applications to directly
 access the hardware during normal execution and providing
 significantly better performance, reliability and
 customizability.<br />
-<a href="arrakis.cs.washington.edu">More about Arrakis
+<a href="http://arrakis.cs.washington.edu">More about Arrakis
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
 <h2>Research Projects at VMware</h2>
 <p>
-Before starting my PhD, I worked on research at VMware. My primary
-focus was on improving the performance of restoring checkpointed
-virtual machines. My work included:
+Before starting my PhD, I worked on several research projects at
+VMware. My primary focus was on improving the performance of restoring
+checkpointed virtual machines. My work included:
 </p>
 <p><b>Halite</b> is a new VM checkpointing system for VMware ESXi Server that
 optimizes for checkpoint restore performance. Halite improves disk

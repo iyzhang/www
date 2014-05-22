@@ -28,9 +28,5 @@ navigation:
       link: /research/
     - title: Publications
       link: /publications.html
-    - title: Code
-      link: /code.html
-    - title: Contact
+    - title: Contact & c.
       link: /contact.html
-    - title: CV
-      link: /cv/irene-zhang-cv.pdf
