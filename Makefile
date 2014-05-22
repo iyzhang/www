@@ -6,7 +6,7 @@ PYTHON=python2.7
 all: _includes/pubs.html _site/index.html
 
 BUILDARGS :=
-_site/index.html _site/wacas14/index.html:
+_site/index.html:
 	jekyll build $(BUILDARGS)
 
 _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
@@ -19,6 +19,6 @@ _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 clean:
 	$(RM) -r _site _includes/pubs.html
 
-HOST := yourwebpage.com
+CSEHOST := bicycle.cs.washington.edu
 deploy: clean all
-	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(HOST):www/
+	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(CSEHOST):/XXX

@@ -30,5 +30,7 @@ navigation:
       link: /publications.html
     - title: Code
       link: /code.html
+    - title: Contact
+      link: /contact.html
     - title: CV
-      link: irene-zhang-cv.pdf
+      link: /cv/irene-zhang-cv.pdf

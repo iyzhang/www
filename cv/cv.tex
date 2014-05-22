@@ -1,0 +1,372 @@
+% -*- mode: latex; TeX-PDF-mode:t; -*-
+\documentclass[10pt,times]{report}
+\usepackage[letterpaper,text={6.5in,9.5in},centering,nofoot]{geometry}
+% use the showframe option in the above line to show the frame
+\usepackage{microtype}
+
+
+\setlength{\tabcolsep}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parsep}{0pt}
+
+
+% Separation between header and body
+\newlength{\partgap}
+\setlength{\partgap}{.2in}
+
+% Additional separation between sections
+\newlength{\sectiongap}
+\setlength{\sectiongap}{.6em}
+
+% Separation between entries
+\newlength{\entrygap}
+\setlength{\entrygap}{.25em}
+
+\newlength{\sectioncolwidth}
+\setlength{\sectioncolwidth}{1in}
+\newlength{\colgap}
+\setlength{\colgap}{.5em}
+\newlength{\stuffwidth}
+\setlength{\stuffwidth}{\textwidth}
+\addtolength{\stuffwidth}{-\colgap}
+\addtolength{\stuffwidth}{-\sectioncolwidth}
+\addtolength{\stuffwidth}{-.5em}  % minipage margins?
+
+\pagestyle{empty}
+
+
+% From TeX by Topic
+\def\ifEqString#1#2{\def\testa{#1}\def\testb{#2}%
+  \ifx\testa\testb}
+
+\newenvironment{rtable}{
+  \begin{minipage}{\textwidth}
+  }{
+  \end{minipage}
+}
+
+\newenvironment{rentry}[3][xxx]{
+  \begin{minipage}[t]{\hsize}
+    \textbf{#2}\ifEqString{#1}{xxx}\relax\else, \textit{#1}\fi
+    \hspace{\stretch{1}} #3 \\
+  }{
+    \removelastskip
+  \end{minipage}
+  \\[\entrygap]  % Useful for page squeezing
+}
+
+\newcommand{\rline}[2]{
+  \begin{minipage}[t]{\hsize}
+    #1 \hspace{\stretch{1}} #2
+  \end{minipage} \\
+}
+
+\newenvironment{rsection}[1]{
+  \begin{minipage}[t]{\sectioncolwidth}
+    \textsc{#1}
+  \end{minipage}
+  \hspace{\colgap}
+  \begin{minipage}[t]{\stuffwidth}
+  }{
+    \removelastskip
+  \end{minipage}
+  \\[\sectiongap]
+}
+
+\newenvironment{ritemize}{%
+  \begin{list}{$\cdot$}{\topsep 0pt \parskip 0pt \partopsep 0pt
+      \itemsep 0pt \parsep 0pt}%
+}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Name
+\begin{center}
+  \LARGE{\sc{Irene Y. Zhang}}
+\end{center}
+\vspace{2mm}
+
+% Contact info
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  185 NE Stevens Way & \textit{iyzhang@cs.washington.edu} \\
+  Seattle, WA  98195 & \\ 
+\end{tabular*}
+
+\vspace{\partgap}
+
+% Table
+\begin{rtable}
+  \begin{rsection}{Education}
+    \begin{rentry}{University of Washington}{Seattle, WA}
+      \rline{Ph.D. in Computer Science and Engineering}{}
+      Advisors: Hank Levy and Arvind Krishnamurthy
+    \end{rentry}
+
+    \begin{rentry}{University of Washington}{Seattle, WA}
+      \rline{M.S. in Computer Science and Engineering}{December 2013}
+      Advisors: Hank Levy, Arvind Krishnamurthy, and Steve Gribble\\
+      Thesis: \textit{Simplifying Mobile/Cloud Applications with Sapphire}
+    \end{rentry}
+
+    \begin{rentry}{Massachusetts Institute of Technology}{Cambridge,
+        MA} \rline{M.Eng. in Electrical Engineering and Computer
+        Science}{June 2009} Advisor: M. Frans Kaashoek\\
+      Thesis: \textit{Efficient File Distribution in a Flexible, Wide-area
+        File System}%\\Graduate GPA: 5.0/5.0
+    \end{rentry}
+
+    \begin{rentry}{Massachusetts Institute of Technology}{Cambridge, MA}        
+        \rline{S.B. in Computer Science and Engineering}{June 2008}
+        %Undergraduate GPA: 4.7/5.0
+    \end{rentry}
+  \end{rsection}
+
+  \begin{rsection}{Interests}
+    Operating systems, virtualization, distributed systems and networking
+  \end{rsection}
+  
+  \begin{rsection}{Research}
+    \begin{rentry}{Optimistic Replicated Two-Phase Commit}{}
+      Optimistic Replicated Two-Phase Commit (OR-2PC) is the first
+      \emph{co-designed} protocol that integrates protocols for
+      consistent replication, atomic commitment and concurrency
+      control to take advantage of cross-protocol
+      optimizations. OR-2PC uses a new optimistic concurrency control
+      protocol that enforces consistency across replicas as well as
+      across transactions with a new ordering technique based on
+      loosely synchronized clocks. OR-2PC commits transactions in a
+      single round-trip and eliminates bottlenecks associated with
+      leader-based Paxos, while maintaining the same consistency
+      guarantees, general-purpose transaction model and replication
+      requirements as standard protocols.
+    \end{rentry}
+
+    \begin{rentry}{Customizable and Extensible Deployment for
+        Mobile/Cloud Applications}{}
+      Sapphire is a new distributed programming platform that provides
+      *customizable* and *extensible* deployment of mobile/cloud
+      applications. Rather than directly deploying the application,
+      application programmers use a library of deployment managers,
+      which customize the platform for their application. Further,
+      Sapphire has an interface for developing new deployment
+      managers, allowing programmers to extend the platform. This
+      flexibility enables programmers to separate deployment logic
+      from their application, while maintaining fine-grained control
+      over performance trade-offs.
+    \end{rentry}
+
+    \begin{rentry}{Arrakis}{}
+      Arrakis is a new operating system that provides high performance
+      I/O by taking advantage of hardware virtualization
+      technology. Hardware virtualization technologies are designed to
+      eliminate the hypervisor from fast-path I/O operations. Arrakis
+      takes this technology a step further by using it to eliminate
+      the operating system as well, allowing applications to directly
+      access the hardware during normal execution and providing
+      significantly better performance, reliability and
+      customizability.
+    \end{rentry}
+
+    \begin{rentry}{Improving VM Checkpoint Restore Performance}{} 
+      With collaborators at VMware, I developed two techniques for
+      improving the performance of restoring checkpointed virtual
+      machines. The first estimates and prefetches the working set of
+      the checkpointed VM on restore, improving the responsiveness of
+      the VM during restore. The second groups memory pages together
+      on disk that are likely to be accessed together, improving disk
+      efficiency during restore.
+    \end{rentry}
+
+    % \begin{rentry}{Transactional Consistency and Automatic Cache Management}{}
+    %   In-memory application caches like memcached introduce
+    %   significant complexity to web applications because they provide
+    %   a simple get-put interface, violate the consistency guarantees
+    %   of the underlying database and leave cache invalidations to the
+    %   application. TxCache addresses these problems by providing a
+    %   programming model for caching, transactional consistency across
+    %   the entire system and automatic cache invalidations generated by
+    %   the database.
+    % \end{rentry}
+
+    % \begin{rentry}{WheelFS and Large File Distribution}{}
+    %   The goal of WheelFS is to provide a general wide-area storage
+    %   solution with a standard POSIX interface. The challenge is that
+    %   any storage system operating in the wide-area must make
+    %   trade-offs for performance and trade-off decisions are often
+    %   better made by applications. WheelFS solves this problem by
+    %   allowing applications to configure the file system using
+    %   keywords embedded in the pathname. My thesis work focused on
+    %   adding support for efficient file distribution to WheelFS for
+    %   distributing large files and handling flash crowds.
+    % \end{rentry}        
+  \end{rsection}
+\end{rtable}
+
+\begin{rtable}
+  %\vspace{1.0em}
+%   \begin{rsection}{}
+%     \begin{rentry}{Fresh Breeze Multiprocessor Architecture}{}
+%       Work with Prof. Jack Dennis implementing a cycle-accurate
+%       simulator for the Fresh Breeze multiprocessor architecture.  Led
+%       a 3 student team in the design and implementation of a tool for
+%       interacting with the Fresh Breeze simulator. The goal of the
+%       Fresh Breeze architecture is to provide a sound base for
+%       executing programs written following the principles of modular
+%       software construction. The architecture introduces three major
+%       departures from conventional multiprocessor design: simultaneous
+%       multithreading, global shared address space, and no memory
+%       update, cycle-free heap.
+%     \end{rentry}
+%  \end{rsection}
+\vspace{1.0em}
+ \begin{rsection}{Publications}
+   I. Zhang, N. Sharma, A. Szekeres, D. Ports,
+   A. Krishnamurthy. \textit{Optimistic, Replicated Two-Phase Commit.}
+   In submission.\\\vspace{-0.5em}
+
+   I. Zhang, A. Szekeres, D. Van Aken, I. Ackerman, S. Gribble,
+   A. Krishnamurthy, H. Levy. \textit{Customizable and Extensible
+     Deployment for Mobile/Cloud Applications.} In
+   submission.\\\vspace{-0.5em}
+
+   S. Peter, J. Li, D. Woos, I. Zhang, D. Ports, A. Krishnamurthy,
+   T. Anderson, T. Roscoe. \textit{Arrakis: The Operating System is
+     the Control Plane.} In submission.\\\vspace{-0.5em}
+
+   S. Peter, J. Li, D. Woos, I. Zhang, D. Ports, T. Anderson,
+   A. Krishnamurthy, M. Zbikowski. \textit{Towards High-Performance
+     Application-Level Storage Management.} In Proc. of HotStorage
+   '14. \\\vspace{-0.5em}
+
+    I. Zhang, T. Denniston, Y. Baskakov, A. Garthwaite. \textit{Optimizing
+      VM Checkpointing for Restore Performance in VMware ESXi.} In
+    Proc. of USENIX ATC '13. San Jose, CA. June 2013.\\\vspace{-0.5em}
+
+    I. Zhang, A. Garthwaite, Y. Baskakov, K. Barr. \textit{Fast
+      Restore of Checkpointed Memory Using Working Set
+      Estimation.} In Proc. of VEE '11. Newport Beach, CA. March
+    2011.\\\vspace{-0.5em}
+
+    D. Ports, A. Clements, I. Zhang, S. Madden,
+    B. Liskov. \textit{Transactional Consistency and Automatic
+      Management in an Application Data Cache.} In Proc. of OSDI
+    '10. Vancouver, Canada. October 2010.\\\vspace{-0.5em}
+
+    J. Stribling, Y. Sovran, I. Zhang, X. Pretzer, J. Li,
+    F. Kaashoek, R. Morris. \textit{Flexible, Wide-Area Storage for
+      Distributed Systems with WheelFS.} In Proc. of NSDI '09. Boston,
+    MA. April 2009.\\\vspace{-0.5em}
+    
+    I. Zhang, A. Garthwaite, Y. Baskakov, K. Barr, J. Pool,
+    K. Christopher. \textit{Fast Restore of Checkpointed Memory Using
+      Working Set Estimation.} Poster at SOSP '09. Big Sky,
+    MT. October 2009.\\\vspace{-0.5em} 
+ 
+   I. Zhang, K. Barr. \textit{Improving VMware Workstation Restore
+      using Working Set Estimation.} Poster at VMworld '08. Las Vegas,
+    NV. September 2008.
+ \end{rsection}
+
+  \vspace{1.0em}
+  \begin{rsection}{Teaching}
+    \begin{rentry}{Operating Systems Engineering (6.828)}{Sept - Dec
+        2008}
+      \rline{Teaching Assistant, MIT Department of EECS}{} 
+      Developed and graded labs assignments where students build an
+      exokernel-style OS. Held weekly office hours to help students
+      with labs and OS fundamentals like virtual memory management,
+      interrupt handlers and process management.
+    \end{rentry}    
+
+    \begin{rentry}{Intro. to Digital Systems Lab (6.111)}{Jan - May
+        2008}
+      \rline{Teaching Assistant, MIT Department of EECS}{} 
+      Taught weekly recitations and helped students with labs using
+      FPGAs and Verilog. Helped students design and implement complex
+      final projects such as 3D object tracking. Received student
+      evaluation of 6.3/7.0, one of the highest ratings in the last 5
+      years.
+    \end{rentry}    
+
+    \begin{rentry}{Computation Structures (6.004)}{Jan - Dec 2007}
+      \rline{Lab Assistant, MIT Department of EECS}{} 
+      Held office hours to help students design and build a processor
+      and small OS kernel in simulation.
+    \end{rentry}
+
+    \begin{rentry}{Intro. to Computer Science and
+        Programming (6.00)}{Sept - Dec 2006}
+      \rline{Lab Assistant, MIT Department of EECS}{} 
+      Taught students basic computer science concepts using Python
+      such as recursion, abstraction and OOP.
+    \end{rentry}
+  \end{rsection}
+\end{rtable}
+
+\begin{rtable}
+\vspace{1.0em}
+  \begin{rsection}{Honors and\\Awards}
+    \begin{rentry}{National Science Board Annual Board Meeting Student
+        Panel}{2013}
+    \end{rentry} \vspace{-0.5em}
+
+    \begin{rentry}{National Science Foundation Fellowship}{2013}
+    \end{rentry} \vspace{-0.5em}
+
+    \begin{rentry}{ARCS Foundation Fellowship}{2012}
+    \end{rentry} \vspace{-0.5em}
+
+    \begin{rentry}{Jeff Dean and Heidi Hopper Endowed Regental Fellowship}{2012}
+    \end{rentry} \vspace{-0.5em}
+
+    \begin{rentry}{VMware Academic Program Top Intern Project}{2008}
+    \end{rentry} \vspace{-0.5em}
+    
+    \begin{rentry}{CRA Outstanding Undergraduate Award, Honorable
+      Mention}{2008}
+    \end{rentry} \vspace{-0.5em}
+
+    \begin{rentry}{Officer, Eta Kappa Nu EECS Honor Society}{2008}
+    \end{rentry} \vspace{-0.5em}
+
+    \begin{rentry}{Northern Telecom/BNR Award for Best Undergrad. Lab Project}{2006}
+    \end{rentry}
+  \end{rsection}
+  \vspace{1.0em}
+  \begin{rsection}{Work\\Experience}
+    \begin{rentry}{VMware, Inc.}{Cambridge, MA}      
+      \rline{MTS, Virtual Machine Monitor
+        Group}{Jan 2010 - Feb 2013}
+      \vspace{-.5em}
+    \end{rentry}
+    \begin{rentry}{VMware, Inc.}{Cambridge, MA}      
+      \rline{R\&D Intern, Virtual Machine Monitor Group}{Jul - Dec 2009}
+      \vspace{-.5em}
+    \end{rentry}
+    \begin{rentry}{VMware, Inc.}{Cambridge, MA}      
+      \rline{R\&D Intern, Core Performance Group}{Jun - Aug 2008}
+      \vspace{-.5em}
+    \end{rentry}
+    \begin{rentry}{Quickware Engineering and Design}{Waltham, MA}
+      \rline{Engineering Intern}{Jun - Aug 2007} 
+      \vspace{-.5em}
+    \end{rentry}
+    \begin{rentry}{Cummins, Inc.}{Columbus, IN}
+      \rline{Engineering Intern, Analysis Led Design}{Jun - Aug 2005}
+      \vspace{-.5em}
+    \end{rentry}
+    \begin{rentry}{Cummins, Inc.}{Beijing, China}
+      \rline{International Business Intern}{Jun - Jul 2004} 
+      \vspace{-.5em}
+    \end{rentry}
+    \begin{rentry}{ArvinMeritor, Inc.}{Columbus, IN}
+      \rline{Web Development Intern}{Aug 2003 - May 2004}
+      \vspace{-.5em}
+    \end{rentry}
+  \end{rsection}
+
+  \vspace{-1em}  
+\end{rtable}
+\end{document}

@@ -7,12 +7,26 @@ body {
 
 h1, h2, h3 {
     font-family: 'Merriweather', Georgia, Times, serif;
-    color:#888;
+    color:#554D7D;
 }
 p, div {
     font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
+a {
+color:#5C2E90;
+}
+
+/* Make sure abstract does not disply by default*/
+.abstract{
+    display:none;
+}
+
+/* customize wells */
+.well{
+    background-color:#e6e6e6;
+    border: 0px solid #fff;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -29,14 +43,13 @@ p, div {
 /* Custom page header */
 .header > h1 {
     font-size:5em;
-    color:#888;
 }
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #444;
-  border-top: 1px solid #604878;
+  border-top: 1px solid #554D7D;
   text-align: center;
   font-size: 0.8em;
 }
@@ -69,12 +82,19 @@ p, div {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #604878;
-  border-top: 1px solid #604878;
+  border-bottom: 1px solid #554D7D;
+  border-top: 1px solid #554D7D;
 }
 .nav-pills > li > a {
   border-radius: 0px;
+  color:#554D7D;
 }
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #554D7D;
+}
+
 
 
 /* Jumbotron */

@@ -14,14 +14,7 @@
 		</td>
 		<td class="publication">
 			<span class="pubtitle">
-				{%- set url = entry|main_url %}
-				{%- if url %}
-				<img src="img/pdficon_small.png" width="16"
-					height="16" alt="PDF" />
-				<a href="{{ url|escape }}">{{ entry|title }}</a>.
-				{%- else %}
-				{{ entry|title }}.
-				{%- endif %}
+			    <b>{{ entry|title }}.</b>
 			</span><br />
 			<span class="authors">
 				{{ entry.persons['author']|author_list }}.
@@ -33,16 +26,23 @@
 			</span>
 			{%- endif %}
 			<br />
-			<span class="links">
-			{%- for type, url in (entry|extra_urls).iteritems() %}
-				[<a href="{{ url|escape }}">{{ type|escape }}</a>]
-			{%- endfor %}
+			<span class="btn-group">
 				{%- if entry.fields['abstract'] %}
-				[<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_{{entry.fields['key']}}').slideToggle('fast');return false;">abstract</a>]
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_{{entry.fields['key']}}').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
 				{%- endif %}
+            {%- set url = entry|main_url %}
+				{%- if url %}
+				<a class="btn btn-default btn-xs" href="{{ url|escape }}">
+                <i class="fa fa-download"></i> pdf</a>
+                {%- endif %}
+			{%- for type, url in (entry|extra_urls).iteritems() %}
+				<a class="btn btn-default btn-xs" href="{{ url|escape }}">
+                <i class="fa fa-chevron-right"></i> {{ type|escape }}</a>
+			{%- endfor %}
 			</span>
 			{%- if entry.fields['abstract'] %}
-			<div id="abstract_{{entry.fields['key']}}" class="abstract">
+			<div id="abstract_{{entry.fields['key']}}" class="abstract well">
 			{{ entry.fields['abstract'] |escape }}
 			</div>
 			{%- endif %}

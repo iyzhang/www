@@ -1,8 +1,127 @@
-@InProceedings{XXX,
-  author = 	 {Author 1 and Author 2},
-  title = 	 {Awesome Publication},
-  booktitle =    {International Conference on Awesome Research},
+@string{sosp = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)"}
+@string{nsdi = "Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)"}
+@string{osdi = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)"}
+@string{usenix_atc = "Proceedings of the USENIX Annual Technical Conference (ATC)"}
+@string{eurosys = "Proceedings of the European Conference on Computer Systems (Eurosys) "}
+@string{vee = "Proceedings of the International Conference on Virtual Execution Environments (VEE)"}
+@string{hot_storage = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)"}
+
+
+
+@InProceedings{irene13-optim_vm_check_restor_perfor_vmwar_esxi,
+  author = 	 {Irene Zhang and Tyler Denniston and Yury Baskakov and Alex Garthwaite},
+  title = 	 {Optimizing VM Checkpointing for Restore Performance in VMware ESXi},
+  booktitle =  usenix_atc,
+  year = 	 2013,
+  month = 6,
+  url={papers/vmrestore-atc13.pdf},
+  abstract={   Cloud providers are increasingly looking to use virtual machine
+  checkpointing for new applications beyond fault tolerance. Existing
+  checkpointing systems designed for fault tolerance only optimize for
+  saving checkpointed state, so they cannot support these new
+  applications, which require efficient restore. Improving restore
+  performance requires a predictive technique to reduce the number of
+  disk accesses to bring in the VM's memory on restore. However,
+  complex VM workloads can diverge at any time due to external inputs,
+  background processes and timing variances, so predicting which pages
+  the VM will access on restore to reduce faults to disk is
+  impossible. Instead, we focus on a technique for predicting which
+  pages the VM will access together on restore to improve the
+  efficiency of disk accesses.
+
+
+  To reduce the number of faults to disk on restore, we group memory
+  pages likely to be accessed together into locality blocks. On
+  each fault, we can load a block of pages that are likely to be
+  accessed with the faulting page, eliminating future faults and
+  increasing disk efficiency. We implement support for locality
+  blocks, along with several other optimizations, in a new
+  checkpointing system for VMware ESXi Server called Halite. Our
+  experiments show that Halite reduces restore overhead by up to
+  94\% even for complex VM workloads.
+ }
+}
+
+@InProceedings{zhang11-fast_restor_check_memor_using,
+  author = 	 {Irene Zhang and Alex Garthwaite and Yury Baskakov and Kenneth C. Barr},
+  title = 	 {Fast Restore of Checkpointed Memory Using Working Set Estimation},
+  booktitle =  vee,
+  year = 	 2011,
+  month = 3,
+  url={papers/vmrestore-vee11.pdf},
+abstract={
+
+In order to make save and restore features practical, saved virtual machines (VMs) must be able to quickly restore to normal operation. Unfortunately, fetching a saved memory image from persistent storage can be slow, especially as VMs grow in memory size. One possible solution for reducing this time is to lazily restore memory after the VM starts. However, accesses to unrestored memory after the VM starts can degrade performance, sometimes rendering the VM unusable for even longer. Existing performance metrics do not account for performance degradation after the VM starts, making it difficult to compare lazily restoring memory against other approaches. In this paper, we propose both a better metric for evaluating the performance of different restore techniques and a better scheme for restoring saved VMs.
+
+Existing performance metrics do not reflect what is really important to the user -- the time until the VM returns to normal operation. We introduce the time-to-responsiveness metric, which better characterizes user experience while restoring a saved VM by measuring the time until there is no longer a noticeable performance impact on the restoring VM. We propose a new lazy restore technique, called working set restore, that minimizes performance degradation after the VM starts by prefetching the working set. We also introduce a novel working set estimator based on memory tracing that we use to test working set restore, along with an estimator that uses access-bit scanning. We show that working set restore can improve the performance of restoring a saved VM by more than 89% for some workloads.
+}
+}
+
+@InProceedings{stribling09-flexib_wide_area_storag_distr_system_wheel,
+  author = 	 {Jeremy Stribling and Yair Sovran and Irene Zhang and
+                  Xavid Pretzer and Jinyang Li and M. Frans Kaashoek
+                  and Robert Morris},
+  title = 	 {Flexible, Wide-Area Storage for Distributed Systems with WheelFS},
+  booktitle =  nsdi,
+  year = 	 2009,
+  month = 4,
+  url = {papers/wfs-nsdi09.pdf},
+ abstract={WheelFS is a wide-area distributed storage system intended to help multi-site applications share data and gain fault tolerance. WheelFS takes the form of a distributed file system with a familiar POSIX interface. Its design allows applications to adjust the tradeoff between prompt visibility of updates from other sites and the ability for sites to operate independently despite failures and long delays. WheelFS allows these adjustments via semantic cues, which provide application control over consistency, failure handling, and file and replica placement.
+
+WheelFS is implemented as a user-level file system and is deployed on PlanetLab and Emulab. Three applications (a distributed Web cache, an email service and large file distribution) demonstrate that WheelFS's file system interface simplifies construction of distributed applications by allowing reuse of existing software. These applications would perform poorly with the strict semantics implied by a traditional file system interface, but by providing cues to WheelFS they are able to achieve good performance. Measurements show that applications built on WheelFS deliver comparable performance to services such as CoralCDN and BitTorrent that use specialized wide-area storage systems.}
+}
+
+@InProceedings{ports10-trans_consis_autom_manag_applic_data_cache,
+  author = 	 {Dan R. K. Ports and Austin T Clements and Irene Zhang and Samuel Madden and Barbara Liskov},
+  title = 	 {Transactional Consistency and Automatic Management in an Application Data Cache},
+  booktitle =  osdi,
+  year = 	 2010,
+  month = 10,
+url={papers/txcache-osdi10.pdf},
+ abstract={Distributed in-memory application data caches like memcached are a popular solution for scaling database-driven web sites. These systems are easy to add to existing deployments, and increase performance significantly by reducing load on both the database and application servers. Unfortunately, such caches do not integrate well with the database or the application. They cannot maintain transactional consistency across the entire system, violating the isolation properties of the underlying database. They leave the application responsible for locating data in the cache and keeping it up to date, a frequent source of application complexity and programming errors. Addressing both of these problems, we introduce a transactional cache, TxCache, with a simple programming model. TxCache ensures that any data seen within a transaction, whether it comes from the cache or the database, reflects a slightly stale but consistent snapshot of the database. TxCache makes it easy to add caching to an application by simply designating functions as cacheable; it automatically caches their results, and invalidates the cached data as the underlying database changes. Our experiments found that adding TxCache increased the throughput of a web application by up to 5.2x, only slightly less than a non-transactional cache, showing that consistency does not have to come at the price of performance. }
+}
+
+@InProceedings{peter14:_towar_high_perfor_applic_level_storag_manag,
+  author = 	 {Simon Peter and Irene Zhang and Dan R. K. Ports and Jialin Li and Doug Woos and Thomas Anderson and Arvind Krishnamurthy and Mark Zbikowski},
+  title = 	 {Towards High-Performance Application-Level Storage Management},
+  booktitle = hot_storage,
   year = 	 2014,
-  month = 5
+  address = 	 {Philadelphia, PA, USA},
+  month = 	 6}
+}
+
+
+@MastersThesis{zhang09:_effic_file_distr_flexib_wide,
+  author =       {Irene Zhang},
+  title =        {Efficient File Distribution in a Flexible, Wide-Area File System},
+  school =       {Massachusetts Institute of Technology},
+  year =         2009,
+  url={papers/meng-thesis.pdf}}
+
+@TechReport{peter14-arrak,
+  author =       {Simon Peter and Jialin Li and Irene Zhang and Dan
+                  R. K. Ports and Doug Woos and Arvind Krishnamurthy
+                  and Tom Anderson and Timothy Roscoe},
+  title =        {Arrakis: {The} Operating System is the Control Plane},
+  institution =  {University of Washington},
+  year =         2014,
+  number =    {UW-CSE-13-10-01},
+  month =     5,
+ url= {http://arrakis.cs.washington.edu/wp-content/uploads/2013/04/arrakis-tr-ver2.pdf},
+abstract={Recent device hardware trends enable a new approach
+to the design of network server operating systems. In a
+traditional operating system, the kernel mediates access
+to device hardware by server applications, to enforce process isolation as well as network and disk security. We
+have designed and implemented a new operating system,
+Arrakis, that splits the traditional role of the kernel in
+two. Applications have direct access to virtualized I/O
+devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide
+network and disk protection without kernel mediation of
+every operation. We describe the hardware and software
+changes needed to take advantage of this new abstraction,
+and we illustrate its power by showing 2-5x end-to-end
+latency and 9x throughput improvements for a popular
+persistent NoSQL store relative to a well-tuned Linux
+implementation.}
 }
 
