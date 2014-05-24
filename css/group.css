@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: url(/img/greyzz.png) repeat 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {

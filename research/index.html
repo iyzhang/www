@@ -2,49 +2,49 @@
 layout: default
 title: Current Research
 ---
-
-My current research focuses on operating systems and distributed
-systems for large-scale distributed applications. I am working on
-better transactional storage, flexible deployment and practical
-user-level I/O for these types of applications.
-
-<h3>Optimistic Replicated Two-Phase Commit</h3>
 <p>
-Optimistic Replicated Two-Phase Commit (OR-2PC) is a new protocol
-integrating two-phase commit, replication and concurrency control. By
-taking advantage of <em>cross-protocol</em> optimizations, OR-2PC is
-able to commit transactions in a single round-trip with the same
-consistency guarantees and transaction model as conventional
+My PhD research broadly covers operating systems and distributed
+systems for large-scale, distributed applications. I am working on
+better transactional storage, flexible mobile/cloud deployment and
+practical user-level I/O for these types of applications. My currently
+ongoing projects are:
+</p>
+<!-- <h3>Optimistic Replicated Two-Phase Commit</h3> -->
+<p>
+<b>Optimistic Replicated Two-Phase Commit</b>, or OR-2PC, is a new
+protocol integrating two-phase commit, replication and concurrency
+control. By taking advantage of <em>cross-protocol</em> optimizations,
+OR-2PC is able to commit transactions in a single round-trip with the
+same consistency guarantees and transaction model as conventional
 protocols.<br />
-<a href="{{ site.base }}/or-2pc/index.html">More about OR-2PC
+<a href="research/or-2pc/index.html">More about OR-2PC
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
 
-<h3>Sapphire</h3>
-Sapphire is a new distributed programming platform that provides
-<em>customizable</em> and <em>extensible</em> deployment of mobile/cloud
-applications.  This flexibility enables programmers to separate
-deployment logic from their application, while maintaining
+<!-- <h3>Sapphire</h3> -->
+<b>Sapphire</b> is a new distributed programming platform that provides
+<em>customizable</em> and <em>extensible</em> deployment of
+mobile/cloud applications.  This flexibility enables programmers to
+separate deployment logic from their application, while maintaining
 fine-grained control over performance trade-offs.<br />
 <a href="http://sapphire.cs.washington.edu">More about Sapphire
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
-<h3>Arrakis</h3> 
+<!-- <h3>Arrakis</h3>  -->
 <p>
-Arrakis is a new operating system that takes advantage of hardware
-virtualization technology to eliminate the operating system from
-fast-path I/O operations. Arrakis allows applications to directly
-access the hardware during normal execution and providing
-significantly better performance, reliability and
-customizability.<br />
+<b>Arrakis</b> is a new operating system that takes advantage of
+hardware virtualization technology to eliminate the operating system
+from fast-path I/O operations. Arrakis allows applications to directly
+access the hardware during normal execution, providing significantly
+better performance, reliability and customizability.<br />
 <a href="http://arrakis.cs.washington.edu">More about Arrakis
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
-<hr />
-<h2>Previous Research at VMware</h2>
+
+<h2>Research at VMware</h2>
 <p>
 Before starting my PhD, I worked on several research projects at
 VMware. My primary focus was on improving the performance of restoring
@@ -64,26 +64,36 @@ VM performance on restore, as well as an implementation of working set
 restore for VMware Workstation.
 </p>
 
-<h2>Previous Research at MIT</h2>
+<h2>Research at MIT</h2>
 <p>
 I worked on a number of research projects with great people while at
 MIT as an undergrad and MEng. Some notable projects that I worked on:
 </p>
-<p><b>TxCache</b> is a distributed, in-memory, application-level cache with
-transactional consistency and automated cache invalidations. By using
-recent snapshots for read-only transactions to optimize cache
+<p><b>TxCache</b> is a distributed, in-memory, application-level cache
+with transactional consistency and automated cache invalidations. By
+using recent snapshots for read-only transactions to optimize cache
 utilization and eliminate cache invalidation, TxCache provides the
 same performance benefits as other in-memory caches without violating
-transactional consistency.
+transactional consistency. I worked on this project
+with <a href="http://drkp.net">Dan
+Ports</a>, <a href="http://web.mit.edu/amdragon/www/pubs/">Austin
+Clements</a>, <a href="http://www.pmg.csail.mit.edu/~liskov/">Barbara
+Liskov</a> and <a href="http://db.lcs.mit.edu/madden/">Sam Madden</a>.
 </p>
-<p><b>WheelFS</b> is a flexible, wide-area file system that gives applications
-control over performance trade-offs, but with a standard POSIX
-interface. My master's thesis work focused on using prefetching and
-cooperative caching for efficient file distribution in WheelFS.
+<p><b>WheelFS</b> is a flexible, wide-area file system that gives
+applications control over performance trade-offs, but with a standard
+POSIX interface. My master's thesis work focused on using prefetching
+and cooperative caching for efficient file distribution in WheelFS. I
+was advised by <a href="http://pdos.csail.mit.edu/~strib/">Jeremy
+Stribling</a>, <a href="http://pdos.csail.mit.edu/rtm/">Robert
+Morris</a> and <a href="http://pdos.csail.mit.edu/~kaashoek/">Frans
+Kaashoek</a>.
 </p>
-<p><b>FreshBreeze</b> is a new multiprocessor architecture designed to support
-the design of functional programs by providing a single global address
-space, a no-update, cycle-free heap and fine-grained threading. As an
-undergraduate, I worked with Prof. Jack Dennis to develop a
-cycle-accurate simulation of the processor architecture.
+<p><b>FreshBreeze</b> is a new multiprocessor architecture designed to
+support the design of functional programs by providing a single global
+address space, a no-update, cycle-free heap and fine-grained
+threading. As an undergraduate, I worked
+with <a href="http://csg.csail.mit.edu/Users/dennis/">Prof. Jack
+Dennis</a> to develop a cycle-accurate simulation of the processor
+architecture.
 </p>
