@@ -2,19 +2,47 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: url(/img/greyzz.png) repeat 0 0;
+  background: url(/img/crossword.png) repeat 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', Georgia, Times, serif;
-    color:#888;
-}
-p, div {
-    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', Georgia, Times, serif;
+    font-weight:600;
+    letter-spacing:1px;
 }
 
 a {
-color:##70608F;
+    color:#554D7D;
+}
+
+p, div {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight:500;
+    color:#444;
+}
+
+/* Customize first page */
+.myname {
+    font-size:2.5em;
+    font-weight:400;
+    font-family: 'Playfair Display SC', Georgia, Times, serif;
+    color:#554D7D;
+    text-align:center;
+    /* text-transform: uppercase; */
+    letter-spacing:2px;
+}
+
+.headline {
+    border-bottom: 1px solid #aaa;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.headline > div {
+    font-size:1.5em;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    padding:15px;
+    font-weight:400;
 }
 
 /* Make sure abstract does not disply by default*/
@@ -25,7 +53,7 @@ color:##70608F;
 /* customize wells */
 .well{
     background-color:#e6e6e6;
-    border: 0px solid #888;
+    border: 0px solid #aaa;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -35,30 +63,77 @@ color:##70608F;
   padding-right: 15px;
 }
 
-/* Custom page header */
-/* .header { */
-/*   border-bottom: 1px solid #ddd; */
-/*   border-top: 1px solid #ddd; */
-/* } */
-/* Custom page header */
-.header > h1 {
-    font-size:5em;
+.header {
+
+}
+
+.inset-img {
+    padding: 15px;
 }
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
-  color: #444;
-  border-top: 1px solid #70608F;
+  color: #888;
+  border-top: 1px solid #554D7D;
   text-align: center;
   font-size: 0.8em;
 }
 .footer p {
   margin: 0.1em 0;
+  color: #554D7D;
 }
 .footer a:link, .footer a:visited {
-  color: #444;
+  color: #554D7D;
 }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+      margin-bottom: 30px;
+  }
+  .footer {
+      margin-top: 30px;
+  }
+  .headline {
+      border-bottom: 0;
+      margin-bottom: 10px;
+  }
+  .headline > div {
+      font-size:2em;
+      text-align: left;
+  }
+  .inset-img {
+      padding: 0px;
+  }
+  .myname {
+      font-size:4.5em;
+      letter-spacing:5px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  /* /\* Make text font slightly bigger *\/ */
+  /* p { */
+  /*   font-size:1.2em; */
+  /* } */
+  /* h3 { */
+  /*     font-size:32px; */
+  /* } */
+  /* h2 { */
+  /*     font-size:36px; */
+  /* } */
+
+}
+
 
 /* Customize container */
 @media (min-width: 768px) {
@@ -82,56 +157,23 @@ color:##70608F;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  border-bottom: 1px solid #70608F;
-  border-top: 1px solid #70608F;
+  border-top: 1px solid #554D7D;  
+  border-bottom: 1px solid #554D7D;  
+  letter-spacing:1px;
+  font-weight:500;
+  text-transform: uppercase;
 }
 .nav-pills > li > a {
   border-radius: 0px;
-  color:#70608F;
+  color:#554D7D;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: #70608F;
-}
-
-/* custom button */
-/* .btn-default { */
-/*   color:#888; */
-/*   font-weight:bold; */
-/*   background-color:#fff; */
-/*   border-color:#888; */
-/* } */
-
-/* Jumbotron */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron p {
-    font-size: 15px;
-}
-.jumbotron {
-    padding-top: 18px;
-    padding-bottom: 10px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+    font-weight:500;
+    background-color:transparent;
+    color:#554D7D;
 }
 
 /* Slightly better-looking header on mobile. */
@@ -140,42 +182,4 @@ color:##70608F;
         display: block;
         margin: 0 auto 1em;
     }
-    #logo {
-        display: block;
-        clear: both;
-        margin: 1em auto;
-    }
-}
-
-/* Photo */
-.inset-image {
-    width: 25%;
-    margin: 0em auto;
-}
-
-/* People list */
-dl.people dd {
-    margin-bottom: 1em;
-}
-
-/* Front page news. */
-ul.news .date {
-    color: #999;
-    font-weight: bold;
-    display: block;
-}
-ul.news > li {
-    margin-top: 1em;
-}
-ul.news .shortnews .date {
-    float: left;
-    margin-right: 1em;
-}
-ul.news .bloglink a {
-    font-size: 1.4em;
-}
-
-.illustration {
-    float: right;
-    margin: 0 0 1em 1em;
 }

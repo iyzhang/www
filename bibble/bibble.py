@@ -33,7 +33,7 @@ def _venue_type(entry):
     elif entry.type == 'phdthesis':
         venuetype = 'Ph.D. thesis, {}'.format(entry.fields['school'])
     elif entry.type == 'mastersthesis':
-        venuetype = 'Masters thesis, {}'.format(entry.fields['school'])
+        venuetype = 'Master\'s thesis, {}'.format(entry.fields['school'])
     return venuetype
 
 def _venue(entry):

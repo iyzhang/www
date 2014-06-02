@@ -2,6 +2,8 @@ name: Irene Y. Zhang
 url: http://irenezhang.net
 exclude: [bibble, README.md, Makefile]
 
+base: 'http://irenezhang.net'
+
 # use this library to parse Markdown
 markdown: redcarpet
 redcarpet:
