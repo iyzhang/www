@@ -17,7 +17,7 @@ a {
 
 p, div {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-weight:500;
+    font-weight:400;
     color:#444;
 }
 
@@ -25,10 +25,10 @@ p, div {
 .myname {
     font-size:2.5em;
     font-weight:400;
-    font-family: 'Playfair Display SC', Georgia, Times, serif;
+    font-family: 'Quattrocento', Georgia, Times, serif;
     color:#554D7D;
     text-align:center;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     letter-spacing:2px;
 }
 
@@ -121,17 +121,16 @@ p, div {
   .jumbotron {
     border-bottom: 0;
   }
-  /* /\* Make text font slightly bigger *\/ */
-  /* p { */
-  /*   font-size:1.2em; */
-  /* } */
-  /* h3 { */
-  /*     font-size:32px; */
-  /* } */
-  /* h2 { */
-  /*     font-size:36px; */
-  /* } */
-
+  /* Make text font slightly bigger */
+  p {
+    font-size:1.2em;
+  }
+  h3 {
+      font-size:32px;
+  }
+  h2 {
+      font-size:36px;
+  }
 }
 
 

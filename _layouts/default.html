@@ -8,7 +8,7 @@
         <link href="{{ site.base }}/css/group.css" rel="stylesheet">
         <!-- <link rel="alternate" type="application/atom+xml" title="Atom" -->
         <!--     href="{{ site.baseurl }}/blog/blog.xml"> -->
-        <link href='//fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italics'
+        <link href='//fonts.googleapis.com/css?family=Quattrocento:400,700'
               rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Raleway:400,500,600,700,900'
         rel='stylesheet' type='text/css'>
@@ -18,12 +18,12 @@
     <body>
         <div class="container">
           <div class="header">
-            <div class="myname clearfix">Irene <i>Y.</i> Zhang</div>
+            <div class="myname clearfix">Irene Y. Zhang</div>
             <ul class="nav nav-pills nav-justified">
               {% assign shorturl = page.url | replace:'index.html','' %}
               {% for item in site.navigation %}
                 <li {% if item.link == shorturl %}class="active"{% endif %}>
-                  <a href="{{ site.base }}{{ item.link }}">{% if item.link == shorturl %}-{% endif %}{{ item.title }}{% if item.link == shorturl %}-{% endif %}</a>
+                  <a href="{{ site.base }}{{ item.link }}">{% if item.link == shorturl %}- {% endif %}{{ item.title }}{% if item.link == shorturl %} -{% endif %}</a>
                 </li>
               {% endfor %}
             </ul>
