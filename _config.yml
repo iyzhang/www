@@ -2,8 +2,6 @@ name: Irene Y. Zhang
 url: http://irenezhang.net
 exclude: [bibble, README.md, Makefile]
 
-base: 'http://irenezhang.net'
-
 # use this library to parse Markdown
 markdown: redcarpet
 redcarpet:
@@ -19,7 +17,7 @@ permalink: /blog/:year/:month/:day/:title.html
 front_page_news: 8
 
 # Base pathname for links.
-base: ''
+base: 'http://irenezhang.net'
 
 # Navigation bar links.
 navigation:
