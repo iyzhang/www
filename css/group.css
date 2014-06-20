@@ -125,6 +125,9 @@ p, div {
   p {
     font-size:1.2em;
   }
+  h4 {
+      font-size:24px;
+  }
   h3 {
       font-size:32px;
   }
