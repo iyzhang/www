@@ -4,32 +4,28 @@ title: Home
 notitle: true
 ---
 
-<div class="clearfix headline">
-  <div class="col-sm-4">
-    <img src="{{ site.base }}/img/me-cropped.jpg" alt="Photo of Me"
-         class="img-responsive">
-  </div>
-  <div class="col-sm-8"  style="padding-top:6px;">
-      I am a second-year PhD student in the
-      <a href="http://cs.washington.edu">Computer Science and
-        Engineering</a> department at
-      the <a href="http://washington.edu">University of Washington</a>.
-  </div>
+<div class="pull-left">
+  <img src="{{ site.base }}/img/irene-new.JPG" alt="Photo of Me"
+       class="inset-img">
 </div>
 
+<p class="lead">  I am a PhD student in the
+  <a href="http://cs.washington.edu">Computer Science and
+    Engineering</a> department at
+  the <a href="http://washington.edu">University of Washington</a>.
+</p>
+
 <p>
-I work
-with <a href="http://www.cs.washington.edu/people/faculty/levy/">Hank
-Levy</a>
-and <a href="http://www.cs.washington.edu/people/faculty/arvind">Arvind
-Krishnamurthy</a> in
-the <a href="https://www.cs.washington.edu/research/systems/">Systems
-and Networking Lab</a>.  My current research focuses on systems for
-large-scale, distributed applications. I am working on several
-projects in this area, including a new protocol to provide
-high-performance transactions in distributed storage systems, and a
-flexible, distributed programming platform for mobile/cloud
-applications.
+  I work
+  with <a href="http://www.cs.washington.edu/people/faculty/levy/">Hank
+  Levy</a>
+  and <a href="http://www.cs.washington.edu/people/faculty/arvind">Arvind
+  Krishnamurthy</a> in
+  the <a href="https://syslab.cs.washington.edu/">Computer Systems
+  Lab</a>.  My current research focuses on systems for large-scale,
+  distributed applications, including distributed runtime systems and
+  transactional storage systems. I received my M.S. in computer
+  science from UW in 2014.
 </p>
 
 <p>
@@ -38,36 +34,64 @@ applications.
   machine monitor group on VM checkpointing, memory management and
   page sharing. I received my B.S. in computer science
   from <a href="http://www.mit.edu">MIT</a> in 2008 and my M. Eng. in
-  2009. My master's thesis was advised by
+  2009.  At MIT, I was advised by
   <a href="http://pdos.csail.mit.edu/~strib/">Jeremy
-	Stribling</a>, <a href="http://pdos.csail.mit.edu/rtm/">Robert
-	Morris</a> and
-  <a href="http://pdos.csail.mit.edu/~kaashoek/">Frans
-	Kaashoek</a>.</p>
-
+	Stribling</a>, <a href="http://pdos.csail.mit.edu/~kaashoek/">Frans
+	Kaashoek</a> and <a href="http://pdos.csail.mit.edu/rtm/">Robert
+	Morris</a>. 
+</p>
+    
 <p>
   I was born in <a href="http://www.ebeijing.gov.cn/">Beijing,
-	China</a> and spent most of my time growing up
+    China</a> and spent most of my time growing up
   in <a href="http://en.wikipedia.org/wiki/Columbus,_Indiana">Columbus,
-	Indiana</a>. <a href="http://www.drkp.net">My husband</a>
-  and I like to cook, travel and occasionally do computer
-  science together.
+    Indiana</a>. <a href="http://www.drkp.net">My husband</a> and I
+  like to cook, travel and occasionally do computer science
+  together.
 </p>
+    
+<h2>News & Happenings</h2>
+<ul class="news list-unstyled">
+  {% for post in site.posts limit: site.front_page_news %}
+  {% if post.shortnews %}
+  <li class="shortnews">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    {{ post.content }}
+  </li>
+  {% else %}
+  <li class="bloglink">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+<p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p>
 
-<!-- <h4>News & Happenings</h4> -->
-<!-- <ul class="news list-unstyled"> -->
-<!--   {% for post in site.posts limit: site.front_page_news %} -->
-<!--   {% if post.shortnews %} -->
-<!--   <li class="shortnews"> -->
-<!--     <span class="date">{{ post.date | date_to_long_string }}</span> -->
-<!--     {{ post.content }} -->
-<!--   </li> -->
-<!--   {% else %} -->
-<!--   <li class="bloglink"> -->
-<!--     <span class="date">{{ post.date | date_to_long_string }}</span> -->
-<!--     <a href="{{ post.url }}">&raquo; {{ post.title }}</a> -->
-<!--   </li> -->
-<!--   {% endif %} -->
-<!--   {% endfor %} -->
-<!-- </ul> -->
-<!-- <p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p> -->
+<h2>Contact Information</h2>
+<table class="table table-condensed table-no-border">
+  <tbody>
+    <tr>
+      <td><i class="fa-fw fa fa-envelope-o"></i> <b>Email: </b></td>
+      <td>iyzhang@cs.washington.edu</td>
+    </tr>
+    <tr>
+      <td><i class="fa-fw fa fa-building-o"></i> <b>Office: </b></td>
+      <td><a href="https://www.cs.washington.edu/contact/">Allen
+      Center</a>, Room 591</td>
+    </tr>
+    <tr>
+      <td><i class="fa-fw fa fa-location-arrow"></i> <b>Address: </b></td>
+      <td>185 Stevens Way, Seattle, WA 98195</td>
+    </tr>
+    <tr>
+      <td><i class="fa-fw fa fa-phone"></i> <b>Phone: </b></td> 
+      <td>206-685-1963</td>
+    </tr>
+    <tr>
+      <td><i class="fa-fw fa fa-github-alt"></i> <b>Code: </b></td>
+      <td><a href="https://github.com/iyzhang/">iyzhang@github</a></td>
+    <tr>
+  </tbody>
+</table>
+

@@ -32,19 +32,6 @@ p, div {
     letter-spacing:2px;
 }
 
-.headline {
-    border-bottom: 1px solid #aaa;
-    margin-bottom:15px;
-    text-align:center;
-}
-
-.headline > div {
-    font-size:1.5em;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    padding:15px;
-    font-weight:400;
-}
-
 /* Make sure abstract does not disply by default*/
 .abstract{
     display:none;
@@ -77,18 +64,44 @@ p, div {
   color: #888;
   border-top: 1px solid #554D7D;
   text-align: center;
-  font-size: 0.8em;
 }
 .footer p {
   margin: 0.1em 0;
   color: #554D7D;
+  font-size: 12px;
 }
 .footer a:link, .footer a:visited {
   color: #554D7D;
 }
 
+/* Customize table */
+.table-no-border>thead>tr>th, 
+.table-no-border>tbody>tr>th, 
+.table-no-border>tfoot>tr>th, 
+.table-no-border>thead>tr>td, 
+.table-no-border>tbody>tr>td, 
+.table-no-border>tfoot>tr>td {
+  border: none;
+}
+
+.table-condensed {
+    width: auto;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+  p, li, tr {
+      font-size:16px;
+  }
   /* Remove the padding we set earlier */
   .header,
   .footer {
@@ -102,16 +115,10 @@ p, div {
   .footer {
       margin-top: 30px;
   }
-  .headline {
-      border-bottom: 0;
-      margin-bottom: 10px;
-  }
-  .headline > div {
-      font-size:2em;
-      text-align: left;
-  }
   .inset-img {
-      padding: 0px;
+      padding:0px;
+      padding-right:20px;
+      margin-bottom:5px;
   }
   .myname {
       font-size:4.5em;
@@ -121,18 +128,10 @@ p, div {
   .jumbotron {
     border-bottom: 0;
   }
-  /* Make text font slightly bigger */
-  p {
-    font-size:1.2em;
-  }
-  h4 {
-      font-size:24px;
-  }
-  h3 {
-      font-size:32px;
-  }
-  h2 {
-      font-size:36px;
+  .lead {
+      font-size:28px;
+      font-weight:400;
+      margin-bottom: 10px;
   }
 }
 
@@ -169,6 +168,7 @@ p, div {
   border-radius: 0px;
   color:#554D7D;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size:12px;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -193,7 +193,7 @@ ul.news .date {
     display: block;
 }
 ul.news > li {
-    margin-top: 1em;
+    margin-top: .5em;
 }
 ul.news .shortnews .date {
     float: left;
