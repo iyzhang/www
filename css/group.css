@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', Georgia, Times, serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:600;
     letter-spacing:1px;
 }
@@ -55,7 +55,9 @@ p, div {
 }
 
 .inset-img {
-    padding: 15px;
+    padding: 0px;
+    align: center;
+    margin-bottom:15px;
 }
 
 /* Custom page footer */
@@ -86,6 +88,7 @@ p, div {
 
 .table-condensed {
     width: auto;
+    margin-bottom:0px;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -129,7 +132,7 @@ p, div {
     border-bottom: 0;
   }
   .lead {
-      font-size:28px;
+      font-size:2em;
       font-weight:400;
       margin-bottom: 10px;
   }

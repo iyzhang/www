@@ -81,13 +81,15 @@ url={papers/txcache-osdi10.pdf},
  abstract={Distributed in-memory application data caches like memcached are a popular solution for scaling database-driven web sites. These systems are easy to add to existing deployments, and increase performance significantly by reducing load on both the database and application servers. Unfortunately, such caches do not integrate well with the database or the application. They cannot maintain transactional consistency across the entire system, violating the isolation properties of the underlying database. They leave the application responsible for locating data in the cache and keeping it up to date, a frequent source of application complexity and programming errors. Addressing both of these problems, we introduce a transactional cache, TxCache, with a simple programming model. TxCache ensures that any data seen within a transaction, whether it comes from the cache or the database, reflects a slightly stale but consistent snapshot of the database. TxCache makes it easy to add caching to an application by simply designating functions as cacheable; it automatically caches their results, and invalidates the cached data as the underlying database changes. Our experiments found that adding TxCache increased the throughput of a web application by up to 5.2x, only slightly less than a non-transactional cache, showing that consistency does not have to come at the price of performance. }
 }
 
-@InProceedings{peter14:_towar_high_perfor_applic_level_storag_manag,
+@InProceedings{peter14-towar_high_perfor_applic_level_storag_manag,
   author = 	 {Simon Peter and Jialin Li and Doug Woos and Irene Zhang and Dan R. K. Ports and Thomas Anderson and Arvind Krishnamurthy and Mark Zbikowski},
   title = 	 {Towards High-Performance Application-Level Storage Management},
   booktitle = hot_storage,
   year = 	 2014,
   address = 	 {Philadelphia, PA, USA},
-  month = 	 6}
+  month = 	 6,
+  url= {papers/arrakis-hotstorage14.pdf},
+  abstract={We propose a radical re-architecture of the traditional operating system storage stack to move the kernel off the data path. Leveraging virtualized I/O hardware for disk and flash storage, most read and write I/O operations go directly to application code. The kernel dynamically allocates extents, manages the virtual to physical binding, and performs name translation. The benefit is to dramatically reduce the CPU overhead of storage operations while improving application flexibility.}
 }
 
 

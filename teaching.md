@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Contact
-notitle: true
+title: Teaching
 ---
 
-## Teaching
 At UW, I have guest lectured the following:
 
 - [CSE 451 - Introduction to Operating Systems](https://courses.cs.washington.edu/courses/cse451/)
