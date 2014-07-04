@@ -1,5 +1,5 @@
 name: Irene Y. Zhang
-url: http://irenezhang.net
+url: irenezhang.net
 exclude: [bibble, README.md, Makefile]
 
 # use this library to parse Markdown
@@ -17,7 +17,6 @@ permalink: /blog/:year/:month/:day/:title.html
 front_page_news: 5
 
 # Base pathname for links.
-#base: 'http://irenezhang.net'
 base: ''
 
 # Navigation bar links.
