@@ -31,5 +31,5 @@ At UW, I've tutored the following classes:
 I have worked with some great undergraduates in the past:
 
 - Tyler Denniston is currently a PhD student at MIT, working with [Saman Amarasinghe](http://people.csail.mit.edu/saman/).
-- Dana Van Acken is currently a PhD student at CMU, working with [Andy Pavlo](http://www.cs.cmu.edu/~./pavlo/).
-- Isaac Ackerman is currently a PhD student at Cornell, working with [Andrew Myers](http://www.cs.cornell.edu/andru/).
+- Dana Van Acken is starting her PhD at CMU in the fall.
+- Isaac Ackerman is starting his PhD at Cornell in the fall.
