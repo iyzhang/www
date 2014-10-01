@@ -128,33 +128,31 @@
   \end{rsection}
   
   \begin{rsection}{Research}
-    \begin{rentry}{Optimistic Replicated Two-Phase Commit}{}
-      Optimistic Replicated Two-Phase Commit (OR-2PC) is the first
-      \emph{co-designed} protocol that integrates protocols for
-      consistent replication, atomic commitment and concurrency
-      control to take advantage of cross-protocol
-      optimizations. OR-2PC uses a new optimistic concurrency control
-      protocol that enforces consistency across replicas as well as
-      across transactions with a new ordering technique based on
-      loosely synchronized clocks. OR-2PC commits transactions in a
-      single round-trip and eliminates bottlenecks associated with
-      leader-based Paxos, while maintaining the same consistency
-      guarantees, general-purpose transaction model and replication
-      requirements as standard protocols.
+    \begin{rentry}{Building Consistent Transactions with Inconsistent
+        Replication}{}
+      TAPIR (Transactional Application Protocol for Inconsistent
+      Replication) provides externally consistent transactions using a
+      replication protocol with \emph{no consistency guarantees}.
+      Removing consistency from the replication protocol allows TAPIR
+      to eliminate coordination between replicas required by
+      consistent replication protocols like Paxos. TAPIR commits
+      transactions \emph{in a single round-trip}, half the latency of
+      conventional transaction protocols that rely on consistent
+      replication, and eliminates the need for a Paxos leader, a
+      throughput bottleneck in conventional protocols.
     \end{rentry}
 
     \begin{rentry}{Customizable and Extensible Deployment for
         Mobile/Cloud Applications}{}
-      Sapphire is a new distributed programming platform that provides
-      \emph{customizable} and \emph{extensible} deployment of
-      mobile/cloud applications. Rather than directly deploying the
-      application, application programmers use a library of deployment
-      managers, which customize the platform for their
-      application. Further, Sapphire has an interface for developing
-      new deployment managers, allowing programmers to extend the
-      platform. This flexibility enables programmers to separate
-      deployment logic from their application, while maintaining
-      fine-grained control over performance trade-offs.
+      Sapphire is a new distributed programming platform providing
+      customizable and extensible deployment of mobile/cloud
+      applications. The key concept is an architecture that supports
+      \emph{deployment managers}, which solve complex distributed
+      systems tasks, such as fault-tolerance, code-offloading, and
+      caching, for a piece of a distributed application. Rather than
+      writing distributed systems code, programmers choose a number of
+      deployment managers from a library to compose a custom
+      deployment platform to meet their application's needs.
     \end{rentry}
 
     \begin{rentry}{Arrakis}{}
@@ -223,7 +221,8 @@
 \vspace{1.0em}
  \begin{rsection}{Publications}
    \textbf{I. Zhang}, N. K. Sharma, A. Szekeres, D. R. K. Ports,
-   A. Krishnamurthy. \textit{Optimistic, Replicated Two-Phase Commit.}
+   A. Krishnamurthy. \textit{Building Consistent Transactions with
+     Inconsistent Replication.}
    In submission.\\\vspace{-0.5em}
 
    \textbf{I. Zhang}, A. Szekeres, D. Van Aken, I. Ackerman, S. D. Gribble,
@@ -232,7 +231,7 @@
 
    S. Peter, J. Li, D. Woos, \textbf{I. Zhang}, D. R. K. Ports, A. Krishnamurthy,
    T. Anderson, T. Roscoe. \textit{Arrakis: The Operating System is
-     the Control Plane.} In Proc. of OSDI '14.\\\vspace{-0.5em}
+     the Control Plane.} In Proc. of OSDI '14. Best Paper Award.\\\vspace{-0.5em}
 
    S. Peter, J. Li, D. Woos, \textbf{I. Zhang}, D. R. K. Ports, T. Anderson,
    A. Krishnamurthy, M. Zbikowski. \textit{Towards High-Performance
