@@ -124,7 +124,7 @@
   \end{rsection}
 
   \begin{rsection}{Interests}
-    Operating systems, virtualization, distributed systems and networking
+    Operating systems, distributed systems, virtualization and networking
   \end{rsection}
   
   \begin{rsection}{Research}
@@ -133,13 +133,10 @@
       TAPIR (Transactional Application Protocol for Inconsistent
       Replication) provides externally consistent transactions using a
       replication protocol with \emph{no consistency guarantees}.
-      Removing consistency from the replication protocol allows TAPIR
-      to eliminate coordination between replicas required by
-      consistent replication protocols like Paxos. TAPIR commits
-      transactions \emph{in a single round-trip}, half the latency of
-      conventional transaction protocols that rely on consistent
-      replication, and eliminates the need for a Paxos leader, a
-      throughput bottleneck in conventional protocols.
+      Unlike conventional protocols that use Paxos, TAPIR does not
+      require a Paxos leader or coordination between replicas in a
+      shard. Thus, TAPIR can commit a transaction \emph{in a single
+        round-trip} and eliminate the bottleneck at the Paxos leader.
     \end{rentry}
 
     \begin{rentry}{Customizable and Extensible Deployment for
@@ -155,7 +152,7 @@
       application's needs.
     \end{rentry}
 
-    \begin{rentry}{Arrakis}{}
+    \begin{rentry}{Arrakis: The Operating System is the Control Plane}{}
       Arrakis is a new operating system that provides high performance
       I/O by taking advantage of hardware virtualization
       technology. Hardware virtualization technologies are designed to
@@ -224,6 +221,11 @@
    A. Krishnamurthy. \textit{Building Consistent Transactions with
      Inconsistent Replication.}
    In submission.\\\vspace{-0.5em}
+
+   A. Szekeres, \textbf{I. Zhang}, I. Ackerman, F. Roesner,
+   D. R. K. Ports, A. Krishnamurthy, H. Levy. \textit{User-controlled
+     Privacy: Enforcing Privacy Policies on Mobile/Cloud
+     Applications.}  In submission.\\\vspace{-0.5em}
 
    \textbf{I. Zhang}, A. Szekeres, D. Van Aken, I. Ackerman, S. D. Gribble,
    A. Krishnamurthy, H. Levy. \textit{Customizable and Extensible
