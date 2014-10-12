@@ -16,14 +16,25 @@ ongoing projects are:
 <b>Transactional Application Protocol for Inconsistent
 Replication</b>, or TAPIR, is a new protocol for linearizable
 distributed transaction built using replication with <em>no
-consistency guarantees</em> By eliminating consistency from the
-replication layer, TAPIR can provide the same transaction model and
-consistency guarantees as existing systems like Spanner, but with 2x
-better latency and 3x better throughput.<br />
+consistency guarantees</em>. By eliminating consistency, and thus
+coordination, from the replication layer, TAPIR provides the same
+transaction model and consistency guarantees as existing systems like
+Spanner with better latency and throughput.<br />
 <a href="{{ site.base }}/research/tapir/index.html">More about TAPIR
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
 
+<p>
+<b>Agate</b> is a new trusted distributed runtime system that gives
+users control over how mobile/cloud applications share sensitive user
+data collected on mobile devices (e.g., photos, GPS location).  Agate
+combines aspects of access control and information flow control to
+allow applications to share user data in application-specific ways,
+while enforcing user policies without trusting the application or the
+application programmer.
+<a href="http://sapphire.cs.washington.edu/research/project/agate.html">More about Agate
+  <i class="fa fa-chevron-circle-right"></i></a>
+</p>
 
 <!-- <h3>Sapphire</h3> -->
 <p>
