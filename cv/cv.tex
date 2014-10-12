@@ -130,8 +130,8 @@
   \begin{rsection}{Research}
     \begin{rentry}{Building Consistent Transactions with Inconsistent
         Replication}{}
-      TAPIR (Transactional Application Protocol for Inconsistent
-      Replication) provides externally consistent transactions using a
+      TAPIR -- the Transactional Application Protocol for Inconsistent
+      Replication -- provides externally consistent transactions using a
       replication protocol with \emph{no consistency guarantees}.
       Unlike conventional protocols that use Paxos, TAPIR does not
       require a Paxos leader or coordination between replicas in a
@@ -145,12 +145,21 @@
       customizable and extensible deployment of mobile/cloud
       applications. The key concept is an architecture that supports
       \emph{deployment managers}, which solve complex distributed
-      systems tasks, such as fault-tolerance, code-offloading, and
-      caching, for a piece of a distributed application. Rather than
+      systems tasks, such as code-offloading and caching. Rather than
       writing distributed systems code, programmers compose a custom
-      deployment platform using deployment managers to meet their
-      application's needs.
+      deployment to meet their application's needs.
     \end{rentry}
+
+    \begin{rentry}{User-controlled Privacy for Mobile/Cloud Applications}{}
+      Agate is a new trusted distributed runtime system that gives
+      users control over how mobile/cloud applications share sensitive
+      user data collected on mobile devices (e.g., photos, GPS
+      location). Agate combines aspects of access control and
+      information flow control to allow applications to share user
+      data in application-specific ways, while enforcing user policies
+      without trusting the application or the application programmer.
+    \end{rentry}
+
 
     \begin{rentry}{Arrakis: The Operating System is the Control Plane}{}
       Arrakis is a new operating system that provides high performance
