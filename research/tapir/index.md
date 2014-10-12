@@ -23,6 +23,6 @@ store that provides high-performance transactional storage.
 
 ### Publications
 
-- **Optimistic Replicated Two-Phase Commit.**   
+- **Building Consistent Transactions with Inconsistent Replication.**   
 Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, Dan R. K. Ports.   
 In submission.
