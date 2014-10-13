@@ -1,0 +1,263 @@
+<table class="table">
+<tbody>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2014</strong></big><br />
+				October
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Customizable and Extensible Deployment for Mobile/Cloud Applications.</b>
+			</span><br />
+			<span class="authors">
+				Irene Zhang, Adriana Szekeres, Dana Van Aken, Isaac Ackerman, Steven D. Gribble, Arvind Krishnamurthy, and Henry M. Levy.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zhang14-custom_exten_deploy_mobil_cloud_applic').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/sapphire-osdi14.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_zhang14-custom_exten_deploy_mobil_cloud_applic" class="abstract well">
+			Modern applications face new challenges in managing today&#39;s highly distributed and heterogeneous environment. For example, they must stitch together code that crosses smartphones, tablets, personal devices, and cloud services, connected by variable wide-area networks, such as WiFi and 4G. This paper describes Sapphire, a distributed programming platform that simplifies the programming of today&#39;s mobile/cloud applications. Sapphire&#39;s key design feature is its distributed runtime system, which supports a flexible and extensible deployment layer for solving complex distributed systems tasks, such as fault-tolerance, code-offloading, and caching. Rather than writing distributed systems code, programmers choose deployment managers that extend Sapphire&#39;s kernel to meet their applications&#39; deployment requirements. In this way, each application runs on an underlying platform that is customized for its own distribution needs.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+                
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Arrakis: The Operating System is the Control Plane.</b>
+			</span><br />
+			<span class="authors">
+				Simon Peter, Jialin Li, Irene Zhang, Dan R. K. Ports, Douglas Woos, Arvind Krishnamurthy, Thomas Anderson, and Timothy Roscoe.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)</span>.
+			<span class="note">
+			<b>Best Paper Award.</b>
+			</span>
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_peter14-arrak-osdi14').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+			</span>
+			<div id="abstract_peter14-arrak-osdi14" class="abstract well">
+			Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications, to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing 2-5x end-to-end latency and 9x throughput improvements for a popular persistent NoSQL store relative to a well-tuned Linux implementation.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+                
+                June
+                
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Towards High-Performance Application-Level Storage Management.</b>
+			</span><br />
+			<span class="authors">
+				Simon Peter, Jialin Li, Doug Woos, Irene Zhang, Dan R. K. Ports, Thomas Anderson, Arvind Krishnamurthy, and Mark Zbikowski.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_peter14-towar_high_perfor_applic_level_storag_manag').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/arrakis-hotstorage14.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_peter14-towar_high_perfor_applic_level_storag_manag" class="abstract well">
+			We propose a radical re-architecture of the traditional operating system storage stack to move the kernel off the data path. Leveraging virtualized I/O hardware for disk and flash storage, most read and write I/O operations go directly to application code. The kernel dynamically allocates extents, manages the virtual to physical binding, and performs name translation. The benefit is to dramatically reduce the CPU overhead of storage operations while improving application flexibility.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+                
+                May
+                
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Arrakis: The Operating System is the Control Plane.</b>
+			</span><br />
+			<span class="authors">
+				Simon Peter, Jialin Li, Irene Zhang, Dan R. K. Ports, Doug Woos, Arvind Krishnamurthy, Tom Anderson, and Timothy Roscoe.
+			</span><br />
+			<span class="venuetype">Technical Report </span><span class="venue">UW-CSE-13-10-01, University of Washington</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_peter14-arrak').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="http://arrakis.cs.washington.edu/wp-content/uploads/2013/04/arrakis-tr-ver2.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_peter14-arrak" class="abstract well">
+			Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications, to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing 2-5x end-to-end latency and 9x throughput improvements for a popular persistent NoSQL store relative to a well-tuned Linux implementation.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2013</strong></big><br />
+				June
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Optimizing VM Checkpointing for Restore Performance in VMware ESXi.</b>
+			</span><br />
+			<span class="authors">
+				Irene Zhang, Tyler Denniston, Yury Baskakov, and Alex Garthwaite.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the USENIX Annual Technical Conference (ATC)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_irene13-optim_vm_check_restor_perfor_vmwar_esxi').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/vmrestore-atc13.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_irene13-optim_vm_check_restor_perfor_vmwar_esxi" class="abstract well">
+			Cloud providers are increasingly looking to use virtual machine checkpointing for new applications beyond fault tolerance. Existing checkpointing systems designed for fault tolerance only optimize for saving checkpointed state, so they cannot support these new applications, which require efficient restore. Improving restore performance requires a predictive technique to reduce the number of disk accesses to bring in the VM&#39;s memory on restore. However, complex VM workloads can diverge at any time due to external inputs, background processes and timing variances, so predicting which pages the VM will access on restore to reduce faults to disk is impossible. Instead, we focus on a technique for predicting which pages the VM will access together on restore to improve the efficiency of disk accesses. To reduce the number of faults to disk on restore, we group memory pages likely to be accessed together into locality blocks. On each fault, we can load a block of pages that are likely to be accessed with the faulting page, eliminating future faults and increasing disk efficiency. We implement support for locality blocks, along with several other optimizations, in a new checkpointing system for VMware ESXi Server called Halite. Our experiments show that Halite reduces restore overhead by up to 94\% even for complex VM workloads.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2011</strong></big><br />
+				March
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Fast Restore of Checkpointed Memory Using Working Set Estimation.</b>
+			</span><br />
+			<span class="authors">
+				Irene Zhang, Alex Garthwaite, Yury Baskakov, and Kenneth C. Barr.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the International Conference on Virtual Execution Environments (VEE)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zhang11-fast_restor_check_memor_using').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/vmrestore-vee11.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_zhang11-fast_restor_check_memor_using" class="abstract well">
+			In order to make save and restore features practical, saved virtual machines (VMs) must be able to quickly restore to normal operation. Unfortunately, fetching a saved memory image from persistent storage can be slow, especially as VMs grow in memory size. One possible solution for reducing this time is to lazily restore memory after the VM starts. However, accesses to unrestored memory after the VM starts can degrade performance, sometimes rendering the VM unusable for even longer. Existing performance metrics do not account for performance degradation after the VM starts, making it difficult to compare lazily restoring memory against other approaches. In this paper, we propose both a better metric for evaluating the performance of different restore techniques and a better scheme for restoring saved VMs. Existing performance metrics do not reflect what is really important to the user -- the time until the VM returns to normal operation. We introduce the time-to-responsiveness metric, which better characterizes user experience while restoring a saved VM by measuring the time until there is no longer a noticeable performance impact on the restoring VM. We propose a new lazy restore technique, called working set restore, that minimizes performance degradation after the VM starts by prefetching the working set. We also introduce a novel working set estimator based on memory tracing that we use to test working set restore, along with an estimator that uses access-bit scanning. We show that working set restore can improve the performance of restoring a saved VM by more than 89% for some workloads.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2010</strong></big><br />
+				October
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Transactional Consistency and Automatic Management in an Application Data Cache.</b>
+			</span><br />
+			<span class="authors">
+				Dan R. K. Ports, Austin T Clements, Irene Zhang, Samuel Madden, and Barbara Liskov.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_ports10-trans_consis_autom_manag_applic_data_cache').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/txcache-osdi10.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_ports10-trans_consis_autom_manag_applic_data_cache" class="abstract well">
+			Distributed in-memory application data caches like memcached are a popular solution for scaling database-driven web sites. These systems are easy to add to existing deployments, and increase performance significantly by reducing load on both the database and application servers. Unfortunately, such caches do not integrate well with the database or the application. They cannot maintain transactional consistency across the entire system, violating the isolation properties of the underlying database. They leave the application responsible for locating data in the cache and keeping it up to date, a frequent source of application complexity and programming errors. Addressing both of these problems, we introduce a transactional cache, TxCache, with a simple programming model. TxCache ensures that any data seen within a transaction, whether it comes from the cache or the database, reflects a slightly stale but consistent snapshot of the database. TxCache makes it easy to add caching to an application by simply designating functions as cacheable; it automatically caches their results, and invalidates the cached data as the underlying database changes. Our experiments found that adding TxCache increased the throughput of a web application by up to 5.2x, only slightly less than a non-transactional cache, showing that consistency does not have to come at the price of performance.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+				<big><strong>2009</strong></big><br />
+				June
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Efficient File Distribution in a Flexible, Wide-Area File System.</b>
+			</span><br />
+			<span class="authors">
+				Irene Zhang.
+			</span><br />
+			<span class="venuetype">Master's thesis, Massachusetts Institute of Technology</span><span class="venue"></span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs" href="papers/meng-thesis.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+                
+                April
+                
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Flexible, Wide-Area Storage for Distributed Systems with WheelFS.</b>
+			</span><br />
+			<span class="authors">
+				Jeremy Stribling, Yair Sovran, Irene Zhang, Xavid Pretzer, Jinyang Li, M. Frans Kaashoek, and Robert Morris.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_stribling09-flexib_wide_area_storag_distr_system_wheel').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/wfs-nsdi09.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_stribling09-flexib_wide_area_storag_distr_system_wheel" class="abstract well">
+			WheelFS is a wide-area distributed storage system intended to help multi-site applications share data and gain fault tolerance. WheelFS takes the form of a distributed file system with a familiar POSIX interface. Its design allows applications to adjust the tradeoff between prompt visibility of updates from other sites and the ability for sites to operate independently despite failures and long delays. WheelFS allows these adjustments via semantic cues, which provide application control over consistency, failure handling, and file and replica placement. WheelFS is implemented as a user-level file system and is deployed on PlanetLab and Emulab. Three applications (a distributed Web cache, an email service and large file distribution) demonstrate that WheelFS&#39;s file system interface simplifies construction of distributed applications by allowing reuse of existing software. These applications would perform poorly with the strict semantics implied by a traditional file system interface, but by providing cues to WheelFS they are able to achieve good performance. Measurements show that applications built on WheelFS deliver comparable performance to services such as CoralCDN and BitTorrent that use specialized wide-area storage systems.
+			</div>
+		</td>
+	</tr>
+</tbody>
+</table>
