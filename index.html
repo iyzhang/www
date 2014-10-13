@@ -52,6 +52,26 @@ I am funded by a <a href="http://www.nsfgrfp.org/">National Science
   like to cook, travel and occasionally do computer science
   together.
 </p>
+
+<h2>News & Happenings</h2>
+<ul class="news list-unstyled">
+  {% for post in site.posts limit: site.front_page_news %}
+  {% if post.shortnews %}
+  <li class="shortnews">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    {{ post.content }}
+  </li>
+  {% else %}
+  <li class="bloglink">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+<p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p>
+
+
     
 <h2>Contact Information</h2>
 <div class="row">
@@ -93,22 +113,4 @@ I am funded by a <a href="http://www.nsfgrfp.org/">National Science
 </table>
 </div>
 </div>
-
-<h2>News & Happenings</h2>
-<ul class="news list-unstyled">
-  {% for post in site.posts limit: site.front_page_news %}
-  {% if post.shortnews %}
-  <li class="shortnews">
-    <span class="date">{{ post.date | date_to_long_string }}</span>
-    {{ post.content }}
-  </li>
-  {% else %}
-  <li class="bloglink">
-    <span class="date">{{ post.date | date_to_long_string }}</span>
-    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-<p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p>
 
