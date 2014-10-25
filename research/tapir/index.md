@@ -4,8 +4,8 @@ title: Transactional Application Protocol for Inconsistent Replication (TAPIR)
 ---
 
 Distributed transactional storage systems (such as Google's Spanner)
-are easier for application developers to use because provide strong
-guarantees. However, they use strongly consistent replication
+are easier for application developers to use because they provide
+strong guarantees. However, they use strongly consistent replication
 protocols, introducing serious performance challenges. On the other
 hand, systems with weaker consistency guarantees (such as Amazon's
 Dynamo) use replication techniques with better performance, but they

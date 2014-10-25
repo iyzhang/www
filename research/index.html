@@ -13,13 +13,14 @@ ongoing projects are:
 </p>
 <!-- <h3>Optimistic Replicated Two-Phase Commit</h3> -->
 <p>
-<b>TAPIR</b> &mdash; the Transactional Application Protocol for Inconsistent
-Replication &mdash; is a new protocol for linearizable
+<b>TAPIR</b> &mdash; the Transactional Application Protocol for
+Inconsistent Replication &mdash; is a new protocol for linearizable
 distributed transactions built using replication with <em>no
-consistency guarantees</em>. By eliminating consistency, and thus
-coordination, from the replication layer, TAPIR provides the same
-transaction model and consistency guarantees as existing systems like
-Spanner with better latency and throughput.<br />
+consistency guarantees</em>. By enforcing consistency <em>only</em> at
+the transaction layer, TAPIR eliminates coordination at the
+replication layer, enabling TAPIR to provide the same transaction
+model and consistency guarantees as existing systems like Spanner with
+better latency and throughput.<br />
 <a href="{{ site.base }}/research/tapir/index.html">More about TAPIR
   <i class="fa fa-chevron-circle-right"></i></a>
 </p>
