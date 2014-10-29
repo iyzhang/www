@@ -17,7 +17,8 @@ permalink: /blog/:year/:month/:day/:title.html
 front_page_news: 5
 
 # Base pathname for links.
-base: 'http://irenezhang.net'
+#base: 'http://irenezhang.net'
+base: ''
 
 # Navigation bar links.
 navigation:

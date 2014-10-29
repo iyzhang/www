@@ -55,10 +55,18 @@ p, div {
 
 }
 
+.lead {
+    font-size:1.5em;
+    font-weight:400;
+    margin-bottom: 10px;
+}
+
+
 .inset-img {
     padding: 0px;
     align: center;
     margin-bottom:15px;
+    width:100%;
 }
 
 /* Custom page footer */
@@ -123,6 +131,7 @@ p, div {
       padding:0px;
       padding-right:20px;
       margin-bottom:5px;
+      width:200px;
   }
   .myname {
       font-size:4.5em;
@@ -133,7 +142,7 @@ p, div {
     border-bottom: 0;
   }
   .lead {
-      font-size:1.8em;
+      font-size:2em;
       font-weight:400;
       margin-bottom: 10px;
   }
