@@ -234,15 +234,50 @@ url={papers/txcache-osdi10.pdf},
 }
 
 
-@MastersThesis{zhang09:_effic_file_distr_flexib_wide,
+@MastersThesis{zhang09-_effic_file_distr_flexib_wide,
   author =       {Irene Zhang},
   title =        {Efficient File Distribution in a Flexible, Wide-Area File System},
   school =       {Massachusetts Institute of Technology},
   year =         2009,
   month= 6,
-  url={papers/meng-thesis.pdf}}
-
-
+  url={papers/meng-thesis.pdf},
+  abstract={WheelFS is a wide-area distributed file system designed to
+                  help applications cope with the challenges of
+                  sharing data over the wide-area network. A wide
+                  range of applications can use WheelFS as a storage
+                  layer because applications can control various
+                  trade-offs in WheelFS, such as consistency versus
+                  availability, using semantic cues. One key feature
+                  that many applications require from any storage
+                  system is efficient file distribution. The storage
+                  system needs to be able to serve files quickly, even
+                  large or popular ones, and allow users and
+                  applications to quickly browse files.  Wide-area
+                  links with high latency and low throughput make
+                  achieving these goals difficult for most distributed
+                  storage systems.  This thesis explores using
+                  prefetching, a traditional file system optimization
+                  technique, in wide-area file systems for more
+                  efficient file distribution. This thesis focuses on
+                  Tread, a prefetcher for WheelFS. Tread includes
+                  several types of prefetching to improve the
+                  performance of reading files and directories in
+                  WheelFS: read-ahead prefetching, whole file
+                  prefetching, directory prefetching and a prefetching
+                  optimization for WheelFS's built-in cooperative
+                  caching. To make the best use of scarce wide-area
+                  resources, Tread adaptively rate-limits prefetching
+                  and gives applications control over what and how
+                  prefetching is done using WheelFS's semantic cues.
+                  Experiments show that Tread can reduce the time to
+                  read a 10MB file in WheelFS by 40% and the time to
+                  list a directory with 100 entries by more than
+                  80%. In addition, experiments on Planetlab show that
+                  using prefetching with cooperative caching to
+                  distribute a 10MB file to 270 clients reduces the
+                  average latency for each client to read the file by
+                  almost 45%}}
+		  
 @TechReport{peter14-arrak,
   author =       {Simon Peter and Jialin Li and Irene Zhang and Dan
                   R. K. Ports and Doug Woos and Arvind Krishnamurthy

@@ -52,6 +52,8 @@
 			<span class="links btn-group">
 				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_peter14-arrak-osdi14').slideToggle('fast');return false;">
                 <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/arrakis-osdi14.pdf">
+                <i class="fa fa-download"></i> pdf</a>
 			</span>
 			<div id="abstract_peter14-arrak-osdi14" class="abstract well">
 			Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications, to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing 2-5x end-to-end latency and 9x throughput improvements for a popular persistent NoSQL store relative to a well-tuned Linux implementation.
@@ -224,9 +226,14 @@
 			<span class="venuetype">Master's thesis, Massachusetts Institute of Technology</span><span class="venue"></span>.
 			<br />
 			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_zhang09-_effic_file_distr_flexib_wide').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
 				<a class="btn btn-default btn-xs" href="papers/meng-thesis.pdf">
                 <i class="fa fa-download"></i> pdf</a>
 			</span>
+			<div id="abstract_zhang09-_effic_file_distr_flexib_wide" class="abstract well">
+			WheelFS is a wide-area distributed file system designed to help applications cope with the challenges of sharing data over the wide-area network. A wide range of applications can use WheelFS as a storage layer because applications can control various trade-offs in WheelFS, such as consistency versus availability, using semantic cues. One key feature that many applications require from any storage system is efficient file distribution. The storage system needs to be able to serve files quickly, even large or popular ones, and allow users and applications to quickly browse files. Wide-area links with high latency and low throughput make achieving these goals difficult for most distributed storage systems. This thesis explores using prefetching, a traditional file system optimization technique, in wide-area file systems for more efficient file distribution. This thesis focuses on Tread, a prefetcher for WheelFS. Tread includes several types of prefetching to improve the performance of reading files and directories in WheelFS: read-ahead prefetching, whole file prefetching, directory prefetching and a prefetching optimization for WheelFS&#39;s built-in cooperative caching. To make the best use of scarce wide-area resources, Tread adaptively rate-limits prefetching and gives applications control over what and how prefetching is done using WheelFS&#39;s semantic cues. Experiments show that Tread can reduce the time to read a 10MB file in WheelFS by 40% and the time to list a directory with 100 entries by more than 80%. In addition, experiments on Planetlab show that using prefetching with cooperative caching to distribute a 10MB file to 270 clients reduces the average latency for each client to read the file by almost 45%
+			</div>
 		</td>
 	</tr>
 	<tr>
