@@ -3,6 +3,11 @@ layout: default
 title: Transactional Application Protocol for Inconsistent Replication (TAPIR)
 ---
 
+<div class="inset-img pull-left">
+  <img src="{{ site.base }}/img/tapir.jpg" alt="Photo of Tapir"
+       class="img-responsive">
+</div>
+
 Distributed transactional storage systems (such as Google's Spanner)
 are easier for application developers to use because they provide
 strong guarantees. However, they use strongly consistent replication
