@@ -49,7 +49,7 @@ better performance, reliability and customizability.
 More about [Arrakis {% icon fa-chevron-circle-right%}](//arrakis.cs.washington.edu)
 
 
-##Research at VMware
+##Past Research
 Before starting my PhD, I worked on several research projects at
 VMware. My primary focus was on improving the performance of restoring
 checkpointed virtual machines. My work included:
@@ -65,8 +65,6 @@ before checkpointing and prefetches those pages on restore, reducing
 overhead on the VM. This project included a new metric for measuring
 VM performance on restore, as well as an implementation of working set
 restore for VMware Workstation.
-
-##Research at MIT
 
 I worked on a number of research projects with great people while at
 MIT as an undergrad and MEng student. Some notable projects that I
