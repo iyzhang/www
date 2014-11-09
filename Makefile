@@ -19,7 +19,7 @@ _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 clean:
 	$(RM) -r _site _includes/pubs.html
 
-CSEHOST := bicycle.cs.washington.edu
+CSEHOST := iyzhang@bicycle.cs.washington.edu
 HOST := irene@ambulatoryclam.net
 deploy: clean all
 	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(HOST):schemeprincess
