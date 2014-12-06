@@ -28,6 +28,6 @@ store that provides high-performance transactional storage.
 
 ### Publications
 
-- **Building Consistent Transactions with Inconsistent Replication.**   
+- **[Building Consistent Transactions with Inconsistent Replication.]({{ site.base }}/papers/tapir-tr14.pdf)**   
 Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, Dan R. K. Ports.   
-In submission.
+UW Technical Report UW-CSE-14-12-01.

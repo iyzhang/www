@@ -6,6 +6,49 @@
 @string{vee = "Proceedings of the International Conference on Virtual Execution Environments (VEE)"}
 @string{hot_storage = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)"}
 
+
+
+@TechReport{zhang14-build_consis_trans_incon_replic,
+  author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana
+                  Szekeres and Arvind Krishnamurhty and Dan
+                  R. K. Ports},
+  title = 	 {Building Consistent Transactions with Inconsistent
+                  Replication},
+  institution =  {University of Washington},
+  year = 	 2014,
+  number = 	 {UW-CSE-14-12-01},
+  month = 	 12,
+  abstract={Application programmers increasingly prefer distributed
+                  storage systems with distributed transactions and
+                  strong consistency (e.g., Google's Spanner) for
+                  their strong guarantees and ease of
+                  use. Unfortunately, existing transactional storage
+                  systems are expensive to use because they rely on
+                  expensive replication protocols like Paxos for
+                  fault-tolerance. In this paper, we take a new
+                  approach to make transactional storage systems more
+                  affordable; we eliminate consistency from the
+                  replication protocol, while still providing
+                  distributed transactions with strong consistency to
+                  applications.  This paper presents TAPIR --
+                  the Transaction Application Protocol for
+                  Inconsistent Replication -- the first transaction
+                  protocol to use a replication protocol,
+                  inconsistent replication, that provides
+                  fault-tolerance with no consistency.  By enforcing
+                  strong consistency only in the transaction protocol,
+                  TAPIR is able to commit transactions in a single
+                  round-trip and schedule distributed transactions
+                  with no centralized coordination. We demonstrate the
+                  use of TAPIR in TAPIR-KV, a key-value store that
+                  provides high-performance transactional
+                  storage. Compared to system using conventional
+                  transaction protocols that require replication with
+                  strong consistency, TAPIR-KV has 2x better
+                  latency \emph{and} throughput.},
+url={papers/tapir-tr14.pdf}
+}
+
 @InProceedings{zhang14-custom_exten_deploy_mobil_cloud_applic,
   author = 	 {Irene Zhang and Adriana Szekeres and Dana Van Aken and Isaac Ackerman and Steven D. Gribble and Arvind Krishnamurthy and Henry M. Levy}, 
   title = 	 {Customizable and Extensible Deployment for Mobile/Cloud Applications},
