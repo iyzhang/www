@@ -321,34 +321,3 @@ url={papers/txcache-osdi10.pdf},
                   average latency for each client to read the file by
                   almost 45%}}
 		  
-@TechReport{peter14-arrak,
-  author =       {Simon Peter and Jialin Li and Irene Zhang and Dan
-                  R. K. Ports and Doug Woos and Arvind Krishnamurthy
-                  and Tom Anderson and Timothy Roscoe},
-  title =        {Arrakis: {The} Operating System is the Control Plane},
-  institution =  {University of Washington},
-  year =         2014,
-  number =    {UW-CSE-13-10-01},
-  month =     5,
- url= {http://arrakis.cs.washington.edu/wp-content/uploads/2013/04/arrakis-tr-ver2.pdf},
-abstract={Recent device hardware trends enable a new approach to the
-                  design of network server operating systems. In a
-                  traditional operating system, the kernel mediates
-                  access to device hardware by server applications, to
-                  enforce process isolation as well as network and
-                  disk security. We have designed and implemented a
-                  new operating system, Arrakis, that splits the
-                  traditional role of the kernel in two. Applications
-                  have direct access to virtualized I/O devices,
-                  allowing most I/O operations to skip the kernel
-                  entirely, while the kernel is re-engineered to
-                  provide network and disk protection without kernel
-                  mediation of every operation. We describe the
-                  hardware and software changes needed to take
-                  advantage of this new abstraction, and we illustrate
-                  its power by showing 2-5x end-to-end latency and 9x
-                  throughput improvements for a popular persistent
-                  NoSQL store relative to a well-tuned Linux
-                  implementation.}
-}
-
