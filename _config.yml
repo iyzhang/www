@@ -28,5 +28,7 @@ navigation:
       link: /research/
     - title: Publications
       link: /publications.html
+    - title: Teaching
+      link: /teaching.html
     - title: CV
       link: /cv/cv.pdf
