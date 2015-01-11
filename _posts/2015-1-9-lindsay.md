@@ -13,8 +13,9 @@ Lindsay Michimoto. Lindsay has been with the department for 15 years,
 and in that time has processed 14,245 applications to the
 Ph.D. program (including mine twice!) and advised 602
 Ph.D. students. She is definitely one of the very unique features of
-CSE and is probably responsible for me going to grad school at all. A
-few PhD students (not me!)  sang a musical number dedicated to
+CSE and is probably responsible for me going to grad school at all.
+
+A few PhD students (not me!)  sang a musical number dedicated to
 Lindsay's many years of listening to complaining grad students. More
 on the event and Lindsay on the [CSE
 News.](https://news.cs.washington.edu/2015/01/10/cses-2015/)
