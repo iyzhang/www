@@ -61,9 +61,9 @@ I am funded by a <a href="http://www.nsfgrfp.org/">National Science
     {{ post.content }}
   </li>
   {% else %}
-  <li class="bloglink">
+  <li >
     <span class="date">{{ post.date | date_to_long_string }}</span>
-    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+    <b>Blog Post: </b><a href="{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endif %}
   {% endfor %}
