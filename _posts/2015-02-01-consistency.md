@@ -4,14 +4,14 @@ shortnews: false
 title: Consistency should be more consistent!
 ---
 
-I hadn't thought that I would blog very often, but since Jekyll makes
-it so easy, I'm feeling like I need to give it a whirl. No promises
-about how often this will happen, of course, because the virtual world
-is littered with dead blogs of the well-intentioned.
+I hadn't thought that I would blog, but since Jekyll makes it so easy,
+I'm feeling like I need to give it a whirl. No promises about how
+often this will happen, of course, because the virtual world is
+littered with dead blogs of the well-intentioned.
 
 I thought I would try to clear up, if only for myself, the terminology
 surrounding consistency and isolation, or, more specifically,
-operation and transaction ordering. Of course, there have been a large
+*operation and transaction ordering*. Of course, there have been a large
 number of discussions and blog posts that are a rabbit-hole of the
 illuminating and horrifying.
 
@@ -26,34 +26,33 @@ wine.
 
 ### Consistency vs. Isolation
 
-Before we dive into the variants of different properties of
-distributed systems and databases, I will try to define the properties
-themselves.
+Before we dive into the different guarantees provided by distributed
+systems and databases, I will try to define the guarantees themselves.
 
-**Consistency**, as in the CAP theorem, is how copies of a
-single data item relate to each other. Do they appear as if they are a
-single copy (to an application or an external observer)? Or do they
-have some other apparent behavior (i.e., after some period of time
-they converge to a single copy)?
+**Consistency**, as in the CAP theorem, defines how copies of a single
+data item relate to each other. Do they appear as if they are a single
+copy (to an application or an external observer)? Or do they have some
+other apparent behavior (i.e., after some period of time they converge
+to a single copy)?
 
-**Isolation**, in ACID, is the how transactions on multiple items
+**Isolation**, in ACID, defines the how transactions on multiple items
 relate to each other. Do transactions appear as if they each ran
 sequentially on a single copy of the database?  Or some other behavior
 (i.e., each transaction ran on its own snapshot of the database)?
 
+Essentially, a storage system's consistency level dictates how
+operations for single data items have to be ordered, and its isolation
+level dictates how transactions over many items have to be ordered.
+
 ### What about the C in ACID?
 
-Now that we have sorted out that consistency enforces the ordering of
-operations for a single data item and isolation enforces the ordering
-of transactions over many items, what the heck does the C for
-consistency in ACID stand for?
-
-This type of consistency is more of an application-specific invariant
-(e.g., bank account balance must be greater than 0) than a system
-property. Enforcing this type of consistency requires that the
-application, assuming some guarantees from the database, does not
-violate its own invariants (e.g., the application checks the bank
-account balance before withdrawing too much).
+Unlike isolation and CAP consistency, the ACID type of consistency is
+more of an application-specific invariant (e.g., bank account balance
+must be greater than 0) than a system property. Enforcing this type of
+consistency requires that the application, assuming some A, I & D
+guarantees from the database, does not violate its own invariants
+(e.g., the application checks the bank account balance before
+withdrawing too much).
 
 I've been reading some great old database papers recommended by Phil
 Bernstein, and Thomas defines, in [1], *internal consistency* as the C
@@ -78,10 +77,9 @@ almost always talking about isolation.**
 ### Linearizability, Serializability and Others
 
 OK, now back to how we order operations and transactions in a
-transactional storage system.  There are many different types of
-ordering guarantees, which is a huge topic because there are so many
-choices. I will primarily talk about the strongest variants because
-these are the best defined.
+transactional storage system.  There are so many different types of
+ordering guarantees, so it is a huge topic. I will primarily talk
+about the strongest variants because these are the best defined.
 
 **Sequential (or serializable) consistency** ensures that the same
 operations are applied in the same order to every copy of the data
@@ -132,15 +130,14 @@ consistency guarantees. Our observation is that there is no need to
 enforce a strict serial ordering of transactions *and* operations in a
 transactional storage system that uses replication. And this has all
 kinds of benefits, like letting us get away without using an expensive
-protocol like Paxos and using transactions as a way to batch execute a
-bunch of transactions together for even less distributed coordination.
+protocol like Paxos.
 
 ### Summary
 
 Explaining consistency is hard and it doesn't help that we don't have
 consistent terminology! Trying to convince people that they might want
-strong isolation, but not consistency (in CAP), and probably don't
-care about that other kind of consistency (in ACID), is really hard.
+strong isolation but not need consistency (in CAP) and probably don't
+care about that other kind of consistency (in ACID) is really hard.
 
 ### References
 
