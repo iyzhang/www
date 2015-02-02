@@ -1,17 +1,14 @@
-Sampa group website
+Irene's Webpage
 ===================
 
-This site uses [Jekyll][] and [bibble][] to generate a static Sampa website
-complete with publications, personnel, and news.
+This site uses [Jekyll][] and [bibble][] to generate a static personal webpage
+complete with publications, research and news.
 
 
 Editing
 -------
 
-Most pages are just Markdown files that you can edit directly. People are
-listed in `_data/people.yml` and the news is generated from `_data/news.yml`.
-
-Try editing directly in GitHub! It's like magic.
+Most pages are just Markdown files that you can edit directly. 
 
 
 News Items and Blog Posts
@@ -36,7 +33,6 @@ For full blog posts, use this format:
 And concoct a page title for your post. The body of the post goes after the `---` in either case.
 
 [yfm]: http://jekyllrb.com/docs/frontmatter/
-[postsdir]: https://github.com/uwsampa/sampa-www/tree/master/_posts
 
 
 Building and Deploying
@@ -55,7 +51,7 @@ The requirements for building the site are:
 directory. To preview the site, run `jekyll serve`` and head to
 http://0.0.0.0:4000.
 
-To upload a new version of the site via rsync over ssh, type `make deploy`. A web hook does this automatically when you push to GitHub.
+To upload a new version of the site via rsync over ssh, type `make deploy`.
 
 If you use an alternative Python when building the bibliography, use `make
 PYTHON=/path/to/python`.
