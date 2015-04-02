@@ -44,7 +44,7 @@ I have worked with some great undergraduates in the past:
 * Tyler Denniston is currently a PhD student at MIT, working with
   [Saman Amarasinghe](http://people.csail.mit.edu/saman/).
 
-* Dana Van Acken is currently a PhD student at CMU, working with [Andy
+* [Dana Van Acken](http://www.cs.cmu.edu/~dvanaken/index.html) is currently a PhD student at CMU, working with [Andy
   Pavlo](http://www.cs.cmu.edu/~pavlo/).
 
 * Isaac Ackerman is currently a PhD student at Cornell.
