@@ -3,9 +3,11 @@ layout: post
 shortnews: true
 ---
 
+<div class="col-xs-4 pull-right">
 <img src="{{ site.base }}/img/lindsay-party.jpg" alt="Lindsay and Parody Bits"
-       class="pull-right">
-       
+       class="img-thumbnail">
+</div>
+
 **Lindsay's Retirement Party**
 
 On Friday, the department held a party celebrating graduate counselor,
