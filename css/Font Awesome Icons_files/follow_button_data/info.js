@@ -1,0 +1,1 @@
+twttr.setFollowersCountAndFollowing([{"following":false,"id":"515543735","screen_name":"fontawesome","name":"Font Awesome","protected":false,"followers_count":13226,"formatted_followers_count":"13.2K followers","age_gated":false}]);
