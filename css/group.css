@@ -6,9 +6,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-weight:600;
-    letter-spacing:1px;
+    font-family: 'Quattrocento', Georgia, Times, serif;
+    font-weight:400;
 }
 
 a {
@@ -23,7 +22,7 @@ p, div {
 }
 
 /* Customize first page */
-.myname {
+.title {
     font-size:2.5em;
     font-weight:400;
     font-family: 'Quattrocento', Georgia, Times, serif;
@@ -33,40 +32,22 @@ p, div {
     letter-spacing:2px;
 }
 
+.subtitle {
+    font-weight:400;
+    font-family: 'Raleway', Georgia, Times, serif;
+    color:#554D7D;
+    text-align:center;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
 /* Make sure abstract does not disply by default*/
 .abstract{
     display:none;
 }
 
-/* customize wells */
-.well{
-    background-color:#e6e6e6;
-    border: 0px solid #aaa;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.header {
-
-}
-
-.lead {
-    font-size:1.5em;
-    font-weight:400;
-    margin-bottom: 10px;
-}
-
-
-.inset-img {
-    padding: 0px;
-    align: center;
-    margin-top:10px;
-    width:100%;
+.img-responsive{
+    padding:40px;
 }
 
 /* Custom page footer */
@@ -76,6 +57,7 @@ p, div {
   border-top: 1px solid #554D7D;
   text-align: center;
 }
+.header,
 .footer p {
   margin: 0.1em 0;
   color: #554D7D;
@@ -85,97 +67,83 @@ p, div {
   color: #554D7D;
 }
 
-/* Customize table */
-.table-no-border>thead>tr>th, 
-.table-no-border>tbody>tr>th, 
-.table-no-border>tfoot>tr>th, 
-.table-no-border>thead>tr>td, 
-.table-no-border>tbody>tr>td, 
-.table-no-border>tfoot>tr>td {
-  border: none;
+.info-header {
+    border-top: 1px solid #554D7D;  
+    border-bottom: 1px solid #554D7D;  
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:12px;
+    letter-spacing:1px;
 }
-
-.table-condensed {
-    width: auto;
-    margin-bottom:0px;
+.info {
+    border-bottom: 1px solid #554D7D;
 }
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-  padding: 5px;
+.fa-ul li {
+    margin-bottom:5px;
 }
-
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  p, li, tr {
-      font-size:16px;
-  }
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-      padding-left: 0;
-      padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-      margin-bottom: 30px;
-  }
-  .footer {
-      margin-top: 30px;
-  }
-  .inset-img {
-      padding:0px;
-      padding-right:20px;
-      margin-bottom:5px;
-      width:200px;
-  }
-  .myname {
-      font-size:4.5em;
+    /* increase header size and padding */
+      .title {
+      font-size:5em;
       letter-spacing:5px;
+      margin-bottom:-15px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  .subtitle {
+      margin-bottom:20px;
   }
-  .lead {
-      font-size:2em;
-      font-weight:400;
-      margin-bottom: 10px;
-  }
-}
+  .img-responsive {
+      margin-top:20px;
+      margin-bottom:20px;
+      padding:0px;
+  }      
 
+}
 
 /* Customize container */
 @media (min-width: 768px) {
-  .container {
+    .container {
     max-width: 730px;
   }
+
 }
+
+
+/* Slightly better-looking header on mobile. */
+@media screen and (max-width: 767px) {
+  .nav-pills {
+      display: block;
+      margin: 0 auto 1em;
+  }
+}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Customize tabs */
-/* .tabWrapper > div { */
-/*     border: 1px solid #ddd; */
-/*     background: #fff; */
-/*     border-radius: 0 0 4px 4px; */
-/*     margin-top: -1px; */
-/*     border-top:transparent; */
-/* } */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
 .nav {
-  margin-bottom: 0;
-  padding-left: 0;
   list-style: none;
   border-top: 1px solid #554D7D;  
   border-bottom: 1px solid #554D7D;  
   letter-spacing:1px;
   font-weight:500;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 .nav-pills > li > a {
   border-radius: 0px;
@@ -189,14 +157,6 @@ p, div {
     font-weight:500;
     background-color:transparent;
     color:#554D7D;
-}
-
-/* Slightly better-looking header on mobile. */
-@media screen and (max-width: 767px) {
-    .nav-pills {
-        display: block;
-        margin: 0 auto 1em;
-    }
 }
 
 /* Front page news. */

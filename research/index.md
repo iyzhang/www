@@ -4,7 +4,7 @@ title: Research
 notitle: true
 ---
 
-##Current Research
+### Current Research
 My PhD research broadly covers operating systems and distributed
 systems for large-scale, distributed applications. I am working on
 better transactional storage, flexible mobile/cloud deployment and
@@ -48,8 +48,7 @@ better performance, reliability and customizability.
 
 More about [Arrakis {% icon fa-chevron-circle-right%}](//arrakis.cs.washington.edu)
 
-
-##Past Research
+### Past Research
 Before starting my PhD, I worked on several research projects at
 VMware. My primary focus was on improving the performance of restoring
 checkpointed virtual machines. My work included:
