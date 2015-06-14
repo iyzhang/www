@@ -10,7 +10,7 @@ notitle: true
 <!--   the <a href="http://washington.edu">University of Washington</a>. -->
 <!-- </p> -->
 
-<h3>Bio & Background</h3>
+<h3></h3>
 <p>
   I work with
   <a href="http://www.cs.washington.edu/people/faculty/levy/">Hank
@@ -22,11 +22,11 @@ notitle: true
   distributed applications, including distributed runtime systems and
   transactional storage systems.
 <p>
-I am funded by a <a href="http://www.nsfgrfp.org/">National Science
-  Foundation Fellowship</a> as well as
-  an <a href="http://www.seattlearcsfoundation.org/">ARCS Foundation
-  Fellowship</a>. I received my M.S. in computer science from UW in 2013. 
-</p>
+<!-- I am funded by a <a href="http://www.nsfgrfp.org/">National Science -->
+<!--   Foundation Fellowship</a> as well as -->
+<!--   an <a href="http://www.seattlearcsfoundation.org/">ARCS Foundation -->
+<!--   Fellowship</a>. I received my M.S. in computer science from UW in 2013.  -->
+<!-- </p> -->
 
 <p>
   Before starting my PhD, I worked for three years
@@ -50,16 +50,21 @@ I am funded by a <a href="http://www.nsfgrfp.org/">National Science
 </p>
 
 <h3>News & Happenings</h3>
-<ul class="news list-unstyled">
+<ul class="media-list">
   {% for post in site.posts limit: site.front_page_news %}
   {% if post.shortnews %}
-  <li class="shortnews">
-    <span class="date">{{ post.date | date_to_long_string }}</span>
+  <li class="media">
+    <div class="media-left">
+      <img style="width:128px" class="media-object" src="{{ post.photo }}">
+    </div>
+    <div class="media-body">
+    <h5 class="media-heading">{{ post.date | date_to_long_string }}</h5>
     {{ post.content }}
+    </div>
   </li>
   {% else %}
-  <li >
-    <span class="date">{{ post.date | date_to_long_string }}</span>
+  <li class="media">
+    <h5 class="media-heading">{{ post.date | date_to_long_string }}</h5>
     <b>Blog Post: </b><a href="{{ site.base }}{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endif %}

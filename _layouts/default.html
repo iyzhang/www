@@ -10,7 +10,7 @@
         <link href="{{ site.base }}/css/group.css" rel="stylesheet">
         <!-- <link rel="alternate" type="application/atom+xml" title="Atom" -->
         <!--     href="{{ site.baseurl }}/blog/blog.xml"> -->
-        <link href='//fonts.googleapis.com/css?family=Quattrocento:400'
+        <link href='//fonts.googleapis.com/css?family=Quattrocento:400,700'
               rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Raleway:400,500,600,700,900'
         rel='stylesheet' type='text/css'>
@@ -32,9 +32,18 @@
               {% endfor %}
             </ul>
           </div>
-	  <div class="row">
-	    <div class="col-md-3 col-sm-4 col-xs-12 pull-left">
-	      <img src="{{ site.base }}/img/irene-new.JPG" alt="Photo of me"
+	    <div class="row">
+	    <div class="col-md-9 col-sm-8 col-xs-12">
+              {% comment %}Liquid is sort of terrible! I think "!= true" is the
+              only way to do negation?{% endcomment %}
+              {% if page.notitle != true %}
+              <h3>{{ page.title }}</h3>
+              {% endif %}
+	      
+              {{ content }}
+	    </div>
+	  <div class="col-md-3 col-sm-4 col-xs-12">
+	      <img src="{{ site.base }}/img/iyzhang.jpg" alt="Photo of me"
 		   class="img-circle img-responsive">
 	      <div class="info-header">
 		Contact</div>
@@ -50,17 +59,7 @@
 		</ul>
 	      </div>
 	    </div>
-
-	    <div class="col-md-9 col-sm-8 col-xs-12">
-              {% comment %}Liquid is sort of terrible! I think "!= true" is the
-              only way to do negation?{% endcomment %}
-              {% if page.notitle != true %}
-              <h3>{{ page.title }}</h3>
-              {% endif %}
-	      
-              {{ content }}
 	    </div>
-	  </div>
 	  
           <div class="footer">
             <p>
