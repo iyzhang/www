@@ -12,7 +12,7 @@ ongoing projects are:
 
 <ul class="media-list">
     <li class="media">
-		<div class="media-left">
+		<div class="media-left hidden-xs">
 			<img style="width:100px" class="media-object img-rounded"
     src="../img/felix.jpg" />
 	</div>
@@ -32,7 +32,7 @@ existing systems like Spanner with better latency and throughput.
 </li>
 
     <li class="media">
-		<div class="media-left">
+		<div class="media-left hidden-xs">
 			<img style="width:100px" class="media-object img-rounded"
 			src="../img/agate.jpg" />
 	</div>
@@ -55,7 +55,7 @@ application programmer.
 </li>
 
     <li class="media">
-		<div class="media-left">
+		<div class="media-left hidden-xs">
 			<img style="width:100px" class="media-object img-rounded"
     src="../img/sapphire.jpg" />
 	</div>
@@ -74,7 +74,7 @@ performance trade-offs.
 </li>
 
     <li class="media">
-		<div class="media-left">
+		<div class="media-left hidden-xs">
 			<img style="width:100px" class="media-object img-rounded"
     src="../img/arrakis.jpg" />
 	</div>

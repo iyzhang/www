@@ -41,6 +41,8 @@ p, div {
 
 .img-responsive{
     padding:40px;
+    margin-top:-30px;
+    margin-bottom:-20px;
 }
 
 /* Custom page footer */
@@ -83,6 +85,7 @@ p, div {
     margin-bottom:5px;
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
     /* increase header size and padding */
@@ -106,14 +109,16 @@ p, div {
     .footer p {
 	font-size:12px;
     }
+    .news > img {
+	width:128px;
+    }
+    .media-body {
+    padding-bottom: 10px;
+    }
+    .container {
+	width: 750px;
+    }
 }
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
 
 /* Slightly better-looking header on mobile. */
 @media screen and (max-width: 767px) {
@@ -138,11 +143,6 @@ p, div {
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
-
-.media-body {
-    padding-bottom: 12px;
-}
-
 
 .nav {
   list-style: none;
@@ -173,7 +173,3 @@ p, div {
     display: block;
 }
 
-.media-heading {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
