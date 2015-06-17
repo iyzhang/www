@@ -33,14 +33,6 @@ p, div {
     letter-spacing:2px;
 }
 
-.subtitle {
-    font-weight:400;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    color:#554D7D;
-    text-align:center;
-    letter-spacing:1px;
-    margin-bottom:10px;
-}
 
 /* Make sure abstract does not disply by default*/
 .abstract{
@@ -52,23 +44,31 @@ p, div {
 }
 
 /* Custom page footer */
+.header,
 .footer {
-  padding-top: 19px;
-  color: #888;
-  border-top: 1px solid #554D7D;
-  text-align: center;
+    text-align: center;
 }
+
+.footer {
+    padding-top: 19px;
+    border-top: 1px solid #554D7D;
+}
+
 .header,
 .footer p {
-  margin: 0.1em 0;
-  color: #554D7D;
-  font-size: 12px;
+    margin: 0.1em 0;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight:400;
+    letter-spacing:1px;
+    font-size:10px;
+    color: #554D7D;
 }
+
 .footer a:link, .footer a:visited {
   color: #554D7D;
 }
 
-.info-header {
+.contact-title {
     border-top: 1px solid #554D7D;
     border-bottom: 1px solid #554D7D;
     text-transform: uppercase;
@@ -76,41 +76,42 @@ p, div {
     margin-bottom:10px;
     padding-top:5px;
     padding-bottom:5px;
-    font-size:12px;
     letter-spacing:1px;
 }
-.info {
-    border-bottom: 1px solid #554D7D;
-}
+
 .fa-ul li {
     margin-bottom:5px;
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     /* increase header size and padding */
     .title {
 	font-size:5em;
 	letter-spacing:5px;
 	margin-bottom:-15px;
     }
-    .subtitle {
-	font-size:16px;
-	margin-bottom:20px;
-    }
     .img-responsive {
-	margin-top:20px;
 	margin-bottom:20px;
 	padding:0px;
-    }      
+    }
+    .contact-title {
+	font-size:.9em;
+    }
+    .contact {
+	border-bottom: 1px solid #554D7D;
+	font-size:.9em;
+    }
+    .header,
+    .footer p {
+	font-size:12px;
+    }
 }
 
-/* Customize container */
 @media (min-width: 768px) {
-    .container {
-    max-width: 730px;
+  .container {
+    width: 750px;
   }
-
 }
 
 
@@ -135,8 +136,13 @@ p, div {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #888;
+  border-top: 1px solid #ddd;
 }
+
+.media-body {
+    padding-bottom: 12px;
+}
+
 
 .nav {
   list-style: none;

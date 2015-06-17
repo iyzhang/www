@@ -18,63 +18,42 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="container">
-          <div class="header">
-            <div class="title clearfix">Irene Y. Zhang</div>
-	    <div class="subtitle clearfix">Ph. D. student - Computer Science &
-	    Engineering - University of Washington</div>
-	    <ul class="nav nav-pills nav-justified">
-              {% assign shorturl = page.url | replace:'index.html','' %}
-              {% for item in site.navigation %}
-                <li {% if item.link == shorturl %}class="active"{% endif %}>
-                  <a href="{{ site.base }}{{ item.link }}">{% if item.link == shorturl %}- {% endif %}{{ item.title }}{% if item.link == shorturl %} -{% endif %}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-	    <div class="row">
-	    <div class="col-md-9 col-sm-8 col-xs-12">
-              {% comment %}Liquid is sort of terrible! I think "!= true" is the
-              only way to do negation?{% endcomment %}
-              {% if page.notitle != true %}
-              <h3>{{ page.title }}</h3>
-              {% endif %}
+      <div class="container">
+        <div class="header">
+          <div class="title clearfix">Irene Y. Zhang</div>
+	  <p>Ph. D. student - Computer Science &
+	    Engineering - University of Washington</p>
+	  <ul class="nav nav-pills nav-justified">
+            {% assign shorturl = page.url | replace:'index.html','' %}
+            {% for item in site.navigation %}
+            <li {% if item.link == shorturl %}class="active"{% endif %}>
+              <a href="{{ site.base }}{{ item.link }}">{% if item.link == shorturl %}- {% endif %}{{ item.title }}{% if item.link == shorturl %} -{% endif %}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+	{% comment %}Liquid is sort of terrible! I think "!= true" is the
+        only way to do negation?{% endcomment %}
+        {% if page.notitle != true %}
+        <h3>{{ page.title }}</h3>
+	{% else %}
+	<h3></h3>
+        {% endif %}
 	      
-              {{ content }}
-	    </div>
-	  <div class="col-md-3 col-sm-4 col-xs-12">
-	      <img src="{{ site.base }}/img/iyzhang.jpg" alt="Photo of me"
-		   class="img-circle img-responsive">
-	      <div class="info-header">
-		Contact</div>
-	      <div class="info">
-		<ul class="fa-ul">
-		  <li><i class="fa-li fa fa-envelope"></i>iyzhang@uw.edu</li>
-		  <li><i class="fa-li fa fa-location-arrow"></i>185 Stevens Way
-		    Seattle, WA 98195</li>
-		  <li><i class="fa-li fa fa-building">
-		      <a href="https://www.cs.washington.edu/contact/"></i>Allen
-		    Center</a> Room 591</li>
-		  <li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
-		</ul>
-	      </div>
-	    </div>
-	    </div>
-	  
-          <div class="footer">
-            <p>
-              <a href="http://www.cs.washington.edu/">Computer Science &amp;
-                Engineering</a>
-              at the
-              <a href="http://www.washington.edu/">University of
-                Washington</a>
-            </p>
-          </div>
-	  </li>
-        </div> <!-- /container -->
+        {{ content }}
+	<div class="footer">
+          <p>
+            <a href="http://www.cs.washington.edu/">Computer Science &amp;
+              Engineering</a>
+            at the
+            <a href="http://www.washington.edu/">University of
+              Washington</a>
+          </p>
+        </div>
+      </div> <!-- /container -->
           
-        <!-- Support retina images. -->
-        <script type="text/javascript"
-            src="{{ site.base }}/js/srcset-polyfill.js"></script>
+      <!-- Support retina images. -->
+      <script type="text/javascript"
+              src="{{ site.base }}/js/srcset-polyfill.js"></script>
     </body>
 </html>
