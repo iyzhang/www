@@ -96,5 +96,5 @@ better performance, reliability and customizability.
 </ul>
 
 Before starting my PhD, I worked on several research projects at
-VMware and MIT. You can find out more about my [past projects](past.html).
+VMware and MIT. You can find out more about my [past projects here](past.html).
 
