@@ -24,7 +24,7 @@ p, div {
 
 /* Customize first page */
 .title {
-    font-size:2.5em;
+    font-size:3em;
     font-weight:400;
     font-family: 'Quattrocento', Georgia, Times, serif;
     color:#554D7D;
@@ -37,12 +37,6 @@ p, div {
 /* Make sure abstract does not disply by default*/
 .abstract{
     display:none;
-}
-
-.img-responsive{
-    padding:40px;
-    margin-top:-30px;
-    margin-bottom:-20px;
 }
 
 /* Custom page footer */
@@ -96,7 +90,6 @@ p, div {
     }
     .img-responsive {
 	margin-bottom:20px;
-	margin-top:0px
 	padding:0px;
     }
     .contact-title {
