@@ -106,8 +106,11 @@ p, div {
     .news > img {
 	width:128px;
     }
-    .media-body {
-    padding-bottom: 10px;
+    .media-list {
+	padding-bottom:5px;
+    }
+    .media {
+	padding-top:10px;
     }
     .container {
 	width: 750px;
