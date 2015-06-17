@@ -96,6 +96,7 @@ p, div {
     }
     .img-responsive {
 	margin-bottom:20px;
+	margin-top:0px
 	padding:0px;
     }
     .contact-title {
