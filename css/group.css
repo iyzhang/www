@@ -33,6 +33,9 @@ p, div {
     letter-spacing:2px;
 }
 
+.subtitle {
+    color:#554D7D;
+}
 
 /* Make sure abstract does not disply by default*/
 .abstract{
