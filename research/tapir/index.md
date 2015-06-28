@@ -28,6 +28,7 @@ better latency *and* throughput.
 
 ### Publications
 
-- **[Building Consistent Transactions with Inconsistent Replication.]({{ site.base }}/papers/tapir-tr14.pdf)**   
-Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, Dan R. K. Ports.   
-UW Technical Report UW-CSE-14-12-01.
+- **Building Consistent Transactions with Inconsistent Replication.**
+Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind
+Krishnamurthy, Dan R. K. Ports. In Proceedings of the ACM Symposium on
+Operating Systems Principles. Monterey, CA. October 2015.
