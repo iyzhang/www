@@ -3,11 +3,6 @@ layout: default
 title: Transactional Application Protocol for Inconsistent Replication (TAPIR)
 ---
 
-<div class="inset-img pull-left">
-  <img src="{{ site.base }}/img/tapir.jpg" alt="Photo of Tapir"
-       class="img-responsive">
-</div>
-
 Application programmers increasingly prefer distributed storage
 systems with distributed transactions and strong consistency (e.g.,
 Google's Spanner) for their strong guarantees and ease of
@@ -33,6 +28,7 @@ better latency *and* throughput.
 
 ### Publications
 
-- **[Building Consistent Transactions with Inconsistent Replication.]({{ site.base }}/papers/tapir-tr14.pdf)**   
-Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, Dan R. K. Ports.   
-UW Technical Report UW-CSE-14-12-01.
+- **Building Consistent Transactions with Inconsistent Replication.**
+Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind
+Krishnamurthy, Dan R. K. Ports. In Proceedings of the ACM Symposium on
+Operating Systems Principles. Monterey, CA. October 2015.

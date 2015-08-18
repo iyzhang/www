@@ -6,9 +6,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-weight:600;
-    letter-spacing:1px;
+    font-family: 'Quattrocento', Georgia, Times, serif;
+    font-weight:700;
+    color:#999;
 }
 
 a {
@@ -19,12 +19,12 @@ a {
 p, div {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:400;
-    color:#444;
+    color:#444;    
 }
 
 /* Customize first page */
-.myname {
-    font-size:2.5em;
+.title {
+    font-size:3em;
     font-weight:400;
     font-family: 'Quattrocento', Georgia, Times, serif;
     color:#554D7D;
@@ -33,149 +33,124 @@ p, div {
     letter-spacing:2px;
 }
 
+.subtitle {
+    color:#554D7D;
+}
+
 /* Make sure abstract does not disply by default*/
 .abstract{
     display:none;
 }
 
-/* customize wells */
-.well{
-    background-color:#e6e6e6;
-    border: 0px solid #aaa;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
+/* Custom page footer */
 .header,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    text-align: center;
 }
 
-.header {
-
-}
-
-.lead {
-    font-size:1.5em;
-    font-weight:400;
-    margin-bottom: 10px;
-}
-
-
-.inset-img {
-    padding: 0px;
-    align: center;
-    margin-top:10px;
-    width:100%;
-}
-
-/* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #888;
-  border-top: 1px solid #554D7D;
-  text-align: center;
+    padding-top: 19px;
+    border-top: 1px solid #554D7D;
 }
+
+.header,
 .footer p {
-  margin: 0.1em 0;
-  color: #554D7D;
-  font-size: 12px;
+    margin: 0.1em 0;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight:400;
+    letter-spacing:1px;
+    font-size:10px;
+    color: #554D7D;
 }
+
 .footer a:link, .footer a:visited {
   color: #554D7D;
 }
 
-/* Customize table */
-.table-no-border>thead>tr>th, 
-.table-no-border>tbody>tr>th, 
-.table-no-border>tfoot>tr>th, 
-.table-no-border>thead>tr>td, 
-.table-no-border>tbody>tr>td, 
-.table-no-border>tfoot>tr>td {
-  border: none;
+.contact-title {
+    border-top: 1px solid #554D7D;
+    border-bottom: 1px solid #554D7D;
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    letter-spacing:1px;
 }
 
-.table-condensed {
-    width: auto;
-    margin-bottom:0px;
-}
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-  padding: 5px;
+.fa-ul li {
+    margin-bottom:5px;
 }
 
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  p, li, tr {
-      font-size:16px;
-  }
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-      padding-left: 0;
-      padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-      margin-bottom: 30px;
-  }
-  .footer {
-      margin-top: 30px;
-  }
-  .inset-img {
-      padding:0px;
-      padding-right:20px;
-      margin-bottom:5px;
-      width:200px;
-  }
-  .myname {
-      font-size:4.5em;
-      letter-spacing:5px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-  .lead {
-      font-size:2em;
-      font-weight:400;
-      margin-bottom: 10px;
-  }
-}
-
-
-/* Customize container */
 @media (min-width: 768px) {
-  .container {
-    max-width: 730px;
+    /* increase header size and padding */
+    .title {
+	font-size:5em;
+	letter-spacing:5px;
+	margin-bottom:-15px;
+    }
+    .img-responsive {
+	margin-bottom:20px;
+	padding:0px;
+    }
+    .contact-title {
+	font-size:.9em;
+    }
+    .contact {
+	border-bottom: 1px solid #554D7D;
+	font-size:.9em;
+    }
+    .header,
+    .footer p {
+	font-size:12px;
+    }
+    .news > img {
+	width:128px;
+    }
+    .media-list {
+	padding-bottom:5px;
+    }
+    .media {
+	padding-top:10px;
+    }
+    .container {
+	width: 750px;
+    }
+}
+
+/* Slightly better-looking header on mobile. */
+@media screen and (max-width: 767px) {
+  .nav-pills {
+      display: block;
+      margin: 0 auto 1em;
   }
 }
+
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Customize tabs */
-/* .tabWrapper > div { */
-/*     border: 1px solid #ddd; */
-/*     background: #fff; */
-/*     border-radius: 0 0 4px 4px; */
-/*     margin-top: -1px; */
-/*     border-top:transparent; */
-/* } */
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
 .nav {
-  margin-bottom: 0;
-  padding-left: 0;
   list-style: none;
   border-top: 1px solid #554D7D;  
   border-bottom: 1px solid #554D7D;  
   letter-spacing:1px;
   font-weight:500;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 .nav-pills > li > a {
   border-radius: 0px;
@@ -191,24 +166,10 @@ p, div {
     color:#554D7D;
 }
 
-/* Slightly better-looking header on mobile. */
-@media screen and (max-width: 767px) {
-    .nav-pills {
-        display: block;
-        margin: 0 auto 1em;
-    }
-}
-
 /* Front page news. */
-ul.news .date {
+.date {
     color: #999;
     font-weight: bold;
     display: block;
 }
-ul.news > li {
-    margin-top: .5em;
-}
-ul.news .shortnews .date {
-    float: left;
-    margin-right: 1em;
-}
+
