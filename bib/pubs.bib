@@ -50,7 +50,46 @@
                   storage. Compared to system using conventional
                   transaction protocols that require replication with
                   strong consistency, TAPIR-KV has 2x better
-                  latency \emph{and} throughput.}
+                  latency and throughput.},
+url={papers/tapir-sosp15.pdf}
+}
+
+@techreport{zhang15:_build_consis_trans_incon_replic_exten_version,
+  author =        {Irene Zhang and Naveen Kr. Sharma and
+                   Adriana Szekeres and Arvind Krishnamurthy and
+                   Dan R. K. Ports},
+  institution =   {University of Washington CSE},
+  month =         oct,
+  number =        {UW-CSE-2014-12-01 v2},
+  title =         {Building Consistent Transactions with Inconsistent
+                   Replication (Extended Version)},
+  year =          {2015},
+    url={papers/tapir-tr-v2.pdf},
+  abstract =      {Application programmers increasingly prefer
+                   distributed storage systems with strong consistency
+                   and distributed transactions (e.g., Google's Spanner)
+                   for their strong guarantees and ease of use.
+                   Unfortunately, existing transactional storage systems
+                   are expensive to use -- in part because they require
+                   costly replication protocols, like Paxos, for fault
+                   tolerance. In this paper, we present a new approach
+                   that makes transactional storage systems more
+                   affordable: we eliminate consistency from the
+                   replication protocol while still providing
+                   distributed transactions with strong consistency to
+                   applications. <p> We present TAPIR -- the
+                   Transactional Application Protocol for Inconsistent
+                   Replication -- the first transaction protocol to use
+                   a novel replication protocol, called inconsistent
+                   replication, that provides fault tolerance without
+                   consistency. By enforcing strong consistency only in
+                   the transaction protocol, TAPIR can commit
+                   transactions in a single round-trip and order
+                   distributed transactions without centralized
+                   coordination. We demonstrate the use of TAPIR in a
+                   transactional key-value store, TAPIR-KV. Compared to
+                   conventional systems, TAPIR-KV provides better
+                   latency and throughput.},
 }
 
 @InProceedings{zhang14-custom_exten_deploy_mobil_cloud_applic,
