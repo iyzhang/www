@@ -34,6 +34,30 @@ existing systems like Spanner with better latency and throughput.
     <li class="media">
 		<div class="media-left hidden-xs">
 			<img style="width:100px" class="media-object img-rounded"
+			src="../img/diamond.jpg" />
+	</div>
+	<div class="media-body">
+	
+			<a href="//sapphire.cs.washington.edu/research/project/diamond.html"
+class="pull-right btn btn-default btn-xs">More about Diamond
+{% icon fa-chevron-circle-right%}</a>
+
+	<h4 class="media-heading">Diamond</h4>
+
+Diamond is a new data structure store that supports transparent access
+to durable cloud storage from application clients.  Diamond uses a new
+abstraction, called <em>mcmap</em>, that lets applications bind
+in-memory state on mobile devices directly to data structures in the
+Diamond storage system. Once bound, Diamond provides <em>reliable
+synchronization</em> between in-memory state and the storage system,
+as well as any other application clients with copies of the same data
+structure.
+
+</li>
+
+    <li class="media">
+		<div class="media-left hidden-xs">
+			<img style="width:100px" class="media-object img-rounded"
 			src="../img/agate.jpg" />
 	</div>
 	<div class="media-body">
