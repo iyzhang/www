@@ -22,7 +22,7 @@ In this post, I will attempt to clear up some of this confusion by
 explaining why it is so hard to compare consistency models from
 different research areas.
 
-## Why can't researchers agree?
+### Why can't researchers agree?
 
 > All consistency models are *underspecified.*
 Different consistency
@@ -37,8 +37,8 @@ possible from a single-threaded, unreplicated system. The system model
 dictates which anomolies are possible, while the consistency model
 dictates which (of the possible) anomolies the system can reveal to
 the application. As a result, all consistency models are
-*underspecified* because they implicitly assume a system model, and
-different research areas assume different system models, so their
+*underspecified* because they implicitly assume a system model.
+Different research areas assume different system models; thus, their
 consistency models are underspecified in different ways, making them
 impossible to compare.
 
