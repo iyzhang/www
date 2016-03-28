@@ -5,13 +5,13 @@ title: Teaching
 
 **UW CSE 452 - Distributed Systems.**
 
-I am a teaching assistant for [Winter 2015](http://courses.cs.washington.edu/courses/cse452/15wi/). Some useful links:
+I am a teaching assistant for [Winter 2016](http://courses.cs.washington.edu/courses/cse452/16wi/). Some useful links:
 
-* [Course calendar](http://courses.cs.washington.edu/courses/cse452/15wi/calendar/calendar.html)
+* [Course calendar](http://courses.cs.washington.edu/courses/cse452/16wi/calendar/calendar.html)
 
 * [Course project](https://gitlab.cs.washington.edu/iyzhang/452-labs/wikis/home)
 
-* [My section notes](http://courses.cs.washington.edu/courses/cse452/15wi/calendar/sectionlist.html)
+* [My section notes](http://courses.cs.washington.edu/courses/cse452/16wi/calendar/sectionlist.html)
 
 **Past Courses** that I have been involved with:
 
@@ -34,7 +34,8 @@ I am a teaching assistant for [Winter 2015](http://courses.cs.washington.edu/cou
    transactions from the systems, architecture, programming languages
    and database communities.
 
-   * [UW CSE 590s](https://courses.cs.washington.edu/courses/cse590s/) - I ran UW's Systems seminar for [Winter
+   * [UW CSE 590s](https://courses.cs.washington.edu/courses/cse590s/)
+   - I ran UW's Systems seminar for [Winter
    2014](http://courses.cs.washington.edu/courses/cse590s/14wi/) where
    we covered a mix of student research and SOSP papers.
 
