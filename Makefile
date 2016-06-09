@@ -18,7 +18,7 @@ _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 clean:
 	$(RM) -r _site _includes/pubs.html
 
-CSEHOST := iyzhang@bicycle.cs.washington.edu
+CSEHOST := iyzhang@tricycle.cs.washington.edu
 HOST := irene@geoduck.ambulatoryclam.net
 
 deploy: clean all
