@@ -19,7 +19,7 @@ clean:
 	$(RM) -r _site _includes/pubs.html
 
 CSEHOST := iyzhang@bicycle.cs.washington.edu
-HOST := irene@ambulatoryclam.net
+HOST := irene@geoduck.ambulatoryclam.net
 
 deploy: clean all
 	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(HOST):schemeprincess
