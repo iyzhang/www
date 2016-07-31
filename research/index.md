@@ -47,11 +47,10 @@ class="pull-right btn btn-default btn-xs">More about Diamond
 Diamond is a new data management system for wide-area, reactive
 applications.  Reactive applications give users the illusion of
 continuous synchronization across mobile devices and the cloud server.
-Diamond simplifies this synchronization by providing applications with
-persistent cloud storage, reliable synchronization between storage and
-mobile devices, and automated execution of application code in
-response to shared data updates.
-</li>
+Diamond simplifies task by providing applications with persistent
+cloud storage, reliable synchronization between storage and mobile
+devices, and automated execution of application code in response to
+shared data updates.  </li>
 
     <li class="media">
 		<div class="media-left hidden-xs">
