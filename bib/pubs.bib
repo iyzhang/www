@@ -6,7 +6,37 @@
 @string{vee = "Proceedings of the International Conference on Virtual Execution Environments (VEE)"}
 @string{hot_storage = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)"}
 @string{papoc = "Proceedings of the Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+@string{socc = "Proceedings of the ACM Symposium on Cloud Computing (SoCC)"}
 
+@InProceedings{ipa-socc16,
+  author =        {Brandon Holt and James Bornholt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
+  month =         10,
+  title =         {Disciplined Inconsistency},
+  year =          2016,
+  booktitle = socc
+}
+
+@techreport{ipa-tech-report,
+  author =        {Brandon Holt and James Bornholt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
+  institution =   {University of Washington CSE},
+  month =         6,
+  number =        {UW-CSE-16-06-01},
+  title =         {Disciplined Inconsistency},
+  year =          2016,
+  url = {papers/ipa-tr.pdf},
+  abstract = {Distributed applications and web services, such as online stores or social networks, are expected to be scalable, available, responsive, and fault-tolerant. To meet these steep requirements in the face of high round-trip latencies, network partitions, server failures, and load spikes, applications use eventually consistent datastores that allow them to weaken the consistency of some data. However, making this transition is highly error-prone because relaxed consistency models are notoriously difficult to understand and test.
+
+In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency. }
+}
+
+
+
+@InProceedings{zhang-diamond,
+  author = 	 {Irene Zhang and Niel Lebeck and Pedro Fonseca and Brandon Holt and Raymond Cheng and Ariadna Norberg and Arvind Krishnamurthy and Henry M. Levy},
+  title = 	 {Automating Data Management for Wide-area, Reactive Applications},
+  booktitle = osdi,
+  year = 	 2016,
+  month = 	 11}
 
 
 @Article{zhang16-when,
@@ -15,31 +45,21 @@
   journal = 	 {IEEE Data Engineering Bulletin},
   year = 	 2016,
   month = 3,
-  abstract={Today's replicated transactional storage systems typically have
-a layered architecture, combining protocols for transaction
-coordination, consistent replication, and concurrency control.  These
-systems generally require costly strongly-consistent replication
-protocols like Paxos, which assign a total order to all operations.
-To avoid this cost, we ask whether all replicated operations in these
-systems need to be strictly ordered. Recent research has yielded
-replication protocols that can avoid unnecessary ordering, e.g., by
-exploiting commutative operations, but it is not clear how to apply
-these to replicated transaction processing systems. We answer this
-question by analyzing existing transaction processing designs in terms
-of which replicated operations require ordering and which simply
-require fault tolerance.  We describe how this analysis leads to our
-recent work on TAPIR, a transaction protocol that efficiently provides
-strict serializability by using a new replication protocol that
-provides fault tolerance but not ordering for most operations.
-},
-url={papers/ordering-data.pdf}}
+  abstract={Today's replicated transactional storage systems typically have a layered architecture, combining protocols for transaction coordination, consistent replication, and concurrency control.  These systems generally require costly strongly-consistent replication protocols like Paxos, which assign a total order to all operations. To avoid this cost, we ask whether all replicated operations in these systems need to be strictly ordered. Recent research has yielded replication protocols that can avoid unnecessary ordering, e.g., by exploiting commutative operations, but it is not clear how to apply these to replicated transaction processing systems. We answer this question by analyzing existing transaction processing designs in terms of which replicated operations require ordering and which simply require fault tolerance.  We describe how this analysis leads to our recent work on TAPIR, a transaction protocol that efficiently provides strict serializability by using a new replication protocol that provides fault tolerance but not ordering for most operations.},
+url={papers/ordering-data.pdf}
+}
 
 @InProceedings{holt15-claret,
   author = 	 {Brandon Holt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
   title = 	 {Claret: Using Data Types for Highly Concurrent Distributed Transactions},
   booktitle = papoc,
   year = 	 2015,
-  month = 	 4}
+  month = 	 4,
+  url = {papers/claret-papoc15.pdf},
+  abstract = {
+Out of the many NoSQL databases in use today, some that provide simple data structures for records, such as Redis and MongoDB, are now becoming popular. Building applications out of these complex data types provides a way to communicate intent to the database system without sacrificing flexibility or committing to a fixed schema. Currently this capability is leveraged in limited ways, such as to ensure related values are co-located, or for atomic updates. There are many ways data types can be used to make databases more efficient that are not yet being exploited.
+
+We explore several ways of leveraging abstract data type (ADT) semantics in databases, focusing primarily on commutativity. Using a Twitter clone as a case study, we show that using commutativity can reduce transaction abort rates for high-contention, update-heavy workloads that arise in real social networks. We conclude that ADTs are a good abstraction for database records, providing a safe and expressive programming model with ample opportunities for optimization, making databases more safe and scalable.}}
 
 @InProceedings{zhang14-build_consis_trans_incon_replic,
   author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana
@@ -81,7 +101,7 @@ url={papers/ordering-data.pdf}}
 url={papers/tapir-sosp15.pdf}
 }
 
-@techreport{zhang15:_build_consis_trans_incon_replic_exten_version,
+@techreport{zhang15-build_consis_trans_incon_replic_exten_version,
   author =        {Irene Zhang and Naveen Kr. Sharma and
                    Adriana Szekeres and Arvind Krishnamurthy and
                    Dan R. K. Ports},
@@ -116,7 +136,7 @@ url={papers/tapir-sosp15.pdf}
                    coordination. We demonstrate the use of TAPIR in a
                    transactional key-value store, TAPIR-KV. Compared to
                    conventional systems, TAPIR-KV provides better
-                   latency and throughput.},
+                   latency and throughput.}
 }
 
 @InProceedings{zhang14-custom_exten_deploy_mobil_cloud_applic,
