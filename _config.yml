@@ -20,11 +20,13 @@ base: '//irenezhang.net'
 navigation:
     - title: Home
       link: /
-    - title: Research
+    - title: Projects
       link: /research/
     - title: Publications
       link: /publications.html
     - title: Teaching
       link: /teaching.html
+    - title: Code
+      link: /code.html
     - title: CV
       link: /cv/cv.pdf
