@@ -99,8 +99,9 @@ p, div {
 	font-size:.9em;
     }
     .contact {
-	border-bottom: 1px solid #554D7D;
+	/* border-bottom: 1px solid #554D7D; */
 	font-size:.9em;
+        margin-bottom: 3em;
     }
     .header,
     .footer p {
