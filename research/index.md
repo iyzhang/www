@@ -4,7 +4,11 @@ title: Research Projects
 ---
 
 My PhD research broadly covers operating systems and distributed
-systems for large-scale, distributed applications.
+systems for large-scale, distributed applications. Before starting my
+PhD, I worked on several research projects at VMware and MIT. You can
+find out more about my
+[past projects here {% icon fa-chevron-circle-right%}](past.html).
+
 
 <ul class="media-list">
     <li class="media">
@@ -127,6 +131,4 @@ better performance, reliability and customizability.
 
 </ul>
 
-Before starting my PhD, I worked on several research projects at
-VMware and MIT. You can find out more about my [past projects here {% icon fa-chevron-circle-right%}](past.html).
 
