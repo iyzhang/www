@@ -39,9 +39,9 @@ game, a to-do list app and a Twitter clone.
 
 * [Sapphire@github](https://github.com/UWSysLab/Sapphire)
 
-#### Academic Webpage
+#### Webpage
 
-The source for my webpage. You can find the
+The source for my academic webpage. You can find the
 [original template](https://github.com/uwsampa/research-group-web) on
 github along with the [bibble tool](https://github.com/sampsyo/bibble)
 for generating a publications page from bibtex.

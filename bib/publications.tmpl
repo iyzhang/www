@@ -35,22 +35,23 @@
 			<br />
 			<span class="links btn-group">
 				{%- if entry.fields['abstract'] %}
-				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_{{entry.fields['key']}}').slideToggle('fast');return false;">
-                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                   href="javascript:void(0);" onclick="$('#abstract_{{entry.fields['key']}}').slideToggle('fast');return false;">
+                                  <i class="fa fa-chevron-down"></i> abstract</a>
 				{%- endif %}
-            {%- set url = entry|main_url %}
+                                {%- set url = entry|main_url %}
 				{%- if url %}
 				<a class="btn btn-default btn-xs" href="{{ url|escape }}">
-                <i class="fa fa-download"></i> pdf</a>
-                {%- endif %}
-			{%- for type, url in (entry|extra_urls).iteritems() %}
+                                  <i class="fa fa-file-pdf-o"></i> pdf</a>
+                                {%- endif %}
+			        {%- for type, url in (entry|extra_urls).iteritems() %}
 				<a class="btn btn-default btn-xs" href="{{ url|escape }}">
-                <i class="fa fa-chevron-right"></i> {{ type|escape }}</a>
-			{%- endfor %}
+                                  <i class="fa fa-chevron-right"></i> {{ type|escape }}</a>
+			        {%- endfor %}
 			</span>
 			{%- if entry.fields['abstract'] %}
 			<div id="abstract_{{entry.fields['key']}}" class="abstract well">
-			{{ entry.fields['abstract'] |escape }}
+			  {{ entry.fields['abstract'] |escape }}
 			</div>
 			{%- endif %}
 		</td>

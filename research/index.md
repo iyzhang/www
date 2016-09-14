@@ -7,7 +7,7 @@ My PhD research broadly covers operating systems and distributed
 systems for large-scale, distributed applications. Before starting my
 PhD, I worked on several research projects at VMware and MIT. You can
 find out more about my
-[past projects here {% icon fa-chevron-circle-right%}](past.html).
+[past projects here {% icon fa-plus%}](past.html).
 
 
 <ul class="media-list">
@@ -20,8 +20,8 @@ find out more about my
 
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/tapir-sosp15.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-<a href="https://github.com/UWSysLab/tapir" class="btn btn-default btn-xs">{%icon fa-github-alt%} Code</a>
-<a href="tapir/index.html" class="btn btn-default btn-xs">{%icon fa-chevron-circle-right%} More</a>
+<a href="https://github.com/UWSysLab/tapir" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="tapir/index.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
 <h4 class="media-heading">TAPIR</h4>
@@ -44,8 +44,8 @@ existing systems like Spanner with better latency and throughput.
 	<div class="media-body">
 	
 <span class="links btn-group pull-right">
-<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-github-alt%} Code</a>
-<a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-chevron-circle-right%} More</a>
+<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
 	<h4 class="media-heading">Diamond</h4>
@@ -66,8 +66,8 @@ shared data updates.  </li>
 	<div class="media-body">
 	
     <span class="links btn-group pull-right">
-<a href="https://github.com/SapphireAgate" class="btn btn-default btn-xs">{%icon fa-github-alt%} Code</a>
-<a href="//sapphire.cs.washington.edu/research/project/agate.html" class="btn btn-default btn-xs">{%icon fa-chevron-circle-right%} More</a>
+<a href="https://github.com/SapphireAgate" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//sapphire.cs.washington.edu/research/project/agate.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
 	<h4 class="media-heading">Agate</h4>
@@ -91,8 +91,8 @@ application programmer.
 
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/sapphire-osdi14.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-<a href="https://github.com/UWSysLab/Sapphire" class="btn btn-default btn-xs">{%icon fa-github-alt%} Code</a>
-<a href="//sapphire.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-chevron-circle-right%} More</a>
+<a href="https://github.com/UWSysLab/Sapphire" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//sapphire.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
 <h4 class="media-heading">Sapphire</h4>
@@ -114,8 +114,8 @@ performance trade-offs.
 
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/arrakis-osdi14.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-<a href="https://arrakis.cs.washington.edu/?page_id=52" class="btn btn-default btn-xs">{%icon fa-github-alt%} Code</a>
-<a href="//arrakis.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-chevron-circle-right%} More</a>
+<a href="https://arrakis.cs.washington.edu/?page_id=52" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//arrakis.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
 <h4 class="media-heading">Arrakis</h4>
