@@ -42,35 +42,12 @@
 			<span class="venuetype"></span><span class="venue">Proceedings of the ACM Symposium on Cloud Computing (SoCC)</span>.
 			<br />
 			<span class="links btn-group">
-			</span>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<span class="date">
-				
-                
-                June
-                
-                        
-			</span>
-		</td>
-		<td class="publication">
-			<span class="pubtitle">
-			    <b>Disciplined Inconsistency.</b>
-			</span><br />
-			<span class="authors">
-				Brandon Holt, James Bornholt, Irene Zhang, Dan R. K. Ports, Mark Oskin, and Luis Ceze.
-			</span><br />
-			<span class="venuetype">Technical Report </span><span class="venue">UW-CSE-16-06-01, University of Washington CSE</span>.
-			<br />
-			<span class="links btn-group">
-				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_ipa-tech-report').slideToggle('fast');return false;">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_ipa-socc16').slideToggle('fast');return false;">
                 <i class="fa fa-chevron-down"></i> abstract</a>
-				<a class="btn btn-default btn-xs" href="papers/ipa-tr.pdf">
+				<a class="btn btn-default btn-xs" href="papers/ipa-socc16.pdf">
                 <i class="fa fa-download"></i> pdf</a>
 			</span>
-			<div id="abstract_ipa-tech-report" class="abstract well">
+			<div id="abstract_ipa-socc16" class="abstract well">
 			Distributed applications and web services, such as online stores or social networks, are expected to be scalable, available, responsive, and fault-tolerant. To meet these steep requirements in the face of high round-trip latencies, network partitions, server failures, and load spikes, applications use eventually consistent datastores that allow them to weaken the consistency of some data. However, making this transition is highly error-prone because relaxed consistency models are notoriously difficult to understand and test. In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency.
 			</div>
 		</td>
@@ -110,7 +87,37 @@
 			<span class="date">
 				
 				<big><strong>2015</strong></big><br />
-				October
+				November
+                        
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+			    <b>Arrakis: The Operating System is the Control Plane.</b>
+			</span><br />
+			<span class="authors">
+				Simon Peter, Jialin Li, Irene Zhang, Dan R. K. Ports, Douglas Woos, Arvind Krishnamurthy, Thomas Anderson, and Timothy Roscoe.
+			</span><br />
+			<span class="venuetype"></span><span class="venue">ACM Transactions on Computer Systems (TOCS)</span>.
+			<br />
+			<span class="links btn-group">
+				<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_peter16-arrak').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+				<a class="btn btn-default btn-xs" href="papers/arrakis-tocs16.pdf">
+                <i class="fa fa-download"></i> pdf</a>
+			</span>
+			<div id="abstract_peter16-arrak" class="abstract well">
+			Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing improvements of 2 to 5x in latency and 9x throughput for a popular persistent NoSQL store relative to a well-tuned Linux implementation.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span class="date">
+				
+                
+                October
+                
                         
 			</span>
 		</td>

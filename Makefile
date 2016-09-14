@@ -18,8 +18,9 @@ _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 
 cv/cv.pdf: cv/cv.tex
 	$(LATEX) cv/cv.tex
-	$(RM) cv/cv.aux
-	$(RM) cv/cv.log
+	$(RM) cv.aux
+	$(RM) cv.log
+	mv cv.pdf _site/cv/
 
 clean:
 	$(RM) -r _site _includes/pubs.html cv/cv.pdf

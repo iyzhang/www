@@ -7,29 +7,21 @@
 @string{hot_storage = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)"}
 @string{papoc = "Proceedings of the Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
 @string{socc = "Proceedings of the ACM Symposium on Cloud Computing (SoCC)"}
+@string{tocs = "ACM Transactions on Computer Systems (TOCS)"}
+
+
 
 @InProceedings{ipa-socc16,
   author =        {Brandon Holt and James Bornholt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
   month =         10,
   title =         {Disciplined Inconsistency},
   year =          2016,
-  booktitle = socc
-}
-
-@techreport{ipa-tech-report,
-  author =        {Brandon Holt and James Bornholt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
-  institution =   {University of Washington CSE},
-  month =         6,
-  number =        {UW-CSE-16-06-01},
-  title =         {Disciplined Inconsistency},
-  year =          2016,
-  url = {papers/ipa-tr.pdf},
+  booktitle = socc,
+  url = {papers/ipa-socc16.pdf},
   abstract = {Distributed applications and web services, such as online stores or social networks, are expected to be scalable, available, responsive, and fault-tolerant. To meet these steep requirements in the face of high round-trip latencies, network partitions, server failures, and load spikes, applications use eventually consistent datastores that allow them to weaken the consistency of some data. However, making this transition is highly error-prone because relaxed consistency models are notoriously difficult to understand and test.
 
 In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency. }
 }
-
-
 
 @InProceedings{zhang-diamond,
   author = 	 {Irene Zhang and Niel Lebeck and Pedro Fonseca and Brandon Holt and Raymond Cheng and Ariadna Norberg and Arvind Krishnamurthy and Henry M. Levy},
@@ -194,6 +186,17 @@ url={papers/tapir-sosp15.pdf}
                   NoSQL store relative to a well-tuned Linux
                   implementation.},
 note= {Best Paper Award}
+}
+
+
+@Article{peter16-arrak,
+  author = 	 {Simon Peter and Jialin Li and Irene Zhang and Dan R. K. Ports and Douglas Woos and Arvind Krishnamurthy and Thomas Anderson and Timothy Roscoe},
+  title = 	 {Arrakis: The Operating System is the Control Plane},
+  year = 	 2015,
+  month = 11,
+  journal = tocs,
+  url={papers/arrakis-tocs16.pdf},
+  abstract = {Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing improvements of 2 to 5x in latency and 9x throughput for a popular persistent NoSQL store relative to a well-tuned Linux implementation.},
 }
 
 @InProceedings{irene13-optim_vm_check_restor_perfor_vmwar_esxi,
