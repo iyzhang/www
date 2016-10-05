@@ -7,7 +7,7 @@ My PhD research broadly covers operating systems and distributed
 systems for large-scale, distributed applications. Before starting my
 PhD, I worked on several research projects at VMware and MIT. You can
 find out more about my
-[past projects here {% icon fa-plus%}](past.html).
+[past projects](past.html).
 
 
 <ul class="media-list">
@@ -44,7 +44,8 @@ existing systems like Spanner with better latency and throughput.
 	<div class="media-body">
 	
 <span class="links btn-group pull-right">
-<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="{{ site-base }}/papers/diamond-osdi16.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
 <a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 

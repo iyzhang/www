@@ -8,18 +8,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quattrocento', Georgia, Times, serif;
     font-weight:700;
-    color:#999;
+    color:#666;
 }
 
 a {
-    color:#554D7D;
-    font-weight:500;
+    color:#4b2e83;
+    font-weight:600;
 }
 
 p, div {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:400;
-    color:#444;    
+    color:#666;    
 }
 
 /* Customize first page */
@@ -27,14 +27,14 @@ p, div {
     font-size:3em;
     font-weight:400;
     font-family: 'Quattrocento', Georgia, Times, serif;
-    color:#554D7D;
+    color:#4b2e83;
     text-align:center;
     text-transform: uppercase;
     letter-spacing:2px;
 }
 
 .subtitle {
-    color:#554D7D;
+    color:#4b2e83;
 }
 
 /* Make sure abstract does not disply by default*/
@@ -50,7 +50,7 @@ p, div {
 
 .footer {
     padding-top: 19px;
-    border-top: 1px solid #554D7D;
+    border-top: 1px solid #4b2e83;
 }
 
 .header,
@@ -60,16 +60,16 @@ p, div {
     font-weight:400;
     letter-spacing:1px;
     font-size:10px;
-    color: #554D7D;
+    color: #4b2e83;
 }
 
 .footer a:link, .footer a:visited {
-  color: #554D7D;
+  color: #4b2e83;
 }
 
 .contact-title {
-    border-top: 1px solid #554D7D;
-    border-bottom: 1px solid #554D7D;
+    border-top: 1px solid #4b2e83;
+    border-bottom: 1px solid #4b2e83;
     text-transform: uppercase;
     text-align:center;
     margin-bottom:10px;
@@ -77,6 +77,8 @@ p, div {
     padding-bottom:5px;
     letter-spacing:1px;
 }
+
+
 
 .fa-ul li {
     margin-bottom:5px;
@@ -99,7 +101,7 @@ p, div {
 	font-size:.9em;
     }
     .contact {
-	/* border-bottom: 1px solid #554D7D; */
+	/* border-bottom: 1px solid #4b2e83; */
 	font-size:.9em;
         margin-bottom: 3em;
     }
@@ -147,29 +149,31 @@ p, div {
 
 .nav {
   list-style: none;
-  border-top: 1px solid #554D7D;  
-  border-bottom: 1px solid #554D7D;  
+  border-top: 1px solid #4b2e83;  
+  border-bottom: 1px solid #4b2e83;  
   letter-spacing:1px;
   font-weight:500;
   text-transform: uppercase;  
 }
+
 .nav-pills > li > a {
   border-radius: 0px;
-  color:#554D7D;
+  color:#4b2e83;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size:12px;
+  font-weight:500;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     font-weight:500;
     background-color:transparent;
-    color:#554D7D;
+    color:#4b2e83;
 }
 
 /* Front page news. */
 .date {
-    color: #999;
+    color: #666;
     font-weight: bold;
     display: block;
 }

@@ -16,18 +16,36 @@
         rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Piwik -->
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(["setDomains", ["*.irenezhang.net","*.irenezhang.com","*.schemeprincess.com"]]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+              var u="//www.ambulatoryclam.net/piwik/";
+              _paq.push(['setTrackerUrl', u+'piwik.php']);
+              _paq.push(['setSiteId', '2']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <noscript><p><img src="//www.ambulatoryclam.net/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
     </head>
     <body>
       <div class="container">
         <div class="header">
           <div class="title clearfix">Irene Y. Zhang</div>
 	  <p class="subtitle">Ph. D. student - Computer Science &
-	    Engineering<span class="hidden-xs"> -</span> University of Washington</p>
+	    Engineering<span class="hidden-xs"> -</span> University of
+	    Washington</p>
 	  <ul class="nav nav-pills nav-justified">
-            {% assign shorturl = page.url | replace:'index.html','' %}
             {% for item in site.navigation %}
-            <li {% if item.link == shorturl %}class="active"{% endif %}>
-              <a href="{{ site.base }}{{ item.link }}">{% if item.link == shorturl %}- {% endif %}{{ item.title }}{% if item.link == shorturl %} -{% endif %}</a>
+            {% assign shorturl = item.link | replace: '.html', '' %}
+            <li {% if page.url == shorturl %}class="active"{% endif %}>
+              <a href="{{ site.base }}{{ item.link }}">{% if page.url == shorturl %}- {% endif %}{{ item.title }}{% if page.url == shorturl %} -{% endif %}</a>
             </li>
             {% endfor %}
           </ul>
