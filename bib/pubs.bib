@@ -20,7 +20,8 @@
   url = {papers/ipa-socc16.pdf},
   abstract = {Distributed applications and web services, such as online stores or social networks, are expected to be scalable, available, responsive, and fault-tolerant. To meet these steep requirements in the face of high round-trip latencies, network partitions, server failures, and load spikes, applications use eventually consistent datastores that allow them to weaken the consistency of some data. However, making this transition is highly error-prone because relaxed consistency models are notoriously difficult to understand and test.
 
-In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency. }
+In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency. },
+code={https://github.com/bholt/ipa}
 }
 
 
@@ -47,7 +48,8 @@ In this work, we propose a new programming model for distributed data that makes
                   applications, strengthens distributed data sharing
                   guarantees, and supports automated reactivity with
                   low performance overhead.  },
-  url={papers/diamond-osdi16.pdf}}
+  url={papers/diamond-osdi16.pdf},
+  code={https://github.com/UWSysLab/diamond}}
 
 
 @Article{zhang16-when,
@@ -70,7 +72,8 @@ url={papers/ordering-data.pdf}
   abstract = {
 Out of the many NoSQL databases in use today, some that provide simple data structures for records, such as Redis and MongoDB, are now becoming popular. Building applications out of these complex data types provides a way to communicate intent to the database system without sacrificing flexibility or committing to a fixed schema. Currently this capability is leveraged in limited ways, such as to ensure related values are co-located, or for atomic updates. There are many ways data types can be used to make databases more efficient that are not yet being exploited.
 
-We explore several ways of leveraging abstract data type (ADT) semantics in databases, focusing primarily on commutativity. Using a Twitter clone as a case study, we show that using commutativity can reduce transaction abort rates for high-contention, update-heavy workloads that arise in real social networks. We conclude that ADTs are a good abstraction for database records, providing a safe and expressive programming model with ample opportunities for optimization, making databases more safe and scalable.}}
+We explore several ways of leveraging abstract data type (ADT) semantics in databases, focusing primarily on commutativity. Using a Twitter clone as a case study, we show that using commutativity can reduce transaction abort rates for high-contention, update-heavy workloads that arise in real social networks. We conclude that ADTs are a good abstraction for database records, providing a safe and expressive programming model with ample opportunities for optimization, making databases more safe and scalable.},
+}
 
 @InProceedings{zhang14-build_consis_trans_incon_replic,
   author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana
@@ -109,7 +112,9 @@ We explore several ways of leveraging abstract data type (ADT) semantics in data
                   transaction protocols that require replication with
                   strong consistency, TAPIR-KV has 2x better
                   latency and throughput.},
-url={papers/tapir-sosp15.pdf}
+url={papers/tapir-sosp15.pdf},
+code={https://github.com/UWSysLab/tapir},
+talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
 }
 
 @techreport{zhang15-build_consis_trans_incon_replic_exten_version,
@@ -121,7 +126,7 @@ url={papers/tapir-sosp15.pdf}
   number =        {UW-CSE-2014-12-01 v2},
   title =         {Building Consistent Transactions with Inconsistent
                    Replication (Extended Version)},
-  year =          {2015},
+  year =          2015,
     url={papers/tapir-tr-v2.pdf},
   abstract =      {Application programmers increasingly prefer
                    distributed storage systems with strong consistency
@@ -147,7 +152,8 @@ url={papers/tapir-sosp15.pdf}
                    coordination. We demonstrate the use of TAPIR in a
                    transactional key-value store, TAPIR-KV. Compared to
                    conventional systems, TAPIR-KV provides better
-                   latency and throughput.}
+                   latency and throughput.},
+                   code={https://github.com/UWSysLab/tapir}
 }
 
 @InProceedings{zhang14-custom_exten_deploy_mobil_cloud_applic,
@@ -175,7 +181,9 @@ url={papers/tapir-sosp15.pdf}
                   extend Sapphire's kernel to meet their applications'
                   deployment requirements. In this way, each
                   application runs on an underlying platform that is
-                  customized for its own distribution needs.}
+                  customized for its own distribution needs.},
+  code={https://github.com/UWSysLab/Sapphire},
+  talk={https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/zhang.mp4}
 }
 
 @InProceedings{peter14-arrak-osdi14,
@@ -204,7 +212,9 @@ url={papers/tapir-sosp15.pdf}
                   throughput improvements for a popular persistent
                   NoSQL store relative to a well-tuned Linux
                   implementation.},
-note= {Best Paper Award}
+note= {Best Paper Award},
+code= {http://arrakis.cs.washington.edu/?page_id=52},
+talk= {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/peter.mp4}
 }
 
 
@@ -216,6 +226,7 @@ note= {Best Paper Award}
   journal = tocs,
   url={papers/arrakis-tocs16.pdf},
   abstract = {Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing improvements of 2 to 5x in latency and 9x throughput for a popular persistent NoSQL store relative to a well-tuned Linux implementation.},
+  code={http://arrakis.cs.washington.edu/?page_id=52}
 }
 
 @InProceedings{irene13-optim_vm_check_restor_perfor_vmwar_esxi,
@@ -249,7 +260,8 @@ note= {Best Paper Award}
   checkpointing system for VMware ESXi Server called Halite. Our
   experiments show that Halite reduces restore overhead by up to
   94\% even for complex VM workloads.
- }
+ },
+ talk = {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/atc13/zhang.mp4}
 }
 
 @InProceedings{zhang11-fast_restor_check_memor_using,
@@ -328,7 +340,8 @@ abstract={ In order to make save and restore features practical, saved
                   that applications built on WheelFS deliver
                   comparable performance to services such as CoralCDN
                   and BitTorrent that use specialized wide-area
-                  storage systems.}
+                  storage systems.},
+ talk = {https://www.usenix.org/conference/nsdi-09/flexible-wide-area-storage-distributed-systems-wheelfs}
 }
 
 @InProceedings{ports10-trans_consis_autom_manag_applic_data_cache,
@@ -365,7 +378,8 @@ url={papers/txcache-osdi10.pdf},
                   TxCache increased the throughput of a web
                   application by up to 5.2x, only slightly less than a
                   non-transactional cache, showing that consistency
-                  does not have to come at the price of performance. }
+                  does not have to come at the price of performance. },
+talk ={ https://www.usenix.org/legacy/events/osdi10/stream/ports/index.html}
 }
 
 @InProceedings{peter14-towar_high_perfor_applic_level_storag_manag,

@@ -13,13 +13,13 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color:#4b2e83;
-    font-weight:600;
+    font-weight:700;
 }
 
 p, div {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
     font-weight:400;
-    color:#666;    
+    color:#666;
 }
 
 /* Customize first page */
@@ -35,6 +35,8 @@ p, div {
 
 .subtitle {
     color:#4b2e83;
+    font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
+    font-weight:400;
 }
 
 /* Make sure abstract does not disply by default*/
@@ -56,7 +58,7 @@ p, div {
 .header,
 .footer p {
     margin: 0.1em 0;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
     font-weight:400;
     letter-spacing:1px;
     font-size:10px;
@@ -152,16 +154,16 @@ p, div {
   border-top: 1px solid #4b2e83;  
   border-bottom: 1px solid #4b2e83;  
   letter-spacing:1px;
-  font-weight:500;
+  font-weight:400;
   text-transform: uppercase;  
 }
 
 .nav-pills > li > a {
   border-radius: 0px;
   color:#4b2e83;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
+  font-weight:400;
   font-size:12px;
-  font-weight:500;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,

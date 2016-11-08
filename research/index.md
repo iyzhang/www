@@ -20,6 +20,7 @@ find out more about my
 
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/tapir-sosp15.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://www.youtube.com/watch?v=yE3eMxYJDiE" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
 <a href="https://github.com/UWSysLab/tapir" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
 <a href="tapir/index.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
@@ -45,7 +46,7 @@ existing systems like Spanner with better latency and throughput.
 	
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/diamond-osdi16.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-<<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
 <a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
@@ -92,6 +93,7 @@ application programmer.
 
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/sapphire-osdi14.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/zhang.mp4" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
 <a href="https://github.com/UWSysLab/Sapphire" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
 <a href="//sapphire.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
@@ -115,10 +117,10 @@ performance trade-offs.
 
 <span class="links btn-group pull-right">
 <a href="{{ site-base }}/papers/arrakis-osdi14.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/peter.mp4" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
 <a href="https://arrakis.cs.washington.edu/?page_id=52" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
 <a href="//arrakis.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
-
 <h4 class="media-heading">Arrakis</h4>
 
 Arrakis is a new operating system that takes advantage of hardware
