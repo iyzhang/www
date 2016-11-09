@@ -13,7 +13,8 @@ you prefer.
 <li class="media">
 <div class="media-left col-xs-12 col-sm-3">
             <a href="https://github.com/UWSysLab/tapir" class="btn btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-github%} tapir@github</a>
-            <a href="https://gitlab.cs.washington.edu/syslab/tapir" class="btn btn-default col-xs-12">{%icon fa-gitlab%} tapir@gitlab</a>
+            <a href="https://gitlab.cs.washington.edu/syslab/tapir"
+            class="btn btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-gitlab%} tapir@gitlab</a>
 	</div>
 	<div class="media-body">
         The implementation of TAPIR along with a few conventional protocols,
@@ -31,7 +32,7 @@ you prefer.
 		btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-github%}
 		    diamond@github</a>
     <a href="https://gitlab.cs.washington.edu/syslab/diamond-src" class="btn
-		btn-default col-xs-12">{%icon fa-gitlab%} diamond@gitlab</a>
+		btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-gitlab%} diamond@gitlab</a>
         </div>
         <div class="media-body">
 
@@ -46,7 +47,7 @@ a note-taking app and a Twitter clone.
 <li class="media">
 <div class="media-left col-sm-3 col-xs-12">
     <a href="https://github.com/UWSysLab/Sapphire" class="btn
-		btn-default col-xs-12">{%icon fa-github%} sapphire@github</a>
+		btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-github%} sapphire@github</a>
     </div>
 	<div class="media-body">
 
@@ -62,7 +63,7 @@ machine replication.
 		    btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-github%}
 		www@github</a>
 <a href="https://gitlab.cs.washington.edu/iyzhang/www" class="btn
-		btn-default col-xs-12">{%icon fa-gitlab%} www@gitlab</a>
+		btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-gitlab%} www@gitlab</a>
 	</div>
 	<div class="media-body">
 The source for this webpage. It is based on this
