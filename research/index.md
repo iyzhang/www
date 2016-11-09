@@ -25,7 +25,7 @@ find out more about my
 <a href="tapir/index.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
-<h4 class="media-heading">TAPIR</h4>
+<h3 class="media-heading">TAPIR</h3>
 
 The Transactional Application Protocol for Inconsistent Replication
 (TAPIR) is a new protocol for linearizable distributed transactions
@@ -50,7 +50,7 @@ existing systems like Spanner with better latency and throughput.
 <a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
-	<h4 class="media-heading">Diamond</h4>
+	<h3 class="media-heading">Diamond</h3>
 
 Diamond is a new data management system for wide-area, reactive
 applications.  Reactive applications give users the illusion of
@@ -72,7 +72,7 @@ shared data updates.  </li>
 <a href="//sapphire.cs.washington.edu/research/project/agate.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
-	<h4 class="media-heading">Agate</h4>
+	<h3 class="media-heading">Agate</h3>
 
 Agate is a new trusted distributed runtime system that gives users
 control over how mobile/cloud applications share sensitive user data
@@ -98,7 +98,7 @@ application programmer.
 <a href="//sapphire.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
 
-<h4 class="media-heading">Sapphire</h4>
+<h3 class="media-heading">Sapphire</h3>
 
 Sapphire is a new distributed programming platform that provides
 customizable and extensible deployment of mobile/cloud applications.
@@ -121,7 +121,7 @@ performance trade-offs.
 <a href="https://arrakis.cs.washington.edu/?page_id=52" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
 <a href="//arrakis.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
 </span>
-<h4 class="media-heading">Arrakis</h4>
+<h3 class="media-heading">Arrakis</h3>
 
 Arrakis is a new operating system that takes advantage of hardware
 virtualization technology to eliminate the operating system from
