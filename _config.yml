@@ -15,6 +15,7 @@ front_page_news: 3
 
 # Base pathname for links.
 base: '//irenezhang.net'
+#base: ''
 
 # Navigation bar links.
 navigation:

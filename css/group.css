@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quattrocento', Helvetica, Arial, sans-serif;
+    font-family: 'Quattrocento', Georgia, Times, serif;
     font-weight:700;
     color:#666;
 }
@@ -20,6 +20,7 @@ p, div {
     font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
     font-weight:400;
     color:#666;
+    font-size:14px;
 }
 
 /* Customize first page */
@@ -61,8 +62,8 @@ p, div {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:500;
     letter-spacing:1px;
-    font-size:10px;
     color: #4b2e83;
+    font-size:.9em;
 }
 
 .footer a:link, .footer a:visited {
@@ -80,6 +81,7 @@ p, div {
     letter-spacing:1px;
     font-family: 'Raleway', Helvetica, Arial, san-serif;
     font-weight: 500;
+    font-size:.9em;
 }
 
 
@@ -101,17 +103,13 @@ p, div {
         margin-bottom:20px;
         padding:0px;
     }
-    .contact-title {
-        font-size:.9em;
-    }
     .contact {
     /* border-bottom: 1px solid #4b2e83; */
-    font-size:.9em;
         margin-bottom: 3em;
     }
     .header,
     .footer p {
-    font-size:12px;
+        font-size:.9em;
     }
     .news > img {
     width:128px;
@@ -156,7 +154,6 @@ p, div {
   border-top: 1px solid #4b2e83;  
   border-bottom: 1px solid #4b2e83;  
   letter-spacing:1px;
-  font-weight:400;
   text-transform: uppercase;  
 }
 
@@ -165,7 +162,7 @@ p, div {
   color:#4b2e83;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight:500;
-  font-size:12px;
+  font-size:.9em;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
