@@ -9,42 +9,62 @@ currently develop on UW's
 the two synchronized, so feel free to download and fork from whichever
 you prefer.
 
-#### TAPIR
+<ul class="media-list">
+    <li class="media">
+        <div class="media-left">
+            <a href="https://github.com/UWSysLab/tapir" class="btn btn-default" style="width:160px;margin-bottom:5px">{%icon fa-github%} tapir@github</a>
+            <a href="https://gitlab.cs.washington.edu/syslab/tapir" class="btn btn-default" style="width:160px">{%icon fa-gitlab%} tapir@gitlab</a>
+	</div>
+	<div class="media-body">
 The implementation of TAPIR along with a few conventional protocols,
 including two-phase commit with optimistic concurrency control and
 strict two phase locking atop viewstamp replication and an
 implementation of the Spanner protocol.  This repo also includes
 bindings for YCSB-t and an implementation of the Retwis Twitter
 benchmark from our SOSP paper.
+</div>
+</li>
 
-* [TAPIR@github](https://github.com/UWSysLab/tapir)
-* [TAPIR@gitlab](https://github.com/UWSysLab/tapir)
-
-#### Diamond
+<li class="media">
+<div class="media-left">
+    <a href="https://github.com/UWSysLab/diamond" class="btn
+		btn-default" style="width:160px; margin-bottom:5px">{%icon fa-github%}
+		    diamond@github</a>
+    <a href="https://gitlab.cs.washington.edu/syslab/diamond-src" class="btn
+		btn-default" style="width:160px">{%icon fa-gitlab%} diamond@gitlab</a>
+</div>
+<div class="media-body">
 
 The implementation of Diamond along with language-bindings for C++,
-Java and Python and many example applications including a simple
-terminal-based multi-player game, a multi-player Scrabble game, a
-note-taking app and a Twitter clone.
+Java and Python and compilation instructions for both x86 and
+ARM. This repo also includes many example applications including a
+simple terminal-based multi-player game, a multi-player Scrabble game,
+a note-taking app and a Twitter clone.  </div> </li>
 
-* [Diamond@github](https://github.com/UWSysLab/diamond)
-* [Diamond@gitlab](https://gitlab.cs.washington.edu/syslab/diamond-src)
+<li class="media">
+<div class="media-left">
+    <a href="https://github.com/UWSysLab/Sapphire" class="btn
+		btn-default" style="width:160px">{%icon fa-github%} sapphire@github</a>
+    </div>
+	<div class="media-body">
 
-#### Sapphire
+The implementation of Sapphire along with example applications and
+deployment managers for client-side caching, code offloading, state
+machine replication.  </div> </li>
 
-The implementation of Sapphire along with deployment managers for
-client-side caching, code offloading, state machine replication and
-more. Also, includes three Sapphire applications: a multi-player word
-game, a to-do list app and a Twitter clone.
+    <li class="media">
+		<div class="media-left">
+            <a href="https://github.com/iyzhang/www" class="btn
+		    btn-default" style="width:160px;margin-bottom:5px">{%icon fa-github%}
+		www@github</a>
+<a href="https://gitlab.cs.washington.edu/iyzhang/www" class="btn
+		btn-default" style="width:160px">{%icon fa-gitlab%} www@gitlab</a>
+	</div>
+	<div class="media-body">
+The source for this webpage. It is based on this
+<a href="https://github.com/uwsampa/research-group-web">original template</a> and uses Jekyll to generate static content and  <a href="https://github.com/sampsyo/bibble">bibble</a> to generate a publications page from bibtex.  I've made many organization changes and additions to templates over the years that may be useful to other academics.
+</div>
+</li>
+</ul>
 
-* [Sapphire@github](https://github.com/UWSysLab/Sapphire)
 
-#### Webpage
-
-The source for my academic webpage. You can find the
-[original template](https://github.com/uwsampa/research-group-web) on
-github along with the [bibble tool](https://github.com/sampsyo/bibble)
-for generating a publications page from bibtex.
-
-* [www@github](https://github.com/iyzhang/www)
-* [www@gitlab](https://gitlab.cs.washington.edu/iyzhang/www)

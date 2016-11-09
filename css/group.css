@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quattrocento', Georgia, Times, serif;
+    font-family: 'Quattrocento', Helvetica, Arial, sans-serif;
     font-weight:700;
     color:#666;
 }
@@ -35,8 +35,8 @@ p, div {
 
 .subtitle {
     color:#4b2e83;
-    font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
-    font-weight:400;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight:500;
 }
 
 /* Make sure abstract does not disply by default*/
@@ -58,8 +58,8 @@ p, div {
 .header,
 .footer p {
     margin: 0.1em 0;
-    font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
-    font-weight:400;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight:500;
     letter-spacing:1px;
     font-size:10px;
     color: #4b2e83;
@@ -78,6 +78,8 @@ p, div {
     padding-top:5px;
     padding-bottom:5px;
     letter-spacing:1px;
+    font-family: 'Raleway', Helvetica, Arial, san-serif;
+    font-weight: 500;
 }
 
 
@@ -91,37 +93,37 @@ p, div {
 @media (min-width: 768px) {
     /* increase header size and padding */
     .title {
-	font-size:5em;
-	letter-spacing:5px;
-	margin-bottom:-15px;
+        font-size:5em;
+        letter-spacing:5px;
+        margin-bottom:-15px;
     }
     .img-responsive {
-	margin-bottom:20px;
-	padding:0px;
+        margin-bottom:20px;
+        padding:0px;
     }
     .contact-title {
-	font-size:.9em;
+        font-size:.9em;
     }
     .contact {
-	/* border-bottom: 1px solid #4b2e83; */
-	font-size:.9em;
+    /* border-bottom: 1px solid #4b2e83; */
+    font-size:.9em;
         margin-bottom: 3em;
     }
     .header,
     .footer p {
-	font-size:12px;
+    font-size:12px;
     }
     .news > img {
-	width:128px;
+    width:128px;
     }
     .media-list {
-	padding-bottom:5px;
+    padding-bottom:5px;
     }
     .media {
-	padding-top:10px;
+    padding-top:10px;
     }
     .container {
-	width: 750px;
+    width: 750px;
     }
 }
 
@@ -161,8 +163,8 @@ p, div {
 .nav-pills > li > a {
   border-radius: 0px;
   color:#4b2e83;
-  font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
-  font-weight:400;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight:500;
   font-size:12px;
 }
 .nav-pills > li.active > a,
