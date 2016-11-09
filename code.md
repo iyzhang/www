@@ -46,7 +46,7 @@ a note-taking app and a Twitter clone.
 <li class="media">
 <div class="media-left col-sm-3 col-xs-12">
     <a href="https://github.com/UWSysLab/Sapphire" class="btn
-		btn-default">{%icon fa-github%} sapphire@github</a>
+		btn-default col-xs-12">{%icon fa-github%} sapphire@github</a>
     </div>
 	<div class="media-body">
 
@@ -59,10 +59,10 @@ machine replication.
 <li class="media">
 <div class="media-left col-sm-3 col-xs-12">
             <a href="https://github.com/iyzhang/www" class="btn
-		    btn-default" style="width:160px;margin-bottom:5px">{%icon fa-github%}
+		    btn-default col-xs-12" style="margin-bottom:5px">{%icon fa-github%}
 		www@github</a>
 <a href="https://gitlab.cs.washington.edu/iyzhang/www" class="btn
-		btn-default">{%icon fa-gitlab%} www@gitlab</a>
+		btn-default col-xs-12">{%icon fa-gitlab%} www@gitlab</a>
 	</div>
 	<div class="media-body">
 The source for this webpage. It is based on this
