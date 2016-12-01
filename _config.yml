@@ -21,7 +21,7 @@ base: '//irenezhang.net'
 navigation:
     - title: Home
       link: /
-    - title: Projects
+    - title: Research
       link: /research/
     - title: Publications
       link: /publications.html

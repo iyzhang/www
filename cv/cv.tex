@@ -129,62 +129,59 @@
   \begin{rsection}{Recent\\Research}
     \begin{rentry}{Automating Data Management for Reactive
         Applications}{OSDI '16}
-      \vspace{-.5em}\\
       Diamond is a new data management system for wide-area, reactive
-      applications. Reactive applications give users the illusion of
-      continuous synchronization across mobile devices and the cloud
+      applications. Reactive applications automatically propagate
+      updates across across mobile devices and the cloud
       server. Diamond simplifies this task by providing applications
       with persistent cloud storage, reliable synchronization between
       storage and mobile devices, and automated execution of
       application code in response to shared data updates.
-    \end{rentry}\vspace{1em}
+    \end{rentry}
 
     \begin{rentry}{Building Consistent Transactions with Inconsistent
         Replication}{SOSP '15}
-      \vspace{-.5em}\\
       TAPIR -- the Transactional Application Protocol for Inconsistent
-      Replication -- provides externally consistent transactions using a
-      replication protocol with \emph{no consistency guarantees}.
-      Unlike conventional protocols that use Paxos, TAPIR does not
-      require a Paxos leader or coordination between replicas in a
-      shard. Thus, TAPIR can commit a transaction \emph{in a single
-        round-trip} and eliminate the bottleneck at the Paxos leader.
-    \end{rentry}\vspace{1em}
+      Replication -- provides externally consistent transactions using
+      a replication protocol with \emph{no consistency guarantees}.
+      TAPIR eliminates the need for a Paxos leader and
+      commits transactions \emph{in a single round-trip}. Compared to
+      a conventional protocol, TAPIR halves the commit latency and
+      triples the throughput.
+    \end{rentry}
 
-    \begin{rentry}{Deployment for Mobile/Cloud Applications}{OSDI '14}
-      \vspace{-.5em}\\
+    \begin{rentry}{Simplifying Deployment for Mobile/Cloud Applications}{OSDI '14}
       Sapphire is a new distributed programming platform providing
       customizable and extensible deployment of mobile/cloud
       applications. The key concept is an architecture that supports
-      \emph{deployment managers}, which solve complex distributed
-      systems tasks, such as code-offloading and caching. Rather than
-      writing distributed systems code, programmers compose a custom
-      deployment to meet their application's needs.
-    \end{rentry}\vspace{1em}
+      \emph{deployment managers} (DMs), which solve complex
+      distributed systems tasks, such as code-offloading and
+      caching. Rather than writing distributed systems code,
+      programmers compose a custom deployment using DMs to meet their
+      application's needs.
+    \end{rentry}
 
-    % \begin{rentry}{User-controlled Privacy for Mobile/Cloud
-    %     Applications}{OSDI '14}
-    %   Agate is a new trusted distributed runtime system that gives
-    %   users control over how mobile/cloud applications share sensitive
-    %   user data collected on mobile devices (e.g., photos, GPS
-    %   location). Agate combines aspects of access control and
-    %   information flow control to allow applications to share user
-    %   data in application-specific ways, while enforcing user policies
-    %   without trusting the application or the application programmer.
-    % \end{rentry}
+    \begin{rentry}{Enforcing User Privacy Policies for Mobile/Cloud
+        Applications}{}
+      Agate is a new trusted distributed runtime system that enforces
+      user sharing policies on untrusted applications.  Agate uses
+      information flow control to give users both \emph{access
+        control} (i.e., which applications have access to their data)
+      and \emph{flow control} (i.e., whom applications can share that
+      data with).  Agate leverages the mobile OS to automatically tag
+      user data without trusting the application or the application
+      programmer.
+    \end{rentry}
 
     \begin{rentry}{Arrakis: The Operating System is the Control
         Plane}{OSDI '14}
-      \vspace{-.5em}\\
       Arrakis is a new operating system that provides high performance
-      I/O by taking advantage of hardware virtualization
-      technology. Hardware virtualization technologies are designed to
-      eliminate the hypervisor from fast-path I/O operations. Arrakis
-      takes this technology a step further by using it to eliminate
-      the operating system as well, allowing applications to directly
-      access the hardware during normal execution and providing
-      significantly better performance, reliability and
-      customizability.
+      I/O using hardware virtualization technology, which is designed
+      to eliminate the hypervisor from fast-path I/O
+      operations. Arrakis takes this technology a step further by
+      using it to eliminate the operating system as well, allowing
+      applications to directly access the hardware during normal
+      execution and providing significantly better performance,
+      reliability and customizability.
     \end{rentry}
   \end{rsection}    
 \end{rtable}
@@ -285,17 +282,15 @@
     File Systems (HotStorage). Philadelphia, PA. June
     2014.\\\vspace{-0.5em}
   \end{rsection}
+\end{rtable}
 
+\begin{rtable}
   \begin{rsection}{Posters \&\\Extended\\Abstracts}
     \textbf{I. Zhang}, N. K. Sharma, A. Szekeres, D. R. K. Ports,
     A. Krishnamurthy. \textit{Optimistic, Replicated Two-Phase
       Commit.}  ACM Asia-Pacific Workshop on Systems (APSys). Beijing,
     China. June 2014.\\\vspace{-.5em}
-  \end{rsection}
-\end{rtable}
 
-\begin{rtable}
-  \begin{rsection}{}
     \textbf{I. Zhang}, A. Garthwaite, Y. Baskakov, K. C. Barr, J.
     Pool, K. Christopher. \textit{Fast Restore of Checkpointed Memory
       Using Working Set Estimation.} ACM Symposium on Operating
@@ -307,54 +302,54 @@
     Conference. Las Vegas, NV. September 2008.\\
   \end{rsection}
 
-  \begin{rsection}{Awards}
-    \begin{rentry}{Rising Stars Workshop}{2016}
-      \vspace{-0.5em}
-    \end{rentry} 
-    \begin{rentry}{NCWIT Collegiate Award Runner-up}{2016}
-      \vspace{-0.5em}
-    \end{rentry} 
-    \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize Runner-Up}{2015}
-      \vspace{-0.5em}
-    \end{rentry} 
-    \begin{rentry}{Bob Bandes Teaching Award Honorable Mention}{2015}
-      \vspace{-0.5em}
+  \begin{rsection}{Fellowships\\\& Awards}
+    \begin{rentry}{Microsoft Research PhD Fellowship}{2015}
+      \vspace{-0.75em}
     \end{rentry} 
     \begin{rentry}{Google Anita Borg Memorial Fellowship}{2015}
-      \vspace{-0.5em}
+      \vspace{-0.75em}
     \end{rentry} 
-    \begin{rentry}{Microsoft Research PhD Fellowship}{2015}
-      \vspace{-0.5em}
-    \end{rentry} 
-    \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize}{2014}
-       \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{OSDI Best Paper Award}{2014}
-      \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{National Science Board Annual Meeting Student
-        Panel}{2013}
-      \vspace{-0.5em}
-    \end{rentry}
     \begin{rentry}{National Science Foundation Fellowship}{2013}
-      \vspace{-0.5em}
+      \vspace{-0.75em}
     \end{rentry}
     \begin{rentry}{ARCS Foundation Fellowship}{2012}
-       \vspace{-0.5em}
+       \vspace{-0.75em}
     \end{rentry}
     \begin{rentry}{Jeff Dean and Heidi Hopper Endowed Regental Fellowship}{2012}
-       \vspace{-0.5em}
+       \vspace{-0.75em}
     \end{rentry}
-    \begin{rentry}{VMware Academic Program Top Intern Project}{2008}
-       \vspace{-0.5em}
+    \begin{rentry}{OSDI Best Paper Award}{2014}
+      \vspace{-0.75em}
     \end{rentry}
     \begin{rentry}{CRA Outstanding Undergraduate Award, Honorable
       Mention}{2008}
-    \vspace{-0.5em}
+    \vspace{-0.75em}
+    \end{rentry}
+    \begin{rentry}{Rising Stars Workshop}{2016}
+      \vspace{-0.75em}
+    \end{rentry} 
+    \begin{rentry}{NCWIT Collegiate Award Runner-up}{2016}
+      \vspace{-0.75em}
+    \end{rentry} 
+    \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize Runner-Up}{2015}
+     \vspace{-0.75em}
+    \end{rentry} 
+    \begin{rentry}{Bob Bandes Teaching Award Honorable Mention}{2015}
+      \vspace{-0.75em}
+    \end{rentry} 
+    \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize}{2014}
+       \vspace{-0.75em}
+    \end{rentry}
+    \begin{rentry}{National Science Board Annual Meeting Student
+        Panel}{2013}
+      \vspace{-0.75em}
+    \end{rentry}
+    \begin{rentry}{VMware Academic Program Top Intern Project}{2008}
+       \vspace{-0.75em}
     \end{rentry}
     \begin{rentry}{Northern Telecom/BNR Award for Best Undergrad. Lab
         Project}{2006}
-      \vspace{-0.5em}
+      \vspace{-0.75em}
     \end{rentry}
   \end{rsection}
 
