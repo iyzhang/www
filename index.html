@@ -4,8 +4,18 @@ title: Home
 notitle: true
 ---
 
+
 <div class="row">
   <div class="col-xs-12 col-sm-9">
+    <div class="jumbotron">
+      <h3>{%icon fa-graduation-cap%} I'm graduating and on the job market!</h3>
+      <p><a class="btn btn-default btn-lg" href="{{ site-base }}/papers/research.pdf" role="button">{%icon
+          fa-file-text-o%} Research Statement</a>
+        <a class="btn btn-default btn-lg" href="{{ site-base }}/papers/teaching.pdf" role="button">{%icon
+          fa-file-text-o%} Teaching Statement</a>
+        <a class="btn btn-default btn-lg" href="{{ site-base }}/papers/research.pdf" role="button">{%icon
+          fa-file-text-o%} CV</a></p>
+    </div>
     <p>
       I work with
       <a href="http://www.cs.washington.edu/people/faculty/levy/">Hank
@@ -28,7 +38,6 @@ notitle: true
 	I cook, travel and occasionally do computer science
 	together.
     </p>
-
     <h3>News & Happenings</h3>
     <ul class="media-list">
       {% for post in site.posts limit: site.front_page_news %}
@@ -51,12 +60,12 @@ notitle: true
       {% endfor %}
     </ul>
     <p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p>
+
   </div>
   <div class="col-sm-3 col-xs-12">
-    <img src="{{ site.base }}/img/iyzhang.jpg" alt="Photo of me"
-       class="img-circle img-responsive hidden-xs">
-
-    <div class="contact-title">
+      <img src="{{ site.base }}/img/iyzhang.jpg" alt="Photo of me"
+           class="img-circle img-responsive hidden-xs">
+          <div class="contact-title">
       Contact</div>
     <div class="contact">
       <ul class="fa-ul">
@@ -71,8 +80,7 @@ notitle: true
 	<li><i class="fa-li fa fa-gitlab"></i><a href="https://gitlab.cs.washington.edu/u/iyzhang">iyzhang@gitlab</a></li>
       </ul>
     </div>
-
-    <div class="contact-title">
+        <div class="contact-title">
       Travel</div>
     <div class="contact">
       <ul class="fa-ul">
@@ -84,5 +92,7 @@ notitle: true
         Savannah, GA</li>
       </ul>
     </div>
+
   </div>
 </div>
+
