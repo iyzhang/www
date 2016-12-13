@@ -1,6 +1,6 @@
 name: Irene Y. Zhang
 url: irenezhang.net
-exclude: [bibble, README.md, Makefile]
+exclude: [bibble, README.md, Makefile, job-search]
 
 # use this library to parse Markdown
 markdown: redcarpet
@@ -14,8 +14,8 @@ permalink: /blog/:year/:month/:day/:title.html
 front_page_news: 3
 
 # Base pathname for links.
-base: '//irenezhang.net'
-#base: ''
+#base: '//irenezhang.net'
+base: ''
 
 # Navigation bar links.
 navigation:
@@ -30,4 +30,4 @@ navigation:
     - title: Code
       link: /code.html
     - title: CV
-      link: /cv/cv.pdf
+      link: cv.pdf

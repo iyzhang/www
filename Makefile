@@ -1,10 +1,11 @@
 PYTHON=python2.7
-LATEX=pdflatex
+LATEX=job-search/latexmk.pl -bibtex -pdf
+BIBTEX=bibtex
 
 # targets that aren't filenames
 .PHONY: all clean deploy
 
-all: _includes/pubs.html _site/index.html cv/cv.pdf
+all: jobsearch _includes/pubs.html _site/index.html
 
 BUILDARGS :=
 
@@ -16,14 +17,15 @@ _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 	_layouts/default.html
 	jekyll build $(BUILDARGS)
 
-cv/cv.pdf: cv/cv.tex
-	$(LATEX) cv/cv.tex
-	$(RM) cv.aux
-	$(RM) cv.log
-	mv cv.pdf _site/cv/
+jobsearch: job-search/cv.tex job-search/research.tex job-search/teaching.tex
+	$(MAKE) -C job-search
+	mv job-search/cv.pdf .
+	mv job-search/teaching.pdf .
+	mv job-search/research.pdf .
 
 clean:
-	$(RM) -r _site _includes/pubs.html cv/cv.pdf
+	$(RM) -r _site _includes/pubs.html
+	$(MAKE) -C job-search clean
 
 CSEHOST := iyzhang@tricycle.cs.washington.edu
 HOST := irene@geoduck.ambulatoryclam.net
