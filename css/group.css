@@ -25,7 +25,7 @@ p, div {
 
 /* Customize first page */
 .title {
-    font-size:3em;
+    font-size:2.2em;
     font-weight:400;
     font-family: 'Quattrocento', Georgia, Times, serif;
     color:#4b2e83;
@@ -38,6 +38,7 @@ p, div {
     color:#4b2e83;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:500;
+    font-size:14px;
 }
 
 /* Make sure abstract does not disply by default*/
@@ -101,6 +102,9 @@ p, div {
         font-size:5em;
         letter-spacing:5px;
         margin-bottom:-15px;
+    }
+    .subtitle {
+        font-size:1em;
     }
     .img-responsive {
         margin-bottom:20px;
@@ -172,11 +176,12 @@ p, div {
 .jumbotron h3,
 .jumbotron .h3 {
     margin-top:0px;
+    font-size:24px;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-top: 0px;
   }
   .container .jumbotron,
@@ -187,8 +192,8 @@ p, div {
       margin-right:0px;
       padding-right: 0px;
       padding-left: 0px;
-      padding-top: 32px;
-      padding-bottom:32px;
+      padding-top: 40px;
+      padding-bottom:40px;
   }
   .jumbotron h3,
   .jumbotron .h3 {
