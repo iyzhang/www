@@ -30,25 +30,37 @@ Before we dive into the different levels of isolation and consistency
 provided by distributed systems and databases, I will try to define
 the guarantees themselves.
 
-**Consistency**, as in the CAP theorem, defines how *copies of a
-single data item* relate to each other in the system. Does the system
+**Consistency**, as in the CAP theorem, defines how *copies of the set
+of data items* in a system relate to each other. Does the system
 ensure that they appear as if they are a single copy (to an
 application or an external observer)? Or do they appear to have some
 other apparent behavior (i.e., after some period of time they converge
 to a single copy)?
 
-**Isolation**, in ACID, defines the how *transactions on multiple
-items* relate to each other in the system. Does the system ensure that
-transactions appear as if they each ran sequentially on a single copy
-of the database?  Or some other behavior (i.e., each transaction ran
-on its own snapshot of the database)?
+**Edit: Coherence** Someone pointed out to me that I should also
+define coherence, as how *copies of a single item* relate to each
+other (assuming that the system holds more than one data item).
+Architects tend to define this differently from consistency due to
+reasoning about a single cache line vs. multiple cache lines. As a
+result, it is possible to have consistency bugs that are not coherence
+bugs.
 
-In summary, consistency dictates how the system orders operations for
-single data items, and isolation dictates how the system orders
-transactions over multiple items. As a side effect, consistency is a
-total ordering guarantee for each data item, while isolation is a
-partial ordering guarantee (because not every transaction touches
-every data item).
+**Isolation**, in ACID, defines the how *sets of multiple operations
+on the set of data items* in a system relate to each other. Does the
+system ensure that a set of operations (grouped together in a
+*transaction*) appear as if they ran at a single point in time? Do
+transactions then appear as if they each ran sequentially on a single
+copy of the database?  Or some other behavior (i.e., each transaction
+ran on its own snapshot of the database)?
+
+In summary, (1) coherence dictates how a system orders operations for
+a single data item in the system, (2) consistency dictates how a
+system orders operations for the entire set of data items in the
+system, and (3) isolation dictates how a system orders sets of
+operations grouped in transactions over the entire set of items in the
+system. As a side effect, consistency is a total ordering guarantee
+for a set of replicas, while isolation is a partial ordering guarantee
+(because not every transaction touches every data item).
 
 ### What about the C in ACID?
 
@@ -90,8 +102,8 @@ this is a huge topic. I will primarily talk about the strongest
 variants because these are the best defined.
 
 **Sequential (or serializable) consistency** ensures that the same
-operations are applied in the same order to every copy of the data
-item.
+operations are applied in the same order to every copy of a set of
+data items.
 
 **Serializable isolation** ensures that transactions execute as if
 they were executing one at a time on a single copy of the database.
@@ -111,7 +123,7 @@ linearizable) transactions since the publication of Google's Spanner
 system [2]. Traditionally, the guarantees provided by Spanner and
 applied to transactions would be called strict serializability.
 Practically, it doesn't matter: *linearizability is just strict
-serializability for single items.*
+serializability for single operations.*
 
 As many people have observed, we just ended up with different words
 for the same thing because two research communities separately

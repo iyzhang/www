@@ -22,6 +22,7 @@ jobsearch: job-search/cv.tex job-search/research.tex job-search/teaching.tex
 	mv job-search/cv.pdf .
 	mv job-search/teaching.pdf .
 	mv job-search/research.pdf .
+	cp job-search/talk.pdf .
 
 clean:
 	$(RM) -r _site _includes/pubs.html
