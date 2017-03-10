@@ -55,29 +55,26 @@ notitle: true
     <h3>News & Happenings</h3>
     <ul class="media-list">
       {% for post in site.posts limit: site.front_page_news %}
-      {% if post.shortnews %}
       <li class="media">
         {% if post.photo %}
-	<div class="media-left news hidden-xs">
+	    <div class="media-left news hidden-xs">
           {% if post.link %}
           <a href="{{ post.link }}">
             {% endif %}
-	    <img class="media-object img-thumbnail"
+	        <img class="media-object img-thumbnail"
                  src="{{ post.photo }}" >
             {% if post.link %} </a> {% endif %}
-	</div>
+	    </div>
         {% endif %}
-	<div class="media-body">
-	  <h5 class="media-heading">{{ post.date | date_to_long_string }}</h5>
-	  {{ post.content }}
-	</div>
+	    <div class="media-body">
+          <h5 class="media-heading">{{ post.date | date_to_long_string }}</h5>
+	      {% if post.shortnews %}
+          {{ post.content }}
+          {% else %}
+          <a href="{{ post.url}})">{{ post.title }}</a>
+          {% endif %}
+	    </div>
       </li>
-      {% else %}
-      <li class="media">
-	<h5 class="media-heading">{{ post.date | date_to_long_string }}</h5>
-	<b>Blog Post: </b><a href="{{ site.base }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endif %}
       {% endfor %}
     </ul>
     <p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p>
