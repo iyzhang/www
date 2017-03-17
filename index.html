@@ -67,11 +67,13 @@ notitle: true
 	    </div>
         {% endif %}
 	    <div class="media-body">
-          <h5 class="media-heading">{{ post.date | date_to_long_string }}</h5>
+          <h5 class="media-heading">{{ post.date | date_to_long_string
+            }}</h5>
 	      {% if post.shortnews %}
           {{ post.content }}
           {% else %}
-          <a href="{{ post.url}})">{{ post.title }}</a>
+          <b>New Blog Post: <b>
+          <a href="{{ post.url}}">{{ post.title }}</a>
           {% endif %}
 	    </div>
       </li>
@@ -105,20 +107,22 @@ notitle: true
     	<!-- <li><i class="fa-li fa fa-calendar"></i>January 12-13 -->
         <!--   <br />UBC -->
     	<!--   <br />Vancouver, Canada</li> -->
-        <li><i class="fa-li fa fa-calendar"></i>February 2-3
-          <br />MSR</li>
-    	<li><i class="fa-li fa fa-calendar"></i>February 13-14
-          <br />UC Berkeley</li>
-    	<li><i class="fa-li fa fa-calendar"></i>February 20-21
-          <br />U. Wisconsin</li>
-    	<li><i class="fa-li fa fa-calendar"></i>February 23-24
-          <br />Georgia Tech</li>
-        <li><i class="fa-li fa fa-calendar"></i>February 27-28
-          <br />MIT</li>
-    	<li><i class="fa-li fa fa-calendar"></i>March 2-3
-          <br />Princeton</li>
-    	<li><i class="fa-li fa fa-calendar"></i>March 6-7
-          <br />Stanford</li>
+        <!-- <li><i class="fa-li fa fa-calendar"></i>February 2-3 -->
+        <!--   <br />MSR</li> -->
+    	<!-- <li><i class="fa-li fa fa-calendar"></i>February 13-14 -->
+        <!--   <br />UC Berkeley</li> -->
+    	<!-- <li><i class="fa-li fa fa-calendar"></i>February 20-21 -->
+        <!--   <br />U. Wisconsin</li> -->
+    	<!-- <li><i class="fa-li fa fa-calendar"></i>February 23-24 -->
+        <!--   <br />Georgia Tech</li> -->
+        <!-- <li><i class="fa-li fa fa-calendar"></i>February 27-28 -->
+        <!--   <br />MIT</li> -->
+    	<!-- <li><i class="fa-li fa fa-calendar"></i>March 2-3 -->
+        <!--   <br />Princeton</li> -->
+    	<!-- <li><i class="fa-li fa fa-calendar"></i>March 6-7 -->
+        <!--   <br />Stanford</li> -->
+        <li><i class="fa-li fa fa-calendar"></i>March 23
+          <br />VMware Research</li>
         <li><i class="fa-li fa fa-calendar"></i>March 30-31
           <br />U. Michigan</li>
         <li><i class="fa-li fa fa-calendar"></i>April 5-6
