@@ -2,71 +2,63 @@
 layout: post
 shortnews: false
 photo: img/consistency-key.jpg
-title: Making Consistency More Consistent
+title: Making Consistency More Consistent (Part 1): How to talk to
+friends and family members in other areas of computer science
+about consistency.
 link: papers/consistency-models.pdf
 ---
 
-While talking to people from different areas during my interview
-trips, I discovered that there is almost universal confusion about
-consistency (and coherence and isolation) models across research areas
-(i.e., systems, architecture, databases). As a result, *many* people
-have asked me whether there is a unified model for consistency.
-Conveniently, I developed such a model for my generals exam, which I
-summarize in this blog post and link at the bottom as a tech report.
+I have written in the past about how
+[consistency should be more consistent](blog/2015/02/01/consistency.html)
+and
+[why researchers are so inconsistent about consistency](blog/2016/01/11/consistency.html).
+During my interview trips, I have discovered that everyone is just as
+confused as I was! In an effort to clear up this confusion (and avoid
+writing my thesis), I will be presenting a series of blog posts on the
+unified consistency models that I developed for my generals exam to
+help me understand memory models, weak consistency models and
+isolation models.
 
-> **TL;DR:** Consistency models constrain how the order of operations
-> can deviate from the *ideal system model* (i.e., a single threaded
-> and unreplicated system).  The potential ways that a system can
-> deviate from the ideal model depend on the *system model.* Existing
-> consistency models are under-specified because they assume a given
-> system model and then constrain the possible deviations from that
-> system model.  A uniform consistency model must take into account
-> the system model and where the system's guarantees lie between that
-> system model and the ideal system.
+To begin with, I will explain how to compare models across different
+areas of computer science.  All of these models begin with an ideal
+system model, which is very easy to understand:
 
-### Background
+> **Ideal System Model:** a system that executes operations in the
+> order in which they arrive to a single copy of the data.
 
-Previously, I have written about how
-[consistency should be more consistent]({{ site.base
-}}/blog/2015/02/01/consistency.html) and why
-[consistency is so inconsistent]({{ site.base
-}}/blog/2016/01/11/consistency.html).  To sum up these posts,
-coherence, consistency and isolation all relate storage
-systems/memory/databases to an ideal system:
+This ideal system model applies to memory operations on memory
+locations, storage operations in a key/value store or database queries
+on database tuples.
 
-> **Ideal System Model:** a system that executes operations one at a
-> time in the order in which they arrive on a single copy of the
-> stored data.
+As a result, we developed coherence, consistency and isolation
+models.  These 
+were largely described by *anomolies* that are forbidden in the model:
 
-An ideal database model includes a further assumption that operations
-grouped together in a single transaction appear as if they arrived and
-executed together when the transaction commits.
-
-In the past, coherence, consistency and isolation models were largely
-described by *anomalies* that are forbidden in the model:
-
-> **Anomaly:** an execution of storage operations that is not possible
-> in the ideal system model
+> **Anomoly:** a sequence of storage operations that the system
+> executes in a way that deviates from the ideal system model
 
 Given this ideal system model, coherence, consistency and isolation
-models govern the types of anomolies that a storage system can expose:
+models govern what anomolies a storage system can expose:
 
-> **Coherence:** Anomalies caused by operations on a single item, where
->  every operation accesses/modifies the entire item.
+**Coherence:** Rules governing operations on copies of a single item,
+where every operation reads/writes the entire item.
 
-> **Consistency:** Anomalies caused by operations on a set of items,
->  where every operation accesses/modifies a subset of the item set.
+**Consistency:** Rules governing operations on copies of a set of
+items, where every operation accesses/modifies a subset of the item
+set.
 
-> **Isolation:** Anomalies cause by operations on a set of items, where
->  every transactions group accesses/modifies a subset of the item set.
+**Isolation:** Rules governing transactional groups of operations on a
+set of items, where every group accesses/modifies a subset of the
+item set.
 
-However, not every system model can produce every type of anomaly.
-Coherence, consistency and isolation models are specified *with
-respect to the system model.* As a result, these models are
-*under-specified* without their system models and cannot be compared.
+The problem with all of these models though is that the model is not
+the only thing that governs what anomolies a system can expose.  The
+system model is also an important factor is what kind of anomolies are
+*possible* in the system. For example, do copies exist in the system?
+Does each copy belong to a single client or are they concurrently
+accessed by many clients at the same time?
 
-> { All potential orderings } - { Potential orderings in the system
-> model} - { Potential ordering allowed by the consistency model } = {
-> Potential orderings from system }
-
-### A Consistent Consistency Model
+Unfortunately, this means that all of our
+models are *under-specified* without also knowing the system. This is
+the underlying mismatch in comparing models across the architecture,
+systems and database fields.
