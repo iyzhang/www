@@ -5,7 +5,7 @@ BIBTEX=bibtex
 # targets that aren't filenames
 .PHONY: all clean deploy
 
-all: jobsearch _includes/pubs.html _site/index.html
+all: cv _includes/pubs.html _site/index.html
 
 BUILDARGS :=
 
@@ -17,16 +17,18 @@ _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 	_layouts/default.html
 	jekyll build $(BUILDARGS)
 
-jobsearch: job-search/cv.tex job-search/research.tex job-search/teaching.tex
-	$(MAKE) -C job-search
-	mv job-search/cv.pdf .
-	mv job-search/teaching.pdf .
-	mv job-search/research.pdf .
-	cp job-search/talk.pdf .
+cv: cv/cv.tex
+	$(MAKE) -C cv
+
+# jobsearch: job-search/research.tex job-search/teaching.tex
+# 	$(MAKE) -C job-search
+# 	mv job-search/teaching.pdf .
+# 	mv job-search/research.pdf .
+# 	cp job-search/talk.pdf .
 
 clean:
 	$(RM) -r _site _includes/pubs.html
-	$(MAKE) -C job-search clean
+	$(MAKE) -C cv clean
 
 CSEHOST := iyzhang@tricycle.cs.washington.edu
 HOST := irene@geoduck.ambulatoryclam.net
