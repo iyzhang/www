@@ -33,33 +33,87 @@
 
     </head>
     <body>
+      <div class="header">
+        <div class="title clearfix">Irene Y. Zhang</div>
+	<ul class="nav nav-pills nav-justified">
+          {% for item in site.navigation %}
+          {% assign shorturl = item.link | replace: '.html', '' %}
+          <li {% if page.url == shorturl %}class="active"{% endif %}>
+            <a href="{{ site.base }}{{ item.link }}">
+              {% if page.url == shorturl %}- {% endif %}{{ item.title
+              }}{% if page.url == shorturl %} -{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
       <div class="container">
-        <div class="header">
-          <div class="title clearfix">Irene Y. Zhang</div>
-	  <ul class="nav nav-pills nav-justified">
-            {% for item in site.navigation %}
-            {% assign shorturl = item.link | replace: '.html', '' %}
-            <li {% if page.url == shorturl %}class="active"{% endif %}>
-              <a href="{{ site.base }}{{ item.link }}">{% if page.url == shorturl %}- {% endif %}{{ item.title }}{% if page.url == shorturl %} -{% endif %}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-	{% comment %}Liquid is sort of terrible! I think "!= true" is the
-        only way to do negation?{% endcomment %}
-        {% if page.notitle != true %}
-        <h2>{{ page.title }}</h2>
-	{% else %}
-	<h3></h3>
-        {% endif %}
-	      
-        {{ content }}
-	<div class="footer">
-          <p>
-            <a href="https://www.microsoft.com/en-us/research/group/systems-research-group-redmond/">Systems Research</a> at 
-            <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>
-          </p>
-        </div>
-      </div> <!-- /container -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+	    {% comment %}Liquid is sort of terrible! I think "!= true" is the
+            only way to do negation?{% endcomment %}
+            {% if page.notitle != true %}
+            <h2>{{ page.title }}</h2>
+	    {% else %}
+	    <h3></h3>
+            {% endif %}
+            {{ content }}
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="contact">
+              <div class="contact-title">
+                Contact</div>
+              <ul class="fa-ul">
+	        <li><i class="fa-li fa fa-envelope"></i>irene.zhang
+	        @microsoft.com</li>
+	        <li><i class="fa-li fa fa-building"></i>Office 2724,
+                  Building 99</li>
+	        <li><i class="fa-li fa fa-location-arrow"></i>14820 NE
+	        36th St.
+                  <br class="hidden-xs"> Redmond, WA</li>
+	        <li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
+              </ul>
+            </div>
+            <div class="contact">
+              <div class="contact-title">News</div>
+              <ul class="media-list">
+                {% for post in site.posts limit: site.front_page_news %}
+                <li class="media">
+                  {% if post.photo %}
+                  <div class="media-left news hidden-xs">
+                    {% if post.link %}
+                    <a href="{{ post.link }}">
+                      {% endif %}
+	              <img class="media-object img-thumbnail"
+                           src="{{ site.base }}/{{ post.photo }}" >
+                      {% if post.link %} </a> {% endif %}
+                  </div>
+                  {% endif %}
+                  <div class="media-body">
+                    <h5 class="media-heading">
+                      {{ post.date | date_to_long_string }}
+                    </h5>
+                    {% if post.shortnews %}
+                    {{ post.content }}
+                    {% else %}
+                    <b>New Blog Post: <b>
+                        <a href="{{ post.url}}">{{ post.title }}</a>
+                        {% endif %}
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+              <!-- <p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p> -->
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="footer">
+        <p>
+          <a href="https://www.microsoft.com/en-us/research/group/systems-research-group-redmond/">Systems Research</a> at 
+          <a href="https://www.microsoft.com/">Microsoft</a>
+        </p>
+      </div>
     </body>
 </html>

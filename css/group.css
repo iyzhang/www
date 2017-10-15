@@ -2,40 +2,40 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: url(/img/crossword.png) repeat 0 0;
+  background: url(/img/greyzz.png) repeat 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quattrocento', Georgia, Times, serif;
     font-weight:700;
-    color:#666;
+    color:#67655D;  
 }
 
 a {
-    color:#4b2e83;
+    color:#577492;
     font-weight:700;
 }
 
 p, div {
     font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
     font-weight:400;
-    color:#666;
+    color:#67655D;
     font-size:16px;
 }
 
 /* Customize first page */
 .title {
-    font-size:2.2em;
+    font-size:1.5em;
     font-weight:400;
     font-family: 'Quattrocento', Georgia, Times, serif;
-    color:#4b2e83;
+    color:#67655D;
     text-align:center;
     text-transform: uppercase;
     letter-spacing:2px;
 }
 
 .subtitle {
-    color:#4b2e83;
+    color:#67655D;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:500;
     font-size:14px;
@@ -54,7 +54,7 @@ p, div {
 
 .footer {
     padding-top: 19px;
-    border-top: 1px solid #4b2e83;
+    border-top: 1px solid #A8A8A1;
 }
 
 .header,
@@ -63,59 +63,128 @@ p, div {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight:500;
     letter-spacing:1px;
-    color: #4b2e83;
+    color: #67655D;
     font-size:.9em;
 }
 
 .footer a:link, .footer a:visited {
-  color: #4b2e83;
+  color: #67655D;
 }
 
 .contact-title {
-    border-top: 1px solid #4b2e83;
-    border-bottom: 1px solid #4b2e83;
+    background-color: #A8A8A1;
     text-transform: uppercase;
     text-align:center;
+    color:#fff;
     padding-top:5px;
     padding-bottom:5px;
-    margin-bottom:5px;
     letter-spacing:1px;
     font-family: 'Raleway', Helvetica, Arial, san-serif;
-    font-weight: 500;
-    font-size:.9em;
+    font-weight: 400;
+    font-size:.8em;
+    margin-bottom:5px;
 }
 
+.contact {
+    margin-bottom:10px;
+    border: 1px solid #A8A8A1;
+}
+
+.media-list {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.media-list > media {
+    padding-bottom: 0px;
+}
 
 
 .fa-ul li {
     margin-bottom:5px;
 }
 
-.contact {
-    border-bottom: 1px solid #4b2e83;
+.nav {
+  list-style: none;
+  border-top: 1px solid #A8A8A1;
+  border-bottom: 1px solid #A8A8A1;
+  letter-spacing:1px;
+  text-transform: uppercase;
+}
+
+.nav-pills > li > a {
+  border-radius: 0px;
+  color:#67655D;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size:1em;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    font-weight:500;
+    background-color:transparent;
+    color:#67655D;
+}
+
+/* Front page news. */
+.date {
+    color: #67655D;
+    font-weight: 400;
+    display: block;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+  color: inherit;
+  background-color: inherit;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron p {
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  border-radius: 0px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+
+.jumbotron h2,
+.jumbotron .h2 {
+    margin-top:6px;
+    font-size:24px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
     /* increase header size and padding */
     .title {
-        font-size:5em;
+        font-size:3em;
         letter-spacing:5px;
-        margin-bottom:-15px;
+        margin-bottom:0px;
     }
     .subtitle {
         font-size:1em;
     }
-    .img-responsive {
-        margin-bottom:20px;
-        padding:0px;
-    }
-    .contact-title {
-        margin-top:1em;
-        margin-bottom:10px;
-    }
     .contact {
-        border-bottom: 0px solid #4b2e83;
+        margin-top:1em;
+        margin-bottom:1em;
     }
     .header,
     .footer p {
@@ -128,129 +197,47 @@ p, div {
         width:64px;
     }
     .media-list {
-        padding-bottom:5px;
+        padding-left:.5em;
+        padding-right:.5em;
     }
     .media {
-        padding-top:10px;
+        padding-top:0px;
+    }
+    .list-group{
+        margin-bottom: 0px;
     }
     .container {
-    width: 750px;
+        width: 850px;
     }
-}
+    .nav-pills {
+        display: block;
+        margin: 0 auto 1em;
+    }
 
-/* Slightly better-looking header on mobile. */
-@media screen and (max-width: 767px) {
-  .nav-pills {
-      display: block;
-      margin: 0 auto 1em;
-  }
-}
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top:0px;
+        margin-bottom:0px;
+        margin-left:0px;
+        margin-right:0px;
+        border-radius: 0px;
+    }
 
-.jumbotron {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top:0px;
-  margin-bottom: 0px;
-  color: inherit;
-  background-color: inherit;
-}
-.jumbotron p {
-    margin-bottom: 0px;
-    margin-top:0px;
-}
-.jumbotron > hr {
-  border-top-color: #d5d5d5;
-}
-.container .jumbotron,
-.container-fluid .jumbotron {
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top:0px;
-  margin-bottom:0px;
-  margin-left:0px;
-  margin-right:0px;
-  border-radius: 0px;
-}
-.jumbotron .container {
-  max-width: 100%;
-}
-.jumbotron h3,
-.jumbotron .h3 {
-    margin-top:0px;
-    font-size:24px;
-}
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-  }
-  .container .jumbotron,
-  .container-fluid .jumbotron {
-      margin-top:0px;
-      margin-bottom:0px;
-      margin-left:0px;
-      margin-right:0px;
-      padding-right: 0px;
-      padding-left: 0px;
-      padding-top: 30px;
-      padding-bottom:30px;
-  }
-  .jumbotron h3,
-  .jumbotron .h3 {
-      font-size:26px;
-  }
+    .jumbotron h2,
+    .jumbotron .h2 {
+        margin-top:0px;
+        font-size:40px;
+    }
 
-  
-}
 
+}
 
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* .table > thead > tr > th, */
-/* .table > tbody > tr > th, */
-/* .table > tfoot > tr > th, */
-/* .table > thead > tr > td, */
-/* .table > tbody > tr > td, */
-/* .table > tfoot > tr > td { */
-/*   padding: 8px; */
-/*   line-height: 1.42857143; */
-/*   vertical-align: top; */
-/*   border-top: 1px solid #ddd; */
-/* } */
-
-.nav {
-  list-style: none;
-  border-top: 1px solid #4b2e83;  
-  border-bottom: 1px solid #4b2e83;  
-  letter-spacing:1px;
-  text-transform: uppercase;  
-}
-
-.nav-pills > li > a {
-  border-radius: 0px;
-  color:#4b2e83;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size:.9em;
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-    font-weight:500;
-    background-color:transparent;
-    color:#4b2e83;
-}
-
-/* Front page news. */
-.date {
-    color: #666;
-    font-weight: 400;
-    display: block;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-}
 

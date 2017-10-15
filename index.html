@@ -1,93 +1,42 @@
 ---
 layout: default
-title: Home
+title: I am a researcher at Microsoft Research
 notitle: true
 ---
 
-
 <div class="row">
-  <div class="col-xs-12 col-sm-9">
-    <h3>I am a researcher at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research.</a></h3>
-    <p>
-      My research focus is primarily in operating systems and
-      distributed systems.
-    </p>
-
-    <p>
-      I completed my PhD in 2017 at
-      the <a href="//www.cs.washington.edu">University of
-      Washington</a>, where I was advised by
-      <a href="http://www.cs.washington.edu/people/faculty/levy/">Hank
-	Levy</a>
-	and <a href="http://www.cs.washington.edu/people/faculty/arvind">Arvind
-	Krishnamurthy</a>.  My thesis is on distributed systems for
-	applications that span mobile devices and cloud servers.
-	Before my PhD, I received my S.B. and M.Eng.
-	from <a href="http://www.mit.edu">MIT</a>.
-    </p>
-
-    <p>
-      I was born in <a href="http://www.ebeijing.gov.cn/">Beijing,
-	China</a> but spent most of my time growing up
-	in <a href="http://en.wikipedia.org/wiki/Columbus,_Indiana">Columbus,
-	Indiana</a>. <a href="http://www.drkp.net">My husband</a> and
-	I cook, travel and occasionally do computer science together.
-    </p>
-    <h3>News & Happenings</h3>
-    <ul class="media-list">
-      {% for post in site.posts limit: site.front_page_news %}
-      <li class="media">
-        {% if post.photo %}
-	    <div class="media-left news hidden-xs">
-          {% if post.link %}
-          <a href="{{ post.link }}">
-            {% endif %}
-	        <img class="media-object img-thumbnail"
-                 src="{{ post.photo }}" >
-            {% if post.link %} </a> {% endif %}
-	    </div>
-        {% endif %}
-	    <div class="media-body">
-          <h5 class="media-heading">{{ post.date | date_to_long_string
-            }}</h5>
-	      {% if post.shortnews %}
-          {{ post.content }}
-          {% else %}
-          <b>New Blog Post: <b>
-          <a href="{{ post.url}}">{{ post.title }}</a>
-          {% endif %}
-	    </div>
-      </li>
-      {% endfor %}
-    </ul>
-    <p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p>
-
+  <div class="col-xs-3">
+    <img src="{{ site.base }}/img/iyzhang.jpg" alt="Photo of me"
+         class="img-circle img-responsive">
   </div>
-  <div class="col-sm-3 col-xs-12">
-      <img src="{{ site.base }}/img/iyzhang.jpg" alt="Photo of me"
-           class="img-circle img-responsive hidden-xs">
-          <div class="contact-title">
-      Contact</div>
-    <div class="contact">
-      <ul class="fa-ul">
-	<li><i class="fa-li fa fa-envelope"></i>Irene.Zhang @microsoft.com</li>
-	<li><i class="fa-li fa fa-location-arrow"></i>Office 2724
-          <br class="hidden-xs">Building 99</li>
-	<li><i class="fa-li fa fa-building"></i>14820 NE 36th St.
-          <br class="hidden-xs">Redmond, WA</li>
-	<li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
-	<!-- <li><i class="fa-li fa fa-gitlab"></i><a href="https://gitlab.cs.washington.edu/u/iyzhang">iyzhang@gitlab</a></li> -->
-      </ul>
-    </div>
-    <div class="contact-title">
-      Travel</div>
-    <div class="contact">
-      <ul class="fa-ul">
-        <li><i class="fa-li fa fa-calendar"></i>Oct 28-31
-          <br />SOSP<br />Shanghai, China</li>
-      </ul>
-    </div>
-
+  <div class="col-xs-9 jumbotron">
+    <h2>I am a researcher
+      at <a href="https://www.microsoft.com/en-us/research/">Microsoft
+      Research</a>. 
+    </h2>
   </div>
 </div>
+
+<h3> My research focuses on operating systems and distributed
+      systems.</h3>
+  <p>
+    I completed my PhD in 2017 at
+    the <a href="//www.cs.washington.edu">University of
+      Washington</a>, where I was advised by
+    <a href="http://www.cs.washington.edu/people/faculty/levy/">Hank
+      Levy</a>
+    and <a href="http://www.cs.washington.edu/people/faculty/arvind">Arvind
+      Krishnamurthy</a>.  My thesis is on distributed systems for
+    applications that span mobile devices and cloud servers.
+    Before my PhD, I received my S.B. and M.Eng.
+    from <a href="http://www.mit.edu">MIT</a>.
+  </p>
+  
+  <p>
+    I was born in <a href="http://www.ebeijing.gov.cn/">Beijing,
+      China</a> but spent most of my time growing up
+    in <a href="http://en.wikipedia.org/wiki/Columbus,_Indiana">Columbus,
+      Indiana</a>. <a href="http://www.drkp.net">My husband</a> and
+    I cook, travel and occasionally do computer science together.
+  </p>
 
