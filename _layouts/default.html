@@ -64,18 +64,18 @@
             <div class="contact">
               <div class="contact-title">
                 Contact</div>
-              <ul class="fa-ul">
-	        <li><i class="fa-li fa fa-envelope"></i>irene.zhang
-	        @microsoft.com</li>
-	        <li><i class="fa-li fa fa-building"></i>Office 2724,
-                  Building 99</li>
-	        <li><i class="fa-li fa fa-location-arrow"></i>14820 NE
-	        36th St.
-                  <br class="hidden-xs"> Redmond, WA</li>
-	        <li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
-              </ul>
+                <ul class="fa-ul">
+	          <li><i class="fa-li fa fa-envelope"></i>irene.zhang
+	            @microsoft.com</li>
+	          <li><i class="fa-li fa fa-building"></i>Office 2724,
+                    Building 99</li>
+	          <li><i class="fa-li fa fa-location-arrow"></i>14820 NE
+	            36th St.
+                    <br class="hidden-xs"> Redmond, WA</li>
+	          <li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
+                </ul>
             </div>
-            <div class="contact">
+            <div class="contact hidden-xs">
               <div class="contact-title">News</div>
               <ul class="media-list">
                 {% for post in site.posts limit: site.front_page_news %}
@@ -97,7 +97,7 @@
                     {% if post.shortnews %}
                     {{ post.content }}
                     {% else %}
-                    <b>New Blog Post: <b>
+                    <b>New Blog Post: <\b>
                         <a href="{{ post.url}}">{{ post.title }}</a>
                         {% endif %}
                   </div>
@@ -106,8 +106,9 @@
               </ul>
               <!-- <p><a href="{{ site.base }}/news/">Older posts&hellip;</a></p> -->
             </div>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
       <div class="footer">
         <p>

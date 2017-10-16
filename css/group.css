@@ -171,6 +171,13 @@ p, div {
     font-size:24px;
 }
 
+/* bound how wide the page can get */
+@media (min-width: 960px) {
+    .container {
+        width: 960px;
+    }
+}
+
 /* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
     /* increase header size and padding */
@@ -205,9 +212,6 @@ p, div {
     }
     .list-group{
         margin-bottom: 0px;
-    }
-    .container {
-        width: 850px;
     }
     .nav-pills {
         display: block;
