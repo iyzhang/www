@@ -3,11 +3,10 @@ layout: default
 title: Research Projects
 ---
 
-My PhD research broadly covers operating systems and distributed
-systems for large-scale, distributed applications. Before starting my
-PhD, I worked on several research projects at VMware and MIT. You can
-find out more about my
-[past projects](past.html).
+My research broadly covers operating systems and distributed systems
+for large-scale, distributed applications. Before starting my PhD, I
+worked on several research projects at VMware and MIT. You can find
+out more about my [past projects](past.html).
 
 
 <ul class="media-list">

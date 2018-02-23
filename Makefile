@@ -1,6 +1,6 @@
 PYTHON=python2.7
-LATEX=job-search/latexmk.pl -bibtex -pdf
 BIBTEX=bibtex
+JEKYLL=/usr/local/bin/jekyll
 
 # targets that aren't filenames
 .PHONY: all clean deploy
@@ -15,16 +15,10 @@ _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
 
 _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 	_layouts/default.html
-	jekyll build $(BUILDARGS)
+	$(JEKYLL) build
 
 cv: cv/cv.tex
 	$(MAKE) -C cv
-
-# jobsearch: job-search/research.tex job-search/teaching.tex
-# 	$(MAKE) -C job-search
-# 	mv job-search/teaching.pdf .
-# 	mv job-search/research.pdf .
-# 	cp job-search/talk.pdf .
 
 clean:
 	$(RM) -r _site _includes/pubs.html
