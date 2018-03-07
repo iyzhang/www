@@ -9,6 +9,31 @@
 @string{socc = "Proceedings of the ACM Symposium on Cloud Computing (SoCC)"}
 @string{tocs = "ACM Transactions on Computer Systems (TOCS)"}
 
+@InProceedings{consistency-papoc18,
+  author =        {Adriana Szekeres and Irene Zhang},
+  month =         4,
+  title =         {Making Consistency More Consistent: A Unified Model for Coherence, Consistency and Isolation},
+  year =          2018,
+  booktitle = papoc,
+  url = {papers/consistency-papoc18.pdf},
+  abstract = {  Ordering guarantees are often defined using abstract
+  execution models. Unfortunately,
+  these models are complex and make different assumptions about system
+  semantics. As a result, researchers find it impossible to compare the ordering
+  guarantees of coherence, consistency and isolation. This paper presents a simple,
+  unified model for defining ordering guarantees that is sufficiently general to
+  model a wide range of systems, including processor memory, distributed storage,
+  and databases. We define a new single constraint relationship, \emph{result
+  visibility}, which formalizes the ``appears to execute before'' relationship
+  between operations. Using only result visibility, we define more than 20
+  ordering guarantees from different research areas, including
+  PRAM, snapshot isolation and
+  eventual consistency session
+  guarantees.
+  To our knowledge, these definitions form the broadest survey of ordering
+  guarantees using a single constraint in the current literature.}}
+
+
 @InProceedings{ipa-socc16,
   author =        {Brandon Holt and James Bornholt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
   month =         10,
