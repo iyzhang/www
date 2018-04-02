@@ -5,11 +5,11 @@
         <Title>{{ site.name }}: {{ page.title }}</title>
         <meta name="viewport" content="width=device-width,
 				       initial-scale=1.0">
-	    <link href="http://irenezhang.net/" rel="canonical">
-        <link href="{{ site.base }}/css/bootstrap.min.css" rel="stylesheet">
-        <link href="{{ site.base }}/css/group.css" rel="stylesheet">
+	<link href="https://irenezhang.net/" rel="canonical">
+        <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/css/group.css" rel="stylesheet">
         <link rel="alternate" type="application/atom+xml" title="Atom"
-              href="{{ site.baseurl }}/blog/blog.xml">
+              href="{{ site.baseurl }}blog/blog.xml">
         <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans:400,400i,700|Raleway:500,700"
               rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
           {% for item in site.navigation %}
           {% assign shorturl = item.link | replace: '.html', '' %}
           <li {% if page.url == shorturl %}class="active"{% endif %}>
-            <a href="{{ site.base }}{{ item.link }}">
+            <a href="{{ site.baseurl }}/{{ item.link }}">
               {% if page.url == shorturl %}- {% endif %}{{ item.title
               }}{% if page.url == shorturl %} -{% endif %}
             </a>
@@ -86,7 +86,7 @@
                     <a href="{{ post.link }}">
                       {% endif %}
 	              <img class="media-object img-thumbnail"
-                           src="{{ site.base }}/{{ post.photo }}" >
+                           src="{{ site.baseurl }}/{{ post.photo }}" >
                       {% if post.link %} </a> {% endif %}
                   </div>
                   {% endif %}
@@ -104,7 +104,7 @@
                 </li>
                 {% endfor %}
               </ul>
-              <p><a href="{{ site.base }}/news/">&nbsp;&nbsp;&nbsp;Older posts&hellip;</a></p>
+              <p><a href="news/">&nbsp;&nbsp;&nbsp;Older posts&hellip;</a></p>
             </div>
             </div>
           </div>
