@@ -3,18 +3,37 @@ layout: default
 title: Current Research
 ---
 
-My research broadly covers operating systems for datacenter servers
+My current research focuses on operating systems for datacenter servers
 and mobile devices.  I also work in distributed systems and security
-for the datacenter.  My PhD focused on runtime systems for
-large-scale, distributed applications. Before starting my PhD, I
-worked on several research projects at VMware and MIT. You can find
-out more about my [past projects](past.html).
+for the datacenter.  
 
 
 <ul class="media-list">
 <li class="media">
 <div class="media-left hidden-xs">
-<img style="width:100px" class="media-object img-rounded" src="../img/marvin.jpg" />
+<img style="width:100px" class="media-object img-circle" src="../img/demikernel.jpg" />
+</div>
+<div class="media-body">
+
+    <span class="links btn-group pull-right">
+    <a href="{{ site-base }}/papers/demikernel-hotos19.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+    </span>
+
+    <h3 class="media-heading">Demikernel</h3>
+    The Demikernel is a new library OS architecture for kernel-bypass
+    I/O in datacenter servers.  The Demikernel defines a new
+    kernel-bypass I/O abstraction and uses library OSes to flexibly provide
+    that abstraction across different
+    kernel-bypass devices (e.g., DPDK, RDMA).  This standard interface
+     makes kernel-bypass applications easier to build and portable
+    across different devices. 
+    <br>
+    </div>
+
+</li>
+<li class="media">
+<div class="media-left hidden-xs">
+<img style="width:100px" class="media-object img-circle" src="../img/marvin.jpg" />
 </div>
 <div class="media-body">
 
@@ -23,11 +42,152 @@ out more about my [past projects](past.html).
     </span>
 
     <h3 class="media-heading">Marvin</h3>
-    Marvin is a new memory manager for Android
+    Marvin is a new memory manager for Android that co-designs the
+    application runtime (i.e., JVM) and operating system.
+    Marvin's key insight is that all mobile applications run within
+    the <i>same</i> runtime, so we can leverage  runtime insight into the
+    application for better  resource management.  Marvin implements
+    almost all memory management in a modified Android Runtime to
+    achieve better  memory utilization and performance.
     <br>
     </div>
 
 </li>
 </ul>
+
+## Previous Research
+
+My PhD research broadly covered distributed systems for large-scale,
+wide-area applications. Before starting my PhD, I worked on several
+research projects at VMware and MIT. You can find out more about my
+[past projects](past.html).
+
+
+<ul class="media-list">
+    <li class="media">
+		<div class="media-left hidden-xs">
+    <img style="width:100px" class="media-object img-rounded"
+    src="../img/felix.jpg" />
+	</div>
+	<div class="media-body">
+
+<span class="links btn-group pull-right">
+<a href="{{ site-base }}/papers/tapir-sosp15.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://www.youtube.com/watch?v=yE3eMxYJDiE" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
+<a href="https://github.com/UWSysLab/tapir" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="tapir/index.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
+</span>
+
+<h3 class="media-heading">TAPIR</h3>
+
+The Transactional Application Protocol for Inconsistent Replication
+(TAPIR) is a new protocol for linearizable distributed transactions
+built using replication with <em>no consistency guarantees</em>. By
+enforcing consistency <em>only</em> at the transaction layer, TAPIR
+eliminates coordination at the replication layer, enabling TAPIR to
+provide the same transaction model and consistency guarantees as
+existing systems like Spanner with better latency and throughput.
+</div>
+</li>
+
+    <li class="media">
+		<div class="media-left hidden-xs">
+			<img style="width:100px" class="media-object img-rounded"
+			src="../img/diamond.jpg" />
+	</div>
+	<div class="media-body">
+	
+<span class="links btn-group pull-right">
+<a href="{{ site-base }}/papers/diamond-osdi16.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://www.usenix.org/conference/osdi16/technical-sessions/presentation/zhang-irene" class="btn btn-default btn-xs">{%icon fa-volume-up%} Talk</a>
+<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
+</span>
+
+	<h3 class="media-heading">Diamond</h3>
+
+Diamond is a new data management system for wide-area, reactive
+applications.  Reactive applications give users the illusion of
+continuous synchronization across mobile devices and the cloud server.
+Diamond simplifies this task by providing applications with persistent
+cloud storage, reliable synchronization between storage and mobile
+devices, and automated execution of application code in response to
+shared data updates.  </li>
+
+    <li class="media">
+		<div class="media-left hidden-xs">
+			<img style="width:100px" class="media-object img-rounded"
+			src="../img/agate.jpg" />
+	</div>
+	<div class="media-body">
+	
+    <span class="links btn-group pull-right">
+<a href="https://github.com/SapphireAgate" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//sapphire.cs.washington.edu/research/project/agate.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
+</span>
+
+	<h3 class="media-heading">Agate</h3>
+
+Agate is a new trusted distributed runtime system that gives users
+control over how mobile/cloud applications share sensitive user data
+collected on mobile devices (e.g., photos, GPS location).  Agate
+combines aspects of access control and information flow control to
+allow applications to share user data in application-specific ways,
+while enforcing user policies without trusting the application or the
+application programmer.
+
+</li>
+
+    <li class="media">
+		<div class="media-left hidden-xs">
+			<img style="width:100px" class="media-object img-rounded"
+    src="../img/sapphire.jpg" />
+	</div>
+	<div class="media-body">
+
+<span class="links btn-group pull-right">
+<a href="{{ site-base }}/papers/sapphire-osdi14.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/zhang.mp4" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
+<a href="https://github.com/UWSysLab/Sapphire" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//sapphire.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
+</span>
+
+<h3 class="media-heading">Sapphire</h3>
+
+Sapphire is a new distributed programming platform that provides
+customizable and extensible deployment of mobile/cloud applications.
+This flexibility enables programmers to separate deployment logic from
+their application, while maintaining fine-grained control over
+performance trade-offs.
+</div>
+</li>
+
+    <li class="media">
+		<div class="media-left hidden-xs">
+			<img style="width:100px" class="media-object img-rounded"
+    src="../img/arrakis.jpg" />
+	</div>
+	<div class="media-body">
+
+<span class="links btn-group pull-right">
+<a href="{{ site-base }}/papers/arrakis-osdi14.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+<a href="https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/peter.mp4" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
+<a href="https://arrakis.cs.washington.edu/?page_id=52" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
+<a href="//arrakis.cs.washington.edu" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
+</span>
+<h3 class="media-heading">Arrakis</h3>
+
+Arrakis is a new operating system that takes advantage of hardware
+virtualization technology to eliminate the operating system from
+fast-path I/O operations. Arrakis allows applications to directly
+access the hardware during normal execution, providing significantly
+better performance, reliability and customizability.
+<br />
+</div>
+</li>
+
+</ul>
+
+
 
 
