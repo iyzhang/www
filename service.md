@@ -6,6 +6,8 @@ notitle: true
 
 ### Program Committees
 
+* APSys 2019
+* SOSP 2019
 * ASPLOS 2019
 * NSDI 2019
 * OSDI 2018
@@ -14,11 +16,12 @@ notitle: true
 * ASPLOS 2017 External Reviewer
 * OSDI 2016 External Reviewer
 
-
-
 ### Mentoring
 I am currently working with some fantastic graduate students:
 
+* [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/)
+* [Jing Liu](http://www.jingliu.xyz/)
+* Amanda Austin
 * [Niel Lebeck](https://homes.cs.washington.edu/~nl35/)
 * [Adriana Szekeres](https://homes.cs.washington.edu/~aaasz/)
 * [Naveen Kr. Sharma](https://homes.cs.washington.edu/~naveenks/)

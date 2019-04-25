@@ -8,7 +8,73 @@
 @string{papoc = "Proceedings of the Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
 @string{socc = "Proceedings of the ACM Symposium on Cloud Computing (SoCC)"}
 @string{tocs = "ACM Transactions on Computer Systems (TOCS)"}
+@string{hotos = "Proceedings of the Workshop on Hot Topics in Operating Systems (HotOS)"}
+@string{hotcloud = "Proceedings of the Workshop on Hot Topics in Cloud Computing (HotCloud)"}
 
+@InProceedings{chimera-hotcloud,
+  author =        {Amy Ousterhout and Adam Belay and Irene Zhang},
+  month =         7,
+  title =         {Just In Time Delivery: Leveraging Operating Systems Knowledge for Better Datacenter Congestion Control},
+  year =          2019,
+  booktitle = hotcloud,
+  url = {papers/chimera-hotcloud19.pdf},
+  abstract = { Network links and server CPUs are heavily contended
+                  resources in modern datacenters.  To keep tail
+                  latencies low, datacenter operators drastically
+                  overprovision both types of resources today, and
+                  there has been significant research into effectively
+                  managing network traffic and CPU load. However, all
+                  of this work looks at the two resources in
+                  isolation.  In this paper, we make the observation
+                  that, in the datacenter, the allocation of network
+                  and CPU resources should be co-designed for
+                  the most efficiency and the best response times.
+                  For example, while congestion control protocols can
+                  prioritize traffic from certain flows, it is wasted
+                  work if the traffic arrives at an overloaded server
+                  that will only enqueue the request.  Likewise,
+                  allocating more CPU resources to an application will
+                  not improve its performance if network congestion is
+                  causing a bottleneck in its requests.  This paper
+                  explores the potential benefits of such a
+                  co-designed resource allocator and considers the
+                  recent work in both CPU scheduling and congestion
+                  control that is best suited to such a system.  We
+                  propose a Chimera, a new datacenter OS that
+                  integrates a receiver-based congestion control
+                  protocol with OS insight into application queues,
+                  using the recent Shenango operating
+                  system.  }}
+
+
+@InProceedings{demikernel-hotos,
+  author =        {Irene Zhang and Jing Liu and Amanda Austin and Michael Lowell Roberts and Anirudh Badam},
+  month =         5,
+  title =         {I'm Not Dead Yet! The Role of the Operating System in a
+    Kernel-Bypass Era},
+  year =          2019,
+  booktitle = hotos,
+  url = {papers/demikernel-hotos19.pdf},
+  abstract = { Researchers have long predicted the demise of the
+                  operating system.  As datacenter servers
+                  increasingly incorporate I/O devices that let
+                  applications bypass the OS kernel (e.g., RDMA and
+                  DPDK network devices or SPDK storage devices), this
+                  prediction may finally come true.  While
+                  kernel-bypass devices do eliminate the OS kernel
+                  from the I/O path, they do not handle the kernel's
+                  most important job: offering higher-level
+                  abstractions.  This paper argues for a new
+                  high-level, device-agnostic I/O abstraction for
+                  kernel-bypass devices.  We propose the Demikernel, a
+                  new library OS architecture for kernel-bypass
+                  devices.  It defines a high-level, kernel-bypass I/O
+                  abstraction and provides user-space library OSes to
+                  implement that abstraction across a range of
+                  kernel-bypass devices.  The Demikernel makes
+                  applications easier to build, portable across
+                  devices, and unmodified as devices continue to
+                  evolve.}}
 
 
 @PhdThesis{zhang17_towar_flexib_high_perfor_operat,
