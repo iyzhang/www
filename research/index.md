@@ -55,7 +55,7 @@ for the datacenter.
 </li>
 </ul>
 
-## Previous Research
+## Past Research
 
 My PhD research broadly covered distributed systems for large-scale,
 wide-area applications. Before starting my PhD, I worked on several
