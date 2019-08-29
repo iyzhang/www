@@ -1,22 +1,12 @@
 <table class="table">
 <tbody>
-	{%- set prev_year = 1900 %}
-	{%- set prev_month = 0 %}
 	{%- for entry in entries %}
 	<tr>
 		<td>
 			<span class="date">
-				{% if entry.fields['year'] != prev_year %}
-				<big><strong>{{ entry.fields['year'] }}</strong></big><br />
-				{%- set prev_year = entry.fields['year'] %}
-				{{ entry.fields['month']|monthname }}
-                {%- set prev_month = entry.fields['month'] %}
-                {% else %}
-                {% if entry.fields['month'] != prev_month %}
-                {{ entry.fields['month']|monthname }}
-				{%- set prev_month = entry.fields['month'] %}
-                {% endif %}
-                {% endif %}        
+				<big><strong>{{ entry.fields['year'] }} </strong></big><br />
+				{{ entry.fields['month']|monthname }}   
+				
 			</span>
 		</td>
 		<td class="publication">

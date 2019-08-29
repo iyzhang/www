@@ -3,7 +3,7 @@ layout: post
 shortnews: false
 title: The Case for a High-level Kernel-Bypass I/O Abstraction
 photo: img/demikernel.jpg
-link: papers/demikernel-hotos19.pdf
+link: /papers/demikernel-hotos19.pdf
 ---
 
 After chatting with people at HotOS, I was inspired to write this blog
@@ -22,7 +22,7 @@ high-level interface for kernel-bypass I/O.  The Demikernel OS
 architecture is a ***solution***: it defines a high-level I/O
 abstraction for kernel-bypass and supports this abstraction across
 different kernel-bypass devices with library OSes.  Read [the HotOS
-paper](papers/demikernel-hotos19.pdf) if you are interested in our
+paper]({{ site.base}}/papers/demikernel-hotos19.pdf) if you are interested in our
 proposed solution.
 
 ### Background: Existing kernel-bypass abstractions are low-level
@@ -50,9 +50,12 @@ break up messages into network packets and implement congestion and
 flow control.  Almost every RDMA application implements an RPC
 messaging mechanism that coordinates message sizes and when the sender
 should stop sending because the receiver is running out of buffers.
+
 This functionality would normally be provided by an OS, but low-level
 kernel-bypass interfaces instead force every application to
-re-implement it.
+re-implement it.  At the end of the day, most kernel-bypass
+applications are still looking for a high-level OS interface but
+without the overhead of going through the OS kernel.
 
 ### Benefits of a high-level interface
 Since most applications want the same functionality (e.g., the ability
@@ -103,8 +106,38 @@ so would not benefit from a higher-level interface.
 3. **Doesn't programming against a low-level interface provide better
 performance?**  Not necessarily.  For example, the RDMA interface
 requires all kinds of tricks for optimizing its use.  We use these to
-lower the cost of providing our interface and provide application
+lower the cost of providing our interface and provide applications
 better performance without requiring the programmer to learn all of
 the ins and outs of RDMA.  For many applications, the benefit gained
 by kernel-bypass will far outweigh the cost of our interface anyway.
-  
+
+### Redis Experimental Results
+
+We ran an experiment with the Redis benchmark on
+[CloudLab](cloudlab.us), which has a 25Gb network with Mellanox CX-4
+NICs.  The first bar is unmodified Redis performance.  The next three
+bars are performance for Redis ported to the Demikernel interface.
+The first bar is simply the Demikernel interface with no
+kernel-bypass, still going through the Linux kernel on every I/O.  The
+next two bars are kernel-bypass with RDMA and DPDK.
+
+<img src="{{site.base}}/img/demikernel-redis-exp.jpg" width="50%">
+
+Note that 30% of the overhead from the Linux kernel comes from
+inefficiencies in the interface, while bypassing the kernel using RDMA
+or DPDK provides another 30% decrease in latency.  For this experiment
+with the Redis benchmark, 60% of the latency comes from the OS kernel
+and its interface!
+
+### Summary
+
+Datacenter applications, which spend a signficant portion of their
+time processing network and storage I/O, will no longer be able to
+afford going through the OS kernel on every I/O operation.  However,
+that does nto mean that these applications want low-level access to
+devices.  Instead, we need a new and efficient ***high-level*** I/O
+abstraction for kernel-bypass.
+
+This is a work in progress as I continue the Demikernel project. If
+you have comments or questions, please email me at
+irene.zhang@microsoft.com.
