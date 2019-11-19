@@ -130,7 +130,7 @@ ordering of transactions, you need to start with a strict serial
 ordering of operations, right? (See why this is confusing?)
 
 Interestingly, we demonstrated that this is not necessary in the
-[TAPIR project]({{ site.base }}/research/tapir/)[3].  TAPIR is a new
+[TAPIR project](research/tapir/)[3].  TAPIR is a new
 protocol that provides strong isolation guarantees without any
 consistency guarantees. Our observation is that there is no need to
 enforce both isolation *and* consistency in a transactional storage

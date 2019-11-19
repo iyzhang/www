@@ -22,7 +22,7 @@ high-level interface for kernel-bypass I/O.  The Demikernel OS
 architecture is a ***solution***: it defines a high-level I/O
 abstraction for kernel-bypass and supports this abstraction across
 different kernel-bypass devices with library OSes.  Read [the HotOS
-paper]({{ site.base}}/papers/demikernel-hotos19.pdf) if you are interested in our
+paper](papers/demikernel-hotos19.pdf) if you are interested in our
 proposed solution.
 
 ### Background: Existing kernel-bypass abstractions are low-level
@@ -121,7 +121,7 @@ The first bar is simply the Demikernel interface with no
 kernel-bypass, still going through the Linux kernel on every I/O.  The
 next two bars are kernel-bypass with RDMA and DPDK.
 
-<img src="{{site.base}}/img/demikernel-redis-exp.jpg" width="50%">
+<img src="img/demikernel-redis-exp.jpg" width="50%">
 
 Note that 30% of the overhead from the Linux kernel comes from
 inefficiencies in the interface, while bypassing the kernel using RDMA

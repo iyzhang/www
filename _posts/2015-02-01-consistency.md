@@ -18,7 +18,7 @@ the illuminating and horrifying.
 I've been thinking and talking about this stuff a lot lately because I
 am TA'ing UW's [undergraduate distributed systems
 class](http://courses.cs.washington.edu/courses/cse452/) and working
-on [TAPIR]({{ site.base }}/research/tapir/), where we are grappling
+on [TAPIR](research/tapir/), where we are grappling
 with how to explain providing consistency with inconsistency (with any
 consistency). Of course, this also serves as dinner conversation for
 me and [Dan](http://drkp.net), so it is good that we have the right
