@@ -6,16 +6,17 @@ notitle: true
 
 ### Program Committees
 
-* EuroDW 2021 Chair
-* OSDI 2020
-* EuroSys 2020 
-* APSys 2019
-* SOSP 2019
-* ASPLOS 2019
-* NSDI 2019
-* OSDI 2018
-* USENIX ATC 2018
-* VEE 2018
+* EuroDW 2021 PC Chair
+* OSDI 2020 PC
+* EuroSys 2020 PC
+* EuroDW 2020 PC
+* APSys 2019 PC
+* SOSP 2019 PC
+* ASPLOS 2019 PC
+* NSDI 2019 PC
+* OSDI 2018 PC
+* USENIX ATC 2018 PC
+* VEE 2018 PC
 * ASPLOS 2017 External Reviewer
 * OSDI 2016 External Reviewer
 
