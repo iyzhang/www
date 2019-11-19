@@ -1,6 +1,6 @@
 PYTHON=python2.7
 BIBTEX=bibtex
-JEKYLL=/usr/local/bin/jekyll
+JEKYLL=jekyll
 
 # targets that aren't filenames
 .PHONY: all clean deploy
