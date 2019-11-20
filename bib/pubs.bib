@@ -14,6 +14,77 @@
 @string{submission = "Submission"}
 @string{asplos = "Proceedings of the International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS)"}
 
+@InProceedings{ambrosia-vldb,
+  author =        { Jonathan Goldstein and Ahmed Abdelhamid and Mike
+                  Barnett and Sebastian Burckhardt and Badrish
+                  Chandramouli and Darren Gehring and Niel Lebeck and
+                  Christopher Meiklejohn and Umar Farooq Minhas and
+                  Ryan Newton and Rahee Peshawaria and Tal Zaccai and
+                  Irene Zhang },
+  month =         12,
+  title =         {A.M.B.R.O.S.I.A: Providing Performant Virtual Resiliency for Distributed Applications},
+  year =          2019,
+  booktitle = vldb,
+  abstract = {When writing today's distributed programs, which
+                  frequently span both devices and cloud services,
+                  programmers are faced with complex decisions and
+                  coding tasks around coping with failure, especially
+                  when these distributed components are stateful. If
+                  their application can be cast as pure data
+                  processing, they benefit from the past 40-50 years
+                  of work from the database community, which has shown
+                  how declarative database systems can completely
+                  isolate the developer from the possibility of
+                  failure in a performant manner. Unfortunately, while
+                  there have been some attempts at bringing similar
+                  functionality into the more general distributed
+                  programming space, a compelling general-purpose
+                  system must handle non-determinism, be performant,
+                  support a variety of machine types with varying
+                  resiliency goals, and be language agnostic, allowing
+                  distributed components written in different
+                  languages to communicate. This paper introduces the
+                  first system, Ambrosia, to satisfy all these
+                  requirements. We coin the term "virtual resiliency",
+                  analogous to virtual memory, for the platform
+                  feature which allows failure oblivious code to run
+                  in a failure resilient manner. We also introduce a
+                  programming construct, the "impulse", which
+                  resiliently handles non-deterministic information
+                  originating from outside the resilient component. Of
+                  further interest to our community is the effective
+                  reapplication of much database performance
+                  optimization technology to make Ambrosia more
+                  performant than many of today's non-resilient cloud
+                  solutions.}}
+
+@InProceedings{leap-asplos,
+  author =        {Huaicheng Li and Mingzhe Hao and Stanko Novakovic
+                  and Vaibhav Gogte and Sriram Govindan and Dan
+                  R. K. Ports and Irene Zhang and Ricardo
+                  Bianchini and Haryadi S. Gunawi and Anirudh Badam},
+  month =         4,
+  title =         {Efficient and Portable Virtual NVMe Storage on ARM SoCs},
+  year =          2020,
+  booktitle = asplos,
+  abstract = {Today's cloud storage stack is extremely resource
+                  hungry, burning 10-20% of datacenter x86 cores, a
+                  major "storage tax" that cloud providers must
+                  pay. Yet complex cloud storage stack is not
+                  completely offload ready to today's I/O
+                  accelerators. We present Leap, a new cloud storage
+                  stack that leverages ARM-based co-processors to
+                  offload complex storage services. Leap addresses
+                  many deployment challenges such as hardware
+                  fungibility, software portability, virtualizability,
+                  composability, and efficiency, with a set of
+                  OS/software techniques and new hardware properties
+                  that provide a uniform address space across the x86
+                  and ARM cores and expose a virtual NVMe storage to
+                  unmodified guest VMs, with a competitive speed to
+                  bare-metal performance.}}
+
+
 @Article{tapir-tocs,
   author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana
                   Szekeres and Arvind Krishnamurhty and Dan
