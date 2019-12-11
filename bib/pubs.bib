@@ -14,6 +14,36 @@
 @string{submission = "Submission"}
 @string{asplos = "Proceedings of the International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS)"}
 
+
+
+@TechReport{hercules-tr,
+  author =        { Niel Lebeck and Jonathan Goldstein and Irene Zhang},
+   title =         { Hercules: A Multi-View Cache for Real-Time Interactive Apps},
+  url = {papers/hercules-tr19.pdf},
+  abstract = {Existing distributed storage systems do not meet the
+                  needs of real-time interactive apps. These apps
+                  feature small groups of users making concurrent
+                  modifications, tight responsiveness bounds, and
+                  wide-area distribution. As a result, they need a
+                  storage system that provides simultaneous access to
+                  multiple versions of shared state, where the
+                  versions trade off consistency and staleness, and
+                  there are versions representing the extreme ends
+                  of the consistency/staleness spectrum. We present
+                  Hercules, a distributed storage system that meets
+                  these needs using client-side caching. Hercules uses
+                  batching to preserve performance in high-throughput
+                  scenarios and includes recovery protocols to
+                  maintain liveness in the face of client-side
+                  failures. We experimentally evaluate Hercules's
+                  performance and failure tolerance, and we present a
+                  set of example apps that demonstrate the versatility
+                  of Hercules's programming model.},
+  institution =  {University of Washington},
+  year =         2019,
+  number =    {UW-CSE-2019-12-01},
+  month =     12}
+
 @InProceedings{ambrosia-vldb,
   author =        { Jonathan Goldstein and Ahmed Abdelhamid and Mike
                   Barnett and Sebastian Burckhardt and Badrish
@@ -129,7 +159,7 @@ code={https://github.com/UWSysLab/tapir}
 
 @techreport{lebeck-marvin-tr,
   author =        {Niel Lebeck and Arvind Krishnamurthy and Henry M. Levy and Irene Zhang},
-  institution =   {University of Washington CSE},
+  institution =   {University of Washington},
   month =         4,
   number =        {UW-CSE-2019-04-01},
   title =         {End the Senseless Killing: Improving Memory Management for Mobile Operating Systems},
@@ -408,7 +438,7 @@ talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
   author =        {Irene Zhang and Naveen Kr. Sharma and
                    Adriana Szekeres and Arvind Krishnamurthy and
                    Dan R. K. Ports},
-  institution =   {University of Washington CSE},
+  institution =   {University of Washington},
   month =         10,
   number =        {UW-CSE-2014-12-01 v2},
   title =         {Building Consistent Transactions with Inconsistent
