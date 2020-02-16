@@ -4,6 +4,8 @@ Irene's Webpage
 This site uses [Jekyll][] and [bibble][] to generate a static personal webpage
 complete with publications, research and news.
 
+Note that all of the tools used to build this page are horribly out of
+date, but I'm never re-writing this webpage, so deal with it.
 
 Editing
 -------
@@ -38,9 +40,19 @@ And concoct a page title for your post. The body of the post goes after the `---
 Building and Deploying
 ----------------------
 
+Note that Jekyll no longer supports Red Carpet markdown. To compile
+this webpage, install an older version of Jekyll.
+
 The requirements for building the site are:
 
-* [Jekyll][]: run `gem install jekyll`
+* [ruby][]: use a package manager, e.g., with Macports `sudo port
+  install ruby`
+* [rbenv][]: use a package manager, e.g., with Macports `sudo port
+  install rbenv`
+* [Bundler][]: run `gem install bundler`
+* [Jekyll][]: run `gem install --version 3.8 jekyll`
+* [Python][]: we're still using python 2.7, so install that
+* [Pip][]: use package manager, e.g., with Macports `sudo port install py36-pip`
 * [Pybtex][]: run `pip install pybtex`
 * [bibble][]: included as a submodule. Because git is cruel, you need to use
   `git clone --recursive URL` or issue the commands `git submodule init ; git

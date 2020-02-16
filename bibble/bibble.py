@@ -70,7 +70,7 @@ def _title(entry):
         title = entry.fields['title']
 
     # remove curlies from titles -- useful in TeX, not here
-    title = title.translate(None, '{}')
+    #title = title.translate(t[None] '{}')
     return title
 
 def _main_url(entry):

@@ -14,6 +14,35 @@
 @string{submission = "Submission"}
 @string{asplos = "Proceedings of the International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS)"}
 
+@InProceedings{meerkat,
+  author = {Adriana Szekeres and Michael Whittaker and Naveen
+                  Kr. Sharma and Jialin Li and Arvind Krishnamurthy
+                  and Irene Zhang and Dan R. K. Ports},
+  month = 4,
+  title = {Meerkat: Scalable Replicated Transactions Following the Zero-Coordination Principle},
+  year = 2020,
+  booktitle = eurosys,
+  abstract = {Traditionally, the high cost of network communication
+                  between servers has hidden the impact of cross-core
+                  coordination in replicated systems. However, new
+                  technologies, like kernel-bypass networking and
+                  faster network links, have exposed hidden
+                  bottlenecks in distributed systems.  This paper
+                  explores how to build multicore-scalable, replicated
+                  storage systems. We introduce a new guideline for
+                  their design, called the Zero-Coordination
+                  Principle. We use this principle to design a new
+                  multicore-scalable, in-memory, replicated, key-value
+                  store, called Meerkat.  Unlike existing systems,
+                  Meerkat eliminates all cross-core and cross-replica
+                  coordination, both of which pose a scalability
+                  bottleneck. Our experiments found that Meerkat is
+                  able to scale up to 80 hyper-threads and execute 8.3
+                  million transactions per second. Meerkat represents
+                  an improvement of 12x on state-of-the
+                  art, fault-tolerant, in-memory, transactional
+                  storage systems built using leader-based replication
+                  and a shared transaction log.  }}
 
 
 @TechReport{hercules-tr,
@@ -86,14 +115,15 @@
                   reapplication of much database performance
                   optimization technology to make Ambrosia more
                   performant than many of today's non-resilient cloud
-                  solutions.}}
+                  solutions.},
+url={papers/ambrosia-vldb19.pdf} }
 
 @InProceedings{leap-asplos,
   author =        {Huaicheng Li and Mingzhe Hao and Stanko Novakovic
                   and Vaibhav Gogte and Sriram Govindan and Dan
                   R. K. Ports and Irene Zhang and Ricardo
                   Bianchini and Haryadi S. Gunawi and Anirudh Badam},
-  month =         4,
+  month =         3,
   title =         {Efficient and Portable Virtual NVMe Storage on ARM SoCs},
   year =          2020,
   booktitle = asplos,
