@@ -7,6 +7,7 @@ notitle: true
 ### Program Committees
 
 * EuroDW 2021 PC Chair
+* NSDI 2020 PC
 * OSDI 2020 PC
 * EuroSys 2020 PC
 * EuroDW 2020 PC
