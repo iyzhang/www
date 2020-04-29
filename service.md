@@ -28,14 +28,15 @@ I am currently working with some fantastic PhD students:
 * [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
 * [Max Demoulin](http://www.maxdml.com/) (Penn)
 * [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
-* [Niel Lebeck](https://homes.cs.washington.edu/~nl35/) (UW)
-* [Adriana Szekeres](https://homes.cs.washington.edu/~aaasz/) (UW)
-* [Michael Whittaker](https://mwhittaker.github.io/) (Berkeley)
+* [Pratyush Patel](https://homes.cs.washington.edu/~patelp1/) (UW)
+* [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
+* [Deepti Raghavan](https://deeptir.me/) (Stanford)
 
 ### Outreach
 I started Women's Research Day at UW as a day of technical content
-presented by women for women. It is now in its fifth year!
+presented by women for women. It is now in its sixth year!
 
+* [Women's Research Day 2020](http://wrd.cs.washington.edu/)
 * [Women's Research Day
   2018](https://www.facebook.com/events/2085124848383890/)
 * [CSE News Post on Women's Research Day 2017](https://news.cs.washington.edu/2017/04/01/allen-schools-2017-womens-research-day/)
