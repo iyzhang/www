@@ -13,6 +13,67 @@
 @string{vldb = "Proceedings of the International Conference on Very Large Data Bases (VLDB)"}
 @string{submission = "Submission"}
 @string{asplos = "Proceedings of the International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS)"}
+@string{acsac = "Annual Computer Security Applications Conference (ACSAC)"}
+
+@InProceedings{ray_acsac_talek,
+  author =        {Raymond Cheng and William Scott and Elisaweta
+                  Masserova and Irene Zhang and Vipul Goyal and Thomas
+                  Anderson and Arvind Krishnamurthy and Bryan Parno},
+                  month = 12,
+                  year = 2020,
+                  booktitle = acsac,
+    title = {Talek: Private Group Messaging with Hidden Access
+                  Patterns},
+                  abstract = {Talek is a private group
+                  messaging system that sends messages through
+                  potentially untrustworthy servers, while hiding both
+                  data content and the communication patterns among
+                  its users. Talek explores a new point in the design
+                  space of private messaging; it guarantees access
+                  sequence indistinguishability, which is among the
+                  strongest guarantees in the space, while assuming an
+                  anytrust threat model, which is only slightly weaker
+                  than the strongest threat model currently found in
+                  related work. Our results suggest that this is a
+                  pragmatic point in the design space, since it
+                  supports strong privacy and good performance: we
+                  demonstrate a 3-server Talek cluster that achieves
+                  throughput of 9,433 messages/second for 32,000
+                  active users with 1.7-second end-to-end latency.  To
+                  achieve its security goals without coordination
+                  between clients, Talek relies on
+                  information-theoretic private information
+                  retrieval. To achieve good performance and minimize
+                  server-side storage, Talek introduces new techniques
+                  and optimizations that may be of independent
+                  interest, e.g., a novel use of blocked cuckoo
+                  hashing and support for private notifications. The
+                  latter provide a private, efficient mechanism for
+                  users to learn, without polling, which logs have new
+                  messages.},
+                  url={papers/talek-acsac20.pdf} }
+@InProceedings{wen_osdi_persimmon,
+  author =        {Wen Zhang and Scott Shenker and Irene Zhang},
+  month =         11,
+  year =          2020,
+  booktitle = osdi,
+  title =         {Persistent State Machines for Recoverable In-memory Storage Systems with NVRam},
+  abstract = {Distributed in-memory storage systems are crucial for
+                  meeting the low latency requirements of modern
+                  datacenter services. However, they lose all state on
+                  failure, so recovery is expensive and data loss is
+                  always a risk. Persistent memory (PM) offers the
+                  possibility of building fast, persistent in-memory
+                  storage; however, existing PM systems are built from
+                  scratch or require heavy modification of existing
+                  systems. To rectify these problems, this paper
+                  presents Persimmon, a PM-based system that converts
+                  existing distributed in-memory storage systems into
+                  persistent, crash-consistent versions with low
+                  overhead and minimal code changes.},
+                  url={papers/persimmon-osdi20.pdf} 
+                  }
+
 
 @InProceedings{rdma_sec_hotcloud,
   author =        {Anna Simpson and Adriana Szekeres and Jacob Nelson and Irene Zhang},
@@ -20,7 +81,25 @@
   year =          2020,
   booktitle = hotcloud,
   title =         {Securing RDMA for High-Performance Datacenter Storage Systems},
-  abstract = {RDMA is increasingly popular for low-latency communication in datacenters, marking a major change in how we build distributed systems. Unfortunately, as we pursue significant system re-designs inspired by new technology, we have not given equal thought to the consequences for system security. This paper investigates security issues introduced to datacenter systems by switching to RDMA and challenges in building secure RDMA systems. These challenges include changes in RPC reliability guarantees and unauditable data-accesses. We show how RDMA's design makes it challenging to build secure storage systems by analyzing recent research systems; then we outline several directions for solutions and future research, with the goal of securing RDMA datacenter systems while they are still in the research and prototype stages.}}
+  abstract = {RDMA is increasingly popular for low-latency
+                  communication in datacenters, marking a major change
+                  in how we build distributed systems. Unfortunately,
+                  as we pursue significant system re-designs inspired
+                  by new technology, we have not given equal thought
+                  to the consequences for system security. This paper
+                  investigates security issues introduced to
+                  datacenter systems by switching to RDMA and
+                  challenges in building secure RDMA systems. These
+                  challenges include changes in RPC reliability
+                  guarantees and unauditable data-accesses. We show
+                  how RDMA's design makes it challenging to build
+                  secure storage systems by analyzing recent research
+                  systems; then we outline several directions for
+                  solutions and future research, with the goal of
+                  securing RDMA datacenter systems while they are
+                  still in the research and prototype stages.},
+                  url={papers/rdma-sec-hotcloud20.pdf} 
+                  }
 
 @InProceedings{marvin_atc,
   author =        {Niel Lebeck and Arvind Krishnamurthy and Henry M. Levy and Irene Zhang},
@@ -51,7 +130,8 @@
                   many concurrent apps as Android, and that Marvin can
                   reclaim memory over 60x faster than Android with a
                   Linux swap file can allocate memory under memory
-                  pressure.  }}
+                  pressure.  },
+   url={papers/marvin-atc20.pdf}}
 
 
 @InProceedings{meerkat,
@@ -83,8 +163,8 @@
                   an improvement of 12x on state-of-the
                   art, fault-tolerant, in-memory, transactional
                   storage systems built using leader-based replication
-                  and a shared transaction log.  }
-                  }
+                  and a shared transaction log.  },
+                  talk = {https://www.youtube.com/watch?v=hVvQTh-2jog&feature=youtu.be}}
 
 
 @TechReport{hercules-tr,
