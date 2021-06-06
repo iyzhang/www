@@ -380,6 +380,35 @@ code={https://github.com/UWSysLab/tapir}
                   using the recent Shenango operating
                   system.  }}
 
+@InProceedings{cornflakes-hotos,
+  author =        {Deepti Raghavan and Philip Levis and Matei Zaharia
+                  and Irene Zhang},
+  month =         6,
+  title =         {Breakfast of Champions: Towards Zero-Copy Serialization with NIC Scatter-Gather},
+  year =          2021,
+  booktitle = hotos,
+  url = {papers/cornflakes-hotos21.pdf},
+  abstract = {  Microsecond I/O will make data serialization a major
+                  bottleneck for datacenter
+                  applications. Serialization is fundamentally about
+                  data movement: serialization libraries coalesce and
+                  flatten in-memory data structures into a single
+                  transmittable buffer. CPU-based serialization
+                  approaches will hit a performance limit due to data
+                  movement overheads and be unable to keep up with
+                  modern networks.  We observe that widely deployed
+                  NICs possess scatter-gather capabilities that can be
+                  re-purposed to accelerate serialization's core task
+                  of coalescing and flattening in-memory data
+                  structures. It is possible to build a completely
+                  zero-copy, zero-allocation serialization library
+                  with commodity NICs. Doing so introduces many
+                  research challenges, including using the hardware
+                  capabilities efficiently for a wide variety of
+                  non-uniform data structures, making application
+                  memory available for zero-copy I/O, and ensuring
+                  memory safety. }}
+
 
 @InProceedings{demikernel-hotos,
   author =        {Irene Zhang and Jing Liu and Amanda Austin and Michael Lowell Roberts and Anirudh Badam},
@@ -389,7 +418,7 @@ code={https://github.com/UWSysLab/tapir}
   year =          2019,
   booktitle = hotos,
   url = {papers/demikernel-hotos19.pdf},
-  abstract = { Researchers have long predicted the demise of the
+  abstract = {Researchers have long predicted the demise of the
                   operating system.  As datacenter servers
                   increasingly incorporate I/O devices that let
                   applications bypass the OS kernel (e.g., RDMA and
@@ -408,7 +437,7 @@ code={https://github.com/UWSysLab/tapir}
                   kernel-bypass devices.  The Demikernel makes
                   applications easier to build, portable across
                   devices, and unmodified as devices continue to
-                  evolve.}}
+                  evolve. }}
 
 
 @PhdThesis{zhang17_towar_flexib_high_perfor_operat,

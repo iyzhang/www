@@ -6,6 +6,9 @@ notitle: true
 
 ### Program Committees
 
+* VEE 2021 PC Chair
+* OSDI 2021 PC
+* SOSP 2021 PC
 * EuroDW 2021 PC Chair
 * NSDI 2021 PC
 * OSDI 2020 PC
