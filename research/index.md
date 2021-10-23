@@ -3,9 +3,9 @@ layout: default
 title: Current Research
 ---
 
-My current research focuses on operating systems for datacenter servers
-and mobile devices.  I also work in distributed systems and security
-for the datacenter.  
+My current research focuses on datapath operating systems for
+microsecond-scale datacenter systems.
+
 
 
 <ul class="media-list">
@@ -16,21 +16,57 @@ for the datacenter.
 <div class="media-body">
 
     <span class="links btn-group pull-right">
-    <a href="papers/demikernel-hotos19.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+    <a href="papers/demikernel-sosp21.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
     </span>
 
     <h3 class="media-heading">Demikernel</h3>
-    The Demikernel is a new library OS architecture for kernel-bypass
-    I/O in datacenter servers.  The Demikernel defines a new
-    kernel-bypass I/O abstraction and uses library OSes to flexibly provide
-    that abstraction across different
-    kernel-bypass devices (e.g., DPDK, RDMA).  This standard interface
-     makes kernel-bypass applications easier to build and portable
-    across different devices. 
+    The Demikernel is a new datapath OS and architecture for
+    microsecond-scale datacenter systems and kernel-bypass devices.
+    Demikernel accommodates heterogenous kernel-bypass devices with a
+    flexible library OS architecture and new high-level datapath API
+    with an asynchronous I/O interface and zero-copy memory
+    semantics for microsecond I/O processing.  Demikernel implements
+    this API for RDMA, DPDK and SPDK devices with new nanosecond-scale
+    I/O stacks in Rust.  Once ported to Demikernel, microsecond
+    datacenter systems can run across different devices with no code changes.
     <br>
     </div>
 
 </li>
+
+<li class="media">
+<div class="media-left hidden-xs">
+<img style="width:100px" class="media-object img-circle" src="../img/persimmon.jpg" />
+</div>
+<div class="media-body">
+
+    <span class="links btn-group pull-right">
+    <a href="papers/persimmon-osdi20.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+    </span>
+
+    <h3 class="media-heading">Persimmon</h3>
+    Persimmon is a persistent memory system that  presents a new persistent state machine abstraction
+    (PSM) to applications,
+    which captures both the granularity of atomic persistent
+    operations and the data that should be persisted.  Persistent
+    state machines nicely capture the RPC-processing behavior of
+    modern datacenter storage systems.  As a result, Persimmon is able
+    to converts existing
+    distributed in-memory storage systems into persistent,
+    crash-consistent versions with low overhead and minimal code
+    changes.  
+    <br>
+    </div>
+
+</li>
+</ul>
+
+## Past Research
+
+My PhD research broadly covered distributed systems for large-scale,
+wide-area applications. Some recent projects are listed below.
+
+<ul class="media-list">
 <li class="media">
 <div class="media-left hidden-xs">
 <img style="width:100px" class="media-object img-circle" src="../img/marvin.jpg" />
@@ -53,14 +89,6 @@ for the datacenter.
     </div>
 
 </li>
-</ul>
-
-## Past Research
-
-My PhD research broadly covered distributed systems for large-scale,
-wide-area applications. Some recent projects are listed below.
-
-<ul class="media-list">
     <li class="media">
 		<div class="media-left hidden-xs">
     <img style="width:100px" class="media-object img-rounded"

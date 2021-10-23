@@ -25,8 +25,27 @@
   month =         10,
   year =          2021,
   booktitle = sosp,
-  title =         {The Demikernel Library OS Architecture for Microsecond Datacenter Systems},
-  url = {papers/demikernel-sosp21.pdf}}
+  title =         {The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems},
+  url = {papers/demikernel-sosp21.pdf},
+  abstract = {Datacenter systems and I/O devices now run at
+                  single-digit microsecond latencies, requiring
+                  ns-scale operating systems. Traditional kernel-based
+                  operating systems impose an unaffordable overhead,
+                  so recent kernel-bypass OSes and libraries
+                  eliminate the OS kernel from the I/O
+                  datapath. However, none of these systems offer a
+                  general-purpose datapath OS replacement that meet
+                  the needs of us-scale systems. This paper proposes
+                  Demikernel, a flexible datapath OS and architecture
+                  designed for heterogenous kernel-bypass devices and
+                  us-scale datacenter systems. We build two prototype
+                  Demikernel OSes and show that minimal effort is
+                  needed to port existing us-scale systems. Once
+                  ported, Demikernel lets applications run across
+                  heterogenous kernel-bypass devices with ns-scale
+                  overheads and no code changes.},
+                  code = {https://github.com/demikernel/demikernel},
+                  talk = {https://youtu.be/DXnFrEBtYVk}}
 
 @InProceedings{max_sosp_persephone,
   author = {Max Demoulin and Josh Fried and Isaac Pedisich and Marios
@@ -36,8 +55,27 @@
   year =          2021,
   booktitle = sosp,
   title =         {When Idling is Ideal: Optimizing Tail-Latency for Highly-Dispersed Datacenter Workloads with Persephone},
-  url = {papers/persephone-sosp21.pdf}
-                  }
+  url = {papers/persephone-sosp21.pdf},
+  abstract = {This paper introduces Persephone, a kernel-bypass OS
+                  scheduler designed to minimize tail latency for
+                  applications executing at microsecond-scale and
+                  exhibiting wide service time
+                  distributions. Persephone integrates a new
+                  scheduling policy, Dynamic Application-aware
+                  Reserved Cores (DARC), that reserves cores for
+                  requests with short processing times. Unlike
+                  existing kernel-bypass schedulers, DARC is not work
+                  conserving. DARC profiles application requests and
+                  leaves a small number of cores idle when no short
+                  requests are in the queue, so when short requests do
+                  arrive, they are not blocked by longer-running
+                  ones. Counter-intuitively, leaving cores idle lets
+                  DARC maintain lower tail latencies at higher
+                  utilization, reducing the overall number of cores
+                  needed to serve the same workloads and consequently
+                  better utilizing the data center resources.},
+   code = {https://github.com/maxdml/psp}
+   }
 
 @InProceedings{sowmya_sosp_prism,
   author = {Sowmya Dharanipragada and Shannon Joyner and Matthew Burke
@@ -47,7 +85,35 @@
   year =          2021,
   booktitle = sosp,
   title =         {PRISM: Rethinking the RDMA Interface for Distributed Systems},
-  url = {papers/prism-sosp21.pdf}}
+  url = {papers/prism-sosp21.pdf},
+  abstract = {Remote Direct Memory Access (RDMA) has been used to
+                  accelerate a variety of distributed systems, by
+                  providing low-latency, CPU-bypassing access to a
+                  remote host's memory. However, most of the
+                  distributed protocols used in these systems cannot
+                  easily be expressed in terms of the simple memory
+                  READs and WRITEs provided by RDMA. As a result,
+                  designers face a choice between introducing
+                  additional protocol complexity (e.g., additional
+                  round trips) or forgoing the benefits of RDMA
+                  entirely.  This paper argues that an extension to
+                  the RDMA interface can resolve this dilemma. We
+                  introduce the PRISM interface, which extends the
+                  RDMA interface with four new primitives:
+                  indirection, allocation, enhanced compare-and-swap,
+                  and operation chaining. These increase the
+                  expressivity of the RDMA interface, while still
+                  being implementable using the same underlying
+                  hardware features. We show their utility by
+                  designing three new applications using PRISM
+                  primitives, that require little to no server-side
+                  CPU involvement: (1) PRISM-KV, a key-value store;
+                  (2) PRISM-RS a replicated block store; and (3)
+                  PRISM-TX, a distributed transaction protocol. Using
+                  a software-based implementation of the PRISM
+                  primitives, we show that these systems outperform
+                  prior RDMA-based equivalents.},
+                  talk = {https://youtu.be/yZDw9uBMHxI}}
 
 
 @InProceedings{ray_acsac_talek,
@@ -170,7 +236,8 @@
                   reclaim memory over 60x faster than Android with a
                   Linux swap file can allocate memory under memory
                   pressure.  },
-   url={papers/marvin-atc20.pdf}}
+   url={papers/marvin-atc20.pdf},
+   talk = {https://www.usenix.org/conference/atc20/presentation/lebeck}}
 
 
 @InProceedings{meerkat,

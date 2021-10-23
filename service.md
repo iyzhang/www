@@ -28,14 +28,28 @@ notitle: true
 I am currently working with some fantastic PhD students:
 
 * Ashlie Martinez (UW)
-* [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
-* [Max Demoulin](http://www.maxdml.com/) (Penn)
-* [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
+* [Omar S. Navarro Leija](https://gatowololo.github.io/) (Penn)
 * [Pratyush Patel](https://homes.cs.washington.edu/~patelp1/) (UW)
 * [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
 * [Deepti Raghavan](https://deeptir.me/) (Stanford)
 
+I've also worked with many great PhD students in the past:
+* Jing Liu (Wisconsin)
+* Amanda Raybuck (UT Austin)
+* Niel Lebeck (UW)
+* [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
+* [Max Demoulin](http://www.maxdml.com/) (Penn)
+* [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
+
 ### Outreach
+I'm currently working on a new initiative to combat harassment at CS
+conferences.  The Superhero Network is an unaffiliated group of mid-career women
+that are experts and advocates in harassment prevention and
+intervention.  We are currently working on standardizing codes of
+conduct across conferences and ensuring conference safety.
+
+* [Superhero Network](https://github.com/iyzhang/superhero-network/)
+
 I started Women's Research Day at UW as a day of technical content
 presented by women for women. It is now in its sixth year!
 

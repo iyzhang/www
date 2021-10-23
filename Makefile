@@ -24,9 +24,7 @@ clean:
 	$(RM) -r _site _includes/pubs.html
 	$(MAKE) -C cv clean
 
-CSEHOST := iyzhang@tricycle.cs.washington.edu
 HOST := irene@geoduck.ambulatoryclam.net
 
 deploy: clean all
 	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(HOST):schemeprincess
-	rsync --compress --recursive --checksum --itemize-changes --delete -e ssh _site/ $(CSEHOST):public_html
