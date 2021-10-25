@@ -34,6 +34,7 @@ I am currently working with some fantastic PhD students:
 * [Deepti Raghavan](https://deeptir.me/) (Stanford)
 
 I've also worked with many great PhD students in the past:
+
 * Jing Liu (Wisconsin)
 * Amanda Raybuck (UT Austin)
 * Niel Lebeck (UW)
