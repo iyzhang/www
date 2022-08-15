@@ -6,13 +6,14 @@ title: Code
 I publish all of my code to [github](https://github.com/iyzhang).
 
 <div class="row"> <ul class="media-list"> 
-<li class="media"> <div class="media-left"> <a href="https://github.com/demikernel/demikernel"
+<li class="media"> <div class="media-left"> <a href="https://github.com/demikernel"
 class="btn btn-link" style="margin-bottom:5px"> {%icon fa-github%}
 Demikernel</a> 
 </div> 
-<div class="media-body"> Demikernel library OS prototype. Included the
-Catnip TCP stack for DPDK and library OSes implementing the Demikernel
-interface for RDMA, DPDK and POSIX.
+<div class="media-body"> Demikernel is a portable user-level OS library
+for kernel-bypass written in Rust.  It is currently maintained by software engineers
+at Microsoft Research and contributors from the open-source community.
+Join the <a href="https://demikernel.slack.com/">Slack</a>  to find out more! 
 </div> </li>
 
 
