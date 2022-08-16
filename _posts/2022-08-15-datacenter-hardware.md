@@ -1,7 +1,7 @@
 ---
 layout: post
 shortnews: false
-title: The Post-Software Datacenter Era
+title: The Post-Software Datacenter
 ---
 
 The death of Moore's law and the attendant growth in hardware speeds
