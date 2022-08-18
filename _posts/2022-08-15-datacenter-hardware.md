@@ -28,8 +28,9 @@ hardware offload for all is the only way forward.
 
 ### Demikernel and Kernel-bypass For All
 Kernel-bypass is the classic example of offloading a common workload
-to hardware.  Every application goes through the OS kernel, therefore
-it makes an excellent target for baking into hardware.  While
+to hardware.  Every I/O operation goes through the OS kernel,
+therefore kernel-bypass I/O hardware offloads the OS features needed
+to safely let applications perform I/O from user-space.  While
 kernel-bypass has been around for a long time, it has never been as
 urgently needed as now.  Unfortunately, as a research community, we've
 put very little thought into how to make kernel-bypass actually usable
@@ -66,7 +67,7 @@ explored before we get to a hardware Demikernel OS:
   care about persistence?
   
 * Scheduling: How do we mediate between application demands on the
-  CPU, memory and I/O bandwidth in hardware. Existing hardware
+  CPU, memory and I/O bandwidth in hardware? Existing hardware
   resource isolation is primitive and there are no hardware mechanisms
   for scheduling CPU cycles (interrupts are too clunky) or memory
   (likewise for page faults).
