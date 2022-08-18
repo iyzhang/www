@@ -6,6 +6,8 @@ notitle: true
 
 ### Program Committees
 
+* SIGOPS Dissertation Award 2023 Committee Chair
+* SOSP 2023 DEI Chair
 * VEE 2021 PC Chair
 * OSDI 2021 PC
 * SOSP 2021 PC
