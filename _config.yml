@@ -24,7 +24,7 @@ navigation:
     - title: Service
       link: /service.html
     - title: Blog
-      link: /news.html
+      link: /news/
     - title: Code
       link: /code.html
  #   - title: CV

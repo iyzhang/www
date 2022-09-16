@@ -6,6 +6,7 @@ notitle: true
 
 ### Program Committees
 
+* SIGOPS Dissertation Award Committee Chair
 * VEE 2021 PC Chair
 * OSDI 2021 PC
 * SOSP 2021 PC
@@ -27,21 +28,24 @@ notitle: true
 ### Mentoring
 I am currently working with some fantastic PhD students:
 
-* Ashlie Martinez (UW)
-* [Omar S. Navarro Leija](https://gatowololo.github.io/) (Penn)
 * [Pratyush Patel](https://homes.cs.washington.edu/~patelp1/) (UW)
 * [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
 * [Deepti Raghavan](https://deeptir.me/) (Stanford)
+* [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin)
+* [Josh Fried](https://joshfried.io) (MIT)
+* Fabricio Carvalho (UFMS)
+* Sowmya Janakiram Dharanipragada (Cornell)
 
 I've also worked with many great PhD students in the past:
 
-* Jing Liu (Wisconsin)
-* Amanda Raybuck (UT Austin)
+* Ashlie Martinez (UW)
+* Shannon Joyner (Cornell)
+* [Omar S. Navarro Leija](https://gatowololo.github.io/) (Penn)
+* [Jing Liu](https://jingliu.xyz) (Wisconsin)
 * Niel Lebeck (UW)
 * [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
 * [Max Demoulin](http://www.maxdml.com/) (Penn)
 * [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
-
 ### Outreach
 I'm currently working on a new initiative to combat harassment at CS
 conferences.  The Superhero Network is an unaffiliated group of mid-career women
