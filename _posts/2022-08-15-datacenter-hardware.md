@@ -29,7 +29,7 @@ hardware offload for all is the only way forward.
 ### Demikernel and Kernel-bypass For All
 Kernel-bypass is the classic example of offloading a common workload
 to hardware.  Every I/O operation goes through the OS kernel,
-therefore kernel-bypass I/O hardware offloads the OS features needed
+therefore kernel-bypass I/O hardware reduces CPU usage by offloading the OS features needed
 to safely let applications perform I/O from user-space.  While
 kernel-bypass has been around for a long time, it has never been as
 urgently needed as now.  Unfortunately, as a research community, we've
