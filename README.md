@@ -51,8 +51,8 @@ The requirements for building the site are:
   install rbenv`
 * [Bundler][]: run `gem install bundler`
 * [Jekyll][]: run `gem install --version 3.8 jekyll`
-* [Python][]: we're still using python 2.7, so install that
-* [Pip][]: use package manager, e.g., with Macports `sudo port install py36-pip`
+* [Python][]: we're still using python 2.7, so install that. Macports `sudo port install python27`, then activate with `sudo port selec --set python2 python27` 
+* [Pip][]: use package manager, e.g., with Macports `sudo port install py27-pip`, then activate with `sudo port select --set pip pip27`
 * [Pybtex][]: run `pip install pybtex`
 * [bibble][]: included as a submodule. Because git is cruel, you need to use
   `git clone --recursive URL` or issue the commands `git submodule init ; git
