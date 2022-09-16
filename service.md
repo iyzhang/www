@@ -6,7 +6,7 @@ notitle: true
 
 ### Program Committees
 
-* SIGOPS Dissertation Award Committee Chair
+* SIGOPS Dissertation Award Committee 2022 Chair
 * VEE 2021 PC Chair
 * OSDI 2021 PC
 * SOSP 2021 PC
