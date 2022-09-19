@@ -6,6 +6,7 @@ notitle: true
 
 ### Program Committees
 
+* SOSP 2023 DEI Chair
 * SIGOPS Dissertation Award Committee 2022 Chair
 * VEE 2021 PC Chair
 * OSDI 2021 PC
@@ -35,6 +36,7 @@ I am currently working with some fantastic PhD students:
 * [Josh Fried](https://joshfried.io) (MIT)
 * Fabricio Carvalho (UFMS)
 * Sowmya Janakiram Dharanipragada (Cornell)
+* [Vishwanath Seshagiri](https://vishwanath1306.github.io)
 
 I've also worked with many great PhD students in the past:
 
