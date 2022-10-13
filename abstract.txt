@@ -1,0 +1,20 @@
+Title: The Demikernel Datapath Architecture for Microsecond-scale
+Datacenter Systems
+
+Abstract:
+
+Datacenter systems and I/O devices now run at single-digit microsecond
+latencies, requiring nanosecond-scale operating systems. Traditional
+kernel-based operating systems impose an unaffordable overhead, so
+recent kernel-bypass OSes (e.g., Arrakis, Ix) and libraries (e.g.,
+Caladan, eRPC) eliminate the OS kernel from the I/O datapath. However,
+none of these systems offer a general-purpose datapath OS replacement
+that meet the needs of microsecond-scale systems.
+
+This talk proposes Demikernel, a flexible datapath OS and architecture
+designed for heterogenous kernel-bypass devices and microsecond-scale
+datacenter systems. We have built two prototype Demikernel datapath
+OSes and show that minimal effort is needed to port existing
+microsecond-scale systems. Once ported, Demikernel lets applications
+run across heterogenous kernel-bypass devices with nanosecond-scale
+overheads and no code changes.

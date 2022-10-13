@@ -1,0 +1,11 @@
+Bio: Irene Zhang is a Principal Researcher at Microsoft Research.  Her
+work focuses on datacenter operating systems and distributed systems,
+especially making new datacenter hardware technologies more widely
+usable by highly-demanding datacenter applications.  Irene completed
+her PhD in 2017 at the University of Washington, where her PhD thesis
+focused on distributed systems that span mobile devices and cloud
+servers.  Her thesis work received the ACM SIGOPS Dennis Ritchie
+doctoral dissertation award and the UW Allen School William Chan
+Memorial dissertation award.  Before her PhD, Irene was a member of
+the virtual machine monitor group at VMware, where she worked on
+memory resource management and virtual machine checkpointing.
