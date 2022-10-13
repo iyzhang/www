@@ -36,25 +36,24 @@ microsecond-scale datacenter systems.
 
 <li class="media">
 <div class="media-left hidden-xs">
-<img style="width:100px" class="media-object img-circle" src="../img/persimmon.jpg" />
+<img style="width:100px" class="media-object img-circle" src="../img/treehouse.png" />
 </div>
 <div class="media-body">
 
     <span class="links btn-group pull-right">
-    <a href="papers/persimmon-osdi20.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
+    <a href="papers/treehouse-arxiv22.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
     </span>
+<h3 class="media-heading">Treehouse</h3>
 
-    <h3 class="media-heading">Persimmon</h3>
-    Persimmon is a persistent memory system that  presents a new persistent state machine abstraction
-    (PSM) to applications,
-    which captures both the granularity of atomic persistent
-    operations and the data that should be persisted.  Persistent
-    state machines nicely capture the RPC-processing behavior of
-    modern datacenter storage systems.  As a result, Persimmon is able
-    to converts existing
-    distributed in-memory storage systems into persistent,
-    crash-consistent versions with low overhead and minimal code
-    changes.  
+Treehouse is new project that proposes a software-centric approach to
+green datacenters. While existing research aims to reduce energy usage
+of datacenter hardware, we argue that being energy-aware in the design
+of datacenter software is equally important.  To that end, Treehouse
+aims to make energy and carbon visible to application developers on a
+fine-grained basis, modify system APIs to make informed trade offs
+between performance and carbon emissions, and raise the level of
+application programming for flexible use of more energy efficient
+means of compute and storage. Find out more about the Treehouse project at our <a href="https://treehouse-research.github.io">project webpage</a>!
     <br>
     </div>
 
