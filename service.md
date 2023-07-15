@@ -6,6 +6,7 @@ notitle: true
 
 ### Program Committees
 
+* NSDI 2024 PC Chair
 * SOSP 2023 DEI Chair
 * SIGOPS Dissertation Award Committee 2022 Chair
 * VEE 2021 PC Chair
@@ -29,7 +30,6 @@ notitle: true
 ### Mentoring
 I am currently working with some fantastic PhD students:
 
-* [Pratyush Patel](https://homes.cs.washington.edu/~patelp1/) (UW)
 * [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
 * [Deepti Raghavan](https://deeptir.me/) (Stanford)
 * [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin)
@@ -48,6 +48,8 @@ I've also worked with many great PhD students in the past:
 * [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
 * [Max Demoulin](http://www.maxdml.com/) (Penn)
 * [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
+* [Pratyush Patel](https://homes.cs.washington.edu/~patelp1/) (UW)
+
 ### Outreach
 I'm currently working on a new initiative to combat harassment at CS
 conferences.  The Superhero Network is an unaffiliated group of mid-career women
