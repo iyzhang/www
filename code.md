@@ -6,7 +6,7 @@ title: Code
 I publish all of my code to [github](https://github.com/iyzhang).
 
 <div class="row"> <ul class="media-list"> 
-<li class="media"> <div class="media-left"> <a href="https://github.com/demikernel"
+<li class="media"> <div class="media-left"> <a href="https://github.com/microsoft/demikernel"
 class="btn btn-link" style="margin-bottom:5px"> {%icon fa-github%}
 Demikernel</a> 
 </div> 
