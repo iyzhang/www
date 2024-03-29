@@ -59,9 +59,10 @@ intervention.  We are currently working on standardizing codes of
 conduct across conferences and ensuring conference safety.
 
 * [Superhero Network](https://github.com/iyzhang/superhero-network/)
+* [CS Climate Survey](https://www.csclimatesurvey.org)
 
 I started Women's Research Day at UW as a day of technical content
-presented by women for women. It is now in its sixth year!
+presented by women for women. It is now in its tenth year!
 
 * [Women's Research Day 2020](http://wrd.cs.washington.edu/)
 * [Women's Research Day
