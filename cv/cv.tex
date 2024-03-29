@@ -101,7 +101,7 @@
       \rline{Ph.D. in Computer Science and Engineering}{Sept 2017}
       Advisors: Hank Levy and Arvind Krishnamurthy\\
       Thesis: \textit{Towards a Flexible, High-Performance Operating System
-      for Mobile/Cloud Applications}
+      \\for Mobile/Cloud Applications}
     \end{rentry}
 
     \begin{rentry}{University of Washington}{Seattle, WA}
@@ -128,7 +128,7 @@
   \end{rsection}
   
   \begin{rsection}{Recent\\Research\\Highlights}
-    \begin{rentry}{Demikernel}{SOSP 2021}
+    \begin{rentry}{Demikernel}{}
       The Demikernel is a new datapath OS and architecture for
       microsecond-scale datacenter systems and kernel-bypass
       devices. Demikernel accommodates heterogenous kernel-bypass
@@ -139,43 +139,48 @@
       SPDK devices with new nanosecond-scale I/O stacks in Rust. Once
       ported to Demikernel, microsecond datacenter systems can run
       across different devices with no code changes.
-    \end{rentry}
+    \end{rentry}\\
     
-    \begin{rentry}{Persephone}{SOSP 2021}
-      Persephone is a kernel-bypass OS scheduler designed to minimize
-      tail latency for microsecond-scale applications with wide
-      service time distributions. Persephone integrates a new
-      scheduling policy, Dynamic Application-aware Reserved Cores
-      (DARC), that reserves cores for requests with short processing
-      times. Unlike existing kernel-bypass schedulers, DARC is not
-      work conserving. DARC profiles application requests and leaves a
-      small number of cores idle when no short requests are in the
-      queue, so when short requests do arrive, they are not blocked by
-      longer-running ones. Counter-intuitively, leaving cores idle
-      lets DARC maintain lower tail latencies at higher utilization,
-      reducing the overall number of cores needed to serve the same
-      workloads and consequently better utilizing the data center
-      resources.
-    \end{rentry}
-    
-    \begin{rentry}{Persimmon}{OSDI 2020}
-          Persimmon is a persistent memory system that presents a new
-          persistent state machine abstraction (PSM) to applications,
-          which captures both the granularity of atomic persistent
-          operations and the data that should be persisted. Persistent
-          state machines nicely capture the RPC-processing behavior of
-          modern datacenter storage systems. As a result, Persimmon is
-          able to converts existing distributed in-memory storage
-          systems into persistent, crash-consistent versions with low
-          overhead and minimal code changes.
-    \end{rentry}
+    \begin{rentry}{Cornflakes}{}
+      Cornflakes is a memory-safe, zero-copy serialization library for
+      microsecond-scale applications. Fundamentally, serialization
+      requires data movement, which is achieved today using copies,
+      while recent kernel-bypass networking stacks, like Demikernel,
+      aim to eliminate copies from the I/O data path.  Cornflakes
+      makes the observation that network devices are better suited for
+      data movement than CPUs in many cases and existing NICs already
+      have the capability to serialize data structures through their
+      scatter-gather API. However, this API is not well-designed for
+      serialization libraries like protobufs. Cornflakes is a hybrid
+      serialization stack that uses NIC scatter-gather when it
+      outperforms the CPU and falls back to software copies in other
+      cases.
+    \end{rentry}\\
 
+    \begin{rentry}{Treehouse}{}
+      Treehouse is a new software-centric approach to green
+      datacenters. While existing research aims to reduce energy usage
+      of datacenter hardware, Treehouse argues that being energy-aware in the
+      design of datacenter software is equally important. To that end,
+      Treehouse aims to make energy and carbon visible to application
+      developers on a fine-grained basis, modify system APIs to make
+      informed trade offs between performance and carbon emissions,
+      and raise the level of application programming for flexible use
+      of more energy efficient means of compute and storage.
+    \end{rentry}
   \end{rsection}    
 \end{rtable}
 
 \begin{rtable}
   
   \begin{rsection}{Conference\\Publications}
+    D. Raghavan, S. Ravi, G. Yuan, P. Thaker, S. Srivastava,
+    M. Murray, P. H. Penna, A. Ousterhout, P. Levis, M. Zaharia, and
+    \textbf{I. Zhang}.  \textit{Cornflakes: Zero-copy Serialization
+      for Microsecond-scale Networking.}  Proc. of the ACM Symposium
+    on Operating Systems Principles (SOSP). October
+    2023. \textbf{Distinguished Artifact Award} \\\vspace{-0.5em}
+
     \textbf{I. Zhang}, A. Raybuck, P. Patel, K. Olynyk, J. Nelson,
     O. S. Navarro Leija, A. Martinez, J. Liu, A. Kornfeld Simpson,
     S. Jayakar, P. H.  Penna, M. Demoulin, P. Choudhury, and
@@ -217,7 +222,7 @@
 
     H. Li, M. Hao, S. Novakovic, V. Gogte, S. Govindan,
     D. R. K. Ports, \textbf{I. Zhang}, R. Bianchini, H. S. Gunawi, and
-    A. Badam. \textbf{ Efficient and Portable Virtual NVMe Storage on
+    A. Badam. \textit{ Efficient and Portable Virtual NVMe Storage on
       ARM SoCs.}  Proc. of the International Conference on
     Architectural Support for Programming Languages and Operating
     Systems (ASPLOS). March 2020.\\\vspace{-0.5em}
@@ -252,24 +257,23 @@
       and Extensible Deployment for Mobile/Cloud Applications.}  In
     Proc. of the USENIX Symposium on Operating Systems Design
     and
-    Implementation (OSDI).  October 2014.\\
-    \vspace{-0.5em}
+    Implementation (OSDI).  October 2014.\\\vspace{-0.5em}
 
-    S. Peter, J. Li, \textbf{I. Zhang}, D. R. K. Ports, D.  Woos,
+     S. Peter, J. Li, \textbf{I. Zhang}, D. R. K. Ports, D.  Woos,
     A. Krishnamurthy, T. Anderson, T. Roscoe.  \textit{Arrakis: The
-      Operating System is the Control Plane.}  In Proc. of the
-    USENIX Symposium on Operating Systems Design and Implementation
-    (OSDI).  October 2014. \textbf{Best Paper Award}.\\\vspace{-0.5em}
-
-    \textbf{I. Zhang}, T. Denniston, Y. Baskakov, A. Garthwaite.
-    \textit{Optimizing VM Checkpointing for Restore Performance in
-      VMware ESXi.}  In Proc. of the USENIX Annual Technical
-    Conference (USENIX ATC).  June 2013.
+      Operating System is the Control Plane.}  In Proc. of the USENIX
+    Symposium on Operating Systems Design and Implementation (OSDI).
+    October 2014.  
   \end{rsection}  
 \end{rtable}
 
 \begin{rtable}
-  \begin{rsection}    
+  \begin{rsection} {}
+    \textbf{I. Zhang}, T. Denniston, Y. Baskakov, A. Garthwaite.
+    \textit{Optimizing VM Checkpointing for Restore Performance in
+      VMware ESXi.}  In Proc. of the USENIX Annual Technical
+    Conference (USENIX ATC).  June 2013. \\\vspace{-0.5em}
+
     \textbf{I. Zhang}, A. Garthwaite, Y. Baskakov,
     K. C. Barr. \textit{Fast Restore of Checkpointed Memory Using
       Working Set Estimation.}  In Proc. of the ACM Conference
@@ -311,6 +315,16 @@
   \end{rsection}
   
   \begin{rsection}{Workshop\\Publications}
+    I. Choi, N. Wadekar, R. Joshi, J. Fried, D. R. K. Ports,
+    \textbf{I. Zhang}, and J. Li. \textit{Capybara: Microsecond-Scale
+      Live TCP Migration.}  ACM SIGOPS Asia-Pacific Workshop on
+    Systems (APSys). August 2023..\\\vspace{-0.5em}
+
+    T. Anderson, A. Belay, M. Chowdhury, A. Cidon, and \textbf{I. Zhang}.
+    \textit{    Treehouse: A Case For Carbon-Aware Datacenter Software.}
+   Proc. of the Workshop on Sustainable Computer Systems Design and
+   Implementation (HotCarbon). July 2022..\\\vspace{-0.5em}
+
     D. Raghavan, P. Levis, M. Zaharia, and
     \textbf{I. Zhang}. \textit{Breakfast of Champions: Towards
       Zero-Copy Serialization with NIC Scatter-Gather.}  Proc.
@@ -349,71 +363,79 @@
     2014.
   \end{rsection}
 
-  \begin{rsection}{Fellowships\\\& Awards}
-    \begin{rentry}{UW CSE William Chan Memorial Dissertation}{2018}
-      \vspace{-0.75em}
-    \end{rentry} 
-    \begin{rentry}{Microsoft Research PhD Fellowship}{2015}
-      \vspace{-0.75em}
-    \end{rentry} 
-    \begin{rentry}{Google Anita Borg Memorial Fellowship}{2015}
-      \vspace{-0.75em}
-    \end{rentry} 
-    \begin{rentry}{National Science Foundation Fellowship}{2013}
-      \vspace{-0.75em}
-    \end{rentry}
-    \begin{rentry}{ARCS Foundation Fellowship}{2012}
-       \vspace{-0.75em}
-    \end{rentry}
-    \begin{rentry}{Jeff Dean and Heidi Hopper Endowed Regental Fellowship}{2012}
-       \vspace{-0.75em}
-    \end{rentry}
-    \begin{rentry}{OSDI Best Paper Award}{2014}
-      \vspace{-0.75em}
-    \end{rentry}
-    % \begin{rentry}{CRA Outstanding Undergraduate Award, Honorable
-    %   Mention}{2008}
-    % \vspace{-0.75em}
-    % \end{rentry}
-    % \begin{rentry}{Rising Stars Workshop}{2016}
-    %   \vspace{-0.75em}
-    % \end{rentry} 
-    %\begin{rentry}{NCWIT Collegiate Award Runner-up}{2016}
-    %  \vspace{-0.75em}
-    %\end{rentry} 
-    % \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize Runner-Up}{2015}
-    %  \vspace{-0.75em}
-    % \end{rentry} 
-    % \begin{rentry}{Bob Bandes Teaching Award Honorable Mention}{2015}
-    %   \vspace{-0.75em}
-    % \end{rentry} 
-    % \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize}{2014}
-    %    \vspace{-0.75em}
-    % \end{rentry}
-    % \begin{rentry}{National Science Board Annual Meeting Student
-    %     Panel}{2013}
-    %   \vspace{-0.75em}
-    % \end{rentry}
-    % \begin{rentry}{VMware Academic Program Top Intern Project}{2008}
-    %    \vspace{-0.75em}
-    % \end{rentry}
-    % \begin{rentry}{Northern Telecom/BNR Award for Best Undergrad. Lab
-    %     Project}{2006}
-    %   \vspace{-0.75em}
-    % \end{rentry}
-  \end{rsection}
 \end{rtable}
 
 \begin{rtable}
-
+  \begin{rsection}{Fellowships\\\& Awards}
+    % \begin{rentry}{SOSP Distinguished Artifact Award}{2023}
+    %  \vspace{-0.5em}
+    % \end{rentry}
+    \begin{rentry}{ACM SIGOPS Dennis Ritchie Doctoral Dissertation Award}{2018}
+      \vspace{-0.5em}
+    \end{rentry} 
+    \begin{rentry}{UW CSE William Chan Memorial Dissertation Award}{2018}
+      \vspace{-0.5em}
+    \end{rentry} 
+    \begin{rentry}{Rising Stars Workshop}{2016}
+      \vspace{-0.5em}
+    \end{rentry} 
+    \begin{rentry}{NCWIT Collegiate Award, Runner-up}{2016}
+     \vspace{-0.5em}
+    \end{rentry} 
+    \begin{rentry}{Microsoft Research PhD Fellowship}{2015}
+      \vspace{-0.5em}
+    \end{rentry} 
+    \begin{rentry}{Google Anita Borg Memorial Fellowship}{2015}
+      \vspace{-0.5em}
+    \end{rentry}
+    \begin{rentry}{Bob Bandes Teaching Award, Honorable Mention}{2015}
+      \vspace{-0.5em}
+    \end{rentry} 
+    % \begin{rentry}{OSDI Best Paper Award}{2014}
+    %  \vspace{-0.5em}
+    % \end{rentry}
+    \begin{rentry}{National Science Foundation Fellowship}{2013}
+      \vspace{-0.5em}
+    \end{rentry}
+    \begin{rentry}{ARCS Foundation Fellowship}{2012}
+       \vspace{-0.5em}
+    \end{rentry}
+    \begin{rentry}{Jeff Dean and Heidi Hopper Endowed Regental Fellowship}{2012}
+       \vspace{-0.5em}
+    \end{rentry}
+    \begin{rentry}{CRA Outstanding Undergraduate Award, Honorable
+      Mention}{2008}
+    \vspace{-0.5em}
+    \end{rentry}
+    % \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize Runner-Up}{2015}
+    %  \vspace{-0.5em}
+    % \end{rentry} 
+    % \begin{rentry}{UW CSE Industrial Affiliates Madrona Prize}{2014}
+    %    \vspace{-0.5em}
+    % \end{rentry}
+    % \begin{rentry}{National Science Board Annual Meeting Student
+    %     Panel}{2013}
+    %   \vspace{-0.5em}
+    % \end{rentry}
+    % \begin{rentry}{VMware Academic Program Top Intern Project}{2008}
+    %    \vspace{-0.5em}
+    % \end{rentry}
+    % \begin{rentry}{Northern Telecom/BNR Award for Best Undergrad. Lab
+    %     Project}{2006}
+    %   \vspace{-0.5em}
+    % \end{rentry}
+  \end{rsection}
   \begin{rsection}{Service}
+    \begin{rentry}{APSys, Program Chair}{2024}
+      \vspace{-0.5em}
+    \end{rentry}
     \begin{rentry}{NSDI, Program Chair}{2024}
       \vspace{-0.5em}
     \end{rentry}
     \begin{rentry}{SOSP, DEI Chair}{2023}
       \vspace{-0.5em}
     \end{rentry}
-    \begin{rentry}{SIGOPS Dissertation Committee Chair}{2022}
+    \begin{rentry}{SIGOPS Dissertation Award, Committee Chair}{2022}
       \vspace{-0.5em}
     \end{rentry}
     \begin{rentry}{VEE, Program Chair}{2021}
@@ -480,62 +502,62 @@
        \vspace{-0.5em}
     \end{rentry}
   \end{rsection}
-  \begin{rsection}{Teaching}
-    \begin{rentry}{Distributed Systems (UW CSE 452)}{Seattle, WA}
-      \rline{Teaching Assistant}{Winter 2016}   
-      \rline{Teaching Assistant}{Winter 2015}   
-      \vspace{-0.5em}   
-    \end{rentry}
-    \begin{rentry}{Introduction to Operating Systems (UW CSE
-        451)}{Seattle, WA}
-      \rline{Tutor}{Spring 2016}
-      \rline{Tutor}{Fall 2014}
-      \rline{Tutor}{Spring 2014}
-      \rline{Guest Lecturer}{Fall 2013}
-      \rline{Tutor}{Spring 2013}
-      \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{The Hardware/Software Interface (UW CSE
-        351)}{Seattle, WA}
-      \rline{Tutor, UW Department of CSE}{Winter 2014}
-      \rline{Tutor, UW Department of CSE}{Winter 2013}
-      \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{Operating Systems Engineering (MIT
-        6.828)}{Cambridge, MA}
-      \rline{Teaching Assistant}{Fall 2008}
-      % Developed and graded labs assignments where students build an
-      % exokernel-style OS. Held weekly office hours to help students
-      % with labs and OS fundamentals like virtual memory management,
-      % interrupt handlers and process management.
-      \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{Intro. to Digital Systems Lab (MIT
-        6.111)}{Cambridge, MA}
-      \rline{Teaching Assistant}{Spring 2008}
-      % Taught weekly recitations and helped students with labs using
-      % FPGAs and Verilog. Helped students design and implement complex
-      % final projects such as 3D object tracking. Received student
-      % evaluation of 6.3/7.0, one of the highest ratings in the last 5
-      % years.
-      \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{Computation Structures (MIT 6.004)}{Cambridge, MA}
-      \rline{Lab Assistant}{Spring 2007}
-% Held office
-%       hours to help students design and build a processor and small OS
-%       kernel in simulation.
-      \vspace{-0.5em}
-    \end{rentry}
-    \begin{rentry}{Intro. to Computer Science and
-        Programming (MIT 6.00)}{Cambridge, MA}
-      \rline{Lab Assistant}{Fall 2006}
- % Taught students
- %      basic computer science concepts such as recursion, abstraction
- %      and OOP.
-      \vspace{-1em}
-    \end{rentry}
-  \end{rsection}
+%   \begin{rsection}{Teaching}
+%     \begin{rentry}{Distributed Systems (UW CSE 452)}{Seattle, WA}
+%       \rline{Teaching Assistant}{Winter 2016}   
+%       \rline{Teaching Assistant}{Winter 2015}   
+%       \vspace{-0.5em}   
+%     \end{rentry}
+%     \begin{rentry}{Introduction to Operating Systems (UW CSE
+%         451)}{Seattle, WA}
+%       \rline{Tutor}{Spring 2016}
+%       \rline{Tutor}{Fall 2014}
+%       \rline{Tutor}{Spring 2014}
+%       \rline{Guest Lecturer}{Fall 2013}
+%       \rline{Tutor}{Spring 2013}
+%       \vspace{-0.5em}
+%     \end{rentry}
+%     \begin{rentry}{The Hardware/Software Interface (UW CSE
+%         351)}{Seattle, WA}
+%       \rline{Tutor, UW Department of CSE}{Winter 2014}
+%       \rline{Tutor, UW Department of CSE}{Winter 2013}
+%       \vspace{-0.5em}
+%     \end{rentry}
+%     \begin{rentry}{Operating Systems Engineering (MIT
+%         6.828)}{Cambridge, MA}
+%       \rline{Teaching Assistant}{Fall 2008}
+%       % Developed and graded labs assignments where students build an
+%       % exokernel-style OS. Held weekly office hours to help students
+%       % with labs and OS fundamentals like virtual memory management,
+%       % interrupt handlers and process management.
+%       \vspace{-0.5em}
+%     \end{rentry}
+%     \begin{rentry}{Intro. to Digital Systems Lab (MIT
+%         6.111)}{Cambridge, MA}
+%       \rline{Teaching Assistant}{Spring 2008}
+%       % Taught weekly recitations and helped students with labs using
+%       % FPGAs and Verilog. Helped students design and implement complex
+%       % final projects such as 3D object tracking. Received student
+%       % evaluation of 6.3/7.0, one of the highest ratings in the last 5
+%       % years.
+%       \vspace{-0.5em}
+%     \end{rentry}
+%     \begin{rentry}{Computation Structures (MIT 6.004)}{Cambridge, MA}
+%       \rline{Lab Assistant}{Spring 2007}
+% % Held office
+% %       hours to help students design and build a processor and small OS
+% %       kernel in simulation.
+%       \vspace{-0.5em}
+%     \end{rentry}
+%     \begin{rentry}{Intro. to Computer Science and
+%         Programming (MIT 6.00)}{Cambridge, MA}
+%       \rline{Lab Assistant}{Fall 2006}
+%  % Taught students
+%  %      basic computer science concepts such as recursion, abstraction
+%  %      and OOP.
+%       \vspace{-1em}
+%     \end{rentry}
+%   \end{rsection}
 
 
 \end{rtable}

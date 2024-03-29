@@ -8,13 +8,17 @@ latencies, requiring nanosecond-scale operating systems. Traditional
 kernel-based operating systems impose an unaffordable overhead, so
 recent kernel-bypass OSes (e.g., Arrakis, Ix) and libraries (e.g.,
 Caladan, eRPC) eliminate the OS kernel from the I/O datapath. However,
-none of these systems offer a general-purpose datapath OS replacement
-that meet the needs of microsecond-scale systems.
+these systems do not offer a general-purpose datapath OS replacement
+that meet the needs of microsecond-scale systems.  As a result, while
+kernel-bypass hardware is widely available in the datacenter, it is
+not widely used.
 
-This talk proposes Demikernel, a flexible datapath OS and architecture
+This talk summarizes Demikernel, a flexible datapath OS and architecture
 designed for heterogenous kernel-bypass devices and microsecond-scale
-datacenter systems. We have built two prototype Demikernel datapath
-OSes and show that minimal effort is needed to port existing
-microsecond-scale systems. Once ported, Demikernel lets applications
-run across heterogenous kernel-bypass devices with nanosecond-scale
-overheads and no code changes.
+datacenter systems. Demikernel supports a variety of kernel-bypass
+hardware, including DPDK, RDMA, as well as software bypass solutions
+like io_uring. To support microsecond-scale operation, Demikernel
+includes a new nanosecond-scale TCP stack, written in Rust and
+proposes new memory management, CPU scheduling and network
+abstractions. Demikernel is currently used by Bing and will go into
+production with Azure services later this year.
