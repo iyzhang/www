@@ -6,6 +6,7 @@ notitle: true
 
 ### Program Committees
 
+* APSys 2024 PC Chair
 * NSDI 2024 PC Chair
 * SOSP 2023 DEI Chair
 * SIGOPS Dissertation Award Committee 2022 Chair
