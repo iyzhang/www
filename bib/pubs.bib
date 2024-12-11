@@ -16,6 +16,170 @@
 @string{acsac = "Annual Computer Security Applications Conference (ACSAC)"}
 @string{hotcarbon = "Proceedings of the Workshop on Sustainable Computer Systems Design and Implementation (HotCarbon)"}
 @string{apsys = "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)"}
+@string{apsys = "IEEE/ACM Symposium on Microarchitecture (MICRO)"}
+
+@InProceedings{katie_beehive_micro,
+  author = { Katie Lim and Matthew Giordano and Theano Stavrinos and Irene Zhang and Jacob Nelson and Baris Kasikci and Thomas Anderson},
+  month =         11,
+  year =          2024,
+  booktitle = micro,
+  title =         {Beehive: A Flexible Network Stack for Direct-Attached Accelerators},
+   url = {papers/beehive-micro24.pdf},
+  abstract = { Direct-attached accelerators, where application
+                  accelerators are directly connected to the
+                  datacenter network via a hardware network stack,
+                  offer substantial benefits in terms of reduced
+                  latency, CPU overhead, and energy use. However, a
+                  key challenge is that modern datacenter network
+                  stacks are complex, with interleaved protocol
+                  layers, network management functions, and
+                  virtualization support. To operators, network
+                  feature agility, diagnostics, and manageability are
+                  often considered just as important as raw
+                  performance. By contrast, existing hardware network
+                  stacks only support basic protocols and are often
+                  difficult to extend since they use fixed processing
+                  pipelines.  We propose Beehive, a new, open-source
+                  FPGA network stack for direct-attached accelerators
+                  designed to enable flexible and adaptive
+                  construction of complex network functionality in
+                  hardware. Application and network protocol elements
+                  are modularized as tiles over a network-on-chip
+                  substrate. Elements can be added or scaled up/down
+                  to match workload characteristics with minimal
+                  effort or changes to other elements. Flexible
+                  diagnostics and control are integral, with tooling
+                  to ensure deadlock safety.  Our implementation
+                  interoperates with standard Linux TCP and UDP
+                  clients, with a 4x improvement in end-to-end RPC
+                  tail latency for Linux UDP clients versus a
+                  CPU-attached accelerator.  Beehive is available at
+                  [Github](https://github.com/beehive-fpga/beehive)}}
+
+
+
+
+
+
+@InProceedings{inho_capybara_apsys,
+  author = {Inho Choi and 
+Nimish Wadekar and 
+Raj Joshi and 
+Joshua Fried and
+Dan R. K. Ports and
+Irene Zhang and
+Jialin Li},
+  month =         8,
+  year =          2023,
+  booktitle = apsys,
+  title = {Capybara: Microsecond-Scale Live TCP Migration},
+   url = {papers/capybara-apsys23.pdf},
+  abstract = {Latency-critical us-scale data center applications are
+                  susceptible to server load spikes. The issue is
+                  particularly challenging for services using
+                  long-lived TCP connections. This paper introduces
+                  Capybara, a highly efficient and versatile live TCP
+                  migration system. Capybara builds atop a
+                  deterministic, kernel-bypassed TCP stack running in
+                  a library OS to realize its us-scale TCP migration
+                  mechanism. Using modern programmable switches,
+                  Capybara implements migration-aware dynamic packet
+                  forwarding and transient packet buffering, further
+                  reducing system interference during live TCP
+                  migration. Capybara can transparently migrate a
+                  running TCP connection in 4 us on average. It
+                  improves the average migration host latency by about
+                  12 times compared to a Linux kernel-based solution.}}
+                  
+@InProceedings{deepti_cornflakes_sosp,
+  author = {Deepti Raghavan and Shreya Ravi and Gina Yuan and
+                  Pratiksha Thaker and Sanjari Srivastava and Micah
+                  Murray and Pedro Henrique Penna and Amy Ousterhout
+                  and Philip Levis and Matei Zaharia and Irene Zhang },
+  month =         10,
+  year =          2023,
+  booktitle = sosp,
+  title =         {Cornflakes: Zero-copy Serialization for Microsecond-scale Networking},
+   url = {papers/cornflakes-sosp23.pdf},
+  abstract = { Data serialization is critical for many datacenter
+                  applications, but the memory copies required to move
+                  application data into packets are costly. Recent
+                  zero-copy APIs expose NIC scatter-gather
+                  capabilities, raising the possibility of offloading
+                  this data movement to the NIC. However, as the
+                  memory coordination required for scatter-gather
+                  adds bookkeeping overhead, scatter-gather is not
+                  always useful. We describe Cornflakes, a hybrid
+                  serialization library stack that uses scatter-gather
+                  for serialization when it improves performance and
+                  falls back to memory copies otherwise. We have
+                  implemented Cornflakes within a UDP and TCP
+                  networking stack, across Mellanox and Intel NICs. On
+                  a Twitter cache trace, Cornflakes achieves 15.4%
+                  higher throughput than prior software approaches on
+                  a custom key-value store and 8.8% higher throughput
+                  than Redis serialization within Redis.}}
+
+
+@InProceedings{inho_capybara_apsys,
+  author = {Inho Choi and 
+Nimish Wadekar and 
+Raj Joshi and 
+Joshua Fried and
+Dan R. K. Ports and
+Irene Zhang and
+Jialin Li},
+  month =         8,
+  year =          2023,
+  booktitle = apsys,
+  title = {Capybara: Microsecond-Scale Live TCP Migration},
+   url = {papers/capybara-apsys23.pdf},
+  abstract = {Latency-critical us-scale data center applications are
+                  susceptible to server load spikes. The issue is
+                  particularly challenging for services using
+                  long-lived TCP connections. This paper introduces
+                  Capybara, a highly efficient and versatile live TCP
+                  migration system. Capybara builds atop a
+                  deterministic, kernel-bypassed TCP stack running in
+                  a library OS to realize its us-scale TCP migration
+                  mechanism. Using modern programmable switches,
+                  Capybara implements migration-aware dynamic packet
+                  forwarding and transient packet buffering, further
+                  reducing system interference during live TCP
+                  migration. Capybara can transparently migrate a
+                  running TCP connection in 4 us on average. It
+                  improves the average migration host latency by about
+                  12 times compared to a Linux kernel-based solution.}}
+                  
+@InProceedings{deepti_cornflakes_sosp,
+  author = {Deepti Raghavan and Shreya Ravi and Gina Yuan and
+                  Pratiksha Thaker and Sanjari Srivastava and Micah
+                  Murray and Pedro Henrique Penna and Amy Ousterhout
+                  and Philip Levis and Matei Zaharia and Irene Zhang },
+  month =         10,
+  year =          2023,
+  booktitle = sosp,
+  title =         {Cornflakes: Zero-copy Serialization for Microsecond-scale Networking},
+   url = {papers/cornflakes-sosp23.pdf},
+  abstract = { Data serialization is critical for many datacenter
+                  applications, but the memory copies required to move
+                  application data into packets are costly. Recent
+                  zero-copy APIs expose NIC scatter-gather
+                  capabilities, raising the possibility of offloading
+                  this data movement to the NIC. However, as the
+                  memory coordination required for scatter-gather
+                  adds bookkeeping overhead, scatter-gather is not
+                  always useful. We describe Cornflakes, a hybrid
+                  serialization library stack that uses scatter-gather
+                  for serialization when it improves performance and
+                  falls back to memory copies otherwise. We have
+                  implemented Cornflakes within a UDP and TCP
+                  networking stack, across Mellanox and Intel NICs. On
+                  a Twitter cache trace, Cornflakes achieves 15.4%
+                  higher throughput than prior software approaches on
+                  a custom key-value store and 8.8% higher throughput
+                  than Redis serialization within Redis.}}
+
 
 @InProceedings{inho_capybara_apsys,
   author = {Inho Choi and 
