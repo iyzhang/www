@@ -1,4 +1,4 @@
-PYTHON=python2.7
+PYTHON=python3.12
 BIBTEX=bibtex
 JEKYLL=jekyll
 

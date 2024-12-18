@@ -1,5 +1,5 @@
 import sys
-from pybtex.database.input import bibtex
+from pybtex.database import parse_file
 import jinja2
 import jinja2.sandbox
 import re
@@ -11,7 +11,7 @@ _months = {
 }
 
 def _author_fmt(author):
-    return u' '.join(author.first() + author.middle() + author.last())
+    return u' '.join(author.first_names + author.middle_names + author.last_names)
 
 def _andlist(ss, sep=', ', seplast=', and ', septwo=' and '):
     if len(ss) <= 1:
@@ -22,7 +22,8 @@ def _andlist(ss, sep=', ', seplast=', and ', septwo=' and '):
         return sep.join(ss[:-1]) + seplast + ss[-1]
 
 def _author_list(authors):
-    return _andlist(map(_author_fmt, authors))
+    alist = map(_author_fmt, authors);
+    return _andlist(list(alist))
 
 def _venue_type(entry):
     venuetype = ''
@@ -86,7 +87,7 @@ def _extra_urls(entry):
           ... }
     """
     urls = {}
-    for k, v in entry.fields.iteritems():
+    for k, v in entry.fields.items():
         if not k.endswith('_url'):
             continue
         k = k[:-4]
@@ -106,10 +107,9 @@ def _month_name (monthnum):
         return ''
 
 def _sortkey(entry):
-    e = entry.fields
-    year =  '{:04d}'.format(int(e['year']))
+    year = '{:04d}'.format(int(entry.fields['year']))
     try:
-        monthnum = _month_match(e['month'])
+        monthnum = _month_match(entry.fields['month'])
         year += '{:02d}'.format(monthnum)
     except KeyError:
         year += '00'
@@ -130,17 +130,17 @@ def main(bibfile, template):
         tmpl = tenv.from_string(f.read())
 
     # Parse the BibTeX file.
-    with open(bibfile) as f:
-        db = bibtex.Parser().parse_stream(f)
-
+    db = parse_file(bibfile)
+ 
     # Include the bibliography key in each entry.
     for k, v in db.entries.items():
         v.fields['key'] = k
-
+        
     # Render the template.
     bib_sorted = sorted(db.entries.values(), key=_sortkey, reverse=True)
+    #print(bib_sorted)
     out = tmpl.render(entries=bib_sorted)
-    print out
+    print(out)
 
 if __name__ == '__main__':
     main(*sys.argv[1:])
