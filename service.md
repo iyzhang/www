@@ -32,42 +32,40 @@ notitle: true
 I am currently working with some fantastic PhD students:
 
 * [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
-* [Deepti Raghavan](https://deeptir.me/) (Stanford)
-* [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin)
 * [Josh Fried](https://joshfried.io) (MIT)
 * Fabricio Carvalho (UFMS)
-* Sowmya Janakiram Dharanipragada (Cornell)
 * [Vishwanath Seshagiri](https://vishwanath1306.github.io) (Emory)
 
 I've also worked with many great PhD students in the past:
 
+* [Deepti Raghavan](https://deeptir.me/) (Stanford -> Brown)
+* [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin -> UC Davis)
+* Sowmya Janakiram Dharanipragada (Cornell -> Google)
 * Ashlie Martinez (UW)
-* Shannon Joyner (Cornell)
+* Shannon Joyner (Cornell -> Google)
 * [Omar S. Navarro Leija](https://gatowololo.github.io/) (Penn)
-* [Jing Liu](https://jingliu.xyz) (Wisconsin)
-* Niel Lebeck (UW)
+* [Jing Liu](https://jingliu.xyz) (Wisconsin -> MSR Asia)
+* Niel Lebeck (UW -> Google)
 * [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
 * [Max Demoulin](http://www.maxdml.com/) (Penn)
 * [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
-* [Pratyush Patel](https://homes.cs.washington.edu/~patelp1/) (UW)
 
 ### Outreach
-I'm currently working on a new initiative to combat harassment at CS
-conferences.  The Superhero Network is an unaffiliated group of mid-career women
-that are experts and advocates in harassment prevention and
-intervention.  We are currently working on standardizing codes of
-conduct across conferences and ensuring conference safety.
 
-* [Superhero Network](https://github.com/iyzhang/superhero-network/)
-* [CS Climate Survey](https://www.csclimatesurvey.org)
+I have worked on combatting harassment at CS conferences.  I, along
+with folks at Microsoft Research, [CHAOSS](https://chaoss.community)
+and the [Superhero
+Network](https://github.com/iyzhang/superhero-network) have designed
+the [CS Climate Survey](https://www.csclimatesurvey.org), a
+measurement study of harassment and discrimination at CS conferences.
+We hope to eventually standardize codes of conduct across conferences
+and ensure conference safety.
 
-I started Women's Research Day at UW as a day of technical content
-presented by women for women. It is now in its tenth year!
+During my PhD, I started Women's Research Day at UW as a day of
+technical content presented by women for women. Now renamed Diverse
+Genders Day, it has been running for more than a decade!
 
 * [Women's Research Day 2020](http://wrd.cs.washington.edu/)
 * [Women's Research Day
   2018](https://www.facebook.com/events/2085124848383890/)
 * [CSE News Post on Women's Research Day 2017](https://news.cs.washington.edu/2017/04/01/allen-schools-2017-womens-research-day/)
-
-If you would like to start a similar event at your institution, feel
-free to contact me.
