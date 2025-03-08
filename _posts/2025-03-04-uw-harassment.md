@@ -6,11 +6,13 @@ title: University of Washington Sexual Harassment and Bullying Investigation
 
 For the last 6 months, the [UW Allen School of
 CSE](https://www.cs.washington.edu) has been investigating the toxic
-and sexist environment in the systems and networking labs that caused
-four women to leave UW -- two went to industry jobs and two have gone
-to other departments -- and four other women to lose at least one year
-of their PhDs. Despite this impact, no one has faced consequences or
-repercussions.
+and sexist environment in the systems and networking labs. Nine
+doctoral and postdoctoral women were in the lab or joined during the
+investigation; out of these, two left academia and two are now at
+other schools. The others remain at UW but avoid the lab by working
+from MSR or other labs.  All have lost up to a year or more of their
+PhDs to harassment.  Despite this impact, no one has faced any
+consequences or repercussions.
 
 Instead, the university has chosen to blame me for the situation,
 gaslight the women, and continue to fail to provide a safe learning
@@ -56,6 +58,10 @@ the women have still not rejoined their labs or returned to lab
 activities.  The Allen School is now finally working on sexual
 harassment training and a code of conduct.
 
+
+> Edited to add: I've posted [a perspective from one of the women
+  ](uw-women-statement.txt) on my involvement.
+
 ### My Experience
 
 I became involved in the situation around the time of OSDI 2024
@@ -94,15 +100,15 @@ women in the systems lab or that it might be unsafe for her to be
 around the men under investigation.
 
 2. I heard another credible report of harassment from the same men of
-a woman in another lab. I also learned about more incidents of
-physical violence (which are detailed in the report).
+a woman in another lab, as well as, concerning incidents of physical
+violence and intimidation (which are detailed in the report).
  
 3. Magda (the school director) refused to implement any changes unless
 the women made a formal complaint to Title IX.  As the harm
-perpatrated by university Title IX offices is well-documented (and the
+perpetrated by university Title IX offices is well-documented (and the
 women sent an email with the research on that to the administration),
-I expected this would be a traumatic experience and not let
-the women could rejoin their lab any time soon.
+I expected the reporting process would be traumatic and not let the
+women rejoin their lab any time soon.
 
 These three things happened in quick succession about one month after
 the women sent the letter to faculty. I had thought the issues were
@@ -113,6 +119,10 @@ Twitter, Facebook and the uw-systems mailing list to ensure that other
 women did not find themselves in the same position.
 
 ### HR Investigation Subjects
+
+> Edited to add: The university administration has asked me to remove
+> the men's names, but as I believe there is no legal basis for them
+> to censor me, I have left them here.
 
 No one has instructed me not to share the men's names, so I will name
 them here: Pratyush Patel (Iota in the HR report), Tapan Chugh (Theta)
@@ -130,16 +140,20 @@ because, while the women are easily identifiable in the report, the
 men are not because there are vastly more men than women in the lab.
 Furthermore, as the men will continue to be in our communities without
 consequences, I do not want women who are not privileged enough to be
-part of the whisper network to suffer harassment from them.
+part of the whisper network to suffer harassment from them. I am
+inspired by women that named names, including [Dana
+Moshkovitz](https://liorpachter.wordpress.com/2018/11/28/yuval-peres/#comment-11872)
+and the women that spoke out about the [University of Michigan
+case](https://www.michigandaily.com/news/daily-investigation-finds-divergence-in-u-m-outside-organizations-handling-of-allegations-against-cse-professor/).
 
 I also stress that their behavior was enabled by their advisors,
-especially Ratul Mahajan (Omicron in the HR report) who advises all of
-the men.  Again, I want to ensure that all women can make informed
-descisions about grad school and advisors and not just those who have
-the privilege of knowing who is problematic and who is not.  It is
-clear from their actions even now that the advisors prioritize the
-men's careers over the women that left, and over the mental health and
-careers of the women that remain.
+especially Ratul Mahajan (Omicron in the HR report) who advises or
+works with all of the men.  Again, I want to ensure that all women can
+make informed descisions about grad school and advisors and not just
+those who have the privilege of knowing who is problematic and who is
+not.  It is clear from their actions even now that the advisors
+prioritize the men's careers over the women that left, and over the
+mental health and careers of the women that remain.
 
 ### Lessons Learned
 
@@ -158,6 +172,12 @@ spot it and help deal with it.
 protect the university and not marginalized students.  If at all
 possible, resolve the situation without university administration
 involvement.
+
+4. Find an advocate and a support system for victims. They will
+generally not want to talk to administrators or faculty unless they
+know they can be trusted. Most people are not explicitly trained to
+intake harassment reports, so the reporting process itself can often
+compound trauma.
 
 It basically boils down to this: do not recruit women and other URM to
 your lab if you have no plan for how to keep them safe. There are
