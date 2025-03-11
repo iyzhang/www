@@ -53,14 +53,18 @@ allowed at any company. For example, several of the incidents detailed
 in the report are explicitly banned by Microsoft's sexual harassment
 policy.
 
+> Edited to add: By request, I have added a ChatGPT summary of [the
+  report](papers/uw-harassment/report-overview.pdf) and the [women's
+  timeline](papers/uw-harassment/timeline-summary.pdf) to help people
+  grasp the situation.
+
 Almost 9 months after sending their letter to the advisors, most of
 the women have still not rejoined their labs or returned to lab
 activities.  The Allen School is now finally working on sexual
 harassment training and a code of conduct.
 
-
 > Edited to add: I've posted [a perspective from one of the women
-  ](uw-women-statement.txt) on my involvement.
+  ](papers/uw-harassment/uw-women-statement.txt) on my involvement.
 
 ### My Experience
 
@@ -162,22 +166,43 @@ the same mistakes as the Allen School.  While by no means
 comprehensive, some easy things for other CS departments to do:
 
 1. Make expectations of appropriate behavior clear. If inappropriate
-behavior pops up, deal with it swiftly and aggressively.
+behavior pops up, deal with it swiftly and aggressively. It is much
+less painful to prevent these issues than to deal with them
+afterwards.
 
 2. Expect harassment when advising women. Statistically, all women in
-grad school will experience  harassment; be prepared to
-spot it and help deal with it.
+grad school will experience harassment; be prepared to spot it and
+help deal with it. Bystander training can educate you on how to
+effectively engage in these situations.
 
 3. Be aware (if you are not already) that university processes
 protect the university and not marginalized students.  If at all
 possible, resolve the situation without university administration
 involvement.
 
-4. Find an advocate and a support system for victims. They will
-generally not want to talk to administrators or faculty unless they
-know they can be trusted. Most people are not explicitly trained to
-intake harassment reports, so the reporting process itself can often
-compound trauma.
+4. Find an advocate that is not in a position of power over the
+student.  Students will generally not want to talk to administrators
+or faculty unless they know they can be trusted.  Most people are not
+explicitly trained to intake harassment reports, so the reporting
+process itself can often compound trauma. Having a trusted advocate to
+navigate the system is crucial to making sure that the victim is
+heard.
+
+5. Find peer support. The only reason any women remain is because
+there were multiple women to carry the emotional and mental load for
+the last year.  All of the women in this situation wanted to quit
+because the process is designed to wear down [victims until they stop
+complaining](https://www.jezebel.com/not-only-do-campus-sexual-assailants-go-unpunished-they-also-often-get-special-treatment)
+and only kept going because one of the other women would take up the
+work engaging with faculty and admin.
+
+6. Rebuild trust after the situation is resolved. [Institutional
+betrayal](https://dynamic.uoregon.edu/jjf/institutionalbetrayal/),
+where people are hurt by institutions and authority figures that are
+suppose to protect them, takes time to process. The lost trust may
+never be rebuilt, but [restorative
+justice](https://en.wikipedia.org/wiki/Restorative_justice) techniques
+may help.
 
 It basically boils down to this: do not recruit women and other URM to
 your lab if you have no plan for how to keep them safe. There are

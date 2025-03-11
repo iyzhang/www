@@ -16,7 +16,6 @@ _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
 _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 	_layouts/default.html
 	$(JEKYLL) build
-	cp uw-women-statement.txt _site/
 
 cv: cv/cv.tex
 	$(MAKE) -C cv
