@@ -31,13 +31,16 @@ notitle: true
 ### Mentoring
 I am currently working with some fantastic PhD students:
 
+* [Inho Choi](https://ihchoi12.github.io) (NUS)
 * [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
-* [Josh Fried](https://joshfried.io) (MIT)
-* Fabricio Carvalho (UFMS)
-* [Vishwanath Seshagiri](https://vishwanath1306.github.io) (Emory)
+* [Angie Montemayor](angelamontemayor.github.io) (UW)
+* [Priyal Suneja](https://priy.al) (UW)
 
 I've also worked with many great PhD students in the past:
 
+* [Josh Fried](https://joshfried.io) (MIT -> UPenn)
+* Fabricio Carvalho (UFMS)
+* [Vishwanath Seshagiri](https://vishwanath1306.github.io) (Emory)
 * [Deepti Raghavan](https://deeptir.me/) (Stanford -> Brown)
 * [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin -> UC Davis)
 * Sowmya Janakiram Dharanipragada (Cornell -> Google)

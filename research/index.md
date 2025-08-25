@@ -34,6 +34,15 @@ microsecond-scale datacenter systems.
 
 </li>
 
+</ul>
+
+## Past Research
+
+My PhD research broadly covered distributed systems for large-scale,
+wide-area applications. Some recent projects are listed below.
+
+<ul class="media-list">
+
 <li class="media">
 <div class="media-left hidden-xs">
 <img style="width:100px" class="media-object img-circle" src="../img/treehouse.png" />
@@ -58,14 +67,7 @@ means of compute and storage. Find out more about the Treehouse project at our <
     </div>
 
 </li>
-</ul>
 
-## Past Research
-
-My PhD research broadly covered distributed systems for large-scale,
-wide-area applications. Some recent projects are listed below.
-
-<ul class="media-list">
 <li class="media">
 <div class="media-left hidden-xs">
 <img style="width:100px" class="media-object img-circle" src="../img/marvin.jpg" />
@@ -88,55 +90,6 @@ wide-area applications. Some recent projects are listed below.
     </div>
 
 </li>
-    <li class="media">
-		<div class="media-left hidden-xs">
-    <img style="width:100px" class="media-object img-rounded"
-    src="../img/felix.jpg" />
-	</div>
-	<div class="media-body">
-
-<span class="links btn-group pull-right">
-<a href="papers/tapir-sosp15.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-<a href="https://www.youtube.com/watch?v=yE3eMxYJDiE" class="btn btn-default btn-xs">{%icon fa-film%} Talk</a>
-<a href="https://github.com/UWSysLab/tapir" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
-<a href="tapir/index.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
-</span>
-
-<h3 class="media-heading">TAPIR</h3>
-
-The Transactional Application Protocol for Inconsistent Replication
-(TAPIR) is a new protocol for linearizable distributed transactions
-built using replication with <em>no consistency guarantees</em>. By
-enforcing consistency <em>only</em> at the transaction layer, TAPIR
-eliminates coordination at the replication layer, enabling TAPIR to
-provide the same transaction model and consistency guarantees as
-existing systems like Spanner with better latency and throughput.
-</div>
-</li>
-
-    <li class="media">
-		<div class="media-left hidden-xs">
-			<img style="width:100px" class="media-object img-rounded"
-			src="../img/diamond.jpg" />
-	</div>
-	<div class="media-body">
-	
-<span class="links btn-group pull-right">
-<a href="papers/diamond-osdi16.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-<a href="https://www.usenix.org/conference/osdi16/technical-sessions/presentation/zhang-irene" class="btn btn-default btn-xs">{%icon fa-volume-up%} Talk</a>
-<a href="https://github.com/UWSysLab/diamond" class="btn btn-default btn-xs">{%icon fa-code%} Code</a>
-<a href="//sapphire.cs.washington.edu/research/project/diamond.html" class="btn btn-default btn-xs">{%icon fa-plus%} More</a>
-</span>
-
-	<h3 class="media-heading">Diamond</h3>
-
-Diamond is a new data management system for wide-area, reactive
-applications.  Reactive applications give users the illusion of
-continuous synchronization across mobile devices and the cloud server.
-Diamond simplifies this task by providing applications with persistent
-cloud storage, reliable synchronization between storage and mobile
-devices, and automated execution of application code in response to
-shared data updates.  </li>
 
 </ul>
 
