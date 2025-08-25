@@ -35,15 +35,20 @@ expect to get more after this blog post.
 ### Overview
 
 On July 12, 2024, seven women sent a letter to the systems and
-networking faculty (Tom, Baris, Simon, Ratul and Arvind) detailing
-three harassment incidents and asking for, among other things, a lab
-code of conduct and sexual harassment training.  They wrote this
-letter at the request of the grad counselors, after the men had
-reported them repeatedly to the advisors for making the lab an
+networking faculty ([Tom
+Anderson](https://www.cs.washington.edu/people/faculty/tom-anderson/),
+[Baris Kasikci](https://homes.cs.washington.edu/~baris/), [Simon
+Peter](https://homes.cs.washington.edu/~simpeter/), [Ratul
+Mahajan](https://ratul.org) and [Arvind
+Krishnamurthy](https://sites.google.com/cs.washington.edu/arvind))
+detailing three harassment incidents and asking for, among other
+things, a lab code of conduct and sexual harassment training.  They
+wrote this letter at the request of the grad counselors, after the men
+had reported them repeatedly to the advisors for making the lab an
 "unwelcoming" space by talking about "women's issues", including
 women's access to medical care.
 
-UW hired outside legal counsel to conduct a 6 month investigation,
+UW hired outside legal counsel to conduct a 5 month investigation,
 which resulted in this [publicly available
 report](https://drive.google.com/file/d/1QqE1Lk9RAWa4MLeHSirsWd7MAbxfl7pz/view).
 While the report finds that none of the incidents involving the three
@@ -53,18 +58,10 @@ allowed at any company. For example, several of the incidents detailed
 in the report are explicitly banned by Microsoft's sexual harassment
 policy.
 
-> Edited to add: By request, I have added a ChatGPT summary of [the
-  report](papers/uw-harassment/report-overview.pdf) and the [women's
-  timeline](papers/uw-harassment/timeline-summary.pdf) to help people
-  grasp the situation.
-
 Almost 9 months after sending their letter to the advisors, most of
 the women have still not rejoined their labs or returned to lab
 activities.  The Allen School is now finally working on sexual
 harassment training and a code of conduct.
-
-> Edited to add: I've posted [a perspective from one of the women
-  ](papers/uw-harassment/uw-women-statement.txt) on my involvement.
 
 ### My Experience
 
@@ -79,7 +76,7 @@ kind of behavior discussed in the report.
 2. I personally knew many of the faculty. I have known Simon, who
 advises one of the men, since 2008 and I have known Baris since 2020
 when I chaired EuroDW with him. I've also known and worked with Tom
-since 2012.
+since 2012 and Arvind was one of my PhD advisors.
 
 3. The women had already attempted to talk to the faculty for months
 and even asked another female faculty member to talk to the faculty in
@@ -92,6 +89,9 @@ PhD program, and I was worried more of them would quit.  My primary
 goal was to protect the women from further harm and de-escalate the
 situation, while repairing the relationship between the women and
 their advisors.
+
+> Edited to add: I've posted [a perspective from one of the women
+  ](papers/uw-harassment/uw-women-statement.txt) on my involvement.
 
 After the HR investigation started, the faculty and students were
 instructed not to speak about the situation. Thus, I became the only
@@ -107,57 +107,80 @@ around the men under investigation.
 a woman in another lab, as well as, concerning incidents of physical
 violence and intimidation (which are detailed in the report).
  
-3. Magda (the school director) refused to implement any changes unless
-the women made a formal complaint to Title IX.  As the harm
-perpetrated by university Title IX offices is well-documented (and the
-women sent an email with the research on that to the administration),
-I expected the reporting process would be traumatic and not let the
-women rejoin their lab any time soon.
+3. [Magda Balazinska](https://db.cs.washington.edu/people/magda) (the
+school director) refused to implement any changes unless the women
+made a formal complaint to Title IX.  As the harm perpetrated by
+university Title IX offices is well-documented (and the women sent an
+email with the research on that to the administration), I expected the
+reporting process would be traumatic and not let the women rejoin
+their lab any time soon.
 
 These three things happened in quick succession about one month after
 the women sent the letter to faculty. I had thought the issues were
 limited to the systems lab and would be fixed quickly, but it became
 clear to me that the issues were more severe and pervasive than I
 thought. I chose to resign my affiliate faculty position and posted to
-Twitter, Facebook and the uw-systems mailing list to ensure that other
-women did not find themselves in the same position.
+Mastodon, Twitter, Facebook and the uw-systems mailing list to ensure
+that other women did not find themselves in the same position.
 
-### HR Investigation Subjects
+### HR Investigation Outcome & Subjects
+
+UW HR hired a lawyer from Inslee Best to conduct the investigation.
+The lawyer spent 2 months interviewing everyone involved, and then
+another 3 months to write the report.  The investigation concluded
+that none of the behavior rose to the legal definition of harassment.
+However, the report has a clear bias towards protecting the
+university, leaves out facts that do not favor their conclusion, is
+sexist and also includes a number of inaccuracies.  I did not have the
+mental or emotional energy to write a critique of the report, so
+produced a [response from ChatGPT](papers/uw-harassment/critique.pdf)
+instead.
 
 > Edited to add: The university administration has asked me to remove
 > the men's names, but as I believe there is no legal basis for them
 > to censor me, I have left them here.
 
-No one has instructed me not to share the men's names, so I will name
-them here: Pratyush Patel (Iota in the HR report), Tapan Chugh (Theta)
-and Anish Nyayachavadi (Eta).  Per the HR investigation, most of the
-bullying came from Anish, while the incidents of physical violence
-were Tapan, and Pratyush was emotionally abusing and stealing ideas
-and work from women.  Since many of the events in the report did not
-happen on campus or between "friends", they were not counted as
-harassment.  Pratyush's academic misconduct was considered to be
-outside the scope of the report.  There are more details and evidence
-(e.g., slack messages, emails, text messages) in the report.
+Since the university will not hold the men accountable for their
+behavior, I name them here: [Pratyush
+Patel](https://homes.cs.washington.edu/~patelp1/) (Iota in the HR
+report), Tapan Chugh (Theta) and Anish Nyayachavadi (Eta).  Per the HR
+investigation, most of the bullying came from Anish, while the
+incidents of physical violence were Tapan, and Pratyush was
+emotionally abusing and stealing ideas and work from women.  Since
+many of the events in the report did not happen on campus or happened
+between "friends", they were not counted as harassment.  Pratyush's
+academic misconduct was considered to be outside the scope of the
+report.  There are more details and evidence (e.g., slack messages,
+emails, text messages) in [the
+report](https://drive.google.com/file/d/1QqE1Lk9RAWa4MLeHSirsWd7MAbxfl7pz/view).
+The women also provided the investigator with many more emails and
+text that were not included in the report it did not support the
+investigator's narrative. 
+
+> Edited to add: By request, I have produced a ChatGPT summary of [the
+  report](papers/uw-harassment/report-overview.pdf) and the [women's
+  timeline](papers/uw-harassment/timeline-summary.pdf) to help people
+  grasp the situation.
 
 I feel that it is important for me to disclose the men's identity
 because, while the women are easily identifiable in the report, the
 men are not because there are vastly more men than women in the lab.
-Furthermore, as the men will continue to be in our communities without
-consequences, I do not want women who are not privileged enough to be
-part of the whisper network to suffer harassment from them. I am
-inspired by women that named names, including [Dana
+Furthermore, as the men will continue to be in our communities, I do
+not want women who are not privileged enough to be part of the whisper
+network to suffer harassment from them. I am inspired by women that
+named names, including [Dana
 Moshkovitz](https://liorpachter.wordpress.com/2018/11/28/yuval-peres/#comment-11872)
 and the women that spoke out about the [University of Michigan
 case](https://www.michigandaily.com/news/daily-investigation-finds-divergence-in-u-m-outside-organizations-handling-of-allegations-against-cse-professor/).
 
 I also stress that their behavior was enabled by their advisors,
-especially Ratul Mahajan (Omicron in the HR report) who advises or
-works with all of the men.  Again, I want to ensure that all women can
-make informed descisions about grad school and advisors and not just
-those who have the privilege of knowing who is problematic and who is
-not.  It is clear from their actions even now that the advisors
-prioritize the men's careers over the women that left, and over the
-mental health and careers of the women that remain.
+especially [Ratul Mahajan](https://ratul.org) (Omicron in the HR report) who
+advises or works with all of the men.  Again, I want to ensure that
+all women can make informed descisions about grad school and advisors
+and not just those who have the privilege of knowing who is
+problematic and who is not.  It is clear from their actions even now
+that the advisors prioritize the men's careers over the women that
+left, and over the mental health and careers of the women that remain.
 
 ### Lessons Learned
 
@@ -175,8 +198,11 @@ grad school will experience harassment; be prepared to spot it and
 help deal with it. Bystander training can educate you on how to
 effectively engage in these situations.
 
-3. Be aware (if you are not already) that university processes
-protect the university and not marginalized students.  If at all
+3. Be aware (if you are not already) that university processes protect
+the university and not harassed students. As shown in [Nicole Bedera's
+book about Title
+IX](https://www.ucpress.edu/books/on-the-wrong-side/hardcover), this
+priority often translates to protecting the harassers.  If at all
 possible, resolve the situation without university administration
 involvement.
 
@@ -190,16 +216,17 @@ heard.
 
 5. Find peer support. The only reason any women remain is because
 there were multiple women to carry the emotional and mental load for
-the last year.  All of the women in this situation wanted to quit
-because the process is designed to wear down [victims until they stop
+the last year.  All of the women in this situation wanted to quit at
+some point because the process is designed to wear down [victims until
+they stop
 complaining](https://www.jezebel.com/not-only-do-campus-sexual-assailants-go-unpunished-they-also-often-get-special-treatment)
 and only kept going because one of the other women would take up the
 work engaging with faculty and admin.
 
 6. Rebuild trust after the situation is resolved. [Institutional
-betrayal](https://dynamic.uoregon.edu/jjf/institutionalbetrayal/),
+betrayal](https://dynamic.uoregon.edu/jjf/institutionalbetrayal/) is
 where people are hurt by institutions and authority figures that are
-suppose to protect them, takes time to process. The lost trust may
+supposed to protect them and takes time to process. The lost trust may
 never be rebuilt, but [restorative
 justice](https://en.wikipedia.org/wiki/Restorative_justice) techniques
 may help.

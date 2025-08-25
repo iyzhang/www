@@ -18,6 +18,64 @@
 @string{apsys = "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)"}
 @string{micro = "IEEE/ACM Symposium on Microarchitecture (MICRO)"}
 
+@InProceedings{inho_autokernel_apsys
+  author = { Inho Choi and Anand Bonde and Jing Liu and Joshua Fried and Irene Zhang and Jialin Li },
+  month =         10,
+  year =          2025,
+  booktitle = apsys,
+  title =         {ML-native Dataplane Operating Systems},
+   url = {papers/autokernel-apsys25.pdf},
+  abstract = { Performance tuning has never been more critical in
+                  modern datacenters, where rapid advances in
+                  networking and I/O speeds expose potential
+                  bottlenecks in CPUs, memory, and operating
+                  systems. Yet, tuning remains notoriously complex,
+                  brittle, and opaque, especially at the
+                  microsecond-scale latencies demanded by modern
+                  dataplanes. We argue that there is a pressing need
+                  to unleash the power of machine learning in
+                  datacenter operating systems.  We propose ML-native
+                  Dataplane Operating Systems, a radical design for
+                  ML-based performance tuning. Our design embraces
+                  real-time, microsecond-scale ML-based adaptation as
+                  a foundational principle, treating ML not as a
+                  byproduct but as the backbone, to continuously
+                  optimize dataplane performance under dynamic
+                  workloads and operating conditions. Our preliminary
+                  experiments show that a traditional static dataplane
+                  OS incurs severe queuing delays (over milliseconds)
+                  under dynamic and parallel workloads, whereas our
+                  adaptive approach sustains microsecond-scale tail
+                  latencies by dynamically tuning OS parameters in
+                  response to runtime signals.}}
+
+@InProceedings{katie_apiary_hotos,
+  author = { Katie Lim and Matthew Giordano and Irene Zhang and Baris Kasikci and Thomas Anderson},
+  month =         5,
+  year =          2025,
+  booktitle = hotos,
+  title =         {Apiary: An OS for the Modern FPGA},
+   url = {papers/apiary-hotos25.pdf},
+  abstract = { Many datacenter operators have deployed FPGAs as
+                  hardware accelerators because their
+                  reconfigurability allows them to be repurposed as
+                  the application mix changes. Directly attaching the
+                  FPGA to the network further reduces latency,
+                  improves cost-performance, and reduces energy use
+                  relative to mediating network communications with
+                  CPUs. However, building accelerated applications or
+                  services for direct-attached FPGAs is challenging,
+                  especially with the complex I/O and
+                  multi-accelerator capacity of modern FPGAs. To
+                  address this, we propose Apiary, a microkernel
+                  operating system for direct-attached FPGA
+                  accelerators. The key idea in Apiary is to raise the
+                  level of abstraction for accelerated application
+                  code, with security, virtualization, threaded
+                  execution, and interprocess communication provided
+                  by the hardware OS layer.}
+                  }
+                  
 @InProceedings{katie_beehive_micro,
   author = { Katie Lim and Matthew Giordano and Theano Stavrinos and Irene Zhang and Jacob Nelson and Baris Kasikci and Thomas Anderson},
   month =         11,
