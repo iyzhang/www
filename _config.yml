@@ -23,6 +23,8 @@ navigation:
       link: /publications.html
     - title: Service
       link: /service.html
+    - title: Students
+      link: /students.html
     - title: Blog
       link: /news/
     - title: Code

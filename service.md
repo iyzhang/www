@@ -28,32 +28,17 @@ notitle: true
 * ASPLOS 2017 External Reviewer
 * OSDI 2016 External Reviewer
 
-### Mentoring
-I am currently working with some fantastic PhD students:
+### DEI
 
-* [Inho Choi](https://ihchoi12.github.io) (NUS)
-* [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
-* [Angie Montemayor](angelamontemayor.github.io) (UW)
-* [Priyal Suneja](https://priy.al) (UW)
+During the 2024-2025 school year, I supported a group of 8 women from
+the University of Washington Allen School who were being sexually
+harassed and bullied in the systems and networking lab. This
+experience prompted me to write two blog posts:
 
-I've also worked with many great PhD students in the past:
-
-* [Josh Fried](https://joshfried.io) (MIT -> UPenn)
-* Fabricio Carvalho (UFMS)
-* [Vishwanath Seshagiri](https://vishwanath1306.github.io) (Emory)
-* [Deepti Raghavan](https://deeptir.me/) (Stanford -> Brown)
-* [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin -> UC Davis)
-* Sowmya Janakiram Dharanipragada (Cornell -> Google)
-* Ashlie Martinez (UW)
-* Shannon Joyner (Cornell -> Google)
-* [Omar S. Navarro Leija](https://gatowololo.github.io/) (Penn)
-* [Jing Liu](https://jingliu.xyz) (Wisconsin -> MSR Asia)
-* Niel Lebeck (UW -> Google)
-* [Anna Simpson](https://homes.cs.washington.edu/~aksimpso/) (UW)
-* [Max Demoulin](http://www.maxdml.com/) (Penn)
-* [Wen Zhang](https://people.eecs.berkeley.edu/~zhangwen/) (Berkeley)
-
-### Outreach
+* An analysis on [the moral implications of being a successful computer scientist and a woman](_posts/2024-07-24-misogyny.md).
+* A [post-mortem summary, which
+provides recommendations for how to avoid these situations in your own
+lab](_posts/2025-03-04-uw-harassment.md).
 
 I have worked on combatting harassment at CS conferences.  I, along
 with folks at Microsoft Research, [CHAOSS](https://chaoss.community)
