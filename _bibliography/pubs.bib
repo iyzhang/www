@@ -2,7 +2,7 @@
 @string{nsdi = "Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)"}
 @string{osdi = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)"}
 @string{usenix_atc = "Proceedings of the USENIX Annual Technical Conference (ATC)"}
-@string{eurosys = "Proceedings of the European Conference on Computer Systems (Eurosys) "}
+@string{eurosys = "Proceedings of the European Conference on Computer Systems (Eurosys)"}
 @string{vee = "Proceedings of the International Conference on Virtual Execution Environments (VEE)"}
 @string{hot_storage = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)"}
 @string{papoc = "Proceedings of the Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
@@ -18,13 +18,14 @@
 @string{apsys = "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)"}
 @string{micro = "IEEE/ACM Symposium on Microarchitecture (MICRO)"}
 
-@InProceedings{inho_autokernel_apsys
+
+@InProceedings{inho_autokernel_apsys,
   author = { Inho Choi and Anand Bonde and Jing Liu and Joshua Fried and Irene Zhang and Jialin Li },
   month =         10,
   year =          2025,
-  booktitle = apsys,
+  booktitle = "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)",
   title =         {ML-native Dataplane Operating Systems},
-   url = {papers/autokernel-apsys25.pdf},
+   link = {papers/autokernel-apsys25.pdf},
   abstract = { Performance tuning has never been more critical in
                   modern datacenters, where rapid advances in
                   networking and I/O speeds expose potential
@@ -53,9 +54,9 @@
   author = { Katie Lim and Matthew Giordano and Irene Zhang and Baris Kasikci and Thomas Anderson},
   month =         5,
   year =          2025,
-  booktitle = hotos,
+  booktitle = "Proceedings of the Workshop on Hot Topics in Operating Systems (HotOS)",
   title =         {Apiary: An OS for the Modern FPGA},
-   url = {papers/apiary-hotos25.pdf},
+   link = {papers/apiary-hotos25.pdf},
   abstract = { Many datacenter operators have deployed FPGAs as
                   hardware accelerators because their
                   reconfigurability allows them to be repurposed as
@@ -80,9 +81,9 @@
   author = { Katie Lim and Matthew Giordano and Theano Stavrinos and Irene Zhang and Jacob Nelson and Baris Kasikci and Thomas Anderson},
   month =         11,
   year =          2024,
-  booktitle = micro,
+  booktitle = "IEEE/ACM Symposium on Microarchitecture (MICRO)",
   title =         {Beehive: A Flexible Network Stack for Direct-Attached Accelerators},
-   url = {https://arxiv.org/pdf/2403.14770},
+   link = {https://arxiv.org/pdf/2403.14770},
   abstract = { Direct-attached accelerators, where application
                   accelerators are directly connected to the
                   datacenter network via a hardware network stack,
@@ -122,9 +123,9 @@
                   and Philip Levis and Matei Zaharia and Irene Zhang },
   month =         10,
   year =          2023,
-  booktitle = sosp,
+  booktitle = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)",
   title =         {Cornflakes: Zero-copy Serialization for Microsecond-scale Networking},
-   url = {papers/cornflakes-sosp23.pdf},
+   link = {papers/cornflakes-sosp23.pdf},
   abstract = { Data serialization is critical for many datacenter
                   applications, but the memory copies required to move
                   application data into packets are costly. Recent
@@ -155,9 +156,9 @@ Irene Zhang and
 Jialin Li},
   month =         8,
   year =          2023,
-  booktitle = apsys,
+  booktitle = "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)",
   title = {Capybara: Microsecond-Scale Live TCP Migration},
-   url = {papers/capybara-apsys23.pdf},
+   link = {papers/capybara-apsys23.pdf},
   abstract = {Latency-critical us-scale data center applications are
                   susceptible to server load spikes. The issue is
                   particularly challenging for services using
@@ -182,9 +183,9 @@ Jialin Li},
                   Cidon and Irene Zhang},
   month =         7,
   year =          2022,
-  booktitle = hotcarbon,
+  booktitle = "Proceedings of the Workshop on Sustainable Computer Systems Design and Implementation (HotCarbon)",
   title =         {Treehouse: A Case For Carbon-Aware Datacenter Software},
-  url = {papers/treehouse-hotcarbon22.pdf},
+  link = {papers/treehouse-hotcarbon22.pdf},
   abstract = {The end of Dennard scaling and the slowing of Moore's
                   Law has put the energy use of datacenters on an
                   unsustainable path. Datacenters are already a
@@ -214,9 +215,9 @@ Jialin Li},
                   Badam},
   month =         10,
   year =          2021,
-  booktitle = sosp,
+  booktitle = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)",
   title =         {The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems},
-  url = {papers/demikernel-sosp21.pdf},
+  link = {papers/demikernel-sosp21.pdf},
   abstract = {Datacenter systems and I/O devices now run at
                   single-digit microsecond latencies, requiring
                   ns-scale operating systems. Traditional kernel-based
@@ -243,9 +244,9 @@ Jialin Li},
                   Irene Zhang},
   month =         10,
   year =          2021,
-  booktitle = sosp,
+  booktitle = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)",
   title =         {When Idling is Ideal: Optimizing Tail-Latency for Highly-Dispersed Datacenter Workloads with Persephone},
-  url = {papers/persephone-sosp21.pdf},
+  link = {papers/persephone-sosp21.pdf},
   abstract = {This paper introduces Persephone, a kernel-bypass OS
                   scheduler designed to minimize tail latency for
                   applications executing at microsecond-scale and
@@ -274,9 +275,9 @@ Jialin Li},
                   Zhang and Dan R. K. Ports},
   month =         10,
   year =          2021,
-  booktitle = sosp,
+  booktitle = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)",
   title =         {PRISM: Rethinking the RDMA Interface for Distributed Systems},
-  url = {papers/prism-sosp21.pdf},
+  link = {papers/prism-sosp21.pdf},
   abstract = {Remote Direct Memory Access (RDMA) has been used to
                   accelerate a variety of distributed systems, by
                   providing low-latency, CPU-bypassing access to a
@@ -313,7 +314,7 @@ Jialin Li},
                   Anderson and Arvind Krishnamurthy and Bryan Parno},
                   month = 12,
                   year = 2020,
-                  booktitle = acsac,
+                  booktitle = "Annual Computer Security Applications Conference (ACSAC)",
     title = {Talek: Private Group Messaging with Hidden Access
                   Patterns},
                   abstract = {Talek is a private group
@@ -343,7 +344,7 @@ Jialin Li},
                   latter provide a private, efficient mechanism for
                   users to learn, without polling, which logs have new
                   messages.},
-                  url={papers/talek-acsac20.pdf} }
+                  link={papers/talek-acsac20.pdf} }
 
 
 
@@ -351,7 +352,7 @@ Jialin Li},
   author =        {Wen Zhang and Scott Shenker and Irene Zhang},
   month =         11,
   year =          2020,
-  booktitle = osdi,
+  booktitle = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
   title =         {Persistent State Machines for Recoverable In-memory Storage Systems with NVRam},
   abstract = {Distributed in-memory storage systems are crucial for
                   meeting the low latency requirements of modern
@@ -366,7 +367,7 @@ Jialin Li},
                   existing distributed in-memory storage systems into
                   persistent, crash-consistent versions with low
                   overhead and minimal code changes.},
-                  url={papers/persimmon-osdi20.pdf},
+                  link={papers/persimmon-osdi20.pdf},
                   talk = {https://www.youtube.com/watch?v=yAnkRRPbhsM}
                   }
 
@@ -394,14 +395,14 @@ Jialin Li},
                   solutions and future research, with the goal of
                   securing RDMA datacenter systems while they are
                   still in the research and prototype stages.},
-                  url={papers/rdma-sec-hotcloud20.pdf} 
+                  link={papers/rdma-sec-hotcloud20.pdf} 
                   }
 
 @InProceedings{marvin_atc,
   author =        {Niel Lebeck and Arvind Krishnamurthy and Henry M. Levy and Irene Zhang},
   month =         7,
   year =          2020,
-  booktitle = usenix_atc,
+  booktitle = "Proceedings of the USENIX Annual Technical Conference (ATC)",
   title =         {End the Senseless Killing: Improving Memory Management for Mobile Operating Systems},
   abstract =      {To ensure low-latency memory allocation, mobile
                   operating systems needing memory kill applications
@@ -427,7 +428,7 @@ Jialin Li},
                   reclaim memory over 60x faster than Android with a
                   Linux swap file can allocate memory under memory
                   pressure.  },
-   url={papers/marvin-atc20.pdf},
+   link={papers/marvin-atc20.pdf},
    talk = {https://www.usenix.org/conference/atc20/presentation/lebeck}}
 
 
@@ -438,8 +439,8 @@ Jialin Li},
   month = 4,
   title = {Meerkat: Multicore-scalable Replicated Transactions Following the Zero-Coordination Principle},
   year = 2020,
-  booktitle = eurosys,
-    url = {papers/meerkat-eurosys20.pdf},
+  booktitle = "Proceedings of the European Conference on Computer Systems (Eurosys) ",
+    link = {papers/meerkat-eurosys20.pdf},
   abstract = {Traditionally, the high cost of network communication
                   between servers has hidden the impact of cross-core
                   coordination in replicated systems. However, new
@@ -467,7 +468,7 @@ Jialin Li},
 @TechReport{hercules-tr,
   author =        { Niel Lebeck and Jonathan Goldstein and Irene Zhang},
    title =         { Hercules: A Multi-View Cache for Real-Time Interactive Apps},
-  url = {papers/hercules-tr19.pdf},
+  link = {papers/hercules-tr19.pdf},
   abstract = {Existing distributed storage systems do not meet the
                   needs of real-time interactive apps. These apps
                   feature small groups of users making concurrent
@@ -502,7 +503,7 @@ Jialin Li},
   month =         12,
   title =         {A.M.B.R.O.S.I.A: Providing Performant Virtual Resiliency for Distributed Applications},
   year =          2019,
-  booktitle = vldb,
+  booktitle = "Proceedings of the International Conference on Very Large Data Bases (VLDB)",
   abstract = {When writing today's distributed programs, which
                   frequently span both devices and cloud services,
                   programmers are faced with complex decisions and
@@ -535,7 +536,7 @@ Jialin Li},
                   optimization technology to make Ambrosia more
                   performant than many of today's non-resilient cloud
                   solutions.},
-url={papers/ambrosia-vldb19.pdf} }
+link={papers/ambrosia-vldb19.pdf} }
 
 @InProceedings{leap-asplos,
   author =        {Huaicheng Li and Mingzhe Hao and Stanko Novakovic
@@ -545,7 +546,7 @@ url={papers/ambrosia-vldb19.pdf} }
   month =         3,
   title =         {Efficient and Portable Virtual NVMe Storage on ARM SoCs},
   year =          2020,
-  booktitle = asplos,
+  booktitle = "Proceedings of the International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS)",
   abstract = {Today's cloud storage stack is extremely resource
                   hungry, burning 10-20% of datacenter x86 cores, a
                   major "storage tax" that cloud providers must
@@ -562,7 +563,7 @@ url={papers/ambrosia-vldb19.pdf} }
                   and ARM cores and expose a virtual NVMe storage to
                   unmodified guest VMs, with a competitive speed to
                   bare-metal performance.},
-                  url={papers/leap-asplos20.pdf},
+                  link={papers/leap-asplos20.pdf},
                   talk={https://www.youtube.com/watch?v=Gyn9eABQwTQ&list=PLsLWHLZB96VeVp3IVzvSH58ttVz_Anr7H&index=26&t=0s}}
 
 
@@ -573,7 +574,7 @@ url={papers/ambrosia-vldb19.pdf} }
   title = 	 {Building Consistent Transactions with Inconsistent
                   Replication},
   year = 	 2018,
-  journal = tocs,
+  journal = "ACM Transactions on Computer Systems (TOCS)",
   month = 	 12,
   abstract={Application programmers increasingly prefer distributed
                   storage systems with distributed transactions and
@@ -603,7 +604,7 @@ url={papers/ambrosia-vldb19.pdf} }
                   transaction protocols that require replication with
                   strong consistency, TAPIR-KV has 2x better
                   latency and throughput.},
-url={papers/tapir-tocs18.pdf},
+link={papers/tapir-tocs18.pdf},
 code={https://github.com/UWSysLab/tapir}
 }
 
@@ -615,7 +616,7 @@ code={https://github.com/UWSysLab/tapir}
   number =        {UW-CSE-2019-04-01},
   title =         {End the Senseless Killing: Improving Memory Management for Mobile Operating Systems},
   year =          2019,
-    url={papers/marvin-tr19.pdf},
+    link={papers/marvin-tr19.pdf},
   abstract =      {To ensure low-latency memory allocation, mobile
                   operating systems needing memory kill applications
                   instead of swapping memory to disk.  This design
@@ -648,7 +649,7 @@ code={https://github.com/UWSysLab/tapir}
   title =         {Just In Time Delivery: Leveraging Operating Systems Knowledge for Better Datacenter Congestion Control},
   year =          2019,
   booktitle = hotcloud,
-  url = {papers/chimera-hotcloud19.pdf},
+  link = {papers/chimera-hotcloud19.pdf},
   abstract = { Network links and server CPUs are heavily contended
                   resources in modern datacenters.  To keep tail
                   latencies low, datacenter operators drastically
@@ -683,8 +684,8 @@ code={https://github.com/UWSysLab/tapir}
   month =         6,
   title =         {Breakfast of Champions: Towards Zero-Copy Serialization with NIC Scatter-Gather},
   year =          2021,
-  booktitle = hotos,
-  url = {papers/cornflakes-hotos21.pdf},
+  booktitle = "Proceedings of the Workshop on Hot Topics in Operating Systems (HotOS)",
+  link = {papers/cornflakes-hotos21.pdf},
   abstract = {  Microsecond I/O will make data serialization a major
                   bottleneck for datacenter
                   applications. Serialization is fundamentally about
@@ -714,8 +715,8 @@ code={https://github.com/UWSysLab/tapir}
   title =         {I'm Not Dead Yet! The Role of the Operating System in a
     Kernel-Bypass Era},
   year =          2019,
-  booktitle = hotos,
-  url = {papers/demikernel-hotos19.pdf},
+  booktitle = "Proceedings of the Workshop on Hot Topics in Operating Systems (HotOS)",
+  link = {papers/demikernel-hotos19.pdf},
   abstract = {Researchers have long predicted the demise of the
                   operating system.  As datacenter servers
                   increasingly incorporate I/O devices that let
@@ -745,7 +746,7 @@ code={https://github.com/UWSysLab/tapir}
   school =       {University of Washington},
   month = 10,
   year =         2017,
-  url = {papers/thesis.pdf},
+  link = {papers/thesis.pdf},
   abstract = {The convergence of ubiquitous mobile devices,
                   large-scale cloud platforms and pervasive network
                   connectivity have changed the face of modern user
@@ -788,8 +789,8 @@ code={https://github.com/UWSysLab/tapir}
   month =         4,
   title =         {Making Consistency More Consistent: A Unified Model for Coherence, Consistency and Isolation},
   year =          2018,
-  booktitle = papoc,
-  url = {papers/consistency-papoc18.pdf},
+  booktitle = "Proceedings of the Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)",
+  link = {papers/consistency-papoc18.pdf},
   abstract = {  Ordering guarantees are often defined using abstract
   execution models. Unfortunately,
   these models are complex and make different assumptions about system
@@ -814,7 +815,7 @@ code={https://github.com/UWSysLab/tapir}
   title =         {Disciplined Inconsistency},
   year =          2016,
   booktitle = socc,
-  url = {papers/ipa-socc16.pdf},
+  link = {papers/ipa-socc16.pdf},
   abstract = {Distributed applications and web services, such as online stores or social networks, are expected to be scalable, available, responsive, and fault-tolerant. To meet these steep requirements in the face of high round-trip latencies, network partitions, server failures, and load spikes, applications use eventually consistent datastores that allow them to weaken the consistency of some data. However, making this transition is highly error-prone because relaxed consistency models are notoriously difficult to understand and test.
 
 In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency. },
@@ -825,7 +826,7 @@ code={https://github.com/bholt/ipa}
 @InProceedings{zhang-diamond,
   author = 	 {Irene Zhang and Niel Lebeck and Pedro Fonseca and Brandon Holt and Raymond Cheng and Ariadna Norberg and Arvind Krishnamurthy and Henry M. Levy},
   title = 	 {Automating Data Management for Wide-area, Reactive Applications},
-  booktitle = osdi,
+  booktitle = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
   year = 	 2016,
   month = 	 11,
   talk = {https://www.usenix.org/conference/osdi16/technical-sessions/presentation/zhang-irene},
@@ -846,7 +847,7 @@ code={https://github.com/bholt/ipa}
                   applications, strengthens distributed data sharing
                   guarantees, and supports automated reactivity with
                   low performance overhead.  },
-  url={papers/diamond-osdi16.pdf},
+  link={papers/diamond-osdi16.pdf},
   code={https://github.com/UWSysLab/diamond}}
 
 
@@ -857,7 +858,7 @@ code={https://github.com/bholt/ipa}
   year = 	 2016,
   month = 3,
   abstract={Today's replicated transactional storage systems typically have a layered architecture, combining protocols for transaction coordination, consistent replication, and concurrency control.  These systems generally require costly strongly-consistent replication protocols like Paxos, which assign a total order to all operations. To avoid this cost, we ask whether all replicated operations in these systems need to be strictly ordered. Recent research has yielded replication protocols that can avoid unnecessary ordering, e.g., by exploiting commutative operations, but it is not clear how to apply these to replicated transaction processing systems. We answer this question by analyzing existing transaction processing designs in terms of which replicated operations require ordering and which simply require fault tolerance.  We describe how this analysis leads to our recent work on TAPIR, a transaction protocol that efficiently provides strict serializability by using a new replication protocol that provides fault tolerance but not ordering for most operations.},
-url={papers/ordering-data.pdf}
+link={papers/ordering-data.pdf}
 }
 
 @InProceedings{holt15-claret,
@@ -866,7 +867,7 @@ url={papers/ordering-data.pdf}
   booktitle = papoc,
   year = 	 2015,
   month = 	 4,
-  url = {papers/claret-papoc15.pdf},
+  link = {papers/claret-papoc15.pdf},
   abstract = {
 Out of the many NoSQL databases in use today, some that provide simple data structures for records, such as Redis and MongoDB, are now becoming popular. Building applications out of these complex data types provides a way to communicate intent to the database system without sacrificing flexibility or committing to a fixed schema. Currently this capability is leveraged in limited ways, such as to ensure related values are co-located, or for atomic updates. There are many ways data types can be used to make databases more efficient that are not yet being exploited.
 
@@ -880,7 +881,7 @@ We explore several ways of leveraging abstract data type (ADT) semantics in data
   title = 	 {Building Consistent Transactions with Inconsistent
                   Replication},
   year = 	 2015,
-  booktitle = sosp,
+  booktitle = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)",
   month = 	 10,
   abstract={Application programmers increasingly prefer distributed
                   storage systems with distributed transactions and
@@ -910,7 +911,7 @@ We explore several ways of leveraging abstract data type (ADT) semantics in data
                   transaction protocols that require replication with
                   strong consistency, TAPIR-KV has 2x better
                   latency and throughput.},
-url={papers/tapir-sosp15.pdf},
+link={papers/tapir-sosp15.pdf},
 code={https://github.com/UWSysLab/tapir},
 talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
 }
@@ -925,7 +926,7 @@ talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
   title =         {Building Consistent Transactions with Inconsistent
                    Replication (Extended Version)},
   year =          2015,
-    url={papers/tapir-tr-v2.pdf},
+    link={papers/tapir-tr-v2.pdf},
   abstract =      {Application programmers increasingly prefer
                    distributed storage systems with strong consistency
                    and distributed transactions (e.g., Google's Spanner)
@@ -957,10 +958,10 @@ talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
 @InProceedings{zhang14-custom_exten_deploy_mobil_cloud_applic,
   author = 	 {Irene Zhang and Adriana Szekeres and Dana Van Aken and Isaac Ackerman and Steven D. Gribble and Arvind Krishnamurthy and Henry M. Levy}, 
   title = 	 {Customizable and Extensible Deployment for Mobile/Cloud Applications},
-  booktitle =  osdi,
+  booktitle = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
   year = 	 2014,
   month = 10,
-  url={papers/sapphire-osdi14.pdf},
+  link={papers/sapphire-osdi14.pdf},
   abstract={ Modern applications face new challenges in managing
                   today's highly distributed and heterogeneous
                   environment. For example, they must stitch together
@@ -987,10 +988,10 @@ talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
 @InProceedings{peter14-arrak-osdi14,
   author = 	 {Simon Peter and Jialin Li and Irene Zhang and Dan R. K. Ports and Douglas Woos and Arvind Krishnamurthy and Thomas Anderson and Timothy Roscoe},
   title = 	 {Arrakis: The Operating System is the Control Plane},
-  booktitle =  osdi,
+  booktitle = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
   year = 	 2014,
   month = 10,
-  url={papers/arrakis-osdi14.pdf},
+  link={papers/arrakis-osdi14.pdf},
   abstract = {Recent device hardware trends enable a new approach to
                   the design of network server operating systems. In a
                   traditional operating system, the kernel mediates
@@ -1021,8 +1022,8 @@ talk= {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rac
   title = 	 {Arrakis: The Operating System is the Control Plane},
   year = 	 2015,
   month = 11,
-  journal = tocs,
-  url={papers/arrakis-tocs16.pdf},
+  journal = "ACM Transactions on Computer Systems (TOCS)",
+  link={papers/arrakis-tocs16.pdf},
   abstract = {Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing improvements of 2 to 5x in latency and 9x throughput for a popular persistent NoSQL store relative to a well-tuned Linux implementation.},
   code={http://arrakis.cs.washington.edu/?page_id=52}
 }
@@ -1030,10 +1031,10 @@ talk= {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rac
 @InProceedings{irene13-optim_vm_check_restor_perfor_vmwar_esxi,
   author = 	 {Irene Zhang and Tyler Denniston and Yury Baskakov and Alex Garthwaite},
   title = 	 {Optimizing VM Checkpointing for Restore Performance in VMware ESXi},
-  booktitle =  usenix_atc,
+  booktitle =  "Proceedings of the USENIX Annual Technical Conference (ATC)",
   year = 	 2013,
   month = 6,
-  url={papers/vmrestore-atc13.pdf},
+  link={papers/vmrestore-atc13.pdf},
   abstract={   Cloud providers are increasingly looking to use virtual machine
   checkpointing for new applications beyond fault tolerance. Existing
   checkpointing systems designed for fault tolerance only optimize for
@@ -1065,10 +1066,10 @@ talk= {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rac
 @InProceedings{zhang11-fast_restor_check_memor_using,
   author = 	 {Irene Zhang and Alex Garthwaite and Yury Baskakov and Kenneth C. Barr},
   title = 	 {Fast Restore of Checkpointed Memory Using Working Set Estimation},
-  booktitle =  vee,
+  booktitle =  "Proceedings of the International Conference on Virtual Execution Environments (VEE)",
   year = 	 2011,
   month = 3,
-  url={papers/vmrestore-vee11.pdf},
+  link={papers/vmrestore-vee11.pdf},
 abstract={ In order to make save and restore features practical, saved
                   virtual machines (VMs) must be able to quickly
                   restore to normal operation. Unfortunately, fetching
@@ -1109,10 +1110,10 @@ abstract={ In order to make save and restore features practical, saved
                   Xavid Pretzer and Jinyang Li and M. Frans Kaashoek
                   and Robert Morris},
   title = 	 {Flexible, Wide-Area Storage for Distributed Systems with WheelFS},
-  booktitle =  nsdi,
+  booktitle =  "Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)",
   year = 	 2009,
   month = 4,
-  url = {papers/wfs-nsdi09.pdf},
+  link = {papers/wfs-nsdi09.pdf},
  abstract={WheelFS is a wide-area distributed storage system intended
                   to help multi-site applications share data and gain
                   fault tolerance. WheelFS takes the form of a
@@ -1145,10 +1146,10 @@ abstract={ In order to make save and restore features practical, saved
 @InProceedings{ports10-trans_consis_autom_manag_applic_data_cache,
   author = 	 {Dan R. K. Ports and Austin T Clements and Irene Zhang and Samuel Madden and Barbara Liskov},
   title = 	 {Transactional Consistency and Automatic Management in an Application Data Cache},
-  booktitle =  osdi,
+  booktitle = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
   year = 	 2010,
   month = 10,
-url={papers/txcache-osdi10.pdf},
+link={papers/txcache-osdi10.pdf},
  abstract={Distributed in-memory application data caches like
                   memcached are a popular solution for scaling
                   database-driven web sites. These systems are easy to
@@ -1183,11 +1184,11 @@ talk ={ https://www.usenix.org/legacy/events/osdi10/stream/ports/index.html}
 @InProceedings{peter14-towar_high_perfor_applic_level_storag_manag,
   author = 	 {Simon Peter and Jialin Li and Doug Woos and Irene Zhang and Dan R. K. Ports and Thomas Anderson and Arvind Krishnamurthy and Mark Zbikowski},
   title = 	 {Towards High-Performance Application-Level Storage Management},
-  booktitle = hot_storage,
+  booktitle = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)",
   year = 	 2014,
   address = 	 {Philadelphia, PA, USA},
   month = 	 6,
-  url= {papers/arrakis-hotstorage14.pdf},
+  link= {papers/arrakis-hotstorage14.pdf},
   abstract={We propose a radical re-architecture of the traditional
                   operating system storage stack to move the kernel
                   off the data path. Leveraging virtualized I/O
@@ -1207,7 +1208,7 @@ talk ={ https://www.usenix.org/legacy/events/osdi10/stream/ports/index.html}
   school =       {Massachusetts Institute of Technology},
   year =         2009,
   month= 6,
-  url={papers/meng-thesis.pdf},
+  link={papers/meng-thesis.pdf},
   abstract={WheelFS is a wide-area distributed file system designed to
                   help applications cope with the challenges of
                   sharing data over the wide-area network. A wide

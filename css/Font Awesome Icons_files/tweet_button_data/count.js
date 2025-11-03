@@ -1,1 +1,0 @@
-twttr.receiveCount({"count":4810,"url":"http:\/\/fortawesome.github.com\/Font-Awesome\/"});

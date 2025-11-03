@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Blog Posts
+layout: page
+title: Blog
 ---
 
 <ul class="news list-unstyled">

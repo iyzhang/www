@@ -1,12 +1,10 @@
 ---
-layout: default
-title: Current Research
+layout: page
+title: Research
 ---
 
 My current research focuses on datapath operating systems for
 microsecond-scale datacenter systems.
-
-
 
 <ul class="media-list">
 <li class="media">
@@ -35,64 +33,3 @@ microsecond-scale datacenter systems.
 </li>
 
 </ul>
-
-## Past Research
-
-My PhD research broadly covered distributed systems for large-scale,
-wide-area applications. Some recent projects are listed below.
-
-<ul class="media-list">
-
-<li class="media">
-<div class="media-left hidden-xs">
-<img style="width:100px" class="media-object img-circle" src="../img/treehouse.png" />
-</div>
-<div class="media-body">
-
-    <span class="links btn-group pull-right">
-    <a href="papers/treehouse-arxiv22.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-    </span>
-<h3 class="media-heading">Treehouse</h3>
-
-Treehouse is new project that proposes a software-centric approach to
-green datacenters. While existing research aims to reduce energy usage
-of datacenter hardware, we argue that being energy-aware in the design
-of datacenter software is equally important.  To that end, Treehouse
-aims to make energy and carbon visible to application developers on a
-fine-grained basis, modify system APIs to make informed trade offs
-between performance and carbon emissions, and raise the level of
-application programming for flexible use of more energy efficient
-means of compute and storage. Find out more about the Treehouse project at our <a href="https://treehouse-research.github.io">project webpage</a>!
-    <br>
-    </div>
-
-</li>
-
-<li class="media">
-<div class="media-left hidden-xs">
-<img style="width:100px" class="media-object img-circle" src="../img/marvin.jpg" />
-</div>
-<div class="media-body">
-
-    <span class="links btn-group pull-right">
-    <a href="papers/marvin-tr19.pdf" class="btn btn-default btn-xs">{%icon fa-file-text-o%} Paper</a>
-    </span>
-
-    <h3 class="media-heading">Marvin</h3>
-    Marvin is a new memory manager for Android that co-designs the
-    application runtime (i.e., JVM) and operating system.
-    Marvin's key insight is that all mobile applications run within
-    the <i>same</i> runtime, so we can leverage  runtime insight into the
-    application for better  resource management.  Marvin implements
-    almost all memory management in a modified Android Runtime to
-    achieve better  memory utilization and performance.
-    <br>
-    </div>
-
-</li>
-
-</ul>
-
-
-
-

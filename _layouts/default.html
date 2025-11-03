@@ -1,125 +1,15 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <Title>{{ site.name }}: {{ page.title }}</title>
-        <meta name="viewport" content="width=device-width,
-				       initial-scale=1.0">
-	<link href="https://irenezhang.net/" rel="canonical">
-        <base href="https://irenezhang.net/">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/group.css" rel="stylesheet">
-        <link rel="alternate" type="application/atom+xml" title="Atom"
-              href="blog/blog.xml">
-        <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans:400,400i,700|Raleway:500,700"
-              rel="stylesheet">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/f08ee12e29.js" crossorigin="anonymous"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Piwik -->
-        <script type="text/javascript">
-            var _paq = _paq || [];
-            _paq.push(["setDomains", ["*.irenezhang.net","*.irenezhang.com","*.schemeprincess.com"]]);
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-              var u="//www.ambulatoryclam.net/piwik/";
-              _paq.push(['setTrackerUrl', u+'piwik.php']);
-              _paq.push(['setSiteId', '2']);
-              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-              g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-        <noscript><p><img src="//www.ambulatoryclam.net/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+<html lang="en-us">
 
-    </head>
-    <body>
-      <div class="header">
-        <div class="title clearfix">Irene Y. Zhang</div>
-	<ul class="nav nav-pills nav-justified">
-          {% for item in site.navigation %}
-          {% assign shorturl = item.link | replace: '.html', '' %}
-          <li {% if page.url == shorturl %}class="active"{% endif %}>
-            <a href="{{ item.link }}">
-              {% if page.url == shorturl %}- {% endif %}{{ item.title
-              }}{% if page.url == shorturl %} -{% endif %}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+  {% include head.html %}
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8">
-	    {% comment %}Liquid is sort of terrible! I think "!= true" is the
-            only way to do negation?{% endcomment %}
-            {% if page.notitle != true %}
-            <h2>{{ page.title }}</h2>
-	    {% else %}
-	    <h3></h3>
-            {% endif %}
-            {{ content }}
-          </div>
-          <div class="col-sm-4 col-xs-12">
-            <div class="contact">
-              <div class="contact-title">
-                Contact</div>
-                <ul class="fa-ul">
-	          <li><i class="fa-li fa fa-envelope"></i>irene.zhang
-	            @microsoft.com</li>
-	          <li><i class="fa-li fa fa-building"></i>Building 99</li>
-	          <li><i class="fa-li fa fa-location-arrow"></i>14820 NE
-	            36th St.
-                    <br class="hidden-xs"> Redmond, WA 98052</li>
-	          <li><i class="fa-li fa
-	                        fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
-                  	          <li><i class="fa-li fa-brands fa-mastodon"></i><a href="https://discuss.systems/@irene">irene@discuss.systems</a></li>
+  <body>
 
-                </ul>
-            </div>
-            <div class="contact hidden-xs">
-              <div class="contact-title">News</div>
-              <ul class="media-list">
-                {% for post in site.posts limit: site.front_page_news %}
-                <li class="media">
-                  {% if post.photo %}
-                  <div class="media-left news hidden-xs">
-                    {% if post.link %}
-                    <a href="{{ post.link }}">
-                      {% endif %}
-	              <img class="media-object img-thumbnail"
-                           src="{{ post.photo }}" >
-                      {% if post.link %} </a> {% endif %}
-                  </div>
-                  {% endif %}
-                  <div class="media-body">
-                    <h5 class="media-heading">
-                      {{ post.date | date_to_long_string }}
-                    </h5>
-                    {% if post.shortnews %}
-                    {{ post.content }}
-                    {% else %}
-                    <b>New Blog Post:</b>
-                        <a href="{{ post.url}}">{{ post.title }}</a>
-                    {% endif %}
-                  </div>
-                </li>
-                {% endfor %}
-              </ul>
-              <p><a href="news/">&nbsp;&nbsp;&nbsp;Older posts&hellip;</a></p>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <p>
-          <a href="https://www.microsoft.com/en-us/research/group/systems-research-group-redmond/">Systems
-          Research Group</a> at 
-          <a href="https://www.microsoft.com/">Microsoft Research</a>
-        </p>
-      </div>
-    </body>
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
 </html>

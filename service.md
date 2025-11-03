@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
 title: Service
-notitle: true
 ---
 
 ### Program Committees

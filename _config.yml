@@ -1,33 +1,18 @@
 name: Irene Y. Zhang
 url: irenezhang.net
+title: Irene Zhang
+description: I am a researcher at Microsoft Research
+    
 exclude: [bibble, README.md, Makefile, job-search]
 
-# use this library to parse Markdown
-markdown: redcarpet
-redcarpet:
-    extensions: [smart, tables]
+plugins:
+   - jekyll-scholar
+   
+scholar:
+   bibliography: pubs.bib
+   bibliography_template: bib
 
-# The path structure for blog posts.
-permalink: /blog/:year/:month/:day/:title.html
-
-# Number of news stories on the front page.
-front_page_news: 3
-
-# Navigation bar links.
-navigation:
-    - title: Home
-      link: /
-    - title: Research
-      link: /research/
-    - title: Publications
-      link: /publications.html
-    - title: Service
-      link: /service.html
-    - title: Students
-      link: /students.html
-    - title: Blog
-      link: /news/
-    - title: Code
-      link: /code.html
- #   - title: CV
- #     link: /cv/cv.pdf
+   
+# Permalinks
+permalink:        pretty
+front_page_news: 5
