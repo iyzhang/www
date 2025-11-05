@@ -9,10 +9,14 @@ plugins:
    - jekyll-scholar
    
 scholar:
+   source: publications
    bibliography: pubs.bib
-   bibliography_template: bib
-
-   
+   bibliography_template: bibtemplate
+   style: citesty
+   locale: en
+   replace_strings: true
+   join_strings: true
+  
 # Permalinks
 permalink:        pretty
 front_page_news: 5

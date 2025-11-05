@@ -1,10 +1,18 @@
 ---
 layout: page
 title: About
-notitle: true
 ---
 
-# I am a researcher at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>. 
+  <div class="col-xs-3">
+    <img src="img/me-2023.jpeg" alt="Photo of me"
+         class="img-circle img-responsive">
+  </div>
+  <div class="col-xs-9">
+    <h2>I am a researcher
+      at <a href="https://www.microsoft.com/en-us/research/">Microsoft
+      Research</a>. 
+    </h2>
+  </div>
 
 ## My research focuses on datacenter operating systems and distributed systems.
 

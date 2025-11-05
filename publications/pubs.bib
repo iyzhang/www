@@ -1,0 +1,1247 @@
+@string{sosp = "Proceedings of the ACM Symposium on Operating Systems Principles (SOSP)"}
+@string{nsdi = "Proceedings of the USENIX Symposium on Networked Systems Design and Implementation (NSDI)"}
+@string{osdi = "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation (OSDI)"}
+@string{usenix_atc = "Proceedings of the USENIX Annual Technical Conference (ATC)"}
+@string{eurosys = "Proceedings of the European Conference on Computer Systems (Eurosys) "}
+@string{vee = "Proceedings of the International Conference on Virtual Execution Environments (VEE)"}
+@string{hot_storage = "Proceedings of the USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage)"}
+@string{papoc = "Proceedings of the Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+@string{socc = "Proceedings of the ACM Symposium on Cloud Computing (SoCC)"}
+@string{tocs = "ACM Transactions on Computer Systems (TOCS)"}
+@string{hotos = "Proceedings of the Workshop on Hot Topics in Operating Systems (HotOS)"}
+@string{hotcloud = "Proceedings of the Workshop on Hot Topics in Cloud Computing (HotCloud)"}
+@string{vldb = "Proceedings of the International Conference on Very Large Data Bases (VLDB)"}
+@string{submission = "Submission"}
+@string{asplos = "Proceedings of the International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS)"}
+@string{acsac = "Annual Computer Security Applications Conference (ACSAC)"}
+@string{hotcarbon = "Proceedings of the Workshop on Sustainable Computer Systems Design and Implementation (HotCarbon)"}
+@string{apsys = "ACM SIGOPS Asia-Pacific Workshop on Systems (APSys)"}
+@string{micro = "IEEE/ACM Symposium on Microarchitecture (MICRO)"}
+
+@InProceedings{inho_autokernel_apsys,
+  author = { Inho Choi and Anand Bonde and Jing Liu and Joshua Fried and Irene Zhang and Jialin Li },
+  month =         10,
+  year =          2025,
+  booktitle = apsys,
+  title =         {ML-native Dataplane Operating Systems},
+   link = {papers/autokernel-apsys25.pdf},
+  abstract = { Performance tuning has never been more critical in
+                  modern datacenters, where rapid advances in
+                  networking and I/O speeds expose potential
+                  bottlenecks in CPUs, memory, and operating
+                  systems. Yet, tuning remains notoriously complex,
+                  brittle, and opaque, especially at the
+                  microsecond-scale latencies demanded by modern
+                  dataplanes. We argue that there is a pressing need
+                  to unleash the power of machine learning in
+                  datacenter operating systems.  We propose ML-native
+                  Dataplane Operating Systems, a radical design for
+                  ML-based performance tuning. Our design embraces
+                  real-time, microsecond-scale ML-based adaptation as
+                  a foundational principle, treating ML not as a
+                  byproduct but as the backbone, to continuously
+                  optimize dataplane performance under dynamic
+                  workloads and operating conditions. Our preliminary
+                  experiments show that a traditional static dataplane
+                  OS incurs severe queuing delays (over milliseconds)
+                  under dynamic and parallel workloads, whereas our
+                  adaptive approach sustains microsecond-scale tail
+                  latencies by dynamically tuning OS parameters in
+                  response to runtime signals.}}
+
+@InProceedings{katie_apiary_hotos,
+  author = { Katie Lim and Matthew Giordano and Irene Zhang and Baris Kasikci and Thomas Anderson},
+  month =         5,
+  year =          2025,
+  booktitle = hotos,
+  title =         {Apiary: An OS for the Modern FPGA},
+   link = {papers/apiary-hotos25.pdf},
+  abstract = { Many datacenter operators have deployed FPGAs as
+                  hardware accelerators because their
+                  reconfigurability allows them to be repurposed as
+                  the application mix changes. Directly attaching the
+                  FPGA to the network further reduces latency,
+                  improves cost-performance, and reduces energy use
+                  relative to mediating network communications with
+                  CPUs. However, building accelerated applications or
+                  services for direct-attached FPGAs is challenging,
+                  especially with the complex I/O and
+                  multi-accelerator capacity of modern FPGAs. To
+                  address this, we propose Apiary, a microkernel
+                  operating system for direct-attached FPGA
+                  accelerators. The key idea in Apiary is to raise the
+                  level of abstraction for accelerated application
+                  code, with security, virtualization, threaded
+                  execution, and interprocess communication provided
+                  by the hardware OS layer.}
+                  }
+                  
+@InProceedings{katie_beehive_micro,
+  author = { Katie Lim and Matthew Giordano and Theano Stavrinos and Irene Zhang and Jacob Nelson and Baris Kasikci and Thomas Anderson},
+  month =         11,
+  year =          2024,
+  booktitle = micro,
+  title =         {Beehive: A Flexible Network Stack for Direct-Attached Accelerators},
+   link = {https://arxiv.org/pdf/2403.14770},
+  abstract = { Direct-attached accelerators, where application
+                  accelerators are directly connected to the
+                  datacenter network via a hardware network stack,
+                  offer substantial benefits in terms of reduced
+                  latency, CPU overhead, and energy use. However, a
+                  key challenge is that modern datacenter network
+                  stacks are complex, with interleaved protocol
+                  layers, network management functions, and
+                  virtualization support. To operators, network
+                  feature agility, diagnostics, and manageability are
+                  often considered just as important as raw
+                  performance. By contrast, existing hardware network
+                  stacks only support basic protocols and are often
+                  difficult to extend since they use fixed processing
+                  pipelines.  We propose Beehive, a new, open-source
+                  FPGA network stack for direct-attached accelerators
+                  designed to enable flexible and adaptive
+                  construction of complex network functionality in
+                  hardware. Application and network protocol elements
+                  are modularized as tiles over a network-on-chip
+                  substrate. Elements can be added or scaled up/down
+                  to match workload characteristics with minimal
+                  effort or changes to other elements. Flexible
+                  diagnostics and control are integral, with tooling
+                  to ensure deadlock safety.  Our implementation
+                  interoperates with standard Linux TCP and UDP
+                  clients, with a 4x improvement in end-to-end RPC
+                  tail latency for Linux UDP clients versus a
+                  CPU-attached accelerator.  Beehive is available at
+                  [Github](https://github.com/beehive-fpga/beehive)}}
+                  
+                  
+@InProceedings{deepti_cornflakes_sosp,
+  author = {Deepti Raghavan and Shreya Ravi and Gina Yuan and
+                  Pratiksha Thaker and Sanjari Srivastava and Micah
+                  Murray and Pedro Henrique Penna and Amy Ousterhout
+                  and Philip Levis and Matei Zaharia and Irene Zhang },
+  month =         10,
+  year =          2023,
+  booktitle = sosp,
+  title =         {Cornflakes: Zero-copy Serialization for Microsecond-scale Networking},
+   link = {papers/cornflakes-sosp23.pdf},
+  abstract = { Data serialization is critical for many datacenter
+                  applications, but the memory copies required to move
+                  application data into packets are costly. Recent
+                  zero-copy APIs expose NIC scatter-gather
+                  capabilities, raising the possibility of offloading
+                  this data movement to the NIC. However, as the
+                  memory coordination required for scatter-gather
+                  adds bookkeeping overhead, scatter-gather is not
+                  always useful. We describe Cornflakes, a hybrid
+                  serialization library stack that uses scatter-gather
+                  for serialization when it improves performance and
+                  falls back to memory copies otherwise. We have
+                  implemented Cornflakes within a UDP and TCP
+                  networking stack, across Mellanox and Intel NICs. On
+                  a Twitter cache trace, Cornflakes achieves 15.4%
+                  higher throughput than prior software approaches on
+                  a custom key-value store and 8.8% higher throughput
+                  than Redis serialization within Redis.}}
+
+
+@InProceedings{inho_capybara_apsys,
+  author = {Inho Choi and 
+Nimish Wadekar and 
+Raj Joshi and 
+Joshua Fried and
+Dan R. K. Ports and
+Irene Zhang and
+Jialin Li},
+  month =         8,
+  year =          2023,
+  booktitle = apsys,
+  title = {Capybara: Microsecond-Scale Live TCP Migration},
+   link = {papers/capybara-apsys23.pdf},
+  abstract = {Latency-critical us-scale data center applications are
+                  susceptible to server load spikes. The issue is
+                  particularly challenging for services using
+                  long-lived TCP connections. This paper introduces
+                  Capybara, a highly efficient and versatile live TCP
+                  migration system. Capybara builds atop a
+                  deterministic, kernel-bypassed TCP stack running in
+                  a library OS to realize its us-scale TCP migration
+                  mechanism. Using modern programmable switches,
+                  Capybara implements migration-aware dynamic packet
+                  forwarding and transient packet buffering, further
+                  reducing system interference during live TCP
+                  migration. Capybara can transparently migrate a
+                  running TCP connection in 4 us on average. It
+                  improves the average migration host latency by about
+                  12 times compared to a Linux kernel-based solution.}}
+                  
+
+
+@InProceedings{treehouse_hotcarbon,
+  author = {Thomas Anderson and Adam Belay and Mosharaf Chowdhury and Asaf
+                  Cidon and Irene Zhang},
+  month =         7,
+  year =          2022,
+  booktitle = hotcarbon,
+  title =         {Treehouse: A Case For Carbon-Aware Datacenter Software},
+  link = {papers/treehouse-hotcarbon22.pdf},
+  abstract = {The end of Dennard scaling and the slowing of Moore's
+                  Law has put the energy use of datacenters on an
+                  unsustainable path. Datacenters are already a
+                  significant fraction of worldwide electricity use,
+                  with application demand scaling at a rapid rate. We
+                  argue that substantial reductions in the carbon
+                  intensity of datacenter computing are possible with
+                  a software-centric approach: by making energy and
+                  carbon visible to application developers on a
+                  fine-grained basis, by modifying system APIs to make
+                  it possible to make informed trade offs between
+                  performance and carbon emissions, and by raising the
+                  level of application programming to allow for
+                  flexible use of more energy efficient means of
+                  compute and storage. We also lay out a research
+                  agenda for systems software to reduce the carbon
+                  footprint of datacenter computing.}}
+                  
+
+
+@InProceedings{irene_demikernel_sosp,
+  author = {Irene Zhang and Amanda Raybuck and Pratyush Patel and Kirk
+                  Olynyk and Jacob Nelson and Omar S. Navarro Leija
+                  and Ashlie Martinez and Jing Liu and Anna Kornfeld
+                  Simpson and Sujay Jayakar and Pedro Henrique Penna
+                  and Max Demoulin and Piali Choudhury and and Anirudh
+                  Badam},
+  month =         10,
+  year =          2021,
+  booktitle = sosp,
+  title =         {The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems},
+  link = {papers/demikernel-sosp21.pdf},
+  abstract = {Datacenter systems and I/O devices now run at
+                  single-digit microsecond latencies, requiring
+                  ns-scale operating systems. Traditional kernel-based
+                  operating systems impose an unaffordable overhead,
+                  so recent kernel-bypass OSes and libraries
+                  eliminate the OS kernel from the I/O
+                  datapath. However, none of these systems offer a
+                  general-purpose datapath OS replacement that meet
+                  the needs of us-scale systems. This paper proposes
+                  Demikernel, a flexible datapath OS and architecture
+                  designed for heterogenous kernel-bypass devices and
+                  us-scale datacenter systems. We build two prototype
+                  Demikernel OSes and show that minimal effort is
+                  needed to port existing us-scale systems. Once
+                  ported, Demikernel lets applications run across
+                  heterogenous kernel-bypass devices with ns-scale
+                  overheads and no code changes.},
+                  code = {https://github.com/demikernel/demikernel},
+                  talk = {https://youtu.be/DXnFrEBtYVk}}
+
+@InProceedings{max_sosp_persephone,
+  author = {Henri Maxime Demoulin and Joshua Fried and Isaac Pedisich and Marios
+                  Kogias and Boon Thau Loo and Linh Thi Xuan Phan and
+                  Irene Zhang},
+  month =         10,
+  year =          2021,
+  booktitle = sosp,
+  title =         {When Idling is Ideal: Optimizing Tail-Latency for Highly-Dispersed Datacenter Workloads with Persephone},
+  link = {papers/persephone-sosp21.pdf},
+  abstract = {This paper introduces Persephone, a kernel-bypass OS
+                  scheduler designed to minimize tail latency for
+                  applications executing at microsecond-scale and
+                  exhibiting wide service time
+                  distributions. Persephone integrates a new
+                  scheduling policy, Dynamic Application-aware
+                  Reserved Cores (DARC), that reserves cores for
+                  requests with short processing times. Unlike
+                  existing kernel-bypass schedulers, DARC is not work
+                  conserving. DARC profiles application requests and
+                  leaves a small number of cores idle when no short
+                  requests are in the queue, so when short requests do
+                  arrive, they are not blocked by longer-running
+                  ones. Counter-intuitively, leaving cores idle lets
+                  DARC maintain lower tail latencies at higher
+                  utilization, reducing the overall number of cores
+                  needed to serve the same workloads and consequently
+                  better utilizing the data center resources.},
+   code = {https://github.com/maxdml/psp},
+   video={https://youtu.be/ivJTugj5S0c}
+   }
+
+@InProceedings{sowmya_sosp_prism,
+  author = {Sowmya Dharanipragada and Shannon Joyner and Matthew Burke
+                  and Adriana Szekeres and Jacob Nelson and Irene
+                  Zhang and Dan R. K. Ports},
+  month =         10,
+  year =          2021,
+  booktitle = sosp,
+  title =         {PRISM: Rethinking the RDMA Interface for Distributed Systems},
+  link = {papers/prism-sosp21.pdf},
+  abstract = {Remote Direct Memory Access (RDMA) has been used to
+                  accelerate a variety of distributed systems, by
+                  providing low-latency, CPU-bypassing access to a
+                  remote host's memory. However, most of the
+                  distributed protocols used in these systems cannot
+                  easily be expressed in terms of the simple memory
+                  READs and WRITEs provided by RDMA. As a result,
+                  designers face a choice between introducing
+                  additional protocol complexity (e.g., additional
+                  round trips) or forgoing the benefits of RDMA
+                  entirely.  This paper argues that an extension to
+                  the RDMA interface can resolve this dilemma. We
+                  introduce the PRISM interface, which extends the
+                  RDMA interface with four new primitives:
+                  indirection, allocation, enhanced compare-and-swap,
+                  and operation chaining. These increase the
+                  expressivity of the RDMA interface, while still
+                  being implementable using the same underlying
+                  hardware features. We show their utility by
+                  designing three new applications using PRISM
+                  primitives, that require little to no server-side
+                  CPU involvement: (1) PRISM-KV, a key-value store;
+                  (2) PRISM-RS a replicated block store; and (3)
+                  PRISM-TX, a distributed transaction protocol. Using
+                  a software-based implementation of the PRISM
+                  primitives, we show that these systems outperform
+                  prior RDMA-based equivalents.},
+                  talk = {https://youtu.be/yZDw9uBMHxI}}
+
+
+@InProceedings{ray_acsac_talek,
+  author =        {Raymond Cheng and William Scott and Elisaweta
+                  Masserova and Irene Zhang and Vipul Goyal and Thomas
+                  Anderson and Arvind Krishnamurthy and Bryan Parno},
+                  month = 12,
+                  year = 2020,
+                  booktitle = acsac,
+    title = {Talek: Private Group Messaging with Hidden Access
+                  Patterns},
+                  abstract = {Talek is a private group
+                  messaging system that sends messages through
+                  potentially untrustworthy servers, while hiding both
+                  data content and the communication patterns among
+                  its users. Talek explores a new point in the design
+                  space of private messaging; it guarantees access
+                  sequence indistinguishability, which is among the
+                  strongest guarantees in the space, while assuming an
+                  anytrust threat model, which is only slightly weaker
+                  than the strongest threat model currently found in
+                  related work. Our results suggest that this is a
+                  pragmatic point in the design space, since it
+                  supports strong privacy and good performance: we
+                  demonstrate a 3-server Talek cluster that achieves
+                  throughput of 9,433 messages/second for 32,000
+                  active users with 1.7-second end-to-end latency.  To
+                  achieve its security goals without coordination
+                  between clients, Talek relies on
+                  information-theoretic private information
+                  retrieval. To achieve good performance and minimize
+                  server-side storage, Talek introduces new techniques
+                  and optimizations that may be of independent
+                  interest, e.g., a novel use of blocked cuckoo
+                  hashing and support for private notifications. The
+                  latter provide a private, efficient mechanism for
+                  users to learn, without polling, which logs have new
+                  messages.},
+                  url={papers/talek-acsac20.pdf} }
+
+
+
+@InProceedings{wen_osdi_persimmon,
+  author =        {Wen Zhang and Scott Shenker and Irene Zhang},
+  month =         11,
+  year =          2020,
+  booktitle = osdi,
+  title =         {Persistent State Machines for Recoverable In-memory Storage Systems with NVRam},
+  abstract = {Distributed in-memory storage systems are crucial for
+                  meeting the low latency requirements of modern
+                  datacenter services. However, they lose all state on
+                  failure, so recovery is expensive and data loss is
+                  always a risk. Persistent memory (PM) offers the
+                  possibility of building fast, persistent in-memory
+                  storage; however, existing PM systems are built from
+                  scratch or require heavy modification of existing
+                  systems. To rectify these problems, this paper
+                  presents Persimmon, a PM-based system that converts
+                  existing distributed in-memory storage systems into
+                  persistent, crash-consistent versions with low
+                  overhead and minimal code changes.},
+                  url={papers/persimmon-osdi20.pdf},
+                  talk = {https://www.youtube.com/watch?v=yAnkRRPbhsM}
+                  }
+
+
+@InProceedings{rdma_sec_hotcloud,
+  author =        {Anna Simpson and Adriana Szekeres and Jacob Nelson and Irene Zhang},
+  month =         7,
+  year =          2020,
+  booktitle = hotcloud,
+  title =         {Securing RDMA for High-Performance Datacenter Storage Systems},
+  abstract = {RDMA is increasingly popular for low-latency
+                  communication in datacenters, marking a major change
+                  in how we build distributed systems. Unfortunately,
+                  as we pursue significant system re-designs inspired
+                  by new technology, we have not given equal thought
+                  to the consequences for system security. This paper
+                  investigates security issues introduced to
+                  datacenter systems by switching to RDMA and
+                  challenges in building secure RDMA systems. These
+                  challenges include changes in RPC reliability
+                  guarantees and unauditable data-accesses. We show
+                  how RDMA's design makes it challenging to build
+                  secure storage systems by analyzing recent research
+                  systems; then we outline several directions for
+                  solutions and future research, with the goal of
+                  securing RDMA datacenter systems while they are
+                  still in the research and prototype stages.},
+                  url={papers/rdma-sec-hotcloud20.pdf} 
+                  }
+
+@InProceedings{marvin_atc,
+  author =        {Niel Lebeck and Arvind Krishnamurthy and Henry M. Levy and Irene Zhang},
+  month =         7,
+  year =          2020,
+  booktitle = usenix_atc,
+  title =         {End the Senseless Killing: Improving Memory Management for Mobile Operating Systems},
+  abstract =      {To ensure low-latency memory allocation, mobile
+                  operating systems needing memory kill applications
+                  instead of swapping memory to disk.  This design
+                  choice shifts the burden of managing over-utilized
+                  memory to application programmers, requiring them to
+                  constantly checkpoint their application state to
+                  disk. This paper presents Marvin, a new memory
+                  manager for mobile platforms that efficiently
+                  supports swapping while meeting the strict
+                  performance requirements of mobile apps.  Marvin's
+                  swap-enabled language runtime is co-designed with
+                  OS-level memory management to avoid common pitfalls
+                  of traditional swap mechanisms. Its three key
+                  features include: (1) a new swap mechanism, called
+                  ahead-of-time (AOT) swap, which pre-writes
+                  memory to disk, then harvests it quickly when
+                  needed, (2) a modified bookmarking garbage collector
+                  that avoids swapping in unused memory, and (3) an
+                  object-granularity working set estimator. Our
+                  experiments show that Marvin can run more than 2x as
+                  many concurrent apps as Android, and that Marvin can
+                  reclaim memory over 60x faster than Android with a
+                  Linux swap file can allocate memory under memory
+                  pressure.  },
+   url={papers/marvin-atc20.pdf},
+   talk = {https://www.usenix.org/conference/atc20/presentation/lebeck}}
+
+
+@InProceedings{meerkat,
+  author = {Adriana Szekeres and Michael Whittaker and Naveen
+                  Kr. Sharma and Jialin Li and Arvind Krishnamurthy
+                  and Irene Zhang and Dan R. K. Ports},
+  month = 4,
+  title = {Meerkat: Multicore-scalable Replicated Transactions Following the Zero-Coordination Principle},
+  year = 2020,
+  booktitle = eurosys,
+    link = {papers/meerkat-eurosys20.pdf},
+  abstract = {Traditionally, the high cost of network communication
+                  between servers has hidden the impact of cross-core
+                  coordination in replicated systems. However, new
+                  technologies, like kernel-bypass networking and
+                  faster network links, have exposed hidden
+                  bottlenecks in distributed systems.  This paper
+                  explores how to build multicore-scalable, replicated
+                  storage systems. We introduce a new guideline for
+                  their design, called the Zero-Coordination
+                  Principle. We use this principle to design a new
+                  multicore-scalable, in-memory, replicated, key-value
+                  store, called Meerkat.  Unlike existing systems,
+                  Meerkat eliminates all cross-core and cross-replica
+                  coordination, both of which pose a scalability
+                  bottleneck. Our experiments found that Meerkat is
+                  able to scale up to 80 hyper-threads and execute 8.3
+                  million transactions per second. Meerkat represents
+                  an improvement of 12x on state-of-the
+                  art, fault-tolerant, in-memory, transactional
+                  storage systems built using leader-based replication
+                  and a shared transaction log.  },
+                  talk = {https://www.youtube.com/watch?v=hVvQTh-2jog&feature=youtu.be}}
+
+
+@TechReport{hercules-tr,
+  author =        { Niel Lebeck and Jonathan Goldstein and Irene Zhang},
+   title =         { Hercules: A Multi-View Cache for Real-Time Interactive Apps},
+  link = {papers/hercules-tr19.pdf},
+  abstract = {Existing distributed storage systems do not meet the
+                  needs of real-time interactive apps. These apps
+                  feature small groups of users making concurrent
+                  modifications, tight responsiveness bounds, and
+                  wide-area distribution. As a result, they need a
+                  storage system that provides simultaneous access to
+                  multiple versions of shared state, where the
+                  versions trade off consistency and staleness, and
+                  there are versions representing the extreme ends
+                  of the consistency/staleness spectrum. We present
+                  Hercules, a distributed storage system that meets
+                  these needs using client-side caching. Hercules uses
+                  batching to preserve performance in high-throughput
+                  scenarios and includes recovery protocols to
+                  maintain liveness in the face of client-side
+                  failures. We experimentally evaluate Hercules's
+                  performance and failure tolerance, and we present a
+                  set of example apps that demonstrate the versatility
+                  of Hercules's programming model.},
+  institution =  {University of Washington},
+  year =         2019,
+  number =    {UW-CSE-2019-12-01},
+  month =     12}
+
+@InProceedings{ambrosia-vldb,
+  author =        { Jonathan Goldstein and Ahmed Abdelhamid and Mike
+                  Barnett and Sebastian Burckhardt and Badrish
+                  Chandramouli and Darren Gehring and Niel Lebeck and
+                  Christopher Meiklejohn and Umar Farooq Minhas and
+                  Ryan Newton and Rahee Peshawaria and Tal Zaccai and
+                  Irene Zhang },
+  month =         12,
+  title =         {A.M.B.R.O.S.I.A: Providing Performant Virtual Resiliency for Distributed Applications},
+  year =          2019,
+  booktitle = vldb,
+  abstract = {When writing today's distributed programs, which
+                  frequently span both devices and cloud services,
+                  programmers are faced with complex decisions and
+                  coding tasks around coping with failure, especially
+                  when these distributed components are stateful. If
+                  their application can be cast as pure data
+                  processing, they benefit from the past 40-50 years
+                  of work from the database community, which has shown
+                  how declarative database systems can completely
+                  isolate the developer from the possibility of
+                  failure in a performant manner. Unfortunately, while
+                  there have been some attempts at bringing similar
+                  functionality into the more general distributed
+                  programming space, a compelling general-purpose
+                  system must handle non-determinism, be performant,
+                  support a variety of machine types with varying
+                  resiliency goals, and be language agnostic, allowing
+                  distributed components written in different
+                  languages to communicate. This paper introduces the
+                  first system, Ambrosia, to satisfy all these
+                  requirements. We coin the term "virtual resiliency",
+                  analogous to virtual memory, for the platform
+                  feature which allows failure oblivious code to run
+                  in a failure resilient manner. We also introduce a
+                  programming construct, the "impulse", which
+                  resiliently handles non-deterministic information
+                  originating from outside the resilient component. Of
+                  further interest to our community is the effective
+                  reapplication of much database performance
+                  optimization technology to make Ambrosia more
+                  performant than many of today's non-resilient cloud
+                  solutions.},
+url={papers/ambrosia-vldb19.pdf} }
+
+@InProceedings{leap-asplos,
+  author =        {Huaicheng Li and Mingzhe Hao and Stanko Novakovic
+                  and Vaibhav Gogte and Sriram Govindan and Dan
+                  R. K. Ports and Irene Zhang and Ricardo
+                  Bianchini and Haryadi S. Gunawi and Anirudh Badam},
+  month =         3,
+  title =         {Efficient and Portable Virtual NVMe Storage on ARM SoCs},
+  year =          2020,
+  booktitle = asplos,
+  abstract = {Today's cloud storage stack is extremely resource
+                  hungry, burning 10-20% of datacenter x86 cores, a
+                  major "storage tax" that cloud providers must
+                  pay. Yet complex cloud storage stack is not
+                  completely offload ready to today's I/O
+                  accelerators. We present Leap, a new cloud storage
+                  stack that leverages ARM-based co-processors to
+                  offload complex storage services. Leap addresses
+                  many deployment challenges such as hardware
+                  fungibility, software portability, virtualizability,
+                  composability, and efficiency, with a set of
+                  OS/software techniques and new hardware properties
+                  that provide a uniform address space across the x86
+                  and ARM cores and expose a virtual NVMe storage to
+                  unmodified guest VMs, with a competitive speed to
+                  bare-metal performance.},
+                  url={papers/leap-asplos20.pdf},
+                  talk={https://www.youtube.com/watch?v=Gyn9eABQwTQ&list=PLsLWHLZB96VeVp3IVzvSH58ttVz_Anr7H&index=26&t=0s}}
+
+
+@Article{tapir-tocs,
+  author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana
+                  Szekeres and Arvind Krishnamurhty and Dan
+                  R. K. Ports},
+  title = 	 {Building Consistent Transactions with Inconsistent
+                  Replication},
+  year = 	 2018,
+  journal = tocs,
+  month = 	 12,
+  abstract={Application programmers increasingly prefer distributed
+                  storage systems with distributed transactions and
+                  strong consistency (e.g., Google's Spanner) for
+                  their strong guarantees and ease of
+                  use. Unfortunately, existing transactional storage
+                  systems are expensive to use because they rely on
+                  expensive replication protocols like Paxos for
+                  fault-tolerance. In this paper, we take a new
+                  approach to make transactional storage systems more
+                  affordable; we eliminate consistency from the
+                  replication protocol, while still providing
+                  distributed transactions with strong consistency to
+                  applications.  This paper presents TAPIR --
+                  the Transaction Application Protocol for
+                  Inconsistent Replication -- the first transaction
+                  protocol to use a replication protocol,
+                  inconsistent replication, that provides
+                  fault-tolerance with no consistency.  By enforcing
+                  strong consistency only in the transaction protocol,
+                  TAPIR is able to commit transactions in a single
+                  round-trip and schedule distributed transactions
+                  with no centralized coordination. We demonstrate the
+                  use of TAPIR in TAPIR-KV, a key-value store that
+                  provides high-performance transactional
+                  storage. Compared to system using conventional
+                  transaction protocols that require replication with
+                  strong consistency, TAPIR-KV has 2x better
+                  latency and throughput.},
+url={papers/tapir-tocs18.pdf},
+code={https://github.com/UWSysLab/tapir}
+}
+
+
+@techreport{lebeck-marvin-tr,
+  author =        {Niel Lebeck and Arvind Krishnamurthy and Henry M. Levy and Irene Zhang},
+  institution =   {University of Washington},
+  month =         4,
+  number =        {UW-CSE-2019-04-01},
+  title =         {End the Senseless Killing: Improving Memory Management for Mobile Operating Systems},
+  year =          2019,
+    url={papers/marvin-tr19.pdf},
+  abstract =      {To ensure low-latency memory allocation, mobile
+                  operating systems needing memory kill applications
+                  instead of swapping memory to disk.  This design
+                  choice shifts the burden of managing over-utilized
+                  memory to application programmers, requiring them to
+                  constantly checkpoint their application state to
+                  disk. This paper presents Marvin, a new memory
+                  manager for mobile platforms that efficiently
+                  supports swapping while meeting the strict
+                  performance requirements of mobile apps.  Marvin's
+                  swap-enabled language runtime is co-designed with
+                  OS-level memory management to avoid common pitfalls
+                  of traditional swap mechanisms. Its three key
+                  features include: (1) a new swap mechanism, called
+                  ahead-of-time (AOT) swap, which pre-writes
+                  memory to disk, then harvests it quickly when
+                  needed, (2) a modified bookmarking garbage collector
+                  that avoids swapping in unused memory, and (3) an
+                  object-granularity working set estimator. Our
+                  experiments show that Marvin can run more than 2x as
+                  many concurrent apps as Android, and that Marvin can
+                  reclaim memory over 60x faster than Android with a
+                  Linux swap file can allocate memory under memory
+                  pressure.  }
+}
+
+@InProceedings{chimera-hotcloud,
+  author =        {Amy Ousterhout and Adam Belay and Irene Zhang},
+  month =         7,
+  title =         {Just In Time Delivery: Leveraging Operating Systems Knowledge for Better Datacenter Congestion Control},
+  year =          2019,
+  booktitle = hotcloud,
+  link = {papers/chimera-hotcloud19.pdf},
+  abstract = { Network links and server CPUs are heavily contended
+                  resources in modern datacenters.  To keep tail
+                  latencies low, datacenter operators drastically
+                  overprovision both types of resources today, and
+                  there has been significant research into effectively
+                  managing network traffic and CPU load. However, all
+                  of this work looks at the two resources in
+                  isolation.  In this paper, we make the observation
+                  that, in the datacenter, the allocation of network
+                  and CPU resources should be co-designed for
+                  the most efficiency and the best response times.
+                  For example, while congestion control protocols can
+                  prioritize traffic from certain flows, it is wasted
+                  work if the traffic arrives at an overloaded server
+                  that will only enqueue the request.  Likewise,
+                  allocating more CPU resources to an application will
+                  not improve its performance if network congestion is
+                  causing a bottleneck in its requests.  This paper
+                  explores the potential benefits of such a
+                  co-designed resource allocator and considers the
+                  recent work in both CPU scheduling and congestion
+                  control that is best suited to such a system.  We
+                  propose a Chimera, a new datacenter OS that
+                  integrates a receiver-based congestion control
+                  protocol with OS insight into application queues,
+                  using the recent Shenango operating
+                  system.  }}
+
+@InProceedings{cornflakes-hotos,
+  author =        {Deepti Raghavan and Philip Levis and Matei Zaharia
+                  and Irene Zhang},
+  month =         6,
+  title =         {Breakfast of Champions: Towards Zero-Copy Serialization with NIC Scatter-Gather},
+  year =          2021,
+  booktitle = hotos,
+  link = {papers/cornflakes-hotos21.pdf},
+  abstract = {  Microsecond I/O will make data serialization a major
+                  bottleneck for datacenter
+                  applications. Serialization is fundamentally about
+                  data movement: serialization libraries coalesce and
+                  flatten in-memory data structures into a single
+                  transmittable buffer. CPU-based serialization
+                  approaches will hit a performance limit due to data
+                  movement overheads and be unable to keep up with
+                  modern networks.  We observe that widely deployed
+                  NICs possess scatter-gather capabilities that can be
+                  re-purposed to accelerate serialization's core task
+                  of coalescing and flattening in-memory data
+                  structures. It is possible to build a completely
+                  zero-copy, zero-allocation serialization library
+                  with commodity NICs. Doing so introduces many
+                  research challenges, including using the hardware
+                  capabilities efficiently for a wide variety of
+                  non-uniform data structures, making application
+                  memory available for zero-copy I/O, and ensuring
+                  memory safety. },
+                  talk = {https://youtu.be/IF0H6dHYL8U?list=PLl-7Fg11LUZe_6cCrz6sVvTbE_8SEobNB}}
+
+
+@InProceedings{demikernel-hotos,
+  author =        {Irene Zhang and Jing Liu and Amanda Austin and Michael Lowell Roberts and Anirudh Badam},
+  month =         5,
+  title =         {I'm Not Dead Yet! The Role of the Operating System in a
+    Kernel-Bypass Era},
+  year =          2019,
+  booktitle = hotos,
+  link = {papers/demikernel-hotos19.pdf},
+  abstract = {Researchers have long predicted the demise of the
+                  operating system.  As datacenter servers
+                  increasingly incorporate I/O devices that let
+                  applications bypass the OS kernel (e.g., RDMA and
+                  DPDK network devices or SPDK storage devices), this
+                  prediction may finally come true.  While
+                  kernel-bypass devices do eliminate the OS kernel
+                  from the I/O path, they do not handle the kernel's
+                  most important job: offering higher-level
+                  abstractions.  This paper argues for a new
+                  high-level, device-agnostic I/O abstraction for
+                  kernel-bypass devices.  We propose the Demikernel, a
+                  new library OS architecture for kernel-bypass
+                  devices.  It defines a high-level, kernel-bypass I/O
+                  abstraction and provides user-space library OSes to
+                  implement that abstraction across a range of
+                  kernel-bypass devices.  The Demikernel makes
+                  applications easier to build, portable across
+                  devices, and unmodified as devices continue to
+                  evolve. }}
+
+
+@PhdThesis{zhang17_towar_flexib_high_perfor_operat,
+  author =       {Irene Zhang},
+  title =        {Towards a Flexible, High-Performance Operating
+                  System for Mobile/Cloud Applications},
+  school =       {University of Washington},
+  month = 10,
+  year =         2017,
+  link = {papers/thesis.pdf},
+  abstract = {The convergence of ubiquitous mobile devices,
+                  large-scale cloud platforms and pervasive network
+                  connectivity have changed the face of modern user
+                  applications. Unlike a traditional desktop
+                  application, which runs on a single machine and
+                  supports a single user, the typical user-facing
+                  application today spans numerous mobile devices and
+                  cloud servers while supporting large numbers of
+                  users. This shift significantly increased the
+                  difficulty of building new user
+                  applications. Programmers must now confront
+                  challenges introduced by distributed deployment
+                  (e.g., partial failures), new mobile/cloud
+                  application features (e.g., reactivity), and new
+                  mobile/cloud requirements (e.g., scalability).  This
+                  thesis proposes a new type of mobile/cloud operating
+                  system designed to meet the evolving needs of modern
+                  applications. Mobile/cloud applications are the
+                  standard applications of the future; thus, they
+                  deserve a first-class operating system that
+                  simplifies their development and run-time
+                  management. Our key contribution is the design,
+                  implementation and evaluation of three systems that
+                  together form the basis for a new mobile/cloud
+                  operating system: (1) Sapphire, a new distributed
+                  run-time and process management system, (2) Diamond,
+                  a new distributed memory management system, and (3)
+                  TAPIR, a new distributed storage system. Each system
+                  introduces new operating systems abstractions and
+                  mechanisms designed to eliminate the challenges and
+                  simplify the development of mobile/cloud
+                  applications. We demonstrate that, like operating
+                  systems of the past, these systems make it easier
+                  for programmers to build bigger and more complex
+                  applications.}
+}
+
+@InProceedings{consistency-papoc18,
+  author =        {Adriana Szekeres and Irene Zhang},
+  month =         4,
+  title =         {Making Consistency More Consistent: A Unified Model for Coherence, Consistency and Isolation},
+  year =          2018,
+  booktitle = papoc,
+  link = {papers/consistency-papoc18.pdf},
+  abstract = {  Ordering guarantees are often defined using abstract
+  execution models. Unfortunately,
+  these models are complex and make different assumptions about system
+  semantics. As a result, researchers find it impossible to compare the ordering
+  guarantees of coherence, consistency and isolation. This paper presents a simple,
+  unified model for defining ordering guarantees that is sufficiently general to
+  model a wide range of systems, including processor memory, distributed storage,
+  and databases. We define a new single constraint relationship, result
+  visibility, which formalizes the ``appears to execute before'' relationship
+  between operations. Using only result visibility, we define more than 20
+  ordering guarantees from different research areas, including
+  PRAM, snapshot isolation and
+  eventual consistency session
+  guarantees.
+  To our knowledge, these definitions form the broadest survey of ordering
+  guarantees using a single constraint in the current literature.}}
+
+
+@InProceedings{ipa-socc16,
+  author =        {Brandon Holt and James Bornholt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
+  month =         10,
+  title =         {Disciplined Inconsistency},
+  year =          2016,
+  booktitle = socc,
+  link = {papers/ipa-socc16.pdf},
+  abstract = {Distributed applications and web services, such as online stores or social networks, are expected to be scalable, available, responsive, and fault-tolerant. To meet these steep requirements in the face of high round-trip latencies, network partitions, server failures, and load spikes, applications use eventually consistent datastores that allow them to weaken the consistency of some data. However, making this transition is highly error-prone because relaxed consistency models are notoriously difficult to understand and test.
+
+In this work, we propose a new programming model for distributed data that makes consistency properties explicit and uses a type system to enforce consistency safety. With the Inconsistent, Performance-bound, Approximate (IPA) storage system, programmers specify performance targets and correctness requirements as constraints on persistent data structures and handle uncertainty about the result of datastore reads using new consistency types. We implement a prototype of this model in Scala on top of an existing datastore, Cassandra, and use it to make performance/correctness tradeoffs in two applications: a ticket sales service and a Twitter clone. Our evaluation shows that IPA prevents consistency-based programming errors and adapts consistency automatically in response to changing network conditions, performing comparably to weak consistency and 2-10x faster than strong consistency. },
+code={https://github.com/bholt/ipa}
+}
+
+
+@InProceedings{zhang-diamond,
+  author = 	 {Irene Zhang and Niel Lebeck and Pedro Fonseca and Brandon Holt and Raymond Cheng and Ariadna Norberg and Arvind Krishnamurthy and Henry M. Levy},
+  title = 	 {Automating Data Management for Wide-area, Reactive Applications},
+  booktitle = osdi,
+  year = 	 2016,
+  month = 	 11,
+  talk = {https://www.usenix.org/conference/osdi16/technical-sessions/presentation/zhang-irene},
+  abstract = { Users of today's popular wide-area apps (e.g., Twitter,
+                  Google Docs, and Words with Friends) must no longer
+                  save and reload when updating shared data; instead,
+                  these applications are reactive, providing the
+                  illusion of continuous synchronization across mobile
+                  devices and the cloud. Achieving this illusion poses
+                  a complex distributed data management problem for
+                  programmers.  This paper presents the first reactive
+                  data management service, called Diamond, which
+                  provides persistent cloud storage, reliable
+                  synchronization between storage and mobile devices,
+                  and automated execution of application code in
+                  response to shared data updates. We demonstrate that
+                  Diamond greatly simplifies the design of reactive
+                  applications, strengthens distributed data sharing
+                  guarantees, and supports automated reactivity with
+                  low performance overhead.  },
+  url={papers/diamond-osdi16.pdf},
+  code={https://github.com/UWSysLab/diamond}}
+
+
+@Article{zhang16-when,
+  author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana Szekeres and Dan R. K. Ports and Arvind Krishnamurthy},
+  title = 	 {When Is Operation Ordering Required in Replicated Transactional Storage?},
+  journal = 	 {IEEE Data Engineering Bulletin},
+  year = 	 2016,
+  month = 3,
+  abstract={Today's replicated transactional storage systems typically have a layered architecture, combining protocols for transaction coordination, consistent replication, and concurrency control.  These systems generally require costly strongly-consistent replication protocols like Paxos, which assign a total order to all operations. To avoid this cost, we ask whether all replicated operations in these systems need to be strictly ordered. Recent research has yielded replication protocols that can avoid unnecessary ordering, e.g., by exploiting commutative operations, but it is not clear how to apply these to replicated transaction processing systems. We answer this question by analyzing existing transaction processing designs in terms of which replicated operations require ordering and which simply require fault tolerance.  We describe how this analysis leads to our recent work on TAPIR, a transaction protocol that efficiently provides strict serializability by using a new replication protocol that provides fault tolerance but not ordering for most operations.},
+url={papers/ordering-data.pdf}
+}
+
+@InProceedings{holt15-claret,
+  author = 	 {Brandon Holt and Irene Zhang and Dan R. K. Ports and Mark Oskin and Luis Ceze},
+  title = 	 {Claret: Using Data Types for Highly Concurrent Distributed Transactions},
+  booktitle = papoc,
+  year = 	 2015,
+  month = 	 4,
+  link = {papers/claret-papoc15.pdf},
+  abstract = {
+Out of the many NoSQL databases in use today, some that provide simple data structures for records, such as Redis and MongoDB, are now becoming popular. Building applications out of these complex data types provides a way to communicate intent to the database system without sacrificing flexibility or committing to a fixed schema. Currently this capability is leveraged in limited ways, such as to ensure related values are co-located, or for atomic updates. There are many ways data types can be used to make databases more efficient that are not yet being exploited.
+
+We explore several ways of leveraging abstract data type (ADT) semantics in databases, focusing primarily on commutativity. Using a Twitter clone as a case study, we show that using commutativity can reduce transaction abort rates for high-contention, update-heavy workloads that arise in real social networks. We conclude that ADTs are a good abstraction for database records, providing a safe and expressive programming model with ample opportunities for optimization, making databases more safe and scalable.},
+}
+
+@InProceedings{zhang14-build_consis_trans_incon_replic,
+  author = 	 {Irene Zhang and Naveen Kr. Sharma and Adriana
+                  Szekeres and Arvind Krishnamurhty and Dan
+                  R. K. Ports},
+  title = 	 {Building Consistent Transactions with Inconsistent
+                  Replication},
+  year = 	 2015,
+  booktitle = sosp,
+  month = 	 10,
+  abstract={Application programmers increasingly prefer distributed
+                  storage systems with distributed transactions and
+                  strong consistency (e.g., Google's Spanner) for
+                  their strong guarantees and ease of
+                  use. Unfortunately, existing transactional storage
+                  systems are expensive to use because they rely on
+                  expensive replication protocols like Paxos for
+                  fault-tolerance. In this paper, we take a new
+                  approach to make transactional storage systems more
+                  affordable; we eliminate consistency from the
+                  replication protocol, while still providing
+                  distributed transactions with strong consistency to
+                  applications.  This paper presents TAPIR --
+                  the Transaction Application Protocol for
+                  Inconsistent Replication -- the first transaction
+                  protocol to use a replication protocol,
+                  inconsistent replication, that provides
+                  fault-tolerance with no consistency.  By enforcing
+                  strong consistency only in the transaction protocol,
+                  TAPIR is able to commit transactions in a single
+                  round-trip and schedule distributed transactions
+                  with no centralized coordination. We demonstrate the
+                  use of TAPIR in TAPIR-KV, a key-value store that
+                  provides high-performance transactional
+                  storage. Compared to system using conventional
+                  transaction protocols that require replication with
+                  strong consistency, TAPIR-KV has 2x better
+                  latency and throughput.},
+url={papers/tapir-sosp15.pdf},
+code={https://github.com/UWSysLab/tapir},
+talk={https://www.youtube.com/watch?v=yE3eMxYJDiE}
+}
+
+@techreport{zhang15-build_consis_trans_incon_replic_exten_version,
+  author =        {Irene Zhang and Naveen Kr. Sharma and
+                   Adriana Szekeres and Arvind Krishnamurthy and
+                   Dan R. K. Ports},
+  institution =   {University of Washington},
+  month =         10,
+  number =        {UW-CSE-2014-12-01 v2},
+  title =         {Building Consistent Transactions with Inconsistent
+                   Replication (Extended Version)},
+  year =          2015,
+    url={papers/tapir-tr-v2.pdf},
+  abstract =      {Application programmers increasingly prefer
+                   distributed storage systems with strong consistency
+                   and distributed transactions (e.g., Google's Spanner)
+                   for their strong guarantees and ease of use.
+                   Unfortunately, existing transactional storage systems
+                   are expensive to use -- in part because they require
+                   costly replication protocols, like Paxos, for fault
+                   tolerance. In this paper, we present a new approach
+                   that makes transactional storage systems more
+                   affordable: we eliminate consistency from the
+                   replication protocol while still providing
+                   distributed transactions with strong consistency to
+                   applications. <p> We present TAPIR -- the
+                   Transactional Application Protocol for Inconsistent
+                   Replication -- the first transaction protocol to use
+                   a novel replication protocol, called inconsistent
+                   replication, that provides fault tolerance without
+                   consistency. By enforcing strong consistency only in
+                   the transaction protocol, TAPIR can commit
+                   transactions in a single round-trip and order
+                   distributed transactions without centralized
+                   coordination. We demonstrate the use of TAPIR in a
+                   transactional key-value store, TAPIR-KV. Compared to
+                   conventional systems, TAPIR-KV provides better
+                   latency and throughput.},
+                   code={https://github.com/UWSysLab/tapir}
+}
+
+@InProceedings{zhang14-custom_exten_deploy_mobil_cloud_applic,
+  author = 	 {Irene Zhang and Adriana Szekeres and Dana Van Aken and Isaac Ackerman and Steven D. Gribble and Arvind Krishnamurthy and Henry M. Levy}, 
+  title = 	 {Customizable and Extensible Deployment for Mobile/Cloud Applications},
+  booktitle =  osdi,
+  year = 	 2014,
+  month = 10,
+  url={papers/sapphire-osdi14.pdf},
+  abstract={ Modern applications face new challenges in managing
+                  today's highly distributed and heterogeneous
+                  environment. For example, they must stitch together
+                  code that crosses smartphones, tablets, personal
+                  devices, and cloud services, connected by variable
+                  wide-area networks, such as WiFi and 4G. This paper
+                  describes Sapphire, a distributed programming
+                  platform that simplifies the programming of today's
+                  mobile/cloud applications. Sapphire's key design
+                  feature is its distributed runtime system, which
+                  supports a flexible and extensible deployment layer
+                  for solving complex distributed systems tasks, such
+                  as fault-tolerance, code-offloading, and
+                  caching. Rather than writing distributed systems
+                  code, programmers choose deployment managers that
+                  extend Sapphire's kernel to meet their applications'
+                  deployment requirements. In this way, each
+                  application runs on an underlying platform that is
+                  customized for its own distribution needs.},
+  code={https://github.com/UWSysLab/Sapphire},
+  talk={https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/zhang.mp4}
+}
+
+@InProceedings{peter14-arrak-osdi14,
+  author = 	 {Simon Peter and Jialin Li and Irene Zhang and Dan R. K. Ports and Douglas Woos and Arvind Krishnamurthy and Thomas Anderson and Timothy Roscoe},
+  title = 	 {Arrakis: The Operating System is the Control Plane},
+  booktitle =  osdi,
+  year = 	 2014,
+  month = 10,
+  url={papers/arrakis-osdi14.pdf},
+  abstract = {Recent device hardware trends enable a new approach to
+                  the design of network server operating systems. In a
+                  traditional operating system, the kernel mediates
+                  access to device hardware by server applications, to
+                  enforce process isolation as well as network and
+                  disk security. We have designed and implemented a
+                  new operating system, Arrakis, that splits the
+                  traditional role of the kernel in two. Applications
+                  have direct access to virtualized I/O devices,
+                  allowing most I/O operations to skip the kernel
+                  entirely, while the kernel is re-engineered to
+                  provide network and disk protection without kernel
+                  mediation of every operation. We describe the
+                  hardware and software changes needed to take
+                  advantage of this new abstraction, and we illustrate
+                  its power by showing 2-5x end-to-end latency and 9x
+                  throughput improvements for a popular persistent
+                  NoSQL store relative to a well-tuned Linux
+                  implementation.},
+note= {Best Paper Award},
+code= {http://arrakis.cs.washington.edu/?page_id=52},
+talk= {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/osdi14/peter.mp4}
+}
+
+
+@Article{peter16-arrak,
+  author = 	 {Simon Peter and Jialin Li and Irene Zhang and Dan R. K. Ports and Douglas Woos and Arvind Krishnamurthy and Thomas Anderson and Timothy Roscoe},
+  title = 	 {Arrakis: The Operating System is the Control Plane},
+  year = 	 2015,
+  month = 11,
+  journal = tocs,
+  url={papers/arrakis-tocs16.pdf},
+  abstract = {Recent device hardware trends enable a new approach to the design of network server operating systems. In a traditional operating system, the kernel mediates access to device hardware by server applications to enforce process isolation as well as network and disk security. We have designed and implemented a new operating system, Arrakis, that splits the traditional role of the kernel in two. Applications have direct access to virtualized I/O devices, allowing most I/O operations to skip the kernel entirely, while the kernel is re-engineered to provide network and disk protection without kernel mediation of every operation. We describe the hardware and software changes needed to take advantage of this new abstraction, and we illustrate its power by showing improvements of 2 to 5x in latency and 9x throughput for a popular persistent NoSQL store relative to a well-tuned Linux implementation.},
+  code={http://arrakis.cs.washington.edu/?page_id=52}
+}
+
+@InProceedings{irene13-optim_vm_check_restor_perfor_vmwar_esxi,
+  author = 	 {Irene Zhang and Tyler Denniston and Yury Baskakov and Alex Garthwaite},
+  title = 	 {Optimizing VM Checkpointing for Restore Performance in VMware ESXi},
+  booktitle =  usenix_atc,
+  year = 	 2013,
+  month = 6,
+  url={papers/vmrestore-atc13.pdf},
+  abstract={   Cloud providers are increasingly looking to use virtual machine
+  checkpointing for new applications beyond fault tolerance. Existing
+  checkpointing systems designed for fault tolerance only optimize for
+  saving checkpointed state, so they cannot support these new
+  applications, which require efficient restore. Improving restore
+  performance requires a predictive technique to reduce the number of
+  disk accesses to bring in the VM's memory on restore. However,
+  complex VM workloads can diverge at any time due to external inputs,
+  background processes and timing variances, so predicting which pages
+  the VM will access on restore to reduce faults to disk is
+  impossible. Instead, we focus on a technique for predicting which
+  pages the VM will access together on restore to improve the
+  efficiency of disk accesses.
+
+
+  To reduce the number of faults to disk on restore, we group memory
+  pages likely to be accessed together into locality blocks. On
+  each fault, we can load a block of pages that are likely to be
+  accessed with the faulting page, eliminating future faults and
+  increasing disk efficiency. We implement support for locality
+  blocks, along with several other optimizations, in a new
+  checkpointing system for VMware ESXi Server called Halite. Our
+  experiments show that Halite reduces restore overhead by up to
+  94\% even for complex VM workloads.
+ },
+ talk = {https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/atc13/zhang.mp4}
+}
+
+@InProceedings{zhang11-fast_restor_check_memor_using,
+  author = 	 {Irene Zhang and Alex Garthwaite and Yury Baskakov and Kenneth C. Barr},
+  title = 	 {Fast Restore of Checkpointed Memory Using Working Set Estimation},
+  booktitle =  vee,
+  year = 	 2011,
+  month = 3,
+  url={papers/vmrestore-vee11.pdf},
+abstract={ In order to make save and restore features practical, saved
+                  virtual machines (VMs) must be able to quickly
+                  restore to normal operation. Unfortunately, fetching
+                  a saved memory image from persistent storage can be
+                  slow, especially as VMs grow in memory size. One
+                  possible solution for reducing this time is to
+                  lazily restore memory after the VM starts. However,
+                  accesses to unrestored memory after the VM starts
+                  can degrade performance, sometimes rendering the VM
+                  unusable for even longer. Existing performance
+                  metrics do not account for performance degradation
+                  after the VM starts, making it difficult to compare
+                  lazily restoring memory against other approaches. In
+                  this paper, we propose both a better metric for
+                  evaluating the performance of different restore
+                  techniques and a better scheme for restoring saved
+                  VMs.  Existing performance metrics do not reflect
+                  what is really important to the user -- the time
+                  until the VM returns to normal operation. We
+                  introduce the time-to-responsiveness metric, which
+                  better characterizes user experience while restoring
+                  a saved VM by measuring the time until there is no
+                  longer a noticeable performance impact on the
+                  restoring VM. We propose a new lazy restore
+                  technique, called working set restore, that
+                  minimizes performance degradation after the VM
+                  starts by prefetching the working set. We also
+                  introduce a novel working set estimator based on
+                  memory tracing that we use to test working set
+                  restore, along with an estimator that uses
+                  access-bit scanning. We show that working set
+                  restore can improve the performance of restoring a
+                  saved VM by more than 89% for some workloads.  }
+}
+
+@InProceedings{stribling09-flexib_wide_area_storag_distr_system_wheel,
+  author = 	 {Jeremy Stribling and Yair Sovran and Irene Zhang and
+                  Xavid Pretzer and Jinyang Li and M. Frans Kaashoek
+                  and Robert Morris},
+  title = 	 {Flexible, Wide-Area Storage for Distributed Systems with WheelFS},
+  booktitle =  nsdi,
+  year = 	 2009,
+  month = 4,
+  link = {papers/wfs-nsdi09.pdf},
+ abstract={WheelFS is a wide-area distributed storage system intended
+                  to help multi-site applications share data and gain
+                  fault tolerance. WheelFS takes the form of a
+                  distributed file system with a familiar POSIX
+                  interface. Its design allows applications to adjust
+                  the tradeoff between prompt visibility of updates
+                  from other sites and the ability for sites to
+                  operate independently despite failures and long
+                  delays. WheelFS allows these adjustments via
+                  semantic cues, which provide application control
+                  over consistency, failure handling, and file and
+                  replica placement.  WheelFS is implemented as a
+                  user-level file system and is deployed on PlanetLab
+                  and Emulab. Three applications (a distributed Web
+                  cache, an email service and large file distribution)
+                  demonstrate that WheelFS's file system interface
+                  simplifies construction of distributed applications
+                  by allowing reuse of existing software. These
+                  applications would perform poorly with the strict
+                  semantics implied by a traditional file system
+                  interface, but by providing cues to WheelFS they are
+                  able to achieve good performance. Measurements show
+                  that applications built on WheelFS deliver
+                  comparable performance to services such as CoralCDN
+                  and BitTorrent that use specialized wide-area
+                  storage systems.},
+ talk = {https://www.usenix.org/conference/nsdi-09/flexible-wide-area-storage-distributed-systems-wheelfs}
+}
+
+@InProceedings{ports10-trans_consis_autom_manag_applic_data_cache,
+  author = 	 {Dan R. K. Ports and Austin T Clements and Irene Zhang and Samuel Madden and Barbara Liskov},
+  title = 	 {Transactional Consistency and Automatic Management in an Application Data Cache},
+  booktitle =  osdi,
+  year = 	 2010,
+  month = 10,
+url={papers/txcache-osdi10.pdf},
+ abstract={Distributed in-memory application data caches like
+                  memcached are a popular solution for scaling
+                  database-driven web sites. These systems are easy to
+                  add to existing deployments, and increase
+                  performance significantly by reducing load on both
+                  the database and application servers. Unfortunately,
+                  such caches do not integrate well with the database
+                  or the application. They cannot maintain
+                  transactional consistency across the entire system,
+                  violating the isolation properties of the underlying
+                  database. They leave the application responsible for
+                  locating data in the cache and keeping it up to
+                  date, a frequent source of application complexity
+                  and programming errors. Addressing both of these
+                  problems, we introduce a transactional cache,
+                  TxCache, with a simple programming model. TxCache
+                  ensures that any data seen within a transaction,
+                  whether it comes from the cache or the database,
+                  reflects a slightly stale but consistent snapshot of
+                  the database. TxCache makes it easy to add caching
+                  to an application by simply designating functions as
+                  cacheable; it automatically caches their results,
+                  and invalidates the cached data as the underlying
+                  database changes. Our experiments found that adding
+                  TxCache increased the throughput of a web
+                  application by up to 5.2x, only slightly less than a
+                  non-transactional cache, showing that consistency
+                  does not have to come at the price of performance. },
+talk ={ https://www.usenix.org/legacy/events/osdi10/stream/ports/index.html}
+}
+
+@InProceedings{peter14-towar_high_perfor_applic_level_storag_manag,
+  author = 	 {Simon Peter and Jialin Li and Doug Woos and Irene Zhang and Dan R. K. Ports and Thomas Anderson and Arvind Krishnamurthy and Mark Zbikowski},
+  title = 	 {Towards High-Performance Application-Level Storage Management},
+  booktitle = hot_storage,
+  year = 	 2014,
+  address = 	 {Philadelphia, PA, USA},
+  month = 	 6,
+  url= {papers/arrakis-hotstorage14.pdf},
+  abstract={We propose a radical re-architecture of the traditional
+                  operating system storage stack to move the kernel
+                  off the data path. Leveraging virtualized I/O
+                  hardware for disk and flash storage, most read and
+                  write I/O operations go directly to application
+                  code. The kernel dynamically allocates extents,
+                  manages the virtual to physical binding, and
+                  performs name translation. The benefit is to
+                  dramatically reduce the CPU overhead of storage
+                  operations while improving application flexibility.}
+}
+
+
+@MastersThesis{zhang09-_effic_file_distr_flexib_wide,
+  author =       {Irene Zhang},
+  title =        {Efficient File Distribution in a Flexible, Wide-Area File System},
+  school =       {Massachusetts Institute of Technology},
+  year =         2009,
+  month= 6,
+  url={papers/meng-thesis.pdf},
+  abstract={WheelFS is a wide-area distributed file system designed to
+                  help applications cope with the challenges of
+                  sharing data over the wide-area network. A wide
+                  range of applications can use WheelFS as a storage
+                  layer because applications can control various
+                  trade-offs in WheelFS, such as consistency versus
+                  availability, using semantic cues. One key feature
+                  that many applications require from any storage
+                  system is efficient file distribution. The storage
+                  system needs to be able to serve files quickly, even
+                  large or popular ones, and allow users and
+                  applications to quickly browse files.  Wide-area
+                  links with high latency and low throughput make
+                  achieving these goals difficult for most distributed
+                  storage systems.  This thesis explores using
+                  prefetching, a traditional file system optimization
+                  technique, in wide-area file systems for more
+                  efficient file distribution. This thesis focuses on
+                  Tread, a prefetcher for WheelFS. Tread includes
+                  several types of prefetching to improve the
+                  performance of reading files and directories in
+                  WheelFS: read-ahead prefetching, whole file
+                  prefetching, directory prefetching and a prefetching
+                  optimization for WheelFS's built-in cooperative
+                  caching. To make the best use of scarce wide-area
+                  resources, Tread adaptively rate-limits prefetching
+                  and gives applications control over what and how
+                  prefetching is done using WheelFS's semantic cues.
+                  Experiments show that Tread can reduce the time to
+                  read a 10MB file in WheelFS by 40% and the time to
+                  list a directory with 100 entries by more than
+                  80%. In addition, experiments on Planetlab show that
+                  using prefetching with cooperative caching to
+                  distribute a 10MB file to 270 clients reduces the
+                  average latency for each client to read the file by
+                  almost 45%}}
+		  
