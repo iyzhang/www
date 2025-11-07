@@ -3,13 +3,14 @@ layout: page
 title: Blog
 ---
 
-<ul class="news list-unstyled">
+<dl class="row">
 {% for post in site.posts %}
     {% if post.shortnews == false %}
-        <li class="bloglink">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            <a href="{{ post.url }}">{{ post.title }}</a><br />
-        </li>
+        <dt class="col-sm-3">
+            {{ post.date | date_to_long_string }}</dt>
+        <dd class="col-sm-9">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </dd>
     {% endif %}
 {% endfor %}
-</ul>
+</dl>
