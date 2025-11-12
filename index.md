@@ -11,12 +11,9 @@ notitle: true
   <div class="col">
     <h1>I am a researcher
       at <a href="https://www.microsoft.com/en-us/research/">Microsoft
-      Research</a>.</h1>
+      Research</a> working on operating systems.</h1>
   </div>
   </div>
-
-
-   <h2> My research focuses on datacenter operating systems and distributed systems.</h2>
 
 I am especially interested in making it easier to build
 microsecond-scale datacenter systems by leveraging new datacenter

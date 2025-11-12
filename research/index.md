@@ -24,5 +24,5 @@ nanosecond-scale I/O stacks in Rust.  Once ported to Demikernel,
 microsecond datacenter systems can run across different devices with
 no code changes.
 
-<a href="publications/papers/demikernel-sosp21.pdf" class="btn btn-sm btn-primary">PAPER</a>
-<a href="https://github.com/microsoft/demikernel" class="btn btn-sm btn-primary">CODE</a>
+<a href="publications/papers/demikernel-sosp21.pdf" class="btn btn-sm btn-light">PAPER</a>
+<a href="https://github.com/microsoft/demikernel" class="btn btn-sm btn-light">CODE</a>

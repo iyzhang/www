@@ -28,32 +28,8 @@ pre{
 <!-- You can use the below to make your name bold -->
 <!-- {{reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' | replace_first: 'Bryngelson, S.', '<b>Bryngelson, S.</b>' }}</div> -->
 
-{% assign bibtest = false %}
-{% if entry.file %}
-{% assign bibfile = "/papers/" | append: entry.file %}
-{% for file in site.static_files %}
-  {% if file.path contains bibfile %}
-   {% assign bibtest = true %}
-  {% endif %}
-{% endfor %}
-{% endif %}
-
-{% if bibtest %}
-<a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank"><button class="btn btn-success btm-sm">PDF</button></a>
-{% endif %}
-
-{% if entry.doi %}
-{% if entry.type == 'unpublished' %}
-<a href="{{ entry.doi | prepend: 'https://arxiv.org/abs/' }}" target="_blank"><button class="btn btn-primary btm-sm">ARXIV</button></a>
-{% else %}
-<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank"><button class="btn btn-light btm-sm">DOI</button></a>
-{% endif %}
-{% endif %}
-
-{% if entry.type == 'unpublished' or entry.type == 'article' or  entry.type == 'thesis' or entry.type == 'inproceedings' or entry.type == 'report' %}
 <button type="button" class="btn btn-light btn-sm"
         onclick="toggleBibtex{{entry.key}}()">BIB</button>
-{% endif %}
 
 {% if entry.abstract %}
 <button type="button"  class="btn btn-sm btn-light" onclick="toggleAbstract{{entry.key}}()">ABSTRACT</button>
@@ -71,13 +47,19 @@ pre{
 <a href="{{ entry.talk }}" class="btn btn-sm btn-light">TALK</a>
 {% endif %}
 
+{% assign bibtext = entry.bibtex %}
+{% if entry.link %}
+   {% assign bibtext = bibtext | remove "entry.link" %}
+{% endif %}
+
+
 {% if entry.abstract %}
 <div id="a{{entry.key}}" style="display: none; background-color:gray; border-radius:1px; padding:1px">
-<pre>{{ entry.bibtex | remove: "entry.abstract" }}</pre>
+<pre>{{ bibtext | remove: "entry.abstract" }}</pre>
 </div>
 {% else %}
 <div id="a{{entry.key}}" style="display: none; background-color:gray; border-radius:1px; padding:1px">
-<pre>{{ entry.bibtex }}</pre>
+<pre>{{ bibtext }}</pre>
 </div>
 {% endif %}
 
