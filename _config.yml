@@ -18,5 +18,6 @@ scholar:
    join_strings: true
   
 # Permalinks
-permalink:        pretty
+# The path structure for blog posts.
+permalink: /blog/:year/:month/:day/:title.html
 front_page_news: 5
