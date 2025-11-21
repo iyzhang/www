@@ -16,16 +16,7 @@
             <header class="card-header text-center">
 			{% if page.date %}
               <div class="card-meta">
-                <span>Published on {{ page.date | date_to_string}}</time></span>{% endif %} in
-                  {% if post %}
-                    {% assign categories = post.categories %}
-                  {% else %}
-                    {% assign categories = page.categories %}
-                  {% endif %}
-                  {% for category in categories %}
-                  <a href="{{ site.baseurl }}/categories/#{{category|slugize}}">{{category}}</a>
-                  {% unless forloop.last %}&nbsp;{% endunless %}
-                  {% endfor %}
+                <span>Published on {{ page.date | date_to_string}}</time></span>{% endif %}
               <div>
 			
                 <h1 class="card-title">{{ page.title }}</h1>
@@ -40,8 +31,6 @@
             
             <div class="card-body">
 			{{ content }}
-            <hr />
-			{% include disqus.html %}
             </div>
           </article><!-- /.card -->
         </div>

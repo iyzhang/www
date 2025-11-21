@@ -7,7 +7,7 @@ exclude: [README.md, Makefile]
 
 plugins:
    - jekyll-scholar
-   
+
 scholar:
    source: publications
    bibliography: pubs.bib
