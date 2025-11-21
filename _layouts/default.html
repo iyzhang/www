@@ -1,19 +1,47 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
 
-  {% include head.html %}
+  <main class="main pt-4" role="main">
 
-  <body>
+    <div class="container">
 
-    {% include sidebar.html %}
-
-    <div class="content container">
       <div class="row">
-        <div class="col">
-          {{ content }}
-          </div>
+        <div class="col-md-9">
+
+          <article class="card mb-4">
+		  
+            <header class="card-header text-center">
+			{% if page.date %}
+              <div class="card-meta">
+                <a href="#"><time>On {{ page.date | date_to_string }}</time></a>
+              </div>
+			{% endif %} 
+              {% if page.notitle != true %}
+                <h1 class="card-title">{{ page.title }}</h1>
+              {% endif %}
+            </header>
+			{% if page.image %}
+            <a href="{{ page.image }}">
+              <img class="card-img" src="{{ site.baseurl }}/img/{{ page.image }}" alt="" />
+            </a>
+            {% endif %}
+            <div class="card-body">
+			{{ content }}
+         		  
+            </div>
+          </article><!-- /.card -->
+
         </div>
+     {% include sidebar.html %}
+      </div>
     </div>
 
-  </body>
+  </main>
+  
+{% include footer.html %}
+
+</body>
 </html>

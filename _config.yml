@@ -3,7 +3,7 @@ url: irenezhang.net
 title: Irene Zhang
 description: I am a researcher at Microsoft Research
     
-exclude: [bibble, README.md, Makefile, job-search]
+exclude: [README.md, Makefile]
 
 plugins:
    - jekyll-scholar
@@ -21,3 +21,21 @@ scholar:
 # The path structure for blog posts.
 permalink: /blog/:year/:month/:day/:title.html
 front_page_news: 5
+
+base_url: ""
+
+main_toc:
+  - title: About
+    url: ""
+  - title: Research
+    url: "research/"
+  - title: Publications
+    url: "publications/"
+  - title: Students
+    url: "students/"
+  - title: Service
+    url: "service/"
+  - title: Blog
+    url: "blog/"
+
+include: ["_pages"]

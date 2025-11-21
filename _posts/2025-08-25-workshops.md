@@ -5,7 +5,7 @@ photo: img/beehive.jpg
 ---
 
 Updates on workshop publications this year! Congratulations to Katie
-Lim on her [HotOS paper on operating systems for FPGA accelerated
-NICs](papers/apiary-hotos25.pdf) and Inho Choi on his [APSys paper on
+Lim on her [HotOS paper](papers/apiary-hotos25.pdf) on operating systems for FPGA accelerated
+NICs and Inho Choi on his [APSys paper](papers/autokernel-apsys25.pdf) on
 ML-tuned datapath operating systems
-architecture](papers/autokernel-apsys25.pdf).
+architecture.

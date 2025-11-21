@@ -1,40 +1,46 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="/">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">Principal Researcher<br>Microsoft Research</p>
-      
-    </div>
+        <div class="col-md-3 ml-auto">
 
-    <nav class="sidebar-nav">
-      <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a> -->
+          <aside class="sidebar">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h4 class="card-title">Contact</h4>
+                <p class="card-text">
+                 <ul class="fa-ul">
+	          <li><i class="fa-li fa fa-envelope"></i>irene.zhang
+	            @microsoft.com</li>
+	          <li><i class="fa-li fa fa-building"></i>Building 99</li>
+	          <li><i class="fa-li fa fa-location-arrow"></i>14820 NE
+	            36th St.
+                    <br class="hidden-xs"> Redmond, WA 98052</li>
+	          <li><i class="fa-li fa
+	                        fa-github-alt"></i><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
+                  	          <li><i class="fa-li fa-brands fa-mastodon"></i><a href="https://discuss.systems/@irene">irene@discuss.systems</a></li>
 
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
+                </ul></p>
+              </div>
+            </div>
+          </aside>
 
-      {% assign pages_list = site.pages | sort: "title" %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </nav>
-    
-    <ul class="list-unstyled">
-  <li>irene.zhang@microsoft.com</li>
-  <li>Building 99</li>
-  <li><address>14820 NE 36th St.<br />Redmond, WA 98052<br /></address></li>
-  <li><a href="https://github.com/iyzhang/">iyzhang@github</a></li>
-  <li><a href="https://discuss.systems/@irene">irene@discuss.systems</a></li>
-</ul>
+		  
+          <aside class="sidebar sidebar-sticky">
+            <div class="card mb-4">
+              <div class="card-body">
+		<h4 class="card-title">Latest posts</h4>
+		{% for post in site.posts limit:2 %}
+                <time>{{ post.date | date_to_string }}</time>	                	
+	              {% if post.shortnews %}
+                 <p>     {{ post.content }} </p>
+                      {% else %}
+                  <h4 class="h6">
+        	<a href="{{site.baseurl}}{{ post.url }}"
+                   class="d-inline-block">
+                      {{ post.title }}        </a>
+	
+                  </h4>
+                      {% endif %}
+        			{% endfor %}
+              </div>
+            </div>
+          </aside>
 
-  </div>
-</div>
+        </div>

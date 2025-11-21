@@ -3,17 +3,9 @@ layout: page
 title: About
 notitle: true
 ---
-<div class="row">
-  <div class="col-sm-3">
-    <img src="img/me-2023.jpeg" alt="Photo of me"
-         class="rounded-circle img-responsive">
-  </div>
-  <div class="col">
-    <h1>I am a researcher
-      at <a href="https://www.microsoft.com/en-us/research/">Microsoft
-      Research</a> working on operating systems.</h1>
-  </div>
-  </div>
+![Photo of an Asian woman with pink hair](img/me-2023.jpeg){: .col-md-3 .rounded-circle .float-left}
+
+## I am a principal researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/).
 
 I am especially interested in making it easier to build
 microsecond-scale datacenter systems by leveraging new datacenter
@@ -40,17 +32,3 @@ in <a href="http://en.wikipedia.org/wiki/Columbus,_Indiana">Columbus,
 Indiana</a>. <a href="http://www.drkp.net">My husband</a> and I like
 to cook, travel and occasionally do computer science together.
  
-## News
-<ul class="news list">
-{% assign posts_list = site.posts %}
-{% for post in posts_list limit: 5%}
-<li class="bloglink">
-  <span class="date">{{ post.date | date_to_long_string }}</span>
-  {% if post.shortnews == true %}
-  {{ post.content | markdownify }}
-  {% else %}
-  <p><b>Blog Post: </b><a href="{{ post.url}}">{{ post.title }}</a></p>
-  {% endif %}
-</li>
-{% endfor %}
-</ul>
