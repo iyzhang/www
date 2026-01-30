@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Service
-permalink: /service/index.html
+permalink: /service/
 ---
 
 ### Program Committees
 
+* HTPS 2026 PC
 * APSys 2024 PC Chair
 * NSDI 2024 PC Chair
 * SOSP 2023 DEI Chair

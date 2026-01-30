@@ -1,23 +1,23 @@
 ---
 layout: page
-title: Student
-permalink: /students/index.html
+title: Students
+permalink: /students/
 ---
 
 I am currently working with some fantastic PhD students:
 
 * [Inho Choi](https://ihchoi12.github.io) (NUS)
-* [Katie Lim](https://homes.cs.washington.edu/~katielim/) (UW)
 * [Angie Montemayor](angelamontemayor.github.io) (UW)
 * [Priyal Suneja](https://priy.al) (UW)
 
 I've also worked with many great PhD students in the past:
 
+* [Katie Lim](https://hellokayt.github.io) (UW -> Oxide)
 * [Josh Fried](https://joshfried.io) (MIT -> UPenn)
 * [Fabricio Carvalho](https://carvalhof.github.io) (UFMS)
 * [Vishwanath Seshagiri](https://vishwanath1306.github.io) (Emory)
 * [Deepti Raghavan](https://deeptir.me/) (Stanford -> Brown)
-* [Amanda Raybuck](https://www.cs.utexas.edu/~ajaustin/) (UT Austin -> UC Davis)
+* [Amanda Raybuck](https://web.cs.ucdavis.edu/~araybuck/) (UT Austin -> UC Davis)
 * Sowmya Janakiram Dharanipragada (Cornell -> Google)
 * Ashlie Martinez (UW)
 * Shannon Joyner (Cornell -> Google)

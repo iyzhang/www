@@ -3,13 +3,13 @@ url: irenezhang.net
 title: Irene Zhang
 description: I am a researcher at Microsoft Research
     
-exclude: [README.md, Makefile]
+exclude: [README.md, Makefile, archive, _drafts, cv]
 
 plugins:
    - jekyll-scholar
 
 scholar:
-   source: publications
+   source: 
    bibliography: pubs.bib
    bibliography_template: bibtemplate
    style: citesty
@@ -38,4 +38,3 @@ main_toc:
   - title: Blog
     url: "blog/"
 
-include: ["_pages"]

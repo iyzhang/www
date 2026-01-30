@@ -1,0 +1,103 @@
+This is why women leave academia        
+
+It has been one year since UW released its report blaming me for the
+sexual harassment in the systems lab. I thought I would write a recap
+for the broader academic community that is not about my experience or
+that of women in general, but about the broader systematic issues that
+this incident revealed in academia. Despite cropping up over and over
+again, these issues are largely unacknowledged. My one attempt to
+address them in a [systematic way](https://csclimatesurvey.org)
+fizzled because of lack of support from institutions (e.g., ACM) and
+the emotional toll to myself from being repeatedly told that I was
+wrong and unrealistic.
+
+The UW situation highlights the issues and inequities in our system in
+a way that I wouldn't have been able to. In many ways, it is a
+qualitative case study of what happened to eight women in a lab with a
+small number of bad actors and what happens when the faculty with
+power and authority ignore the problems and side with the men.
+Unfortunately, the same situation is replaying over and over again in
+labs around the world, usually with a fewer number of women, who are
+easy to dismiss. The UW situation was unique in that there were a
+substantial (by academic standards) number of women, eight, and they
+were exceptionally well read and articulate.  They also believed in
+the ability of the department to hear their concerns and fix them (or
+they would not have bothered complaining, which is more likely to
+happen). And yes, they had an influential alum, me, backing them up
+and encouraging them and telling them that they are entitled to a
+better work environment.
+
+Additionally, because a year has passed, we can track where the women
+have wound up. In most cases, the women simply disappear and are
+easily forgotten.  Their lab likely didn't have many or any women
+before they arrived and simply returns to that state. The decision of
+one or two women that decide to quit is dismissed as a personal
+decision and not an issue with the broader system.  We lament how hard
+it is to keep women in CS and academia, while patting ourselves on the
+back for managing to recruit a woman in the first place and reassuring
+ourselves that women just can't cut it in the high-stakes world of
+academia.
+
+The UW situation is both representative and unique in this sense
+too. The letter written to the faculty by the women was precipitated
+by a single woman quitting because of sexual harassment; however, once
+the women started talking to each other, it seemed that they were
+having the same experiences over and over again; that is, it seemed to
+be more systematic than one woman leaving would suggest.  Thus, they
+took the time off from their research and the emotional energy to
+write a letter in good faith to those in charge.
+
+What happened afterwards was a lesson in not challenging the
+system. Not only did UW go after the women by subjecting them to an
+investigation that set back all of their careers by at least a year,
+it also went after me, their only advocate. While UW might not have
+meant to make an example of them, it is exactly what they did. Now
+women in the department know not to complain because it will cause a
+year of gaslighting and harassment from the faculty.  I sent a FOIA
+request for the faculty email because I legitimately was confused by
+their animosity towards me. The emails revealed conspiracy theories
+and demeaning language about me that were shocking. They also
+threatened to and did take these conspiracy theories to my management
+at MSR, which felt, again like they were trying to make a point about
+speaking up for women.
+
+More concretely, we can study what happened to the women. For
+anonymity, I will use the designations from the HR report.
+
+1. Alpha - struggling to graduate, likely will leave academia
+afterwards, but unsure
+2. Beta - rushed to graduate, original plan was to stay for postdoc
+and interview but decided to leave academia
+3. Gamma - Left to finish PhD at another university
+4. Delta - Stayed at UW in another lab, may quit
+5. Epsilon - Left to visit another university, likely quitting at the
+end of the school year
+6. Zeta - quit after her first year due to sexual harassment, returned
+to industry job
+7. Kappa - postdoc intending to interview for jobs, quit half way
+through postdoc due to the situation
+8. Chi - transferred to another university
+
+Chi was interviewed for the HR report but not included because she was
+a new student. Note that essentially all eight women left the systems
+lab, not a single one was interested in staying after the
+investigation.  If eight women left a group at a company, some
+questions would be asked, but here there is no accountability or
+reflection. Three women left for other universities, where hopefully
+the situation is better but there is no guarantee that something
+similar will happen again.  Beta experienced harassment in another lab
+at UW, where she had already gone through the same experience but was
+assured that the systems lab would be better.  While some of the eight
+will finish their PhDs, it is highly unlikely that any of them will
+become faculty.
+
+
+
+
+
+
+So what are these systematic issues?
+
+1. Survivor bias
+2. Himpathy and both side-ism
+3. Institutional betrayal

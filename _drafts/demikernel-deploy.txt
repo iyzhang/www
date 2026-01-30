@@ -1,0 +1,9 @@
+How I (almost) deployed Demikernel at Microsoft and what's next
+
+For the last 3 years, I have been working with the Bing organization
+to move their BondRPC stack to Demikernel. It has been a challenging
+road that ultimately failed because the systems that drive search no
+longer require microsecond tail latencies. I considered writing this
+blog post for a long time but haven't because I've been spending a lot
+of time thinking of the broader implications for systems researchers
+of this failed deployment.

@@ -10,21 +10,20 @@ notitle: true
 I am especially interested in making it easier to build
 microsecond-scale datacenter systems by leveraging new datacenter
 hardware technologies, like kernel-bypass, RDMA and programmable
-devices.  My most recent work has been on
-the <a href="//github.com/microsoft/demikernel">Demikernel datapath
-OS</a> and related projects.  A <a href="bio.txt">bio</a> and
-<a href="abstract.txt">talk abstract</a> for my most recent work is
-      available.
+devices.  My most recent work has been on the [Demikernel datapath
+OS](//github.com/microsoft/demikernel) and related projects.  A
+[bio](/files/bio.txt) and <a href="abstract.txt">talk abstract</a> for
+my most recent work is available.
 
-I completed my PhD in 2017 at
-the <a href="//www.cs.washington.edu">University of Washington</a>,
-where my research focused on distributed systems that span mobile
-devices and cloud servers.  My thesis work received the ACM SIGOPS
-Dennis Ritchie doctoral dissertation award and the UW Allen School
-William Chan doctoral dissertion award.  Before my PhD, I received my
-S.B. and M.Eng.  from <a href="http://www.mit.edu">MIT</a> and worked
-for 3 years in the virtual machine monitor group
-at <a href="https://www.vmware.com">VMware</a>.
+I completed my PhD in 2017 at the [University of
+Washington](//www.cs.washington.edu), where my research focused on
+distributed systems that span mobile devices and cloud servers.  My
+thesis work received the ACM SIGOPS Dennis Ritchie doctoral
+dissertation award and the UW Allen School William Chan doctoral
+dissertion award.  Before my PhD, I received my S.B. and M.Eng.  from
+[MIT](http://www.mit.edu) and worked for 3 years in the
+virtual machine monitor group at <a
+href="https://www.vmware.com">VMware</a>.
   
 I was born in <a href="http://www.ebeijing.gov.cn/">Beijing, China</a>
 but spent most of my time growing up

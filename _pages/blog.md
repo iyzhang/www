@@ -8,7 +8,7 @@ permalink: /blog/index.html
 {% for post in site.posts %}
     {% if post.shortnews == false %}
         <li class="bloglink">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
+            <span class="date"><b>{{ post.date | date_to_long_string }}</b></span>
             <a href="{{ post.url }}">{{ post.title }}</a><br />
         </li>
     {% endif %}
