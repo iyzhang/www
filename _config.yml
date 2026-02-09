@@ -4,12 +4,12 @@ title: Irene Zhang
 description: I am a researcher at Microsoft Research
     
 exclude: [README.md, Makefile, archive, _drafts, cv]
-
+include: [_pages]
 plugins:
    - jekyll-scholar
 
 scholar:
-   source: 
+   source: publications
    bibliography: pubs.bib
    bibliography_template: bibtemplate
    style: citesty
