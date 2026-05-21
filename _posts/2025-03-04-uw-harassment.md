@@ -91,7 +91,7 @@ situation, while repairing the relationship between the women and
 their advisors.
 
 > Edited to add: I've posted [a perspective from one of the women
-  ](papers/uw-harassment/uw-women-statement.txt) on my involvement.
+  ](/papers/uw-harassment/uw-women-statement.txt) on my involvement.
 
 After the HR investigation started, the faculty and students were
 instructed not to speak about the situation. Thus, I became the only
@@ -158,8 +158,8 @@ text that were not included in the report it did not support the
 investigator's narrative. 
 
 > Edited to add: By request, I have produced a ChatGPT summary of [the
-  report](papers/uw-harassment/report-overview.pdf) and the [women's
-  timeline](papers/uw-harassment/timeline-summary.pdf) to help people
+  report](/papers/uw-harassment/report-overview.pdf) and the [women's
+  timeline](/papers/uw-harassment/timeline-summary.pdf) to help people
   grasp the situation.
 
 I feel that it is important for me to disclose the men's identity

@@ -65,3 +65,16 @@ wiht LLMs right now is that it takes longer to have an LLM write most
 reasonable pieces of code than just writing it yourself. But given the
 rapidity at which the models are developing, it is probably reasonable
 to assume that this will improve.
+
+
+Big research problems
+
+1. How do we give programmers experience while not forcing them to
+write code themselves
+
+2. How do we get from prototype to stable production code?
+
+Self-healing code?
+
+3. Writing code with LLMs is not fun, it's really tedious right now,
+what do we do about that?
