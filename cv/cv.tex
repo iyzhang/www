@@ -129,9 +129,9 @@
   
   \begin{rsection}{Recent\\Research\\Highlights}
     \begin{rentry}{Demikernel}{}
-      The Demikernel is a new datapath OS and architecture for
+      \textit{A new datapath OS and architecture for
       microsecond-scale datacenter systems and kernel-bypass
-      devices. Demikernel accommodates heterogenous kernel-bypass
+      devices.} Demikernel accommodates heterogenous kernel-bypass
       devices with a flexible library OS architecture and new
       high-level datapath API with an asynchronous I/O interface and
       zero-copy memory semantics for microsecond I/O
@@ -139,34 +139,42 @@
       SPDK devices with new nanosecond-scale I/O stacks in Rust. Once
       ported to Demikernel, microsecond datacenter systems can run
       across different devices with no code changes.
-    \end{rentry}\\
+    \end{rentry}
+
+\begin{rentry}{Capybara}{}
+  \textit{A microsecond-scale load balancer that uses TCP
+  migration to move established TCP connections between
+  servers.} Capybara uses a programmable switch to implement
+  transparent L4 load balancing and a user-space TCP stack to
+  encapsulate and move application-level state. Using this co-designed
+  architecture, Capybara achieves up to 149x lower tail latency and
+  more than 2x higher throughput for scale-out services compared to
+  state-of-the-art load balancing approaches.
+    \end{rentry}
     
     \begin{rentry}{Cornflakes}{}
-      Cornflakes is a memory-safe, zero-copy serialization library for
-      microsecond-scale applications. Fundamentally, serialization
-      requires data movement, which is achieved today using copies,
-      while recent kernel-bypass networking stacks, like Demikernel,
-      aim to eliminate copies from the I/O data path.  Cornflakes
-      makes the observation that network devices are better suited for
-      data movement than CPUs in many cases and existing NICs already
-      have the capability to serialize data structures through their
-      scatter-gather API. However, this API is not well-designed for
-      serialization libraries like protobufs. Cornflakes is a hybrid
-      serialization stack that uses NIC scatter-gather when it
-      outperforms the CPU and falls back to software copies in other
-      cases.
-    \end{rentry}\\
+      \textit{A memory-safe, zero-copy serialization library for
+        microsecond-scale applications.} Serialization requires data
+      movement -- achieved today using copies -- that is at odds with
+      kernel-bypass networking stacks that aim to eliminate copies
+      from the I/O path.  Network devices are better suited for data
+      movement than CPUs but existing scatter-gather APIs are poorly
+      designed for data serialization.  Cornflakes is a hybrid
+      serialization stack that uses NIC scatter-gather when it is
+      better and otherwise falls back to software copies.
+    \end{rentry}
 
     \begin{rentry}{Treehouse}{}
-      Treehouse is a new software-centric approach to green
-      datacenters. While existing research aims to reduce energy usage
-      of datacenter hardware, Treehouse argues that being energy-aware in the
-      design of datacenter software is equally important. To that end,
-      Treehouse aims to make energy and carbon visible to application
-      developers on a fine-grained basis, modify system APIs to make
-      informed trade offs between performance and carbon emissions,
-      and raise the level of application programming for flexible use
-      of more energy efficient means of compute and storage.
+      \textit{A new software-centric approach to green datacenters.}
+      While existing research aims to reduce energy usage of
+      datacenter hardware, Treehouse argues that being energy-aware in
+      the design of datacenter software is equally important. To that
+      end, Treehouse aims to make energy and carbon visible to
+      application developers on a fine-grained basis, modify system
+      APIs to make informed trade offs between performance and carbon
+      emissions, and raise the level of application programming for
+      flexible use of more energy efficient means of compute and
+      storage.
     \end{rentry}
   \end{rsection}    
 \end{rtable}
@@ -174,6 +182,11 @@
 \begin{rtable}
   
   \begin{rsection}{Conference\\Publications}
+    K. Lim, M. Giordano, T. Stavrinos, I. Zhang, J. Nelson,
+    B. Kasikci, T. Anderson. \textit{Beehive: A Flexible
+    Network Stack for Direct-Attached Accelerators.} Prof. of the IEEE/ACM Symposium
+    on Microarchitecture (MICRO). November 2024. \\\vspace{-0.5em}
+    
     D. Raghavan, S. Ravi, G. Yuan, P. Thaker, S. Srivastava,
     M. Murray, P. H. Penna, A. Ousterhout, P. Levis, M. Zaharia, and
     \textbf{I. Zhang}.  \textit{Cornflakes: Zero-copy Serialization

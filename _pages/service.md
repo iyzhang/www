@@ -6,6 +6,7 @@ permalink: /service/
 
 ### Program Committees
 
+* ASPLOS 2027 VPC Chair
 * HTPS 2026 PC
 * APSys 2024 PC Chair
 * NSDI 2024 PC Chair
